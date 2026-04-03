@@ -193,7 +193,7 @@ function getMoneylineLabel(edgePercent: number | null) {
 
 export function evaluateMlbGames(
   games: MlbOddsGame[],
-  ratings: Record<string, MlbTeamProfile>,
+  ratings: Record<string, Omit<MlbTeamProfile, "name">>,
   parkFactors: Record<string, number>
 ) {
   return (games ?? []).map((game): EvaluatedMlbGame => {
