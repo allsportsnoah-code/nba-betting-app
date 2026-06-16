@@ -2,10 +2,17 @@ import { redirect } from "next/navigation";
 import LoginForm from "@/app/login/LoginForm";
 import { isOwnerLoggedIn } from "@/lib/ownerAuth";
 
-export default async function LoginPage() {
+type LoginPageProps = {
+  searchParams?: Promise<{ error?: string }>;
+};
+
+export default async function LoginPage({ searchParams }: LoginPageProps) {
   if (await isOwnerLoggedIn()) {
     redirect("/");
   }
+
+  const params = await searchParams;
+  const initialMessage = params?.error === "invalid" ? "Invalid login." : "";
 
   return (
     <main className="max-w-xl mx-auto p-8">
@@ -19,7 +26,7 @@ export default async function LoginPage() {
         </p>
       </div>
 
-      <LoginForm />
+      <LoginForm initialMessage={initialMessage} />
     </main>
   );
 }

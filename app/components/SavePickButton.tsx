@@ -4,7 +4,7 @@ import { useState } from "react";
 
 type SavePickPayload = {
   pick_date: string;
-  sport: "NBA" | "NFL" | "MLB";
+  sport: "NBA" | "NFL" | "MLB" | "SOCCER";
   market_scope: "team" | "player_prop" | "live";
   market_type: string;
   game_label: string;
@@ -23,7 +23,7 @@ type SavePickPayload = {
   edge_label?: string | null;
   top_pick_rank?: number | null;
   is_top_pick?: boolean;
-  status?: "pending" | "win" | "loss" | "push";
+  status?: "pending" | "win" | "loss" | "push" | "postponed";
   final_score?: string | null;
   final_stat?: number | null;
   closing_line?: number | null;

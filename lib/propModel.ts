@@ -1,7 +1,4 @@
-export const PROP_MARKET_MAP: Record<
-  string,
-  { marketKey: string; statKey: string; label: string }
-> = {
+export const PROP_MARKET_MAP = {
   points: {
     marketKey: "player_points",
     statKey: "points",
@@ -22,7 +19,69 @@ export const PROP_MARKET_MAP: Record<
     statKey: "pra",
     label: "PRA",
   },
-};
+  threes: {
+    marketKey: "player_threes",
+    statKey: "threes",
+    label: "3-Pointers",
+  },
+  blocks: {
+    marketKey: "player_blocks",
+    statKey: "blocks",
+    label: "Blocks",
+  },
+  steals: {
+    marketKey: "player_steals",
+    statKey: "steals",
+    label: "Steals",
+  },
+  blocks_steals: {
+    marketKey: "player_blocks_steals",
+    statKey: "blocks_steals",
+    label: "Blocks + Steals",
+  },
+  turnovers: {
+    marketKey: "player_turnovers",
+    statKey: "turnovers",
+    label: "Turnovers",
+  },
+  points_rebounds: {
+    marketKey: "player_points_rebounds",
+    statKey: "points_rebounds",
+    label: "Points + Rebounds",
+  },
+  points_assists: {
+    marketKey: "player_points_assists",
+    statKey: "points_assists",
+    label: "Points + Assists",
+  },
+  rebounds_assists: {
+    marketKey: "player_rebounds_assists",
+    statKey: "rebounds_assists",
+    label: "Rebounds + Assists",
+  },
+  field_goals: {
+    marketKey: "player_field_goals",
+    statKey: "field_goals_made",
+    label: "Field Goals",
+  },
+  free_throws_made: {
+    marketKey: "player_frees_made",
+    statKey: "free_throws_made",
+    label: "Free Throws Made",
+  },
+  free_throws_attempted: {
+    marketKey: "player_frees_attempts",
+    statKey: "free_throws_attempted",
+    label: "Free Throws Attempted",
+  },
+} as const;
+
+export type NbaPropType = keyof typeof PROP_MARKET_MAP;
+export const NBA_PROP_TYPES = Object.keys(PROP_MARKET_MAP) as NbaPropType[];
+
+export function isNbaPropType(value: string | null | undefined): value is NbaPropType {
+  return Boolean(value && value in PROP_MARKET_MAP);
+}
 
 export function americanToImpliedProb(american: number) {
   if (american > 0) return (100 / (american + 100)) * 100;
@@ -59,10 +118,11 @@ export function buildPropMarketScore(oddsTaken: number | null, line: number | nu
   return Number((hitFit * 0.35 + payoutFit + lineFit).toFixed(1));
 }
 
-export function parsePropsFromEventOdds(eventOdds: any, propType: string) {
+function buildGroupedPropRows(eventOdds: any, propType: string) {
   const bookmakers = eventOdds?.bookmakers ?? [];
   const book = bookmakers[0];
   if (!book) return [];
+  if (!isNbaPropType(propType)) return [];
 
   const marketKey = PROP_MARKET_MAP[propType]?.marketKey;
   const market = book.markets?.find((m: any) => m.key === marketKey);
@@ -124,26 +184,36 @@ export function parsePropsFromEventOdds(eventOdds: any, propType: string) {
     if (side === "Under") row.under_odds = outcome.price ?? null;
   }
 
-  const rows = Array.from(grouped.values()).map((row: any) => {
-    const bestSide =
-      row.over_odds === null
+  return Array.from(grouped.values());
+}
+
+export function parsePropMenuFromEventOdds(eventOdds: any, propType: string) {
+  return buildGroupedPropRows(eventOdds, propType);
+}
+
+export function parsePropsFromEventOdds(eventOdds: any, propType: string) {
+  const rows = buildGroupedPropRows(eventOdds, propType).flatMap((row: any) => {
+    const sideRows = [
+      { side: "Over" as const, odds: row.over_odds },
+      { side: "Under" as const, odds: row.under_odds },
+    ].filter((entry) => entry.odds !== null && entry.odds !== undefined);
+
+    const favoriteSide =
+      row.over_odds === null || row.over_odds === undefined
         ? "Under"
-        : row.under_odds === null
+        : row.under_odds === null || row.under_odds === undefined
         ? "Over"
         : americanToImpliedProb(row.over_odds) >= americanToImpliedProb(row.under_odds)
         ? "Over"
         : "Under";
 
-    const oddsTaken = bestSide === "Over" ? row.over_odds : row.under_odds;
-    const score = buildPropMarketScore(oddsTaken, row.line);
-
-    return {
+    return sideRows.map((entry) => ({
       ...row,
-      official_side: bestSide,
-      official_odds: oddsTaken,
-      market_score: score,
-      signal: "Market favorite",
-    };
+      official_side: entry.side,
+      official_odds: entry.odds,
+      market_score: buildPropMarketScore(entry.odds, row.line),
+      signal: entry.side === favoriteSide ? "Market favorite" : "Market underdog side",
+    }));
   });
 
   return rows.sort((a: any, b: any) => b.market_score - a.market_score);

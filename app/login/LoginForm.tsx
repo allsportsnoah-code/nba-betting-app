@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
-export default function LoginForm() {
-  const router = useRouter();
+type LoginFormProps = {
+  initialMessage?: string;
+};
+
+export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(initialMessage);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -19,6 +21,7 @@ export default function LoginForm() {
 
       const res = await fetch("/api/login", {
         method: "POST",
+        credentials: "include",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
       });
@@ -30,8 +33,7 @@ export default function LoginForm() {
         return;
       }
 
-      router.push("/");
-      router.refresh();
+      window.location.assign("/");
     } catch {
       setMessage("Login failed.");
     } finally {
@@ -40,10 +42,16 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="app-panel rounded-3xl p-6 space-y-4">
+    <form
+      action="/api/login"
+      method="post"
+      onSubmit={handleSubmit}
+      className="app-panel rounded-3xl p-6 space-y-4"
+    >
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-2">Username</label>
         <input
+          name="username"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
           className="app-input"
@@ -55,6 +63,7 @@ export default function LoginForm() {
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-2">Password</label>
         <input
+          name="password"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}

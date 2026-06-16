@@ -1,6 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState, type FormEvent } from "react";
+
+function getFormParts(endpoint: string) {
+  const url = new URL(endpoint, "http://betting-lab.local");
+
+  return {
+    action: url.pathname,
+    fields: Array.from(url.searchParams.entries()),
+  };
+}
 
 export default function SyncButton({
   label,
@@ -13,13 +22,25 @@ export default function SyncButton({
 }) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const formParts = useMemo(() => getFormParts(endpoint), [endpoint]);
 
-  async function handleClick() {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
     try {
       setLoading(true);
       setMessage("");
 
-      const res = await fetch(endpoint);
+      const res = await fetch(endpoint, {
+        credentials: "include",
+        cache: "no-store",
+      });
+
+      if (res.status === 401) {
+        window.location.assign("/login");
+        return;
+      }
+
       const data = await res.json();
 
       if (!res.ok || !data.ok) {
@@ -37,16 +58,29 @@ export default function SyncButton({
   }
 
   return (
-    <div>
+    <form
+      action={formParts.action}
+      method="get"
+      onSubmit={handleSubmit}
+      className="rounded-2xl border border-slate-200/80 bg-white/78 p-3 shadow-sm"
+    >
+      {formParts.fields.map(([name, value], index) => (
+        <input key={`${name}-${index}`} type="hidden" name={name} value={value} />
+      ))}
+      <input type="hidden" name="native" value="1" />
       <button
-        onClick={handleClick}
+        type="submit"
         disabled={loading}
-        className="app-button app-button-primary disabled:opacity-50 disabled:cursor-not-allowed"
+        className="app-button app-button-primary flex w-full items-center justify-between gap-3 text-left disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {loading ? "Working..." : label}
+        <span>{loading ? "Working..." : label}</span>
+        <span className="text-sm font-semibold text-white/80">{loading ? "..." : "Run"}</span>
       </button>
-      {message && <p className="text-sm mt-2 text-slate-600">{message}</p>}
-      {description && !message && <p className="text-xs mt-2 text-slate-500">{description}</p>}
-    </div>
+      {message ? (
+        <p className="mt-2 text-sm font-medium text-slate-700">{message}</p>
+      ) : description ? (
+        <p className="mt-2 text-xs leading-5 text-slate-500">{description}</p>
+      ) : null}
+    </form>
   );
 }

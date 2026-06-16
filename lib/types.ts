@@ -1,7 +1,7 @@
 export type PickRecord = {
   id?: number;
   pick_date: string;
-  sport: "NBA" | "NFL" | "MLB";
+  sport: "NBA" | "NFL" | "MLB" | "SOCCER";
   market_scope: "team" | "player_prop" | "live";
   market_type: string;
   game_label: string;
@@ -20,7 +20,7 @@ export type PickRecord = {
   edge_label?: string | null;
   top_pick_rank?: number | null;
   is_top_pick?: boolean;
-  status?: "pending" | "win" | "loss" | "push";
+  status?: "pending" | "win" | "loss" | "push" | "postponed";
   final_score?: string | null;
   final_stat?: number | null;
   closing_line?: number | null;

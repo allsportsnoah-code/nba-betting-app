@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { resolvePickStatus } from "@/lib/pickStatus";
 import { getSupabaseServer } from "@/lib/supabaseServer";
 import { settleUnits } from "@/lib/units";
 
@@ -24,7 +25,9 @@ export async function GET(req: NextRequest) {
       grouped[key] = { date: row.pick_date, units: 0, wins: 0, losses: 0, pushes: 0 };
     }
 
-    const status = row.status as "win" | "loss" | "push";
+    const status = resolvePickStatus(row.status) as "pending" | "win" | "loss" | "push";
+    if (status === "pending") continue;
+
     grouped[key].units += settleUnits(row.odds_taken, row.stake_units, status);
     if (status === "win") grouped[key].wins += 1;
     if (status === "loss") grouped[key].losses += 1;

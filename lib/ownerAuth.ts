@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { getCachedData, setCachedData } from "@/lib/cache";
+import { getRequestUrl } from "@/lib/requestOrigin";
 
 const SESSION_COOKIE = "betting_lab_owner";
 const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
@@ -23,7 +24,7 @@ function getOwnerPassword() {
 }
 
 export function getManualSyncLimit() {
-  return Number(process.env.OWNER_MANUAL_SYNC_LIMIT ?? 4);
+  return Number.POSITIVE_INFINITY;
 }
 
 function buildCookieValue(username: string, expiresAt: number) {
@@ -153,6 +154,13 @@ export async function requireSyncAccess(
   }
 
   if (!isOwnerRequest(req)) {
+    if (req.nextUrl.searchParams.get("native") === "1") {
+      return {
+        ok: false as const,
+        response: NextResponse.redirect(getRequestUrl(req, "/login"), { status: 303 }),
+      };
+    }
+
     return {
       ok: false as const,
       response: NextResponse.json(
@@ -167,21 +175,6 @@ export async function requireSyncAccess(
   }
 
   const usage = await getManualSyncUsage();
-  const limit = getManualSyncLimit();
-
-  if (usage.count >= limit) {
-    return {
-      ok: false as const,
-      response: NextResponse.json(
-        {
-          ok: false,
-          error: `Daily manual sync limit reached (${limit}).`,
-          usage,
-        },
-        { status: 429 }
-      ),
-    };
-  }
 
   return { ok: true as const, access: "owner" as const, usage };
 }

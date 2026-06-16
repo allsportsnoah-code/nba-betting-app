@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getMlbTeamOddsMarketParam } from "@/lib/mlbTeamMarketExpansion";
+import { normalizeSoccerCompetition } from "@/lib/soccerOddsCache";
+import type { SoccerCompetitionKey } from "@/lib/soccerModel";
 
 const SPORT_CONFIG: Record<
   string,
@@ -13,6 +16,23 @@ const SPORT_CONFIG: Record<
   },
   MLB: {
     oddsApiKey: "baseball_mlb",
+    markets: getMlbTeamOddsMarketParam(false),
+  },
+};
+
+const SOCCER_SPORT_CONFIG: Record<
+  SoccerCompetitionKey,
+  {
+    oddsApiKey: string;
+    markets: string;
+  }
+> = {
+  world_cup: {
+    oddsApiKey: "soccer_fifa_world_cup",
+    markets: "h2h,spreads,totals",
+  },
+  mls: {
+    oddsApiKey: "soccer_usa_mls",
     markets: "h2h,spreads,totals",
   },
 };
@@ -110,15 +130,19 @@ export async function GET(req: NextRequest) {
   try {
     const apiKey = process.env.ODDS_API_KEY;
     const day = req.nextUrl.searchParams.get("day");
-    const sport = req.nextUrl.searchParams.get("sport") === "MLB" ? "MLB" : "NBA";
-    const config = SPORT_CONFIG[sport];
+    const sportParam = req.nextUrl.searchParams.get("sport");
+    const sport = sportParam === "MLB" ? "MLB" : sportParam === "SOCCER" ? "SOCCER" : "NBA";
+    const competition = normalizeSoccerCompetition(req.nextUrl.searchParams.get("competition"));
+    const explicitMarkets = req.nextUrl.searchParams.get("markets");
+    const config = sport === "SOCCER" ? SOCCER_SPORT_CONFIG[competition] : SPORT_CONFIG[sport];
     const window = getBusinessWindow(day);
+    const markets = explicitMarkets ?? config.markets;
 
     const url =
       `https://api.the-odds-api.com/v4/sports/${config.oddsApiKey}/odds` +
       `?apiKey=${apiKey}` +
       `&regions=us` +
-      `&markets=${config.markets}` +
+      `&markets=${markets}` +
       `&oddsFormat=american` +
       `&bookmakers=draftkings` +
       `&commenceTimeFrom=${encodeURIComponent(window.startIso)}` +
@@ -146,6 +170,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       ok: true,
       sport,
+      competition: sport === "SOCCER" ? competition : undefined,
       day: day ?? "today",
       businessDate: window.label,
       startIso: window.startIso,

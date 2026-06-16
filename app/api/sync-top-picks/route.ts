@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiJsonOrNativeRedirect } from "@/lib/nativeApiResponse";
 import { requireSyncAccess } from "@/lib/ownerAuth";
+import { getRequestOrigin } from "@/lib/requestOrigin";
 
 export async function GET(req: NextRequest) {
   try {
@@ -7,7 +9,7 @@ export async function GET(req: NextRequest) {
     if (!access.ok) return access.response;
 
     const day = req.nextUrl.searchParams.get("day") === "tomorrow" ? "tomorrow" : "today";
-    const origin = req.nextUrl.origin;
+    const origin = getRequestOrigin(req);
 
     const res = await fetch(`${origin}/api/daily-picks?day=${day}`, {
       cache: "no-store",
@@ -16,18 +18,20 @@ export async function GET(req: NextRequest) {
     const data = await res.json();
 
     if (!data.ok) {
-      return NextResponse.json({ ok: false, error: data.error }, { status: 500 });
+      return apiJsonOrNativeRedirect(req, { ok: false, error: data.error }, { status: 500 }, { fallbackPath: "/dashboard" });
     }
 
-    return NextResponse.json({
+    return apiJsonOrNativeRedirect(req, {
       ok: true,
       message: `Top picks synced for ${day}`,
       data: data.data ?? [],
-    });
+    }, undefined, { fallbackPath: "/dashboard" });
   } catch (error) {
-    return NextResponse.json(
+    return apiJsonOrNativeRedirect(
+      req,
       { ok: false, error: error instanceof Error ? error.message : "Unknown error" },
-      { status: 500 }
+      { status: 500 },
+      { fallbackPath: "/dashboard" }
     );
   }
 }

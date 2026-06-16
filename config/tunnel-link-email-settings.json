@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "sendTimeLocal": "09:00",
+  "sendTimesLocal": [
+    "09:00"
+  ],
+  "waitUntilSendTime": true,
+  "deliveryMode": "together",
+  "recipientEmails": [
+    "allsportsnoah15@gmail.com",
+    "Isaacchristman0715@gmail.com"
+  ],
+  "recipients": "allsportsnoah15@gmail.com, Isaacchristman0715@gmail.com",
+  "from": "Sharp3Analytics@gmail.com",
+  "subject": "Money Maker",
+  "bodyTemplate": "Sharp3Analytics\r\nWe are on a role!\r\n\r\nBase link:\r\n{{baseLink}}\r\n\r\nSent automatically at {{sentAt}}."
+}

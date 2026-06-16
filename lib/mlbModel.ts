@@ -1,3 +1,6 @@
+import type { MlbGameContext, MlbStarterContext } from "@/lib/mlbContext";
+import type { MlbLearningProfile } from "@/lib/mlbLearning";
+
 export type MlbTeamProfile = {
   name: string;
   offenseVsRhp: number;
@@ -10,6 +13,8 @@ export type MlbStarterProfile = {
   name: string;
   hand: "R" | "L";
   rating: number;
+  confirmed?: boolean;
+  statsSummary?: string;
 };
 
 export type MlbGameInput = {
@@ -35,6 +40,7 @@ export type MlbProjection = {
 
 type OddsOutcome = {
   name: string;
+  description?: string | null;
   price?: number | null;
   point?: number | null;
 };
@@ -58,9 +64,14 @@ export type MlbOddsGame = {
 
 export type EvaluatedMlbGame = {
   game: MlbOddsGame;
+  context?: MlbGameContext | null;
   spreads?: OddsMarket;
   totals?: OddsMarket;
   moneyline?: OddsMarket;
+  teamTotals?: OddsMarket;
+  firstFiveMoneyline?: OddsMarket;
+  firstFiveSpreads?: OddsMarket;
+  firstFiveTotals?: OddsMarket;
   missingModel?: boolean;
   projectedHomeRuns?: number;
   projectedAwayRuns?: number;
@@ -86,6 +97,11 @@ export type EvaluatedMlbGame = {
   moneylineSignal?: string;
   runLineSignal?: string;
   totalSignal?: string;
+  homeAdjustmentNote?: string;
+  awayAdjustmentNote?: string;
+  weatherNote?: string | null;
+  contextRiskScore?: number;
+  contextRiskNotes?: string[];
 };
 
 function round1(value: number) {
@@ -191,16 +207,75 @@ function getMoneylineLabel(edgePercent: number | null) {
   return "Pass";
 }
 
+function getProjectionAlignedMoneylineLabel(
+  edgePercent: number | null,
+  projectedWinner: string | null | undefined,
+  homeTeam: string,
+  awayTeam: string
+) {
+  const rawLabel = getMoneylineLabel(edgePercent);
+  if (rawLabel !== "Home moneyline value" && rawLabel !== "Away moneyline value") {
+    return rawLabel;
+  }
+
+  if (rawLabel === "Home moneyline value") {
+    return projectedWinner === homeTeam ? rawLabel : "Pass";
+  }
+
+  return projectedWinner === awayTeam ? rawLabel : "Pass";
+}
+
+function starterFromContext(starter: MlbStarterContext | null | undefined): MlbStarterProfile | undefined {
+  if (!starter) return undefined;
+
+  return {
+    name: starter.name,
+    hand: starter.hand,
+    rating: starter.rating,
+    confirmed: starter.confirmed,
+    statsSummary: starter.statsSummary,
+  };
+}
+
+function buildLearningNote(adjustment: {
+  offenseRuns?: number;
+  defenseRuns?: number;
+  homeFieldRuns?: number;
+  sampleSize?: number;
+} | null | undefined) {
+  if (!adjustment || !adjustment.sampleSize) return undefined;
+
+  const parts: string[] = [];
+  if (adjustment.offenseRuns && Math.abs(adjustment.offenseRuns) >= 0.08) {
+    parts.push(`${adjustment.offenseRuns > 0 ? "+" : ""}${adjustment.offenseRuns.toFixed(2)} off`);
+  }
+  if (adjustment.defenseRuns && Math.abs(adjustment.defenseRuns) >= 0.08) {
+    parts.push(`${adjustment.defenseRuns > 0 ? "+" : ""}${adjustment.defenseRuns.toFixed(2)} def`);
+  }
+  if (adjustment.homeFieldRuns && Math.abs(adjustment.homeFieldRuns) >= 0.05) {
+    parts.push(`${adjustment.homeFieldRuns > 0 ? "+" : ""}${adjustment.homeFieldRuns.toFixed(2)} home`);
+  }
+
+  if (parts.length === 0) return undefined;
+  return `${parts.join(" | ")} (${adjustment.sampleSize} samples)`;
+}
+
 export function evaluateMlbGames(
   games: MlbOddsGame[],
   ratings: Record<string, Omit<MlbTeamProfile, "name">>,
-  parkFactors: Record<string, number>
+  parkFactors: Record<string, number>,
+  contextMap?: Record<string, MlbGameContext>,
+  learningProfile?: MlbLearningProfile
 ) {
   return (games ?? []).map((game): EvaluatedMlbGame => {
     const book = game.bookmakers?.[0];
     const spreads = book?.markets?.find((market) => market.key === "spreads");
     const totals = book?.markets?.find((market) => market.key === "totals");
     const moneyline = book?.markets?.find((market) => market.key === "h2h");
+    const teamTotals = book?.markets?.find((market) => market.key === "team_totals");
+    const firstFiveMoneyline = book?.markets?.find((market) => market.key === "h2h_1st_5_innings");
+    const firstFiveSpreads = book?.markets?.find((market) => market.key === "spreads_1st_5_innings");
+    const firstFiveTotals = book?.markets?.find((market) => market.key === "totals_1st_5_innings");
 
     const homeTeam = ratings[game.home_team] ?? null;
     const awayTeam = ratings[game.away_team] ?? null;
@@ -208,18 +283,93 @@ export function evaluateMlbGames(
     if (!homeTeam || !awayTeam) {
       return {
         game,
+        context: null,
         spreads,
         totals,
         moneyline,
+        teamTotals,
+        firstFiveMoneyline,
+        firstFiveSpreads,
+        firstFiveTotals,
         missingModel: true,
       };
     }
 
+    const context = contextMap?.[`${game.away_team} @ ${game.home_team}`] ?? null;
+    const homeLearning = learningProfile?.teams?.[game.home_team];
+    const awayLearning = learningProfile?.teams?.[game.away_team];
+    const globalTotalBias = learningProfile?.globalTotalBiasRuns ?? 0;
+    const globalHomeBias = learningProfile?.globalHomeFieldBiasRuns ?? 0;
+
+    const adjustedHomeTeam = {
+      ...homeTeam,
+      offenseVsRhp: homeTeam.offenseVsRhp + (homeLearning?.offenseRuns ?? 0) * 8,
+      offenseVsLhp: homeTeam.offenseVsLhp + (homeLearning?.offenseRuns ?? 0) * 8,
+      bullpen: homeTeam.bullpen + (homeLearning?.defenseRuns ?? 0) * 7,
+    };
+
+    const adjustedAwayTeam = {
+      ...awayTeam,
+      offenseVsRhp: awayTeam.offenseVsRhp + (awayLearning?.offenseRuns ?? 0) * 8,
+      offenseVsLhp: awayTeam.offenseVsLhp + (awayLearning?.offenseRuns ?? 0) * 8,
+      bullpen: awayTeam.bullpen + (awayLearning?.defenseRuns ?? 0) * 7,
+    };
+
     const projection = projectMlbGame({
-      homeTeam: { name: game.home_team, ...homeTeam },
-      awayTeam: { name: game.away_team, ...awayTeam },
+      homeTeam: { name: game.home_team, ...adjustedHomeTeam },
+      awayTeam: { name: game.away_team, ...adjustedAwayTeam },
+      homeStarter: starterFromContext(context?.homeStarter),
+      awayStarter: starterFromContext(context?.awayStarter),
       parkFactor: parkFactors[game.home_team] ?? 1,
+      homeFieldRuns:
+        0.15 +
+        (homeLearning?.homeFieldRuns ?? 0) +
+        globalHomeBias -
+        (context?.homeInjuryImpact ?? 0) * 0.35 +
+        (context?.awayInjuryImpact ?? 0) * 0.15,
     });
+
+    const adjustedProjection = {
+      ...projection,
+      projectedHomeRuns: Number(
+        Math.max(
+          2,
+          projection.projectedHomeRuns -
+            (context?.homeInjuryImpact ?? 0) +
+            (awayLearning?.defenseRuns ?? 0) * -0.15 +
+            (homeLearning?.totalBiasRuns ?? 0) * 0.5 +
+            globalTotalBias * 0.5
+        ).toFixed(1)
+      ),
+      projectedAwayRuns: Number(
+        Math.max(
+          2,
+          projection.projectedAwayRuns -
+            (context?.awayInjuryImpact ?? 0) +
+            (homeLearning?.defenseRuns ?? 0) * -0.15 +
+            (awayLearning?.totalBiasRuns ?? 0) * 0.5 +
+            globalTotalBias * 0.5
+        ).toFixed(1)
+      ),
+    };
+
+    adjustedProjection.projectedTotal = Number(
+      (adjustedProjection.projectedHomeRuns + adjustedProjection.projectedAwayRuns).toFixed(1)
+    );
+    adjustedProjection.projectedMargin = Number(
+      (adjustedProjection.projectedHomeRuns - adjustedProjection.projectedAwayRuns).toFixed(1)
+    );
+    adjustedProjection.homeWinProb = winProbabilityFromRuns(
+      adjustedProjection.projectedHomeRuns,
+      adjustedProjection.projectedAwayRuns
+    );
+    adjustedProjection.awayWinProb = 1 - adjustedProjection.homeWinProb;
+    adjustedProjection.fairHomeMoneyline = probabilityToAmerican(adjustedProjection.homeWinProb);
+    adjustedProjection.fairAwayMoneyline = probabilityToAmerican(adjustedProjection.awayWinProb);
+    adjustedProjection.projectedWinner =
+      adjustedProjection.projectedHomeRuns >= adjustedProjection.projectedAwayRuns
+        ? game.home_team
+        : game.away_team;
 
     const homeMoneyline = moneyline?.outcomes?.find((outcome) => outcome.name === game.home_team);
     const awayMoneyline = moneyline?.outcomes?.find((outcome) => outcome.name === game.away_team);
@@ -236,27 +386,32 @@ export function evaluateMlbGames(
 
     const marketHomeWinProb =
       marketHomeMoneyline === null ? null : americanToImpliedProb(marketHomeMoneyline);
-    const moneylineEdgePercent =
+    const adjustedMoneylineEdgePercent =
       marketHomeWinProb === null
         ? null
-        : Number(((projection.homeWinProb - marketHomeWinProb) * 100).toFixed(1));
+        : Number(((adjustedProjection.homeWinProb - marketHomeWinProb) * 100).toFixed(1));
 
-    const runLineEdge =
+    const adjustedRunLineEdge =
       marketHomeRunLine === null
         ? null
-        : Number((projection.projectedMargin + marketHomeRunLine).toFixed(1));
+        : Number((adjustedProjection.projectedMargin + marketHomeRunLine).toFixed(1));
 
-    const totalEdge =
+    const adjustedTotalEdge =
       marketTotal === null
         ? null
-        : Number((projection.projectedTotal - marketTotal).toFixed(1));
+        : Number((adjustedProjection.projectedTotal - marketTotal).toFixed(1));
 
     return {
       game,
+      context,
       spreads,
       totals,
       moneyline,
-      ...projection,
+      teamTotals,
+      firstFiveMoneyline,
+      firstFiveSpreads,
+      firstFiveTotals,
+      ...adjustedProjection,
       marketHomeMoneyline,
       marketAwayMoneyline,
       marketHomeRunLine,
@@ -266,12 +421,22 @@ export function evaluateMlbGames(
       marketTotal,
       overPrice: overOutcome?.price ?? null,
       underPrice: underOutcome?.price ?? null,
-      moneylineEdgePercent,
-      runLineEdge,
-      totalEdge,
-      moneylineSignal: getMoneylineLabel(moneylineEdgePercent),
-      runLineSignal: getRunLineLabel(runLineEdge),
-      totalSignal: getTotalLabel(totalEdge),
+      moneylineEdgePercent: adjustedMoneylineEdgePercent,
+      runLineEdge: adjustedRunLineEdge,
+      totalEdge: adjustedTotalEdge,
+      moneylineSignal: getProjectionAlignedMoneylineLabel(
+        adjustedMoneylineEdgePercent,
+        adjustedProjection.projectedWinner,
+        game.home_team,
+        game.away_team
+      ),
+      runLineSignal: getRunLineLabel(adjustedRunLineEdge),
+      totalSignal: getTotalLabel(adjustedTotalEdge),
+      homeAdjustmentNote: buildLearningNote(homeLearning),
+      awayAdjustmentNote: buildLearningNote(awayLearning),
+      weatherNote: context?.weather?.note ?? null,
+      contextRiskScore: context?.contextRiskScore ?? 0,
+      contextRiskNotes: context?.contextRiskNotes ?? [],
     };
   });
 }
