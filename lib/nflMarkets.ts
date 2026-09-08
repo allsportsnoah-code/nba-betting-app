@@ -101,6 +101,181 @@ export const NFL_PROP_CATEGORY_LABELS: Record<NflPropCategoryKey, string> = {
   defense: "Defense",
 };
 
+// ---------------------------------------------------------------------------
+// NFL Pick Scoring
+// ---------------------------------------------------------------------------
+
+export type NflCandidate = {
+  marketType: "moneyline" | "spread" | "game_total";
+  side: string;
+  lineTaken: number | null;
+  oddsTaken: number;
+  edge: number;
+  confidenceScore: number;
+  projectedLine: number | null;
+  marketLine: number | null;
+  payoutPerUnit: number;
+  selectedImpliedProb: number;
+  projectedSideMargin?: number | null;
+  coverBuffer?: number | null;
+  contextRiskScore?: number;
+  betRecommendation: "bet" | "lean" | "pass";
+  edgeLabel: string;
+  reasonLabels: string[];
+  riskFlags: string[];
+};
+
+function americanToProfitPerUnitNfl(american: number): number {
+  if (american > 0) return american / 100;
+  return 100 / Math.abs(american);
+}
+
+function americanToImpliedProbNfl(american: number): number {
+  if (american > 0) return 100 / (american + 100);
+  return Math.abs(american) / (Math.abs(american) + 100);
+}
+
+export function getNflTopPickScore(params: {
+  marketType: "moneyline" | "spread" | "game_total";
+  edge: number;
+  confidenceScore: number;
+  oddsTaken: number;
+  projectedSideMargin?: number | null;
+  coverBuffer?: number | null;
+  contextRiskScore?: number;
+}): number {
+  const payoutPerUnit = americanToProfitPerUnitNfl(params.oddsTaken);
+  const impliedProb = americanToImpliedProbNfl(params.oddsTaken);
+
+  // Favorites get a stability bonus — consistent-hit strategy prefers high-prob outcomes
+  const favoriteBonus = params.oddsTaken < 0
+    ? Math.min((Math.abs(params.oddsTaken) - 100) / 50, 10)
+    : 0;
+  // Penalize heavy underdogs on moneyline
+  const longshotPenalty = params.marketType === "moneyline" && params.oddsTaken > 160
+    ? Math.min((params.oddsTaken - 160) / 30, 10)
+    : 0;
+  // Reward implied probability in the 55-70% range (high hit-rate zone)
+  const hitRateBonus = (1 - Math.abs(impliedProb - 0.62)) * 14;
+  // Market stability: spreads are most reliable in NFL, totals next, ML last
+  const marketStability = params.marketType === "spread" ? 12 : params.marketType === "game_total" ? 8 : 4;
+
+  let supportAdjustment = 0;
+  if (params.marketType === "moneyline") {
+    if ((params.projectedSideMargin ?? 0) < 1.5) supportAdjustment -= 12;
+    if ((params.projectedSideMargin ?? 0) < 0.5) supportAdjustment -= 10;
+    if (params.edge < 5.0) supportAdjustment -= 10;
+  }
+  if (params.marketType === "spread") {
+    if ((params.coverBuffer ?? 0) >= 2.0) supportAdjustment += 8;
+    if ((params.coverBuffer ?? 0) < 0.5) supportAdjustment -= 10;
+  }
+
+  const contextPenalty = (params.contextRiskScore ?? 0) * 0.6;
+
+  return Number(
+    Math.max(
+      0,
+      params.confidenceScore * 1.3 +
+      impliedProb * 60 +
+      params.edge * 8 +
+      favoriteBonus +
+      hitRateBonus +
+      marketStability +
+      supportAdjustment -
+      longshotPenalty -
+      contextPenalty
+    ).toFixed(1)
+  );
+}
+
+export function isNflCandidateTopPickEligible(candidate: NflCandidate): boolean {
+  if (candidate.betRecommendation !== "bet") return false;
+  if (candidate.marketType === "moneyline") {
+    return (
+      candidate.edge >= 5.0 &&
+      candidate.confidenceScore >= 65 &&
+      candidate.payoutPerUnit <= 1.1 &&
+      (candidate.projectedSideMargin ?? 0) >= 1.5
+    );
+  }
+  if (candidate.marketType === "spread") {
+    return (
+      candidate.edge >= 2.0 &&
+      candidate.confidenceScore >= 72 &&
+      candidate.payoutPerUnit >= 0.88 &&
+      (candidate.coverBuffer ?? 0) >= 0.5
+    );
+  }
+  if (candidate.marketType === "game_total") {
+    return (
+      candidate.edge >= 2.5 &&
+      candidate.confidenceScore >= 70 &&
+      candidate.payoutPerUnit >= 0.88 &&
+      candidate.selectedImpliedProb >= 0.52
+    );
+  }
+  return false;
+}
+
+export function buildNflBetProfile(params: {
+  marketType: "moneyline" | "spread" | "game_total";
+  edge: number;
+  confidenceScore: number;
+  payoutPerUnit: number;
+  projectedSideMargin?: number | null;
+  coverBuffer?: number | null;
+  contextRiskScore?: number;
+}): { betRecommendation: NflCandidate["betRecommendation"]; reasonLabels: string[]; riskFlags: string[] } {
+  const reasonLabels: string[] = [];
+  const riskFlags: string[] = [];
+
+  if (params.payoutPerUnit >= 0.88) {
+    reasonLabels.push(`pays ${params.payoutPerUnit.toFixed(2)}u`);
+  } else {
+    riskFlags.push(`low payout ${params.payoutPerUnit.toFixed(2)}u`);
+  }
+
+  if (params.marketType === "moneyline") {
+    const margin = params.projectedSideMargin ?? 0;
+    if (margin >= 2) reasonLabels.push(`model favors side by ${margin.toFixed(1)}`);
+    else if (margin >= 1) reasonLabels.push(`model supports side by ${margin.toFixed(1)}`);
+    else riskFlags.push(`thin ML margin ${margin.toFixed(1)}`);
+    if (params.edge >= 6) reasonLabels.push(`${params.edge.toFixed(1)}% ML edge`);
+    else if (params.edge < 3) riskFlags.push("thin ML edge");
+  }
+
+  if (params.marketType === "spread") {
+    const buffer = params.coverBuffer ?? 0;
+    if (buffer >= 2) reasonLabels.push(`${buffer.toFixed(1)} pt cover buffer`);
+    else if (buffer >= 0.5) reasonLabels.push(`${buffer.toFixed(1)} pt spread support`);
+    else riskFlags.push("thin spread buffer");
+    if (params.edge >= 2.5) reasonLabels.push(`${params.edge.toFixed(1)} pt edge`);
+  }
+
+  if (params.marketType === "game_total") {
+    if (params.edge >= 3) reasonLabels.push(`${params.edge.toFixed(1)} pt total edge`);
+    else if (params.edge < 1.5) riskFlags.push("thin total edge");
+  }
+
+  if ((params.contextRiskScore ?? 0) >= 20) {
+    riskFlags.push(`high context risk ${params.contextRiskScore}/40`);
+  }
+
+  const hardRisk = riskFlags.some((f) =>
+    f.includes("thin") || f.includes("low payout") || f.includes("high context risk")
+  );
+
+  let betRecommendation: NflCandidate["betRecommendation"] = "lean";
+  if (!hardRisk && params.confidenceScore >= 62 && params.payoutPerUnit >= 0.88) {
+    betRecommendation = "bet";
+  } else if (params.confidenceScore < 45 || hardRisk) {
+    betRecommendation = "pass";
+  }
+
+  return { betRecommendation, reasonLabels, riskFlags };
+}
+
 export const NFL_MODEL_READINESS_TRACKS = [
   {
     title: "Roster Map",

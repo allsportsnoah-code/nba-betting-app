@@ -1,6 +1,5 @@
 import {
   FREE_PICK_PAYOUT_FLOOR,
-  FIVE_STAR_FREE_PICK_PAYOUT_FLOOR,
 } from "@/lib/mlbFreePicks";
 import {
   getMlbHistorySnapshot,
@@ -319,14 +318,13 @@ export default async function AllSportsFreePicksBoard({
   return (
     <section className={`app-card rounded-[2rem] p-6 ${className}`}>
       <div className="inline-flex items-center rounded-full border border-teal-700/15 bg-white/70 px-3 py-1 text-sm font-medium text-teal-900 mb-3">
-        5-star floor: {FIVE_STAR_FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u | 4-star MLB floor:{" "}
-        {FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u
+        5-star picks: payout floor off | 4-star MLB floor: {FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u
       </div>
       <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
         <div>
           <h2 className="text-2xl font-semibold text-slate-950 mb-2">Free Picks</h2>
           <p className="text-slate-600 max-w-3xl">
-            Best 3 from MLB/NBA Top Picks and Best Value for {resolvedPickDate}, ranked together so every eligible pick gets a fair shot. MLB can qualify at the public 4/5-star floors; NBA must stay a clean displayed 5-star. Free Picks are tracked as 2u plays.
+            Best 3 from MLB/NBA Top Picks and Best Value for {resolvedPickDate}, ranked together so every eligible pick gets a fair shot. MLB 4-star picks still need the public payout floor; displayed 5-star picks can qualify even at lower payouts. Free Picks are tracked as 2u plays.
           </p>
         </div>
       </div>

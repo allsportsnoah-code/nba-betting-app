@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import FoldPanel from "@/app/components/FoldPanel";
 import EmailSettingsForm from "@/app/owner/EmailSettingsForm";
+import ManualOddsForm from "@/app/owner/ManualOddsForm";
 import { isOwnerLoggedIn } from "@/lib/ownerAuth";
 import { readTunnelEmailRuntimeStatus, readTunnelEmailSettings } from "@/lib/tunnelEmailSettings";
 
@@ -39,6 +40,15 @@ export default async function OwnerPage() {
       </section>
 
       <div className="grid gap-6">
+        <FoldPanel
+          eyebrow="Odds fallback"
+          title="Manual Odds Import"
+          summary="Paste a spreadsheet slate when the odds feed is unavailable."
+          defaultOpen
+        >
+          <ManualOddsForm />
+        </FoldPanel>
+
         <FoldPanel
           eyebrow="Email automation"
           title="Tunnel Link Email"

@@ -80,8 +80,9 @@ export function getNbaTeamTopPickScore({
   const impliedProbability = americanToImpliedProb(oddsTaken);
   const targetImpliedProbability = marketType === "moneyline" ? 56 : 54;
   const oddsFitScore = (100 - Math.abs(impliedProbability - targetImpliedProbability)) * 0.2;
+  // Favorites (negative odds) get higher stability bonus — they hit more consistently
   const stabilityBonus =
-    marketType === "total" ? 16 : marketType === "moneyline" ? (oddsTaken < 0 ? 12 : 4) : 10;
+    marketType === "total" ? 16 : marketType === "moneyline" ? (oddsTaken < 0 ? 16 : 4) : 10;
   const longshotPenalty =
     payoutPerUnit > (marketType === "moneyline" ? 1.6 : 1.05)
       ? (payoutPerUnit - (marketType === "moneyline" ? 1.6 : 1.05)) * 14
@@ -109,20 +110,27 @@ export function getNbaTeamBestValueScore({
   const scoringEdge =
     marketType === "moneyline" ? capNbaMoneylineEdge(edge) ?? edge : edge;
   const payoutPerUnit = americanToProfitPerUnit(oddsTaken);
-  const plusMoneyBonus = oddsTaken > 0 ? (marketType === "moneyline" ? 8 : 4) : 0;
-  const favoritePenalty =
-    marketType === "moneyline" && oddsTaken < -220
-      ? Math.min((Math.abs(oddsTaken) - 220) / 25, 10)
+  // Reward favorites, not underdogs — goal is consistent hits over high payout
+  const plusMoneyBonus = oddsTaken > 0 ? (marketType === "moneyline" ? 2 : 1) : 0;
+  const favoriteBonus =
+    marketType === "moneyline" && oddsTaken < 0
+      ? Math.min((Math.abs(oddsTaken) - 100) / 60, 8)
       : 0;
-  const payoutWeight = marketType === "moneyline" ? 18 : 24;
+  // Penalize heavy underdogs instead of heavy favorites
+  const longshotPenalty =
+    marketType === "moneyline" && oddsTaken > 150
+      ? Math.min((oddsTaken - 150) / 30, 8)
+      : 0;
+  const payoutWeight = marketType === "moneyline" ? 10 : 16;
 
   return Number(
     (
-      confidenceScore * 0.45 +
+      confidenceScore * 0.55 +
       Math.abs(scoringEdge) * (getNbaTeamEdgeMultiplier(marketType) + 0.5) +
       payoutPerUnit * payoutWeight +
-      plusMoneyBonus -
-      favoritePenalty
+      plusMoneyBonus +
+      favoriteBonus -
+      longshotPenalty
     ).toFixed(1)
   );
 }

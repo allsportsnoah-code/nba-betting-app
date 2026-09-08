@@ -1,4 +1,4 @@
-import { getCachedData } from "@/lib/cache";
+import { getCachedData, isOddsDataStale } from "@/lib/cache";
 import type { MlbContextMap } from "@/lib/mlbContext";
 import type { MlbLearningProfile } from "@/lib/mlbLearning";
 import type { MlbOddsGame } from "@/lib/mlbModel";
@@ -71,10 +71,14 @@ export async function getResolvedMlbOddsCache(day: MlbOddsCacheDay, now = new Da
   const active =
     primaryMatches ? primary : fallbackMatches ? tomorrowFallback : null;
 
+  const isDateStale = Boolean(primary?.businessDate && primary.businessDate !== expectedBusinessDate);
+  const isAgeStale = isOddsDataStale(primaryRow?.updated_at);
+
   return {
     active,
     expectedBusinessDate,
-    isStale: Boolean(primary?.businessDate && primary.businessDate !== expectedBusinessDate),
+    isStale: isDateStale || isAgeStale,
+    isAgeStale,
     primary,
     usedTomorrowFallback: !primaryMatches && fallbackMatches,
   };

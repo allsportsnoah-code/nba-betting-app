@@ -2,7 +2,7 @@ import Link from "next/link";
 import CalendarFilterSelect from "@/app/components/CalendarFilterSelect";
 import {
   FREE_PICK_PAYOUT_FLOOR,
-  FIVE_STAR_FREE_PICK_PAYOUT_FLOOR,
+  getFreePickPayoutFloor,
   getMlbDisplayStars,
 } from "@/lib/mlbFreePicks";
 import {
@@ -175,10 +175,6 @@ function formatPotentialPayout(odds: number | null | undefined, stakeUnits = STA
 function getPayoutPerUnit(odds: number | null | undefined) {
   if (odds === null || odds === undefined) return 0;
   return americanToProfitPerUnit(odds);
-}
-
-function getFreePickPayoutFloor(stars: number) {
-  return stars >= 5 ? FIVE_STAR_FREE_PICK_PAYOUT_FLOOR : FREE_PICK_PAYOUT_FLOOR;
 }
 
 function formatStartTime(value: string | null | undefined) {
@@ -660,7 +656,7 @@ export default async function CalendarPage({
 
       <section className="mb-8">
         <div className="inline-flex items-center rounded-full border border-teal-700/15 bg-white/70 px-3 py-1 text-sm font-medium text-teal-900 mb-3">
-          5-star floor: {FIVE_STAR_FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u | 4-star floor: {FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u
+          5-star picks: payout floor off | 4-star floor: {FREE_PICK_PAYOUT_FLOOR.toFixed(2)}u
         </div>
         <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
           <div>

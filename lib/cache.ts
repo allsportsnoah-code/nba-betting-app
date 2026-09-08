@@ -1,5 +1,12 @@
 import { getSupabaseServer } from "@/lib/supabaseServer";
 
+const STALE_ODDS_THRESHOLD_MS = 6 * 60 * 60 * 1000; // 6 hours
+
+export function isOddsDataStale(updatedAt: string | null | undefined): boolean {
+  if (!updatedAt) return true;
+  return Date.now() - new Date(updatedAt).getTime() > STALE_ODDS_THRESHOLD_MS;
+}
+
 export async function getCachedData(cacheKey: string) {
   const supabase = getSupabaseServer();
 

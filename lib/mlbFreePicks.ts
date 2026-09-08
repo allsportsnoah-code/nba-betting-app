@@ -3,7 +3,8 @@ import { getConfidenceStars } from "@/lib/starRatings";
 import { americanToProfitPerUnit } from "@/lib/units";
 
 export const FREE_PICK_PAYOUT_FLOOR = 0.63;
-export const FIVE_STAR_FREE_PICK_PAYOUT_FLOOR = 0.5;
+// 5-star picks can qualify even when the payout is below the 4-star public floor.
+export const FIVE_STAR_FREE_PICK_PAYOUT_FLOOR = 0;
 
 export type MlbFreePickLike = {
   id: number;

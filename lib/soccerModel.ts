@@ -929,7 +929,8 @@ function buildCandidate(params: {
   const probabilityGap = (params.modelProbability - params.marketProbability) * 100;
   const oddsRisk =
     params.oddsTaken <= -220 ? -8 : params.oddsTaken >= 450 ? -6 : params.oddsTaken >= 300 ? -2 : 0;
-  const totalRisk = params.marketType === "total" && Math.abs(params.projectedTotal - (params.lineTaken ?? params.projectedTotal)) < 0.12 ? -6 : 0;
+  // Picks close to fair value are credible, not risky — removed proximity penalty
+  const totalRisk = 0;
   const confidenceScore = clamp(
     45 + edge * 1.25 + probabilityGap * 0.8 + oddsRisk + totalRisk,
     1,
@@ -996,11 +997,13 @@ function getCandidateRiskFlags(candidate: SoccerCandidate) {
 
 function isCandidateEligible(candidate: SoccerCandidate) {
   if (new Date(candidate.game.commence_time).getTime() <= Date.now()) return false;
-  if (candidate.modelProbability < 0.16) return false;
+  // Raised from 0.16 — 16% model probability meant 84% expected loss rate
+  if (candidate.modelProbability < 0.25) return false;
   if (candidate.edge < 3.4) return false;
   if (candidate.confidenceScore < 50) return false;
   if (candidate.oddsTaken <= -360 || candidate.oddsTaken >= 700) return false;
-  if (candidate.marketType === "moneyline" && candidate.side !== "Draw" && candidate.edge < 4.2) return false;
+  // Standardize: draws and non-draws both require 4.2% edge on moneyline
+  if (candidate.marketType === "moneyline" && candidate.edge < 4.2) return false;
   return true;
 }
 

@@ -56,6 +56,9 @@ export default function NflPage() {
           <Link href="/calendar?sport=NFL" className="app-button app-button-secondary inline-flex items-center justify-center">
             NFL calendar view
           </Link>
+          <Link href="/nfl/lotto" className="app-button app-button-primary inline-flex items-center justify-center">
+            Million ticket builder
+          </Link>
         </div>
       </section>
 

@@ -623,15 +623,17 @@ function buildPropMarketScore(params: {
       : 4;
   const trueProbability = params.trueProbability ?? null;
   const probabilityEdge = trueProbability === null ? 0 : trueProbability - implied;
-  const probabilityScore = trueProbability === null ? 0 : trueProbability * 34 + probabilityEdge * 150;
+  // Reduced multiplier: was 150x, which drowned out edge and confidence
+  const probabilityScore = trueProbability === null ? 0 : trueProbability * 34 + probabilityEdge * 50;
   const expensivePenalty = params.oddsTaken !== null && params.oddsTaken < -170 ? Math.min((Math.abs(params.oddsTaken) - 170) * 0.18, 20) : 0;
+  // Workload penalties capped — previously up to 45pts combined could bury high-edge props
   const workloadPenalty =
     isPitcherWorkloadMarket(params.marketType) &&
     params.pickSide === "Over" &&
     params.projectedInnings !== null &&
     params.projectedInnings !== undefined &&
     params.projectedInnings < 5.2
-      ? 18
+      ? 7
       : 0;
   const pitchCountPenalty =
     isPitcherWorkloadMarket(params.marketType) &&
@@ -639,7 +641,7 @@ function buildPropMarketScore(params: {
     params.projectedPitchCount !== null &&
     params.projectedPitchCount !== undefined &&
     params.projectedPitchCount < 88
-      ? 12
+      ? 5
       : 0;
   const leashPenalty =
     isPitcherWorkloadMarket(params.marketType) &&
@@ -647,7 +649,7 @@ function buildPropMarketScore(params: {
     params.projectedTimesThroughOrder !== null &&
     params.projectedTimesThroughOrder !== undefined &&
     params.projectedTimesThroughOrder < 2.6
-      ? 8
+      ? 4
       : 0;
   const workloadSwingPenalty =
     isPitcherWorkloadMarket(params.marketType) &&
@@ -655,7 +657,7 @@ function buildPropMarketScore(params: {
     params.recentWorkloadSwing !== null &&
     params.recentWorkloadSwing !== undefined &&
     params.recentWorkloadSwing <= -10
-      ? 7
+      ? 4
       : 0;
   const paPenalty =
     !isPitcherWorkloadMarket(params.marketType) &&
@@ -913,12 +915,22 @@ function buildPropBetProfile(params: {
     reasonLabels.push("market health is positive");
   }
 
+  // Flag unconfirmed batters with no recent slot sample — lineup is unknown
+  if (
+    !isPitcherWorkloadMarket(params.marketType) &&
+    !params.confirmedLineup &&
+    (params.battingOrderSample ?? 0) < 2
+  ) {
+    riskFlags.push("lineup unconfirmed");
+  }
+
   let betRecommendation: MlbPropCandidate["bet_recommendation"] = "lean";
   const hardRisk = riskFlags.some((flag) =>
     flag.includes("thin") ||
     flag.includes("risk") ||
     flag.includes("volatility") ||
-    flag.includes("cold")
+    flag.includes("cold") ||
+    flag.includes("lineup unconfirmed")
   );
 
   if (!hardRisk && params.confidenceScore >= 54 && Math.abs(params.edge) >= 0.7) {

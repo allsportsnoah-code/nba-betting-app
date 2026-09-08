@@ -165,19 +165,26 @@ function buildTopPickScore(
     const coverBuffer = candidate.coverBuffer ?? 0;
     supportAdjustment += Math.min(Math.max(coverBuffer, 0), 2.2) * 14;
 
+    // Penalize underdog run lines with weak projected margin — don't reward low-confidence underdogs
     if ((candidate.lineTaken ?? 0) > 0 && (candidate.projectedSideMargin ?? 0) < 0.4) {
-      supportAdjustment += 10;
+      supportAdjustment -= 8;
+    }
+    // Reward when projection clearly supports the spread side
+    if ((candidate.coverBuffer ?? 0) >= 1.5) {
+      supportAdjustment += 6;
     }
   }
 
   if (isMoneylineMarket) {
     const projectedSideMargin = candidate.projectedSideMargin ?? 0;
 
-    if (projectedSideMargin < 1.1) supportAdjustment -= 18;
-    if (projectedSideMargin < 0.75) supportAdjustment -= 14;
-    if (candidate.edge < 6.5) supportAdjustment -= 12;
+    if (projectedSideMargin < 1.1) supportAdjustment -= 12;
+    if (projectedSideMargin < 0.75) supportAdjustment -= 8;
+    // Align with eligibility threshold of 6% — no double-penalty at 6.5
+    if (candidate.edge < 6.0) supportAdjustment -= 10;
+    // Cap underdog payout penalty — consistency goal means underdogs aren't preferred
     if (candidate.payoutPerUnit > 1.0) {
-      supportAdjustment -= Math.min((candidate.payoutPerUnit - 1) * 20, 22);
+      supportAdjustment -= Math.min((candidate.payoutPerUnit - 1) * 12, 10);
     }
   }
 
@@ -238,8 +245,8 @@ function buildTopPickScore(
 
   return Number(
     (
-      candidate.confidenceScore * 1.2 +
-      candidate.selectedImpliedProb * 140 +
+      candidate.confidenceScore * 1.4 +
+      candidate.selectedImpliedProb * 80 +
       marketStabilityBonus +
       favoriteBonus -
       plusMoneyPenalty +

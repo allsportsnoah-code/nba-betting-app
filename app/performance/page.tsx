@@ -18,7 +18,7 @@ import {
   isNbaSnapshotTopPick,
   type NbaHistorySnapshot,
 } from "@/lib/nbaHistorySnapshot";
-import { getMlbDisplayStars } from "@/lib/mlbFreePicks";
+import { getFreePickPayoutFloor, getMlbDisplayStars } from "@/lib/mlbFreePicks";
 import { rankPublicFreePickRowsForHistory } from "@/lib/publicFreePicks";
 import {
   getFreshPublicFreePickIds,
@@ -33,8 +33,6 @@ import {
   type MlbPickGameReview,
 } from "@/lib/mlbGameReview";
 
-const FREE_PICK_PAYOUT_FLOOR = 0.63;
-const FIVE_STAR_FREE_PICK_PAYOUT_FLOOR = 0.5;
 const FREE_PICK_STAKE_UNITS = 2;
 const STANDARD_PICK_STAKE_UNITS = 1;
 const PERFORMANCE_STAKING_NOTE =
@@ -686,10 +684,6 @@ function getPerformanceDisplayStars(pick: PerformancePick, snapshotByDate?: Perf
 function getPayoutPerUnit(odds: number | null | undefined) {
   if (odds === null || odds === undefined) return 0;
   return americanToProfitPerUnit(odds);
-}
-
-function getFreePickPayoutFloor(stars: number) {
-  return stars >= 5 ? FIVE_STAR_FREE_PICK_PAYOUT_FLOOR : FREE_PICK_PAYOUT_FLOOR;
 }
 
 function splitEdgeLabel(value: string | null | undefined) {
@@ -1581,12 +1575,37 @@ export default async function PerformancePage({
 
   const currentBettingDate = getCurrentBettingDateEt();
   const currentCalendarMonth = getMonthKey(getCurrentCalendarDateEt());
-  const datedRows = await getPerformancePicks({
-    currentBettingDate,
-    range: view === "calendar" ? "all" : range,
-    sport,
-    scope,
-  });
+
+  let datedRows: PerformancePick[];
+  try {
+    datedRows = await getPerformancePicks({
+      currentBettingDate,
+      range: view === "calendar" ? "all" : range,
+      sport,
+      scope,
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "Unknown error";
+    return (
+      <main className="mx-auto max-w-[88rem] px-6 py-8">
+        <div className="app-card rounded-[2rem] p-8 mb-6">
+          <div className="inline-flex items-center rounded-full border border-red-700/15 bg-white/75 px-3 py-1 text-sm font-medium text-red-900 mb-3">
+            Data unavailable
+          </div>
+          <h1 className="text-4xl font-semibold text-slate-950 mb-2">Performance</h1>
+          <p className="text-slate-600 max-w-3xl mb-4">
+            Could not load performance data. The database may be temporarily unreachable — if you are
+            on the free Supabase tier, your project may be paused. Log in to{" "}
+            <a href="https://supabase.com" className="underline text-teal-700" target="_blank" rel="noreferrer">
+              supabase.com
+            </a>{" "}
+            and resume your project, then reload this page.
+          </p>
+          <p className="text-xs text-slate-400 font-mono">{message}</p>
+        </div>
+      </main>
+    );
+  }
   const mlbDateSet = new Set(
     datedRows.filter((pick) => pick.sport === "MLB").map((pick) => pick.pick_date)
   );

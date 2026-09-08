@@ -1,7 +1,7 @@
 # NBA Impact Rankings
 
-Generated: 2026-06-16T13:51:05.319Z
-Season year: 2026
+Generated: 2026-09-08T15:52:08.729Z
+Season year: 2027
 
 Rule: ranks 1-5 are high impact, ranks 6-8 are medium impact, and ranks 9+ are low impact. The injury guardrail caps only high/medium players from 5 stars to 4 stars.
 
@@ -9,866 +9,871 @@ Rule: ranks 1-5 are high impact, ranks 6-8 are medium impact, and ranks 9+ are l
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Jalen Johnson | high | 134.654 | F | 35.5 MPG, 20.7 PPG, 6.2 APG, 8.7 RPG, 100% starter rate |
-| 2 | CJ McCollum | high | 110.017 | G | 31.1 MPG, 19 PPG, 1.8 stocks, 81% starter rate, previous rank 2 |
-| 3 | Nickeil Alexander-Walker | high | 108.889 | G | 34.6 MPG, 16.5 PPG, 92% starter rate, previous rank 3 |
-| 4 | Onyeka Okongwu | high | 104.713 | F | 32.3 MPG, 7 RPG, 2.1 stocks, 87% starter rate, previous rank 4 |
-| 5 | Dyson Daniels | high | 102.595 | G | 29.9 MPG, 5.4 APG, 6.4 RPG, 2.2 stocks, 100% starter rate |
-| 6 | Jock Landale | medium | 85.515 | C | previous rank 6 |
-| 7 | Jonathan Kuminga | medium | 80.164 | F | previous rank 7 |
-| 8 | Buddy Hield | medium | 58.68 | G | previous rank 8 |
-| 9 | Zaccharie Risacher | low | 47.921 | F | 64% starter rate, rookie/young-player watch, previous rank 9 |
-| 10 | Keshon Gilbert | low | 45.737 | G | rookie/young-player watch, previous rank 10 |
-| 11 | Christian Koloko | low | 45.615 | C | previous rank 11 |
-| 12 | Asa Newell | low | 44.455 | F | rookie/young-player watch, previous rank 12 |
+| 1 | Jalen Johnson | high | 6.6 | F | previous rank 1 |
+| 2 | Dyson Daniels | high | 5.5 | G | previous rank 2 |
+| 3 | CJ McCollum | high | 4.62 | G | previous rank 3 |
+| 4 | Luguentz Dort | high | 4.009 | G | previous rank 4 |
+| 5 | Onyeka Okongwu | high | 3.546 | F | previous rank 5 |
+| 6 | Nickeil Alexander-Walker | medium | 3.169 | G | previous rank 6 |
+| 7 | Corey Kispert | medium | 3.075 | F | previous rank 7 |
+| 8 | Buddy Hield | medium | 2.125 | G | previous rank 8 |
+| 9 | Aaron Wiggins | low | 2.029 | G | previous rank 9 |
+| 10 | Jock Landale | low | 1.76 | C | previous rank 10 |
+| 11 | Devin Carter | low | 1.135 | G | previous rank 11 |
+| 12 | Asa Newell | low | 0.748 | F | rookie/young-player watch, previous rank 12 |
 
 Rookie/young-player watch:
-- Zaccharie Risacher: rank 9, low, score 47.921
-- Keshon Gilbert: rank 10, low, score 45.737
-- Asa Newell: rank 12, low, score 44.455
-- RayJ Dennis: rank 15, low, score 38.425
+- Asa Newell: rank 12, low, score 0.748
+- Ryan Nembhard: rank 15, low, score 0.071
+- Henri Veesaar: rank 16, low, score 0
+- Keshon Gilbert: rank 17, low, score 0
 
 Practical injury notes:
-- If Jalen Johnson is out, watch Onyeka Okongwu and CJ McCollum for usage, minutes, or role lift.
-- If CJ McCollum is out, watch Nickeil Alexander-Walker and Jalen Johnson for usage, minutes, or role lift.
-- If Nickeil Alexander-Walker is out, watch CJ McCollum and Jalen Johnson for usage, minutes, or role lift.
-- If Onyeka Okongwu is out, watch Jalen Johnson for usage, minutes, or role lift.
+- If Jalen Johnson is out, watch Onyeka Okongwu and Dyson Daniels for usage, minutes, or role lift.
+- If Dyson Daniels is out, watch CJ McCollum and Jalen Johnson for usage, minutes, or role lift.
+- If CJ McCollum is out, watch Dyson Daniels and Jalen Johnson for usage, minutes, or role lift.
+- If Luguentz Dort is out, watch Dyson Daniels and Jalen Johnson for usage, minutes, or role lift.
 
 ## Boston Celtics (BOS)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Jaylen Brown | high | 144.392 | G | 35.1 MPG, 26.9 PPG, 4 APG, 6.2 RPG, 100% starter rate |
-| 2 | Jayson Tatum | high | 118.234 | F | 34.9 MPG, 22.7 PPG, 6.2 APG, 10.4 RPG, 100% starter rate |
-| 3 | Derrick White | high | 113.703 | G | 35.2 MPG, 4 APG, 2.3 stocks, 100% starter rate, previous rank 3 |
-| 4 | Payton Pritchard | high | 105.99 | G | 32.7 MPG, 15.6 PPG, 5.2 APG, previous rank 4 |
-| 5 | Neemias Queta | high | 88.806 | C | 8.5 RPG, 97% starter rate, previous rank 5 |
-| 6 | Nikola Vucevic | medium | 85.274 | C | 67% starter rate, previous rank 6 |
-| 7 | Sam Hauser | medium | 68.613 | F | 66% starter rate, previous rank 7 |
-| 8 | Baylor Scheierman | medium | 46.232 | G | rookie/young-player watch, previous rank 8 |
-| 9 | Luka Garza | low | 43.153 | C | previous rank 9 |
-| 10 | Jordan Walsh | low | 43.057 | G | previous rank 10 |
-| 11 | Dalano Banton | low | 26.936 | F | previous rank 11 |
-| 12 | Amari Williams | low | 26.063 | F | rookie/young-player watch, previous rank 12 |
+| 1 | Jayson Tatum | high | 12.1 | F | previous rank 1 |
+| 2 | Paul George | high | 11.908 | F | previous rank 2 |
+| 3 | Mike Conley | high | 7.59 | G | previous rank 3 |
+| 4 | Derrick White | high | 6.677 | G | previous rank 4 |
+| 5 | Mitchell Robinson | high | 3.75 | C | previous rank 5 |
+| 6 | Sam Hauser | medium | 2.387 | F | previous rank 6 |
+| 7 | Payton Pritchard | medium | 1.709 | G | previous rank 7 |
+| 8 | Hugo Gonzalez | medium | 0.643 | G | rookie/young-player watch, previous rank 8 |
+| 9 | Luka Garza | low | 0.616 | C | previous rank 9 |
+| 10 | Baylor Scheierman | low | 0.604 | G | previous rank 10 |
+| 11 | Neemias Queta | low | 0.587 | C | previous rank 11 |
+| 12 | Jordan Walsh | low | 0.529 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Baylor Scheierman: rank 8, medium, score 46.232
-- Amari Williams: rank 12, low, score 26.063
-- Hugo Gonzalez: rank 13, low, score 24.606
-- John Tonje: rank 15, low, score 20.712
+- Hugo Gonzalez: rank 8, medium, score 0.643
+- Amari Williams: rank 13, low, score 0.108
+- Chris Cenac Jr.: rank 14, low, score 0
+- Dillon Mitchell: rank 15, low, score 0
 
 Practical injury notes:
-- If Jaylen Brown is out, watch Derrick White and Jayson Tatum for usage, minutes, or role lift.
-- If Jayson Tatum is out, watch Sam Hauser and Jaylen Brown for usage, minutes, or role lift.
-- If Derrick White is out, watch Jaylen Brown for usage, minutes, or role lift.
-- If Payton Pritchard is out, watch Jaylen Brown for usage, minutes, or role lift.
+- If Jayson Tatum is out, watch Paul George for usage, minutes, or role lift.
+- If Paul George is out, watch Jayson Tatum for usage, minutes, or role lift.
+- If Mike Conley is out, watch Derrick White and Jayson Tatum for usage, minutes, or role lift.
+- If Derrick White is out, watch Mike Conley and Jayson Tatum for usage, minutes, or role lift.
 
 ## Brooklyn Nets (BKN)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Michael Porter Jr. | high | 138.835 | F | 32.5 MPG, 24.2 PPG, 7.1 RPG, 100% starter rate, previous rank 1 |
-| 2 | Nic Claxton | high | 116.831 | C | 6.9 RPG, 99% starter rate, previous rank 2 |
-| 3 | Noah Clowney | high | 88.715 | F | 91% starter rate, previous rank 3 |
-| 4 | Egor Demin | high | 87.867 | G | 87% starter rate, rookie/young-player watch, previous rank 4 |
-| 5 | Day'Ron Sharpe | high | 83.687 | C | 6.7 RPG, previous rank 5 |
-| 6 | Terance Mann | medium | 80.848 | G | 81% starter rate, previous rank 6 |
-| 7 | Malachi Smith | medium | 79.16 | G | rookie/young-player watch, previous rank 7 |
-| 8 | Nolan Traore | medium | 74.6 | G | rookie/young-player watch, previous rank 8 |
-| 9 | Ziaire Williams | low | 73.446 | F | previous rank 9 |
-| 10 | Chaney Johnson | low | 71.841 | F | rookie/young-player watch, previous rank 10 |
-| 11 | Danny Wolf | low | 71.773 | F | rookie/young-player watch, previous rank 11 |
-| 12 | Trevon Scott | low | 70.348 | F | 30.3 MPG, 2.2 stocks, 67% starter rate, rookie/young-player watch, previous rank 12 |
+| 1 | Michael Porter Jr. | high | 8.999 | F | previous rank 1 |
+| 2 | Julius Randle | high | 7.333 | F | previous rank 2 |
+| 3 | Terance Mann | high | 3.41 | G | previous rank 3 |
+| 4 | Moritz Wagner | high | 2.42 | F | previous rank 4 |
+| 5 | Egor Demin | high | 1.591 | G | rookie/young-player watch, previous rank 5 |
+| 6 | Day'Ron Sharpe | medium | 1.375 | C | previous rank 6 |
+| 7 | Noah Clowney | medium | 1.191 | F | previous rank 7 |
+| 8 | Nolan Traore | medium | 0.88 | G | rookie/young-player watch, previous rank 8 |
+| 9 | Drake Powell | low | 0.779 | G | rookie/young-player watch, previous rank 9 |
+| 10 | Ben Saraf | low | 0.666 | G | rookie/young-player watch, previous rank 10 |
+| 11 | Danny Wolf | low | 0.647 | F | rookie/young-player watch, previous rank 11 |
+| 12 | Josh Minott | low | 0.569 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Egor Demin: rank 4, high, score 87.867
-- Malachi Smith: rank 7, medium, score 79.16
-- Nolan Traore: rank 8, medium, score 74.6
-- Chaney Johnson: rank 10, low, score 71.841
+- Egor Demin: rank 5, high, score 1.591
+- Nolan Traore: rank 8, medium, score 0.88
+- Drake Powell: rank 9, low, score 0.779
+- Ben Saraf: rank 10, low, score 0.666
 
 Practical injury notes:
-- If Michael Porter Jr. is out, watch Noah Clowney and Nic Claxton for usage, minutes, or role lift.
-- If Nic Claxton is out, watch Day'Ron Sharpe and Michael Porter Jr. for usage, minutes, or role lift.
-- If Noah Clowney is out, watch Michael Porter Jr. for usage, minutes, or role lift.
-- If Egor Demin is out, watch Terance Mann and Michael Porter Jr. for usage, minutes, or role lift.
+- If Michael Porter Jr. is out, watch Julius Randle for usage, minutes, or role lift.
+- If Julius Randle is out, watch Michael Porter Jr. for usage, minutes, or role lift.
+- If Terance Mann is out, watch Egor Demin and Michael Porter Jr. for usage, minutes, or role lift.
+- If Moritz Wagner is out, watch Michael Porter Jr. for usage, minutes, or role lift.
 
 ## Charlotte Hornets (CHA)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | LaMelo Ball | high | 136.72 | G | 28 MPG, 20.1 PPG, 7.1 APG, 96% starter rate, previous rank 1 |
-| 2 | Kon Knueppel | high | 119.673 | G | 31.5 MPG, 18.5 PPG, 99% starter rate, rookie/young-player watch, previous rank 2 |
-| 3 | Brandon Miller | high | 119.399 | F | 30.3 MPG, 20.2 PPG, 100% starter rate, previous rank 3 |
-| 4 | Miles Bridges | high | 117.113 | F | 31 MPG, 17.1 PPG, 100% starter rate, previous rank 4 |
-| 5 | Coby White | high | 102.539 | G | 17.4 PPG, 4 APG, previous rank 5 |
-| 6 | Moussa Diabate | medium | 91.274 | F | 8.7 RPG, 64% starter rate, previous rank 6 |
-| 7 | Ryan Kalkbrenner | medium | 84.597 | C | 1.9 stocks, rookie/young-player watch, previous rank 7 |
-| 8 | Grant Williams | medium | 65.929 | F | previous rank 8 |
-| 9 | Sion James | low | 63.212 | G | rookie/young-player watch, previous rank 9 |
-| 10 | Tidjane Salaun | low | 53.641 | F | rookie/young-player watch, previous rank 10 |
-| 11 | PJ Hall | low | 49.862 | C | rookie/young-player watch, previous rank 11 |
-| 12 | Josh Green | low | 47.628 | G | previous rank 12 |
+| 1 | Naz Reid | high | 5.121 | C | previous rank 1 |
+| 2 | Grayson Allen | high | 3.988 | G | previous rank 2 |
+| 3 | Brandon Miller | high | 3.323 | F | previous rank 3 |
+| 4 | Dennis Schroder | high | 3.258 | G | previous rank 4 |
+| 5 | Grant Williams | high | 3.138 | F | previous rank 5 |
+| 6 | Dorian Finney-Smith | medium | 2.934 | F | previous rank 6 |
+| 7 | Coby White | medium | 2.836 | G | previous rank 7 |
+| 8 | Royce O'Neale | medium | 2.503 | F | previous rank 8 |
+| 9 | Kon Knueppel | low | 2.314 | G | rookie/young-player watch, previous rank 9 |
+| 10 | Tidjane Salaun | low | 1.812 | F | previous rank 10 |
+| 11 | Pat Connaughton | low | 0.839 | G | previous rank 11 |
+| 12 | Liam McNeeley | low | 0.638 | G | rookie/young-player watch, previous rank 12 |
 
 Rookie/young-player watch:
-- Kon Knueppel: rank 2, high, score 119.673
-- Ryan Kalkbrenner: rank 7, medium, score 84.597
-- Sion James: rank 9, low, score 63.212
-- Tidjane Salaun: rank 10, low, score 53.641
+- Kon Knueppel: rank 9, low, score 2.314
+- Liam McNeeley: rank 12, low, score 0.638
+- Ryan Kalkbrenner: rank 14, low, score 0.53
+- Sion James: rank 15, low, score 0.53
 
 Practical injury notes:
-- If LaMelo Ball is out, watch Kon Knueppel for usage, minutes, or role lift.
-- If Kon Knueppel is out, watch LaMelo Ball for usage, minutes, or role lift.
-- If Brandon Miller is out, watch Miles Bridges and LaMelo Ball for usage, minutes, or role lift.
-- If Miles Bridges is out, watch Brandon Miller and LaMelo Ball for usage, minutes, or role lift.
+- If Naz Reid is out, watch Grayson Allen for usage, minutes, or role lift.
+- If Grayson Allen is out, watch Dennis Schroder and Naz Reid for usage, minutes, or role lift.
+- If Brandon Miller is out, watch Grant Williams and Naz Reid for usage, minutes, or role lift.
+- If Dennis Schroder is out, watch Grayson Allen and Naz Reid for usage, minutes, or role lift.
 
 ## Chicago Bulls (CHI)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Josh Giddey | high | 143.674 | G | 32.1 MPG, 17 PPG, 9.1 APG, 8.3 RPG, 94% starter rate |
-| 2 | Tre Jones | high | 108.73 | G | 14.1 PPG, 5.4 APG, 63% starter rate, previous rank 2 |
-| 3 | Matas Buzelis | high | 107.912 | F | 29.2 MPG, 16.3 PPG, 2.2 stocks, 100% starter rate, rookie/young-player watch |
-| 4 | Collin Sexton | high | 97.069 | G | 15.4 PPG, previous rank 4 |
-| 5 | Anfernee Simons | high | 90.443 | G | 14.3 PPG, previous rank 5 |
-| 6 | Isaac Okoro | medium | 82.844 | F | 98% starter rate, previous rank 6 |
-| 7 | Jalen Smith | medium | 80.541 | F | 6.7 RPG, previous rank 7 |
-| 8 | Patrick Williams | medium | 62.082 | F | previous rank 8 |
-| 9 | Zach Collins | low | 60.945 | F | previous rank 9 |
-| 10 | Leonard Miller | low | 60.841 | F | previous rank 10 |
-| 11 | Mouhamadou Gueye | low | 58.544 | F | rookie/young-player watch, previous rank 11 |
-| 12 | Nick Richards | low | 56.632 | C | previous rank 12 |
+| 1 | Josh Giddey | high | 5.5 | G | previous rank 1 |
+| 2 | Nic Claxton | high | 5.092 | C | previous rank 2 |
+| 3 | Norman Powell | high | 4.506 | G | previous rank 3 |
+| 4 | Zach Collins | high | 3.978 | F | previous rank 4 |
+| 5 | Patrick Williams | high | 3.96 | F | previous rank 5 |
+| 6 | Isaac Okoro | medium | 2.599 | F | previous rank 6 |
+| 7 | Jalen Smith | medium | 2.074 | F | previous rank 7 |
+| 8 | Tre Jones | medium | 1.76 | G | previous rank 8 |
+| 9 | Rob Dillingham | low | 1.516 | G | previous rank 9 |
+| 10 | Matas Buzelis | low | 1.257 | F | previous rank 10 |
+| 11 | Noa Essengue | low | 1.254 | F | rookie/young-player watch, previous rank 11 |
+| 12 | Guerschon Yabusele | low | 1.21 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Matas Buzelis: rank 3, high, score 107.912
-- Mouhamadou Gueye: rank 11, low, score 58.544
-- Rob Dillingham: rank 14, low, score 50.628
-- Yuki Kawamura: rank 15, low, score 43.748
+- Noa Essengue: rank 11, low, score 1.254
+- Caleb Wilson: rank 14, low, score 0
+- Dailyn Swain: rank 15, low, score 0
+- Tobe Awaka: rank 17, low, score 0
 
 Practical injury notes:
-- If Josh Giddey is out, watch Tre Jones for usage, minutes, or role lift.
-- If Tre Jones is out, watch Josh Giddey for usage, minutes, or role lift.
-- If Matas Buzelis is out, watch Isaac Okoro and Josh Giddey for usage, minutes, or role lift.
-- If Collin Sexton is out, watch Josh Giddey for usage, minutes, or role lift.
+- If Josh Giddey is out, watch Norman Powell and Nic Claxton for usage, minutes, or role lift.
+- If Nic Claxton is out, watch Josh Giddey for usage, minutes, or role lift.
+- If Norman Powell is out, watch Josh Giddey for usage, minutes, or role lift.
+- If Zach Collins is out, watch Patrick Williams and Josh Giddey for usage, minutes, or role lift.
 
 ## Cleveland Cavaliers (CLE)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Donovan Mitchell | high | 141.515 | G | 35.1 MPG, 26.8 PPG, 4.1 APG, 100% starter rate, previous rank 1 |
-| 2 | James Harden | high | 139.82 | G | 36.3 MPG, 20.9 PPG, 6.5 APG, 2 stocks, 100% starter rate |
-| 3 | Evan Mobley | high | 137.882 | C | 34.1 MPG, 17.5 PPG, 8.4 RPG, 2.6 stocks, 98% starter rate |
-| 4 | Jarrett Allen | high | 110.421 | C | 28.5 MPG, 7.7 RPG, 2.4 stocks, 100% starter rate, previous rank 4 |
-| 5 | Max Strus | high | 77.928 | G | previous rank 5 |
-| 6 | Sam Merrill | medium | 67.422 | G | previous rank 6 |
-| 7 | Dennis Schroder | medium | 63.097 | G | previous rank 7 |
-| 8 | Dean Wade | medium | 61.15 | F | 69% starter rate, previous rank 8 |
-| 9 | Jaylon Tyson | low | 59.68 | G | rookie/young-player watch, previous rank 9 |
-| 10 | Larry Nance Jr. | low | 41.661 | F | previous rank 10 |
-| 11 | Olivier Sarr | low | 36.903 | F | previous rank 11 |
-| 12 | Keon Ellis | low | 35.601 | G | previous rank 12 |
+| 1 | Donovan Mitchell | high | 11.023 | G | previous rank 1 |
+| 2 | Evan Mobley | high | 11.023 | C | previous rank 2 |
+| 3 | James Harden | high | 9.31 | G | previous rank 3 |
+| 4 | Jarrett Allen | high | 6.16 | C | previous rank 4 |
+| 5 | Sam Merrill | high | 2.015 | G | previous rank 5 |
+| 6 | Thomas Bryant | medium | 1.907 | C | previous rank 6 |
+| 7 | Mario Hezonja | medium | 1.43 | F | previous rank 7 |
+| 8 | Peyton Watson | medium | 0.958 | G | previous rank 9 |
+| 9 | Jaylon Tyson | low | 0.805 | G | previous rank 10 |
+| 10 | Nae'Qwan Tomlin | low | 0.53 | F | previous rank 11 |
+| 11 | Craig Porter Jr. | low | 0.529 | G | previous rank 12 |
+| 12 | Tyrese Proctor | low | 0.473 | G | rookie/young-player watch, previous rank 13 |
 
 Rookie/young-player watch:
-- Jaylon Tyson: rank 9, low, score 59.68
-- Tristan Enaruna: rank 13, low, score 32.756
-- Riley Minix: rank 16, low, score 29.436
-- Nae'Qwan Tomlin: rank 17, low, score 26.075
+- Tyrese Proctor: rank 12, low, score 0.473
+- Ernest Udeh Jr.: rank 13, low, score 0
+- Khalifa Diop: rank 14, low, score 0
+- Meleek Thomas: rank 15, low, score 0
 
 Practical injury notes:
-- If Donovan Mitchell is out, watch James Harden for usage, minutes, or role lift.
-- If James Harden is out, watch Donovan Mitchell for usage, minutes, or role lift.
+- If Donovan Mitchell is out, watch James Harden and Evan Mobley for usage, minutes, or role lift.
 - If Evan Mobley is out, watch Jarrett Allen and Donovan Mitchell for usage, minutes, or role lift.
+- If James Harden is out, watch Donovan Mitchell for usage, minutes, or role lift.
 - If Jarrett Allen is out, watch Evan Mobley and Donovan Mitchell for usage, minutes, or role lift.
 
 ## Dallas Mavericks (DAL)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Cooper Flagg | high | 132.975 | F | 33.5 MPG, 21 PPG, 4.5 APG, 6.7 RPG, 2.1 stocks |
-| 2 | P.J. Washington | high | 107.308 | F | 31 MPG, 14.2 PPG, 7 RPG, 2.1 stocks, 95% starter rate |
-| 3 | Naji Marshall | high | 104.298 | F | 29.5 MPG, 15.2 PPG, 64% starter rate, previous rank 3 |
-| 4 | Max Christie | high | 92.617 | G | 29.1 MPG, 88% starter rate, previous rank 4 |
-| 5 | Daniel Gafford | high | 89.376 | F | 6.9 RPG, 2 stocks, 80% starter rate, previous rank 5 |
-| 6 | Brandon Williams | medium | 88.204 | G | previous rank 6 |
-| 7 | Khris Middleton | medium | 85.562 | F | 79% starter rate, previous rank 7 |
-| 8 | Marvin Bagley III | medium | 80.023 | F | 6.1 RPG, previous rank 8 |
-| 9 | Klay Thompson | low | 73.344 | G | previous rank 9 |
-| 10 | Ryan Nembhard | low | 71.718 | G | 5.3 APG, rookie/young-player watch, previous rank 10 |
-| 11 | Dereck Lively II | low | 60.473 | C | 2.1 stocks, previous rank 11 |
-| 12 | Moussa Cisse | low | 60.053 | C | rookie/young-player watch, previous rank 12 |
+| 1 | Kyrie Irving | high | 8.672 | G | previous rank 1 |
+| 2 | P.J. Washington | high | 4.359 | F | previous rank 2 |
+| 3 | Daniel Gafford | high | 3.798 | F | previous rank 3 |
+| 4 | Santi Aldama | high | 3.742 | F | previous rank 4 |
+| 5 | Cooper Flagg | high | 3.194 | F | rookie/young-player watch, previous rank 5 |
+| 6 | Zaccharie Risacher | medium | 3.042 | F | previous rank 6 |
+| 7 | Caleb Martin | medium | 2.2 | F | previous rank 7 |
+| 8 | Naji Marshall | medium | 2.074 | F | previous rank 8 |
+| 9 | Max Christie | low | 1.823 | G | previous rank 9 |
+| 10 | Dereck Lively II | low | 1.593 | C | previous rank 10 |
+| 11 | Jett Howard | low | 1.217 | G | previous rank 11 |
+| 12 | Marcus Sasser | low | 1.144 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Ryan Nembhard: rank 10, low, score 71.718
-- Moussa Cisse: rank 12, low, score 60.053
-- John Poulakidas: rank 13, low, score 49.714
-- Tyler Smith: rank 16, low, score 34.504
+- Cooper Flagg: rank 5, high, score 3.194
+- John Poulakidas: rank 13, low, score 0
+- Morez Johnson Jr.: rank 14, low, score 0
+- Moussa Cisse: rank 15, low, score 0
 
 Practical injury notes:
-- If Cooper Flagg is out, watch P.J. Washington for usage, minutes, or role lift.
-- If P.J. Washington is out, watch Cooper Flagg for usage, minutes, or role lift.
-- If Naji Marshall is out, watch Cooper Flagg for usage, minutes, or role lift.
-- If Max Christie is out, watch Brandon Williams and Cooper Flagg for usage, minutes, or role lift.
+- If Kyrie Irving is out, watch P.J. Washington for usage, minutes, or role lift.
+- If P.J. Washington is out, watch Daniel Gafford and Kyrie Irving for usage, minutes, or role lift.
+- If Daniel Gafford is out, watch P.J. Washington and Kyrie Irving for usage, minutes, or role lift.
+- If Santi Aldama is out, watch P.J. Washington and Kyrie Irving for usage, minutes, or role lift.
 
 ## Denver Nuggets (DEN)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Nikola Jokic | high | 181.641 | C | 37.6 MPG, 26.6 PPG, 10 APG, 13 RPG, 2 stocks |
-| 2 | Jamal Murray | high | 146.637 | G | 37.9 MPG, 24.4 PPG, 6.3 APG, 100% starter rate, previous rank 2 |
-| 3 | Peyton Watson | high | 103.01 | G | 29.6 MPG, 14.6 PPG, 2.1 stocks, 74% starter rate, previous rank 3 |
-| 4 | Cameron Johnson | high | 96.182 | F | 30.8 MPG, 100% starter rate, previous rank 4 |
-| 5 | Aaron Gordon | high | 95.849 | F | 29 MPG, 93% starter rate, previous rank 5 |
-| 6 | Christian Braun | medium | 89.56 | G | 31.4 MPG, 100% starter rate, previous rank 6 |
-| 7 | Tim Hardaway Jr. | medium | 69.394 | G | previous rank 7 |
-| 8 | Spencer Jones | medium | 60.194 | F | rookie/young-player watch, previous rank 8 |
-| 9 | Bruce Brown | low | 59.67 | G | previous rank 9 |
-| 10 | Jalen Pickett | low | 54.849 | G | previous rank 10 |
-| 11 | Julian Strawther | low | 54.285 | G | previous rank 11 |
-| 12 | David Roddy | low | 51.189 | F | previous rank 12 |
+| 1 | Nikola Jokic | high | 12.1 | C | previous rank 1 |
+| 2 | Jamal Murray | high | 11.023 | G | previous rank 2 |
+| 3 | Aaron Gordon | high | 7.405 | F | previous rank 3 |
+| 4 | DeMar DeRozan | high | 5.663 | G | previous rank 4 |
+| 5 | Cameron Johnson | high | 5.074 | F | previous rank 5 |
+| 6 | Christian Braun | medium | 4.741 | G | previous rank 6 |
+| 7 | Tyus Jones | medium | 3.08 | G | previous rank 7 |
+| 8 | Marvin Bagley III | medium | 2.75 | F | previous rank 8 |
+| 9 | Zeke Nnaji | low | 1.643 | F | previous rank 9 |
+| 10 | Lonnie Walker IV | low | 1.425 | G | previous rank 10 |
+| 11 | Julian Strawther | low | 1.062 | G | previous rank 11 |
+| 12 | DaRon Holmes II | low | 0.742 | F | rookie/young-player watch, previous rank 12 |
 
 Rookie/young-player watch:
-- Spencer Jones: rank 8, medium, score 60.194
-- KJ Simpson: rank 13, low, score 44.226
-- DaRon Holmes II: rank 16, low, score 36.744
-- Curtis Jones: rank 18, low, score 26.606
+- DaRon Holmes II: rank 12, low, score 0.742
+- Alpha Diallo: rank 15, low, score 0
+- Bryce Hopkins: rank 16, low, score 0
+- Trevon Brazile: rank 18, low, score 0
 
 Practical injury notes:
 - If Nikola Jokic is out, watch Jamal Murray for usage, minutes, or role lift.
-- If Jamal Murray is out, watch Peyton Watson and Nikola Jokic for usage, minutes, or role lift.
-- If Peyton Watson is out, watch Jamal Murray and Nikola Jokic for usage, minutes, or role lift.
-- If Cameron Johnson is out, watch Aaron Gordon and Nikola Jokic for usage, minutes, or role lift.
+- If Jamal Murray is out, watch DeMar DeRozan and Nikola Jokic for usage, minutes, or role lift.
+- If Aaron Gordon is out, watch Cameron Johnson and Nikola Jokic for usage, minutes, or role lift.
+- If DeMar DeRozan is out, watch Jamal Murray and Nikola Jokic for usage, minutes, or role lift.
 
 ## Detroit Pistons (DET)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Cade Cunningham | high | 158.858 | G | 38.1 MPG, 26.5 PPG, 8.5 APG, 1.9 stocks, 100% starter rate |
-| 2 | Jalen Duren | high | 112.101 | C | 29.4 MPG, 9.3 RPG, 100% starter rate, previous rank 2 |
-| 3 | Tobias Harris | high | 108.08 | F | 31.9 MPG, 16.2 PPG, 6.4 RPG, 1.9 stocks, 100% starter rate |
-| 4 | Ausar Thompson | high | 97.797 | G | 28.7 MPG, 7 RPG, 3.4 stocks, 99% starter rate, previous rank 4 |
-| 5 | Duncan Robinson | high | 87.979 | F | 28.7 MPG, 97% starter rate, previous rank 5 |
-| 6 | Daniss Jenkins | medium | 68.693 | G | rookie/young-player watch, previous rank 6 |
-| 7 | Caris LeVert | medium | 53.927 | G | previous rank 7 |
-| 8 | Isaiah Stewart | medium | 52.81 | F | previous rank 8 |
-| 9 | Paul Reed | low | 49.77 | F | previous rank 9 |
-| 10 | Kevin Huerter | low | 48.684 | G | previous rank 10 |
-| 11 | Javonte Green | low | 40.685 | G | previous rank 11 |
-| 12 | Ronald Holland II | low | 36.998 | F | rookie/young-player watch, previous rank 12 |
+| 1 | Cade Cunningham | high | 11.023 | G | previous rank 1 |
+| 2 | John Collins | high | 5.848 | F | previous rank 2 |
+| 3 | Kevin Huerter | high | 3.958 | G | previous rank 3 |
+| 4 | Duncan Robinson | high | 3.518 | F | previous rank 4 |
+| 5 | Isaiah Joe | high | 2.491 | G | previous rank 5 |
+| 6 | Ausar Thompson | medium | 2.446 | G | previous rank 6 |
+| 7 | Ronald Holland II | medium | 1.995 | F | previous rank 7 |
+| 8 | Jalen Duren | medium | 1.426 | C | previous rank 8 |
+| 9 | Paul Reed | low | 1.1 | F | previous rank 9 |
+| 10 | Daniss Jenkins | low | 0.88 | G | previous rank 10 |
+| 11 | Gary Harris | low | 0.839 | G | previous rank 11 |
+| 12 | Taurean Prince | low | 0.839 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Daniss Jenkins: rank 6, medium, score 68.693
-- Ronald Holland II: rank 12, low, score 36.998
-- Tolu Smith: rank 15, low, score 17.263
-- Isaac Jones: rank 16, low, score 15.693
+- Chaz Lanier: rank 16, low, score 0.473
+- Ebuka Okorie: rank 18, low, score 0
+- Ugonna Onyenso: rank 20, low, score 0
 
 Practical injury notes:
-- If Cade Cunningham is out, watch Ausar Thompson and Jalen Duren for usage, minutes, or role lift.
-- If Jalen Duren is out, watch Cade Cunningham for usage, minutes, or role lift.
-- If Tobias Harris is out, watch Duncan Robinson and Cade Cunningham for usage, minutes, or role lift.
-- If Ausar Thompson is out, watch Cade Cunningham for usage, minutes, or role lift.
+- If Cade Cunningham is out, watch Kevin Huerter and John Collins for usage, minutes, or role lift.
+- If John Collins is out, watch Duncan Robinson and Cade Cunningham for usage, minutes, or role lift.
+- If Kevin Huerter is out, watch Cade Cunningham for usage, minutes, or role lift.
+- If Duncan Robinson is out, watch John Collins and Cade Cunningham for usage, minutes, or role lift.
 
 ## Golden State Warriors (GS)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Stephen Curry | high | 149.474 | G | 30.9 MPG, 26.6 PPG, 4.7 APG, 95% starter rate, previous rank 1 |
-| 2 | Jimmy Butler III | high | 140.672 | F | 31.1 MPG, 20 PPG, 4.9 APG, 100% starter rate, previous rank 2 |
-| 3 | Kristaps Porzingis | high | 114.356 | C | 16.7 PPG, 72% starter rate, previous rank 3 |
-| 4 | Brandin Podziemski | high | 102.114 | G | 28.5 MPG, previous rank 4 |
-| 5 | Draymond Green | high | 99.317 | F | 5.5 APG, 100% starter rate, previous rank 5 |
-| 6 | Moses Moody | medium | 90.5 | G | 82% starter rate, previous rank 6 |
-| 7 | De'Anthony Melton | medium | 85.479 | G | 2 stocks, previous rank 7 |
-| 8 | Al Horford | medium | 83.701 | C | 1.8 stocks, previous rank 8 |
-| 9 | Gui Santos | low | 74.473 | F | previous rank 9 |
-| 10 | Quinten Post | low | 67.579 | C | rookie/young-player watch, previous rank 10 |
-| 11 | Pat Spencer | low | 66.454 | G | previous rank 11 |
-| 12 | Gary Payton II | low | 64.488 | G | previous rank 12 |
+| 1 | Stephen Curry | high | 12.1 | G | previous rank 1 |
+| 2 | Jimmy Butler III | high | 12.1 | F | previous rank 2 |
+| 3 | Kristaps Porzingis | high | 7.924 | C | previous rank 3 |
+| 4 | Draymond Green | high | 6.089 | F | previous rank 4 |
+| 5 | De'Anthony Melton | high | 2.821 | G | previous rank 5 |
+| 6 | Moses Moody | medium | 2.75 | G | previous rank 6 |
+| 7 | Gary Payton II | medium | 2.009 | G | previous rank 7 |
+| 8 | Georges Niang | medium | 1.936 | F |  |
+| 9 | Al Horford | low | 1.313 | C | previous rank 8 |
+| 10 | Brandin Podziemski | low | 1.249 | G | previous rank 9 |
+| 11 | Gui Santos | low | 1.019 | F | previous rank 10 |
+| 12 | Charles Bassey | low | 0.572 | C | previous rank 11 |
 
 Rookie/young-player watch:
-- Quinten Post: rank 10, low, score 67.579
-- Will Richard: rank 13, low, score 62.106
-- LJ Cryer: rank 14, low, score 51.166
-- Malevy Leons: rank 18, low, score 39.85
+- Will Richard: rank 13, low, score 0.473
+- Brandon Williams: rank 15, low, score 0
+- Lajae Jones: rank 16, low, score 0
+- LJ Cryer: rank 17, low, score 0
 
 Practical injury notes:
-- If Stephen Curry is out, watch Brandin Podziemski and Jimmy Butler III for usage, minutes, or role lift.
+- If Stephen Curry is out, watch De'Anthony Melton and Jimmy Butler III for usage, minutes, or role lift.
 - If Jimmy Butler III is out, watch Draymond Green and Stephen Curry for usage, minutes, or role lift.
-- If Kristaps Porzingis is out, watch Al Horford and Stephen Curry for usage, minutes, or role lift.
-- If Brandin Podziemski is out, watch Stephen Curry for usage, minutes, or role lift.
+- If Kristaps Porzingis is out, watch Stephen Curry for usage, minutes, or role lift.
+- If Draymond Green is out, watch Jimmy Butler III and Stephen Curry for usage, minutes, or role lift.
 
 ## Houston Rockets (HOU)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Kevin Durant | high | 155.422 | F | 36.4 MPG, 26 PPG, 4.8 APG, 100% starter rate, previous rank 1 |
-| 2 | Alperen Sengun | high | 147.499 | C | 36.5 MPG, 20.3 PPG, 5.3 APG, 9.7 RPG, 2.8 stocks |
-| 3 | Amen Thompson | high | 138.865 | G | 41.4 MPG, 18.8 PPG, 5.5 APG, 7.3 RPG, 2.7 stocks |
-| 4 | Jabari Smith Jr. | high | 116.9 | F | 39.3 MPG, 16.8 PPG, 7.8 RPG, 100% starter rate, previous rank 4 |
-| 5 | Reed Sheppard | high | 94.016 | G | 29.7 MPG, 4.2 APG, 2.7 stocks, rookie/young-player watch, previous rank 5 |
-| 6 | Tari Eason | medium | 91.737 | F | 29.8 MPG, 6.5 RPG, 2.6 stocks, previous rank 6 |
-| 7 | Steven Adams | medium | 85.627 | C | 8.6 RPG, previous rank 7 |
-| 8 | Tristen Newton | medium | 59.13 | G | rookie/young-player watch, previous rank 8 |
-| 9 | Josh Okogie | low | 49.367 | G | previous rank 9 |
-| 10 | Dorian Finney-Smith | low | 34.263 | F | previous rank 10 |
-| 11 | Clint Capela | low | 33.033 | C | previous rank 11 |
-| 12 | Aaron Holiday | low | 32.356 | G | previous rank 12 |
+| 1 | Kevin Durant | high | 9.659 | F | previous rank 1 |
+| 2 | Alperen Sengun | high | 7.841 | C | previous rank 2 |
+| 3 | Fred VanVleet | high | 5.5 | G | previous rank 3 |
+| 4 | Jabari Smith Jr. | high | 5.202 | F | previous rank 4 |
+| 5 | Bogdan Bogdanovic | high | 3.524 | G | previous rank 5 |
+| 6 | Steven Adams | medium | 2.86 | C | previous rank 6 |
+| 7 | Amen Thompson | medium | 2.697 | G | previous rank 7 |
+| 8 | Reed Sheppard | medium | 2.444 | G | previous rank 8 |
+| 9 | Jae'Sean Tate | low | 1.664 | F | previous rank 9 |
+| 10 | Clint Capela | low | 1.548 | C | previous rank 10 |
+| 11 | Tari Eason | low | 1.249 | F | previous rank 11 |
+| 12 | Marcus Smart | low | 1.186 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Reed Sheppard: rank 5, high, score 94.016
-- Tristen Newton: rank 8, medium, score 59.13
-- Isaiah Crawford: rank 16, low, score 20.187
+- Bruce Thornton: rank 13, low, score 0
+- Quadir Copeland: rank 15, low, score 0
+- Rafael Castro: rank 16, low, score 0
+- Sean Pedulla: rank 17, low, score 0
 
 Practical injury notes:
 - If Kevin Durant is out, watch Jabari Smith Jr. and Alperen Sengun for usage, minutes, or role lift.
 - If Alperen Sengun is out, watch Steven Adams and Kevin Durant for usage, minutes, or role lift.
-- If Amen Thompson is out, watch Reed Sheppard and Kevin Durant for usage, minutes, or role lift.
+- If Fred VanVleet is out, watch Bogdan Bogdanovic and Kevin Durant for usage, minutes, or role lift.
 - If Jabari Smith Jr. is out, watch Kevin Durant for usage, minutes, or role lift.
 
 ## Indiana Pacers (IND)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Pascal Siakam | high | 141.321 | F | 33.2 MPG, 24 PPG, 6.6 RPG, 100% starter rate, previous rank 1 |
-| 2 | Andrew Nembhard | high | 127.087 | G | 31.3 MPG, 16.9 PPG, 7.7 APG, 100% starter rate, previous rank 2 |
-| 3 | Ivica Zubac | high | 123.798 | C | 30.1 MPG, 14.1 PPG, 10.6 RPG, 98% starter rate, previous rank 3 |
-| 4 | Aaron Nesmith | high | 97.7 | G | 29.7 MPG, 93% starter rate, previous rank 4 |
-| 5 | Jay Huff | high | 86.771 | C | 2.4 stocks, previous rank 5 |
-| 6 | Jarace Walker | medium | 86.629 | F | previous rank 6 |
-| 7 | T.J. McConnell | medium | 82.426 | G | 5.1 APG, previous rank 7 |
-| 8 | Obi Toppin | medium | 78.303 | F | previous rank 8 |
-| 9 | Micah Potter | low | 75.343 | C | previous rank 9 |
-| 10 | Quenton Jackson | low | 70.451 | G | previous rank 10 |
-| 11 | Jalen Slawson | low | 65.264 | F | 2.6 stocks, rookie/young-player watch, previous rank 11 |
-| 12 | Ben Sheppard | low | 64.69 | G | previous rank 12 |
+| 1 | Pascal Siakam | high | 10.763 | F | previous rank 1 |
+| 2 | Tyrese Haliburton | high | 10.763 | G | previous rank 2 |
+| 3 | Ivica Zubac | high | 4.475 | C | previous rank 3 |
+| 4 | Andrew Nembhard | high | 4.301 | G | previous rank 4 |
+| 5 | Kelly Oubre Jr. | high | 3.438 | G | previous rank 5 |
+| 6 | Obi Toppin | medium | 3.3 | F | previous rank 6 |
+| 7 | Larry Nance Jr. | medium | 2.8 | F | previous rank 7 |
+| 8 | Aaron Nesmith | medium | 2.42 | G | previous rank 8 |
+| 9 | T.J. McConnell | low | 2.42 | G | previous rank 9 |
+| 10 | Jarace Walker | low | 1.865 | F | previous rank 10 |
+| 11 | Ben Sheppard | low | 1.107 | G | previous rank 11 |
+| 12 | Jay Huff | low | 0.587 | C | previous rank 12 |
 
 Rookie/young-player watch:
-- Jalen Slawson: rank 11, low, score 65.264
-- Ethan Thompson: rank 13, low, score 61.36
-- Johnny Furphy: rank 14, low, score 58.986
-- Kam Jones: rank 16, low, score 52.917
+- Braden Smith: rank 16, low, score 0
 
 Practical injury notes:
-- If Pascal Siakam is out, watch Jarace Walker and Andrew Nembhard for usage, minutes, or role lift.
-- If Andrew Nembhard is out, watch Aaron Nesmith and Pascal Siakam for usage, minutes, or role lift.
-- If Ivica Zubac is out, watch Jay Huff and Pascal Siakam for usage, minutes, or role lift.
-- If Aaron Nesmith is out, watch Andrew Nembhard and Pascal Siakam for usage, minutes, or role lift.
+- If Pascal Siakam is out, watch Obi Toppin and Tyrese Haliburton for usage, minutes, or role lift.
+- If Tyrese Haliburton is out, watch Andrew Nembhard and Pascal Siakam for usage, minutes, or role lift.
+- If Ivica Zubac is out, watch Pascal Siakam for usage, minutes, or role lift.
+- If Andrew Nembhard is out, watch Tyrese Haliburton and Pascal Siakam for usage, minutes, or role lift.
 
 ## LA Clippers (LAC)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Kawhi Leonard | high | 157.285 | F | 32.1 MPG, 27.9 PPG, 6.4 RPG, 2.3 stocks, 100% starter rate |
-| 2 | Darius Garland | high | 130.417 | G | 29.9 MPG, 18.8 PPG, 6.7 APG, 96% starter rate, previous rank 2 |
-| 3 | Bennedict Mathurin | high | 106.232 | G | 30 MPG, 17.6 PPG, previous rank 3 |
-| 4 | John Collins | high | 101.018 | F | 81% starter rate, previous rank 4 |
-| 5 | Derrick Jones Jr. | high | 88.807 | F | 1.9 stocks, 90% starter rate, previous rank 5 |
-| 6 | Kris Dunn | medium | 88.271 | G | 83% starter rate, previous rank 6 |
-| 7 | Brook Lopez | medium | 79.609 | C | previous rank 7 |
-| 8 | Jordan Miller | medium | 75.407 | G | previous rank 8 |
-| 9 | Isaiah Jackson | low | 66.435 | F | previous rank 9 |
-| 10 | Bogdan Bogdanovic | low | 63.755 | G | previous rank 10 |
-| 11 | Kobe Sanders | low | 61.416 | G | rookie/young-player watch, previous rank 11 |
-| 12 | Bradley Beal | low | 51.305 | G | 100% starter rate, previous rank 12 |
+| 1 | Kawhi Leonard | high | 11.066 | F | previous rank 1 |
+| 2 | Darius Garland | high | 9.277 | G | previous rank 2 |
+| 3 | Rui Hachimura | high | 4.017 | F | previous rank 3 |
+| 4 | Max Strus | high | 3.665 | G | previous rank 4 |
+| 5 | Derrick Jones Jr. | high | 2.305 | F | previous rank 5 |
+| 6 | Bennedict Mathurin | medium | 2.021 | G | previous rank 6 |
+| 7 | Brook Lopez | medium | 1.925 | C | previous rank 7 |
+| 8 | Isaiah Jackson | medium | 1.54 | F | previous rank 8 |
+| 9 | Kris Dunn | low | 1.251 | G | previous rank 9 |
+| 10 | Bradley Beal | low | 1.237 | G | previous rank 10 |
+| 11 | Yanic Konan Niederhauser | low | 0.634 | C | rookie/young-player watch, previous rank 11 |
+| 12 | Jordan Miller | low | 0.55 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Kobe Sanders: rank 11, low, score 61.416
-- Yanic Konan Niederhauser: rank 14, low, score 47.385
-- Norchad Omier: rank 15, low, score 34.081
-- Cam Christie: rank 16, low, score 30.004
+- Yanic Konan Niederhauser: rank 11, low, score 0.634
+- Johni Broome: rank 16, low, score 0.473
+- Kobe Sanders: rank 17, low, score 0.473
+- Baba Miller: rank 18, low, score 0
 
 Practical injury notes:
-- If Kawhi Leonard is out, watch John Collins and Darius Garland for usage, minutes, or role lift.
-- If Darius Garland is out, watch Bennedict Mathurin and Kawhi Leonard for usage, minutes, or role lift.
-- If Bennedict Mathurin is out, watch Darius Garland and Kawhi Leonard for usage, minutes, or role lift.
-- If John Collins is out, watch Kawhi Leonard for usage, minutes, or role lift.
+- If Kawhi Leonard is out, watch Rui Hachimura and Darius Garland for usage, minutes, or role lift.
+- If Darius Garland is out, watch Max Strus and Kawhi Leonard for usage, minutes, or role lift.
+- If Rui Hachimura is out, watch Kawhi Leonard for usage, minutes, or role lift.
+- If Max Strus is out, watch Darius Garland and Kawhi Leonard for usage, minutes, or role lift.
 
 ## Los Angeles Lakers (LAL)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Luka Doncic | high | 189.423 | G | 35.8 MPG, 33.5 PPG, 8.3 APG, 7.7 RPG, 2.2 stocks |
-| 2 | LeBron James | high | 143.673 | F | 36.3 MPG, 22.3 PPG, 7.3 APG, 6.4 RPG, 100% starter rate |
-| 3 | Austin Reaves | high | 127.997 | G | 35.9 MPG, 21.3 PPG, 5.7 APG, 88% starter rate, previous rank 3 |
-| 4 | Marcus Smart | high | 99.507 | G | 32.1 MPG, 4.3 APG, 2.7 stocks, 90% starter rate, previous rank 4 |
-| 5 | Rui Hachimura | high | 98.972 | F | 34.5 MPG, 15.1 PPG, 67% starter rate, previous rank 5 |
-| 6 | Deandre Ayton | medium | 97.67 | C | 9 RPG, 100% starter rate, previous rank 6 |
-| 7 | Luke Kennard | medium | 78.549 | G | 28.2 MPG, previous rank 7 |
-| 8 | Jaxson Hayes | medium | 56.831 | C | previous rank 8 |
-| 9 | Jake LaRavia | low | 54.051 | F | previous rank 9 |
-| 10 | Jarred Vanderbilt | low | 39.629 | F | previous rank 10 |
-| 11 | Drew Timme | low | 34.295 | F | rookie/young-player watch, previous rank 11 |
-| 12 | Nick Smith Jr. | low | 23.577 | G | previous rank 12 |
+| 1 | Luka Doncic | high | 10.89 | G | previous rank 1 |
+| 2 | Collin Sexton | high | 4.217 | G | previous rank 2 |
+| 3 | Austin Reaves | high | 3.066 | G | previous rank 3 |
+| 4 | Jarred Vanderbilt | high | 2.734 | F | previous rank 4 |
+| 5 | Matisse Thybulle | high | 2.541 | G | previous rank 5 |
+| 6 | Quentin Grimes | medium | 1.923 | G | previous rank 6 |
+| 7 | Kevon Looney | medium | 1.76 | F | previous rank 7 |
+| 8 | Ziaire Williams | medium | 1.375 | F | previous rank 8 |
+| 9 | Jaden Hardy | low | 1.32 | G | previous rank 9 |
+| 10 | Jake LaRavia | low | 1.32 | F | previous rank 10 |
+| 11 | Walker Kessler | low | 1.073 | C | previous rank 11 |
+| 12 | Dalton Knecht | low | 0.924 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Drew Timme: rank 11, low, score 34.295
-- Dalton Knecht: rank 14, low, score 21.477
-- Bronny James: rank 15, low, score 21.08
-- Chris Manon: rank 16, low, score 19.216
+- Adou Thiero: rank 15, low, score 0.473
+- AK Okereke: rank 16, low, score 0
+- Cameron Carr: rank 17, low, score 0
+- Chris Manon: rank 18, low, score 0
 
 Practical injury notes:
-- If Luka Doncic is out, watch Austin Reaves and LeBron James for usage, minutes, or role lift.
-- If LeBron James is out, watch Rui Hachimura and Luka Doncic for usage, minutes, or role lift.
+- If Luka Doncic is out, watch Collin Sexton for usage, minutes, or role lift.
+- If Collin Sexton is out, watch Luka Doncic for usage, minutes, or role lift.
 - If Austin Reaves is out, watch Luka Doncic for usage, minutes, or role lift.
-- If Marcus Smart is out, watch Luka Doncic for usage, minutes, or role lift.
+- If Jarred Vanderbilt is out, watch Kevon Looney and Luka Doncic for usage, minutes, or role lift.
 
 ## Memphis Grizzlies (MEM)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Ja Morant | high | 134.205 | G | 28.5 MPG, 19.5 PPG, 8.1 APG, 100% starter rate, previous rank 1 |
-| 2 | Ty Jerome | high | 120.924 | G | 19.7 PPG, 5.7 APG, 100% starter rate, previous rank 2 |
-| 3 | Santi Aldama | high | 102.422 | F | 14 PPG, 6.7 RPG, previous rank 3 |
-| 4 | Zach Edey | high | 99.583 | C | 11.1 RPG, 2.5 stocks, 100% starter rate, rookie/young-player watch, previous rank 4 |
-| 5 | Cedric Coward | high | 96.313 | F | 76% starter rate, rookie/young-player watch, previous rank 5 |
-| 6 | Cam Spencer | medium | 92.572 | G | 5.6 APG, rookie/young-player watch, previous rank 6 |
-| 7 | Jaylen Wells | medium | 86.899 | F | 100% starter rate, rookie/young-player watch, previous rank 7 |
-| 8 | GG Jackson | medium | 81.487 | F | previous rank 8 |
-| 9 | Javon Small | low | 79.054 | G | rookie/young-player watch, previous rank 9 |
-| 10 | Kentavious Caldwell-Pope | low | 74.513 | G | previous rank 10 |
-| 11 | Dariq Whitehead | low | 74.446 | F | 30.5 MPG, 16.3 PPG, rookie/young-player watch, previous rank 11 |
-| 12 | Lucas Williamson | low | 74.141 | G | 32 MPG, rookie/young-player watch, previous rank 12 |
+| 1 | Jerami Grant | high | 7.526 | F | previous rank 1 |
+| 2 | Isaiah Stewart | high | 3.3 | F | previous rank 2 |
+| 3 | Ty Jerome | high | 2.028 | G | previous rank 3 |
+| 4 | Taylor Hendricks | high | 1.717 | F | previous rank 4 |
+| 5 | Jordan Hawkins | high | 1.545 | G |  |
+| 6 | Zach Edey | medium | 1.393 | C | previous rank 5 |
+| 7 | Cedric Coward | medium | 1.32 | F | rookie/young-player watch, previous rank 6 |
+| 8 | D'Angelo Russell | medium | 1.313 | G | previous rank 7 |
+| 9 | Kris Murray | low | 1.169 | F | previous rank 8 |
+| 10 | Walter Clayton Jr. | low | 0.922 | G | rookie/young-player watch, previous rank 9 |
+| 11 | Olivier-Maxence Prosper | low | 0.55 | F | previous rank 12 |
+| 12 | Scotty Pippen Jr. | low | 0.542 | G | previous rank 13 |
 
 Rookie/young-player watch:
-- Zach Edey: rank 4, high, score 99.583
-- Cedric Coward: rank 5, high, score 96.313
-- Cam Spencer: rank 6, medium, score 92.572
-- Jaylen Wells: rank 7, medium, score 86.899
+- Cedric Coward: rank 7, medium, score 1.32
+- Walter Clayton Jr.: rank 10, low, score 0.922
+- Micah Peavy: rank 16, low, score 0.473
+- Cameron Boozer: rank 18, low, score 0
 
 Practical injury notes:
-- If Ja Morant is out, watch Ty Jerome for usage, minutes, or role lift.
-- If Ty Jerome is out, watch Ja Morant for usage, minutes, or role lift.
-- If Santi Aldama is out, watch Cedric Coward and Ja Morant for usage, minutes, or role lift.
-- If Zach Edey is out, watch Ja Morant for usage, minutes, or role lift.
+- If Jerami Grant is out, watch Isaiah Stewart for usage, minutes, or role lift.
+- If Isaiah Stewart is out, watch Jerami Grant for usage, minutes, or role lift.
+- If Ty Jerome is out, watch Jordan Hawkins and Jerami Grant for usage, minutes, or role lift.
+- If Taylor Hendricks is out, watch Jerami Grant for usage, minutes, or role lift.
 
 ## Miami Heat (MIA)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Bam Adebayo | high | 142.674 | C | 32.4 MPG, 20.1 PPG, 10 RPG, 1.8 stocks, 100% starter rate |
-| 2 | Tyler Herro | high | 127.959 | G | 31.3 MPG, 20.5 PPG, 4.1 APG, 85% starter rate, previous rank 2 |
-| 3 | Norman Powell | high | 119.783 | G | 29.6 MPG, 21.7 PPG, 90% starter rate, previous rank 3 |
-| 4 | Andrew Wiggins | high | 113.748 | F | 30.3 MPG, 15.4 PPG, 2.1 stocks, 100% starter rate, previous rank 4 |
-| 5 | Davion Mitchell | high | 103.291 | G | 28.6 MPG, 6.5 APG, 100% starter rate, previous rank 5 |
-| 6 | Jaime Jaquez Jr. | medium | 99.977 | F | 28.3 MPG, 15.4 PPG, 4.7 APG, previous rank 6 |
-| 7 | Kel'el Ware | medium | 97.694 | C | 9 RPG, 1.9 stocks, rookie/young-player watch, previous rank 7 |
-| 8 | Pelle Larsson | medium | 91.483 | G | 77% starter rate, rookie/young-player watch, previous rank 8 |
-| 9 | Kasparas Jakucionis | low | 61.829 | G | rookie/young-player watch, previous rank 9 |
-| 10 | Simone Fontecchio | low | 61.717 | F | previous rank 10 |
-| 11 | Dru Smith | low | 61.267 | G | previous rank 11 |
-| 12 | Nikola Jovic | low | 57.008 | F | previous rank 12 |
+| 1 | Giannis Antetokounmpo | high | 12.1 | F | previous rank 1 |
+| 2 | Bam Adebayo | high | 10.89 | C | previous rank 2 |
+| 3 | Andrew Wiggins | high | 6.637 | F | previous rank 3 |
+| 4 | Tim Hardaway Jr. | high | 4.688 | G | previous rank 4 |
+| 5 | Klay Thompson | high | 3.841 | G |  |
+| 6 | Nikola Jovic | medium | 3.564 | F | previous rank 5 |
+| 7 | Bobby Portis | medium | 3.195 | F | previous rank 6 |
+| 8 | Davion Mitchell | medium | 2.728 | G | previous rank 7 |
+| 9 | Simone Fontecchio | low | 1.828 | F | previous rank 8 |
+| 10 | Nick Richards | low | 1.1 | C |  |
+| 11 | Dru Smith | low | 0.569 | G | previous rank 9 |
+| 12 | Pelle Larsson | low | 0.505 | G | previous rank 10 |
+
+Movement watch:
+- Jahmir Young: 12 -> 16
+- Ryan Conwell: 13 -> 17
+- Tre Donaldson: 14 -> 18
+- Trevor Keels: 15 -> 19
+- Vladislav Goldin: 16 -> 20
 
 Rookie/young-player watch:
-- Kel'el Ware: rank 7, medium, score 97.694
-- Pelle Larsson: rank 8, medium, score 91.483
-- Kasparas Jakucionis: rank 9, low, score 61.829
-- Myron Gardner: rank 13, low, score 41.237
+- Myron Gardner: rank 13, low, score 0.473
+- J'Vonne Hadley: rank 15, low, score 0
+- Ryan Conwell: rank 17, low, score 0
+- Tre Donaldson: rank 18, low, score 0
 
 Practical injury notes:
-- If Bam Adebayo is out, watch Kel'el Ware and Tyler Herro for usage, minutes, or role lift.
-- If Tyler Herro is out, watch Norman Powell and Bam Adebayo for usage, minutes, or role lift.
-- If Norman Powell is out, watch Tyler Herro and Bam Adebayo for usage, minutes, or role lift.
-- If Andrew Wiggins is out, watch Jaime Jaquez Jr. and Bam Adebayo for usage, minutes, or role lift.
+- If Giannis Antetokounmpo is out, watch Andrew Wiggins and Bam Adebayo for usage, minutes, or role lift.
+- If Bam Adebayo is out, watch Giannis Antetokounmpo for usage, minutes, or role lift.
+- If Andrew Wiggins is out, watch Giannis Antetokounmpo for usage, minutes, or role lift.
+- If Tim Hardaway Jr. is out, watch Klay Thompson and Giannis Antetokounmpo for usage, minutes, or role lift.
 
 ## Milwaukee Bucks (MIL)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Giannis Antetokounmpo | high | 164.04 | F | 28.9 MPG, 27.6 PPG, 5.4 APG, 9.8 RPG, 100% starter rate |
-| 2 | Kevin Porter Jr. | high | 136.239 | G | 33.2 MPG, 17.4 PPG, 7.4 APG, 2.7 stocks, 95% starter rate |
-| 3 | Ryan Rollins | high | 123.74 | G | 32.1 MPG, 17.3 PPG, 5.6 APG, 1.9 stocks, 91% starter rate |
-| 4 | Myles Turner | high | 107.793 | C | 2.3 stocks, 100% starter rate, previous rank 4 |
-| 5 | Kyle Kuzma | high | 95.415 | F | 62% starter rate, previous rank 5 |
-| 6 | Bobby Portis | medium | 89.843 | F | 6.4 RPG, previous rank 6 |
-| 7 | AJ Green | medium | 85.356 | G | 29.1 MPG, 87% starter rate, previous rank 7 |
-| 8 | Cormac Ryan | medium | 71.227 | G | 14.3 PPG, rookie/young-player watch, previous rank 8 |
-| 9 | Taurean Prince | low | 71.147 | F | previous rank 9 |
-| 10 | Jericho Sims | low | 66.3 | C | previous rank 10 |
-| 11 | Ousmane Dieng | low | 64.485 | F | previous rank 11 |
-| 12 | Gary Trent Jr. | low | 60.31 | G | previous rank 12 |
+| 1 | Tyler Herro | high | 7.26 | G | previous rank 1 |
+| 2 | Myles Turner | high | 5.849 | C | previous rank 2 |
+| 3 | Kyle Kuzma | high | 4.476 | F | previous rank 3 |
+| 4 | Gary Trent Jr. | high | 4.083 | G | previous rank 4 |
+| 5 | Caris LeVert | high | 3.258 | G | previous rank 5 |
+| 6 | AJ Green | medium | 2.21 | G | previous rank 6 |
+| 7 | Ousmane Dieng | medium | 1.468 | F | previous rank 7 |
+| 8 | Jaime Jaquez Jr. | medium | 1.307 | F | previous rank 8 |
+| 9 | Kevin Porter Jr. | low | 1.186 | G | previous rank 9 |
+| 10 | Kel'el Ware | low | 1.024 | C | previous rank 10 |
+| 11 | Ryan Rollins | low | 0.88 | G | previous rank 11 |
+| 12 | Kasparas Jakucionis | low | 0.845 | G | rookie/young-player watch, previous rank 12 |
 
 Rookie/young-player watch:
-- Cormac Ryan: rank 8, medium, score 71.227
-- Alex Antetokounmpo: rank 15, low, score 30.988
+- Kasparas Jakucionis: rank 12, low, score 0.845
+- Kam Jones: rank 14, low, score 0.473
+- Bogoljub Markovic: rank 15, low, score 0
+- Brayden Burries: rank 16, low, score 0
 
 Practical injury notes:
-- If Giannis Antetokounmpo is out, watch Kyle Kuzma and Kevin Porter Jr. for usage, minutes, or role lift.
-- If Kevin Porter Jr. is out, watch Ryan Rollins and Giannis Antetokounmpo for usage, minutes, or role lift.
-- If Ryan Rollins is out, watch Kevin Porter Jr. and Giannis Antetokounmpo for usage, minutes, or role lift.
-- If Myles Turner is out, watch Giannis Antetokounmpo for usage, minutes, or role lift.
+- If Tyler Herro is out, watch Gary Trent Jr. and Myles Turner for usage, minutes, or role lift.
+- If Myles Turner is out, watch Tyler Herro for usage, minutes, or role lift.
+- If Kyle Kuzma is out, watch Ousmane Dieng and Tyler Herro for usage, minutes, or role lift.
+- If Gary Trent Jr. is out, watch Tyler Herro for usage, minutes, or role lift.
 
 ## Minnesota Timberwolves (MIN)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Anthony Edwards | high | 132.166 | G | 33.5 MPG, 24.5 PPG, 95% starter rate, previous rank 1 |
-| 2 | Julius Randle | high | 117.068 | F | 33.2 MPG, 18 PPG, 7.2 RPG, 100% starter rate, previous rank 2 |
-| 3 | Rudy Gobert | high | 112.98 | C | 31.1 MPG, 10.2 RPG, 2.3 stocks, 100% starter rate, previous rank 3 |
-| 4 | Jaden McDaniels | high | 107.268 | F | 33 MPG, 15.7 PPG, 100% starter rate, previous rank 4 |
-| 5 | Ayo Dosunmu | high | 94.799 | G | 28.4 MPG, 15.3 PPG, previous rank 5 |
-| 6 | Donte DiVincenzo | medium | 92.619 | G | 100% starter rate, previous rank 6 |
-| 7 | Naz Reid | medium | 91.365 | C | 6.9 RPG, previous rank 7 |
-| 8 | Terrence Shannon Jr. | medium | 53.782 | G | rookie/young-player watch, previous rank 8 |
-| 9 | Mike Conley | low | 47.99 | G | previous rank 9 |
-| 10 | Bones Hyland | low | 44.74 | G | previous rank 10 |
-| 11 | Kyle Anderson | low | 39.193 | F | previous rank 11 |
-| 12 | Rocco Zikarsky | low | 37.422 | C | rookie/young-player watch, previous rank 12 |
+| 1 | Anthony Edwards | high | 10.763 | G | previous rank 1 |
+| 2 | LaMelo Ball | high | 8.97 | G | previous rank 2 |
+| 3 | Rudy Gobert | high | 8.03 | C | previous rank 3 |
+| 4 | Jaden McDaniels | high | 5.764 | F | previous rank 4 |
+| 5 | Jonathan Kuminga | high | 5.346 | F |  |
+| 6 | Donte DiVincenzo | medium | 2.638 | G | previous rank 6 |
+| 7 | Trey Lyles | medium | 1.76 | F | previous rank 7 |
+| 8 | Ayo Dosunmu | medium | 1.654 | G | previous rank 8 |
+| 9 | John Konchar | low | 1.356 | G |  |
+| 10 | Cody Williams | low | 1.323 | F |  |
+| 11 | Joan Beringer | low | 0.97 | F | rookie/young-player watch, previous rank 9 |
+| 12 | Bones Hyland | low | 0.915 | G | previous rank 10 |
 
 Rookie/young-player watch:
-- Terrence Shannon Jr.: rank 8, medium, score 53.782
-- Rocco Zikarsky: rank 12, low, score 37.422
-- Zyon Pullin: rank 13, low, score 35.935
-- Enrique Freeman: rank 14, low, score 32.903
+- Joan Beringer: rank 11, low, score 0.97
+- Isaiah Evans: rank 17, low, score 0
+- Rocco Zikarsky: rank 18, low, score 0
+- Trey Kaufman-Renn: rank 19, low, score 0
 
 Practical injury notes:
-- If Anthony Edwards is out, watch Ayo Dosunmu and Julius Randle for usage, minutes, or role lift.
-- If Julius Randle is out, watch Jaden McDaniels and Anthony Edwards for usage, minutes, or role lift.
-- If Rudy Gobert is out, watch Naz Reid and Anthony Edwards for usage, minutes, or role lift.
-- If Jaden McDaniels is out, watch Julius Randle and Anthony Edwards for usage, minutes, or role lift.
+- If Anthony Edwards is out, watch LaMelo Ball for usage, minutes, or role lift.
+- If LaMelo Ball is out, watch Anthony Edwards for usage, minutes, or role lift.
+- If Rudy Gobert is out, watch Anthony Edwards for usage, minutes, or role lift.
+- If Jaden McDaniels is out, watch Jonathan Kuminga and Anthony Edwards for usage, minutes, or role lift.
 
 ## New Orleans Pelicans (NO)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Trey Murphy III | high | 136.359 | F | 35.5 MPG, 21.5 PPG, 1.9 stocks, 100% starter rate, previous rank 1 |
-| 2 | Zion Williamson | high | 131.212 | F | 29.7 MPG, 21 PPG, 89% starter rate, previous rank 2 |
-| 3 | Saddiq Bey | high | 114.197 | G | 31.2 MPG, 17.7 PPG, 89% starter rate, previous rank 3 |
-| 4 | Dejounte Murray | high | 104.96 | G | 16.7 PPG, 6.4 APG, 1.9 stocks, 100% starter rate, previous rank 4 |
-| 5 | Derik Queen | high | 103.173 | C | 7.1 RPG, 2 stocks, rookie/young-player watch, previous rank 5 |
-| 6 | Jeremiah Fears | medium | 96.907 | G | 14.3 PPG, rookie/young-player watch, previous rank 6 |
-| 7 | Herbert Jones | medium | 89.821 | F | 28.4 MPG, 2.1 stocks, 100% starter rate, previous rank 7 |
-| 8 | Jordan Poole | medium | 88.319 | G | previous rank 8 |
-| 9 | Yves Missi | low | 76.127 | C | 1.8 stocks, rookie/young-player watch, previous rank 9 |
-| 10 | Josh Oduro | low | 67.698 | C | 7.7 RPG, rookie/young-player watch, previous rank 10 |
-| 11 | Bryce McGowens | low | 65.606 | G | previous rank 11 |
-| 12 | DeAndre Jordan | low | 56.697 | C | 6.3 RPG, previous rank 12 |
+| 1 | Zion Williamson | high | 9.277 | F | previous rank 1 |
+| 2 | Jordan Poole | high | 7.49 | G | previous rank 2 |
+| 3 | Dejounte Murray | high | 7.213 | G | previous rank 3 |
+| 4 | Trey Murphy III | high | 5.94 | F | previous rank 4 |
+| 5 | DeAndre Jordan | high | 5.037 | C | previous rank 5 |
+| 6 | Herbert Jones | medium | 3.278 | F | previous rank 6 |
+| 7 | Jeremiah Fears | medium | 1.737 | G | rookie/young-player watch, previous rank 7 |
+| 8 | Saddiq Bey | medium | 1.417 | G | previous rank 9 |
+| 9 | Derik Queen | low | 1.192 | C | rookie/young-player watch, previous rank 10 |
+| 10 | Yves Missi | low | 0.773 | C | previous rank 11 |
+| 11 | AJ Johnson | low | 0.712 | G |  |
+| 12 | Taj Gibson | low | 0.701 | F |  |
 
 Rookie/young-player watch:
-- Derik Queen: rank 5, high, score 103.173
-- Jeremiah Fears: rank 6, medium, score 96.907
-- Yves Missi: rank 9, low, score 76.127
-- Josh Oduro: rank 10, low, score 67.698
+- Jeremiah Fears: rank 7, medium, score 1.737
+- Derik Queen: rank 9, low, score 1.192
+- Jaron Pierre Jr.: rank 16, low, score 0
+- Josh Oduro: rank 17, low, score 0
 
 Practical injury notes:
+- If Zion Williamson is out, watch Trey Murphy III and Jordan Poole for usage, minutes, or role lift.
+- If Jordan Poole is out, watch Dejounte Murray and Zion Williamson for usage, minutes, or role lift.
+- If Dejounte Murray is out, watch Jordan Poole and Zion Williamson for usage, minutes, or role lift.
 - If Trey Murphy III is out, watch Zion Williamson for usage, minutes, or role lift.
-- If Zion Williamson is out, watch Trey Murphy III for usage, minutes, or role lift.
-- If Saddiq Bey is out, watch Dejounte Murray and Trey Murphy III for usage, minutes, or role lift.
-- If Dejounte Murray is out, watch Saddiq Bey and Trey Murphy III for usage, minutes, or role lift.
 
 ## New York Knicks (NY)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Jalen Brunson | high | 144.291 | G | 36.2 MPG, 27.4 PPG, 6.4 APG, 100% starter rate, previous rank 1 |
-| 2 | Karl-Anthony Towns | high | 137.271 | C | 30.6 MPG, 17.6 PPG, 4.2 APG, 11.1 RPG, 2.1 stocks |
-| 3 | OG Anunoby | high | 119.708 | F | 34 MPG, 18.7 PPG, 2.5 stocks, 100% starter rate, previous rank 3 |
-| 4 | Josh Hart | high | 108.257 | G | 31.5 MPG, 4.7 APG, 8.3 RPG, 85% starter rate, previous rank 4 |
-| 5 | Mikal Bridges | high | 105.895 | G | 32.3 MPG, 100% starter rate, previous rank 5 |
-| 6 | Mitchell Robinson | medium | 62.755 | C | 6.8 RPG, previous rank 6 |
-| 7 | Miles McBride | medium | 60.46 | G | previous rank 7 |
-| 8 | Landry Shamet | medium | 50.868 | G | previous rank 8 |
-| 9 | Jose Alvarado | low | 44.387 | G | previous rank 9 |
-| 10 | Jordan Clarkson | low | 40.286 | G | previous rank 10 |
-| 11 | Tyler Kolek | low | 31.664 | G | rookie/young-player watch, previous rank 11 |
-| 12 | Ariel Hukporti | low | 30.29 | C | rookie/young-player watch, previous rank 12 |
+| 1 | Karl-Anthony Towns | high | 12.1 | C | previous rank 1 |
+| 2 | OG Anunoby | high | 9.35 | F | previous rank 2 |
+| 3 | Jalen Brunson | high | 8.303 | G | previous rank 3 |
+| 4 | Mikal Bridges | high | 7.366 | G | previous rank 4 |
+| 5 | Andre Drummond | high | 5.96 | C | previous rank 5 |
+| 6 | Jordan Clarkson | medium | 5.167 | G | previous rank 6 |
+| 7 | Josh Hart | medium | 4.603 | G | previous rank 7 |
+| 8 | Landry Shamet | medium | 2.255 | G | previous rank 8 |
+| 9 | Jose Alvarado | low | 0.99 | G | previous rank 9 |
+| 10 | Miles McBride | low | 0.87 | G | previous rank 10 |
+| 11 | Pacome Dadiet | low | 0.656 | F | previous rank 11 |
+| 12 | Tyler Kolek | low | 0.505 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Tyler Kolek: rank 11, low, score 31.664
-- Ariel Hukporti: rank 12, low, score 30.29
-- Kevin McCullar Jr.: rank 13, low, score 28.894
-- Mohamed Diawara: rank 14, low, score 23.92
+- Mohamed Diawara: rank 13, low, score 0.28
+- Jack Kayil: rank 14, low, score 0
+- Tyler Nickel: rank 16, low, score 0
 
 Practical injury notes:
-- If Jalen Brunson is out, watch Josh Hart and Karl-Anthony Towns for usage, minutes, or role lift.
-- If Karl-Anthony Towns is out, watch Mitchell Robinson and Jalen Brunson for usage, minutes, or role lift.
-- If OG Anunoby is out, watch Jalen Brunson for usage, minutes, or role lift.
-- If Josh Hart is out, watch Jalen Brunson for usage, minutes, or role lift.
+- If Karl-Anthony Towns is out, watch Andre Drummond and OG Anunoby for usage, minutes, or role lift.
+- If OG Anunoby is out, watch Karl-Anthony Towns for usage, minutes, or role lift.
+- If Jalen Brunson is out, watch Mikal Bridges and Karl-Anthony Towns for usage, minutes, or role lift.
+- If Mikal Bridges is out, watch Jalen Brunson and Karl-Anthony Towns for usage, minutes, or role lift.
 
 ## Oklahoma City Thunder (OKC)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Shai Gilgeous-Alexander | high | 156.278 | G | 35 MPG, 29 PPG, 7.4 APG, 2.1 stocks, 100% starter rate |
-| 2 | Chet Holmgren | high | 116.971 | C | 29.9 MPG, 15.8 PPG, 8.5 RPG, 2.5 stocks, 100% starter rate |
-| 3 | Isaiah Hartenstein | high | 98.486 | C | 8.8 RPG, 99% starter rate, previous rank 3 |
-| 4 | Jalen Williams | high | 95.424 | G | 15.5 PPG, 96% starter rate, previous rank 4 |
-| 5 | Ajay Mitchell | high | 93.012 | G | 14.5 PPG, 4 APG, rookie/young-player watch, previous rank 5 |
-| 6 | Cason Wallace | medium | 79.407 | G | 2.5 stocks, 61% starter rate, previous rank 6 |
-| 7 | Luguentz Dort | medium | 69.973 | G | 100% starter rate, previous rank 7 |
-| 8 | Alex Caruso | medium | 68.124 | G | previous rank 8 |
-| 9 | Jaylin Williams | low | 54.724 | F | previous rank 9 |
-| 10 | Branden Carlson | low | 53.863 | C | rookie/young-player watch, previous rank 10 |
-| 11 | Jared McCain | low | 52.086 | G | rookie/young-player watch, previous rank 11 |
-| 12 | Isaiah Joe | low | 50.24 | G | previous rank 12 |
+| 1 | Chet Holmgren | high | 9.13 | C | previous rank 1 |
+| 2 | Jalen Williams | high | 9.13 | G | previous rank 2 |
+| 3 | Shai Gilgeous-Alexander | high | 8.977 | G | previous rank 3 |
+| 4 | Isaiah Hartenstein | high | 6.27 | C | previous rank 4 |
+| 5 | Alex Caruso | high | 4.301 | G | previous rank 5 |
+| 6 | Jaylin Williams | medium | 1.71 | F | previous rank 6 |
+| 7 | Cason Wallace | medium | 1.633 | G | previous rank 7 |
+| 8 | Kenrich Williams | medium | 1.576 | G | previous rank 8 |
+| 9 | Nikola Topic | low | 1.195 | G | rookie/young-player watch, previous rank 9 |
+| 10 | Thomas Sorber | low | 1.075 | C | rookie/young-player watch, previous rank 10 |
+| 11 | Jared McCain | low | 0.973 | G | previous rank 11 |
+| 12 | Ajay Mitchell | low | 0.627 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Ajay Mitchell: rank 5, high, score 93.012
-- Branden Carlson: rank 10, low, score 53.863
-- Jared McCain: rank 11, low, score 52.086
-- Payton Sandfort: rank 13, low, score 42.982
+- Nikola Topic: rank 9, low, score 1.195
+- Thomas Sorber: rank 10, low, score 1.075
+- Aday Mara: rank 13, low, score 0
+- Bennett Stirtz: rank 14, low, score 0
 
 Practical injury notes:
+- If Chet Holmgren is out, watch Isaiah Hartenstein and Jalen Williams for usage, minutes, or role lift.
+- If Jalen Williams is out, watch Shai Gilgeous-Alexander and Chet Holmgren for usage, minutes, or role lift.
 - If Shai Gilgeous-Alexander is out, watch Jalen Williams and Chet Holmgren for usage, minutes, or role lift.
-- If Chet Holmgren is out, watch Isaiah Hartenstein and Shai Gilgeous-Alexander for usage, minutes, or role lift.
-- If Isaiah Hartenstein is out, watch Chet Holmgren and Shai Gilgeous-Alexander for usage, minutes, or role lift.
-- If Jalen Williams is out, watch Shai Gilgeous-Alexander for usage, minutes, or role lift.
+- If Isaiah Hartenstein is out, watch Chet Holmgren for usage, minutes, or role lift.
 
 ## Orlando Magic (ORL)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Paolo Banchero | high | 138.645 | F | 37.3 MPG, 24.7 PPG, 5.8 APG, 8.8 RPG, 100% starter rate |
-| 2 | Desmond Bane | high | 121.261 | G | 35.1 MPG, 18.9 PPG, 1.9 stocks, 100% starter rate, previous rank 2 |
-| 3 | Franz Wagner | high | 116.17 | F | 30.3 MPG, 18.3 PPG, 2.3 stocks, 95% starter rate, previous rank 3 |
-| 4 | Jalen Suggs | high | 111.422 | G | 32.3 MPG, 4.7 APG, 2.5 stocks, 99% starter rate, previous rank 4 |
-| 5 | Wendell Carter Jr. | high | 106.974 | C | 32 MPG, 7.2 RPG, 1.9 stocks, 100% starter rate, previous rank 5 |
-| 6 | Anthony Black | medium | 87.367 | G | 28.7 MPG, 2.6 stocks, previous rank 6 |
-| 7 | Goga Bitadze | medium | 54.953 | C | 1.8 stocks, previous rank 7 |
-| 8 | Tristan da Silva | medium | 52.933 | F | rookie/young-player watch, previous rank 8 |
-| 9 | Moritz Wagner | low | 49.728 | F | previous rank 9 |
-| 10 | Noah Penda | low | 43.95 | F | rookie/young-player watch, previous rank 10 |
-| 11 | Jett Howard | low | 43.675 | G | previous rank 11 |
-| 12 | Jamal Cain | low | 41.839 | F | previous rank 12 |
+| 1 | Franz Wagner | high | 9.186 | F | previous rank 1 |
+| 2 | Paolo Banchero | high | 9.13 | F | previous rank 2 |
+| 3 | Desmond Bane | high | 8.678 | G | previous rank 3 |
+| 4 | Jalen Suggs | high | 7.128 | G | previous rank 4 |
+| 5 | Nikola Vucevic | high | 6.16 | C | previous rank 5 |
+| 6 | Wendell Carter Jr. | medium | 3.982 | C | previous rank 6 |
+| 7 | Jonathan Isaac | medium | 3.19 | F | previous rank 7 |
+| 8 | Anthony Black | medium | 2.223 | G | previous rank 8 |
+| 9 | Goga Bitadze | low | 1.674 | C | previous rank 9 |
+| 10 | Jevon Carter | low | 1.43 | G | previous rank 10 |
+| 11 | Malaki Branham | low | 1.092 | F |  |
+| 12 | Tristan da Silva | low | 0.878 | F | previous rank 11 |
 
 Rookie/young-player watch:
-- Tristan da Silva: rank 8, medium, score 52.933
-- Noah Penda: rank 10, low, score 43.95
-- Jase Richardson: rank 13, low, score 39.422
-- Alex Morales: rank 17, low, score 13.433
+- Jase Richardson: rank 13, low, score 0.689
+- Noah Penda: rank 16, low, score 0.473
+- Alex Morales: rank 17, low, score 0
+- Izaiyah Nelson: rank 18, low, score 0
 
 Practical injury notes:
-- If Paolo Banchero is out, watch Franz Wagner and Desmond Bane for usage, minutes, or role lift.
-- If Desmond Bane is out, watch Jalen Suggs and Paolo Banchero for usage, minutes, or role lift.
 - If Franz Wagner is out, watch Paolo Banchero for usage, minutes, or role lift.
-- If Jalen Suggs is out, watch Desmond Bane and Paolo Banchero for usage, minutes, or role lift.
+- If Paolo Banchero is out, watch Franz Wagner for usage, minutes, or role lift.
+- If Desmond Bane is out, watch Jalen Suggs and Franz Wagner for usage, minutes, or role lift.
+- If Jalen Suggs is out, watch Desmond Bane and Franz Wagner for usage, minutes, or role lift.
 
 ## Philadelphia 76ers (PHI)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Tyrese Maxey | high | 149.14 | G | 39 MPG, 25.6 PPG, 6.2 APG, 100% starter rate, previous rank 1 |
-| 2 | Joel Embiid | high | 146.536 | C | 32.6 MPG, 25.1 PPG, 4.8 APG, 7.5 RPG, 100% starter rate |
-| 3 | Paul George | high | 118.534 | F | 33.8 MPG, 16.7 PPG, 1.9 stocks, 100% starter rate, previous rank 3 |
-| 4 | VJ Edgecombe | high | 113.317 | G | 36.2 MPG, 14.8 PPG, 100% starter rate, rookie/young-player watch, previous rank 4 |
-| 5 | Kelly Oubre Jr. | high | 94.228 | G | 32.4 MPG, 86% starter rate, previous rank 5 |
-| 6 | Quentin Grimes | medium | 73.394 | G | previous rank 6 |
-| 7 | Andre Drummond | medium | 55.761 | C | previous rank 7 |
-| 8 | Tyrese Martin | medium | 54.784 | G | previous rank 8 |
-| 9 | Dominick Barlow | low | 49.413 | F | 70% starter rate, previous rank 9 |
-| 10 | MarJon Beauchamp | low | 42.432 | F | previous rank 10 |
-| 11 | Adem Bona | low | 42.292 | C | rookie/young-player watch, previous rank 11 |
-| 12 | Justin Edwards | low | 37.525 | F | rookie/young-player watch, previous rank 12 |
+| 1 | Joel Embiid | high | 12.1 | C | previous rank 1 |
+| 2 | Jaylen Brown | high | 12.1 | G | previous rank 2 |
+| 3 | LeBron James | high | 11.578 | F | previous rank 3 |
+| 4 | Tyrese Maxey | high | 8.97 | G | previous rank 4 |
+| 5 | Anfernee Simons | high | 6.089 | G | previous rank 5 |
+| 6 | Kentavious Caldwell-Pope | medium | 4.757 | G | previous rank 6 |
+| 7 | VJ Edgecombe | medium | 2.566 | G | rookie/young-player watch, previous rank 7 |
+| 8 | Dean Wade | medium | 1.457 | F | previous rank 8 |
+| 9 | Dominick Barlow | low | 0.751 | F | previous rank 9 |
+| 10 | Jabari Walker | low | 0.569 | F | previous rank 10 |
+| 11 | Justin Edwards | low | 0.53 | F | previous rank 11 |
+| 12 | Adem Bona | low | 0.505 | C | previous rank 12 |
 
 Rookie/young-player watch:
-- VJ Edgecombe: rank 4, high, score 113.317
-- Adem Bona: rank 11, low, score 42.292
-- Justin Edwards: rank 12, low, score 37.525
-- Johni Broome: rank 17, low, score 10.314
+- VJ Edgecombe: rank 7, medium, score 2.566
+- Caleb Love: rank 15, low, score 0
+- Duke Miles: rank 16, low, score 0
+- Jameer Nelson Jr.: rank 17, low, score 0
 
 Practical injury notes:
-- If Tyrese Maxey is out, watch VJ Edgecombe and Joel Embiid for usage, minutes, or role lift.
-- If Joel Embiid is out, watch Andre Drummond and Tyrese Maxey for usage, minutes, or role lift.
-- If Paul George is out, watch Tyrese Maxey for usage, minutes, or role lift.
-- If VJ Edgecombe is out, watch Tyrese Maxey for usage, minutes, or role lift.
+- If Joel Embiid is out, watch Jaylen Brown for usage, minutes, or role lift.
+- If Jaylen Brown is out, watch Tyrese Maxey and Joel Embiid for usage, minutes, or role lift.
+- If LeBron James is out, watch Dean Wade and Joel Embiid for usage, minutes, or role lift.
+- If Tyrese Maxey is out, watch Jaylen Brown and Joel Embiid for usage, minutes, or role lift.
 
 ## Phoenix Suns (PHX)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Devin Booker | high | 138.362 | G | 36.4 MPG, 23.2 PPG, 5.3 APG, 100% starter rate, previous rank 1 |
-| 2 | Jalen Green | high | 118.26 | G | 33 MPG, 20.2 PPG, 1.9 stocks, 87% starter rate, previous rank 2 |
-| 3 | Dillon Brooks | high | 117.564 | F | 34.5 MPG, 23.7 PPG, 100% starter rate, previous rank 3 |
-| 4 | Grayson Allen | high | 109.157 | G | 28.8 MPG, 16.5 PPG, previous rank 4 |
-| 5 | Mark Williams | high | 104.946 | C | 8 RPG, 1.8 stocks, 92% starter rate, previous rank 5 |
-| 6 | Collin Gillespie | medium | 92.869 | G | 28.5 MPG, 4.1 APG, 73% starter rate, previous rank 6 |
-| 7 | Royce O'Neale | medium | 79.487 | F | 80% starter rate, previous rank 7 |
-| 8 | Oso Ighodaro | medium | 79.126 | F | 28.2 MPG, 6.2 RPG, rookie/young-player watch, previous rank 8 |
-| 9 | Jordan Goodwin | low | 77.855 | G | previous rank 9 |
-| 10 | Haywood Highsmith | low | 40.929 | F | previous rank 10 |
-| 11 | Ryan Dunn | low | 35.064 | F | rookie/young-player watch, previous rank 11 |
-| 12 | Khaman Maluach | low | 31.369 | C | rookie/young-player watch, previous rank 12 |
+| 1 | Devin Booker | high | 12.1 | G | previous rank 1 |
+| 2 | Jalen Green | high | 7.975 | G | previous rank 2 |
+| 3 | Miles Bridges | high | 5.022 | F | previous rank 3 |
+| 4 | Dillon Brooks | high | 4.398 | F | previous rank 4 |
+| 5 | Luke Kennard | high | 3.392 | G | previous rank 5 |
+| 6 | Khaman Maluach | medium | 1.39 | C | rookie/young-player watch, previous rank 6 |
+| 7 | Mark Williams | medium | 1.381 | C | previous rank 7 |
+| 8 | Haywood Highsmith | medium | 0.664 | F | previous rank 8 |
+| 9 | Ryan Dunn | low | 0.613 | F | previous rank 9 |
+| 10 | Jamaree Bouyea | low | 0.569 | G | previous rank 10 |
+| 11 | Jordan Goodwin | low | 0.517 | G | previous rank 11 |
+| 12 | Collin Gillespie | low | 0.505 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Oso Ighodaro: rank 8, medium, score 79.126
-- Ryan Dunn: rank 11, low, score 35.064
-- Khaman Maluach: rank 12, low, score 31.369
-- CJ Huntley: rank 14, low, score 26.74
+- Khaman Maluach: rank 6, medium, score 1.39
+- Rasheer Fleming: rank 14, low, score 0.473
+- CJ Huntley: rank 17, low, score 0
+- Koa Peat: rank 18, low, score 0
 
 Practical injury notes:
 - If Devin Booker is out, watch Jalen Green for usage, minutes, or role lift.
 - If Jalen Green is out, watch Devin Booker for usage, minutes, or role lift.
-- If Dillon Brooks is out, watch Royce O'Neale and Devin Booker for usage, minutes, or role lift.
-- If Grayson Allen is out, watch Devin Booker for usage, minutes, or role lift.
+- If Miles Bridges is out, watch Dillon Brooks and Devin Booker for usage, minutes, or role lift.
+- If Dillon Brooks is out, watch Miles Bridges and Devin Booker for usage, minutes, or role lift.
 
 ## Portland Trail Blazers (POR)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Deni Avdija | high | 127.079 | F | 34.2 MPG, 23 PPG, 5.4 APG, 6.4 RPG, 100% starter rate |
-| 2 | Jrue Holiday | high | 126.968 | G | 34.8 MPG, 16.4 PPG, 6.8 APG, 97% starter rate, previous rank 2 |
-| 3 | Donovan Clingan | high | 93.096 | C | 9.3 RPG, 100% starter rate, rookie/young-player watch, previous rank 3 |
-| 4 | Toumani Camara | high | 90.3 | F | 33.1 MPG, 1.8 stocks, 100% starter rate, previous rank 4 |
-| 5 | Scoot Henderson | high | 85.213 | G | 14.7 PPG, previous rank 5 |
-| 6 | Jerami Grant | medium | 84.054 | F | previous rank 6 |
-| 7 | Robert Williams III | medium | 79.713 | C | 7.3 RPG, 1.9 stocks, previous rank 7 |
-| 8 | Shaedon Sharpe | medium | 71.818 | G | 73% starter rate, previous rank 8 |
-| 9 | Caleb Love | low | 67.715 | G | rookie/young-player watch, previous rank 9 |
-| 10 | Matisse Thybulle | low | 35.828 | G | 1.9 stocks, previous rank 10 |
-| 11 | Sidy Cissoko | low | 34.502 | G | previous rank 11 |
-| 12 | Kris Murray | low | 33.269 | F | previous rank 12 |
+| 1 | Ja Morant | high | 9.277 | G | previous rank 1 |
+| 2 | Jrue Holiday | high | 7.656 | G | previous rank 2 |
+| 3 | Shaedon Sharpe | high | 4.42 | G | previous rank 3 |
+| 4 | Toumani Camara | high | 3.978 | F | previous rank 4 |
+| 5 | Scoot Henderson | high | 2.989 | G | previous rank 5 |
+| 6 | Damian Lillard | medium | 2.948 | G | previous rank 6 |
+| 7 | Robert Williams III | medium | 2.923 | C | previous rank 7 |
+| 8 | Deni Avdija | medium | 2.888 | F | previous rank 8 |
+| 9 | Donovan Clingan | low | 1.654 | C | previous rank 9 |
+| 10 | Jeremy Sochan | low | 1.225 | F | previous rank 10 |
+| 11 | Yang Hansen | low | 1.022 | C | rookie/young-player watch, previous rank 11 |
+| 12 | Micah Potter | low | 0.616 | C | previous rank 12 |
 
 Rookie/young-player watch:
-- Donovan Clingan: rank 3, high, score 93.096
-- Caleb Love: rank 9, low, score 67.715
-- Chris Youngblood: rank 14, low, score 23.146
-- Jayson Kent: rank 15, low, score 22.574
+- Yang Hansen: rank 11, low, score 1.022
+- Chris Youngblood: rank 16, low, score 0
+- Jayson Kent: rank 17, low, score 0
+- John Tonje: rank 18, low, score 0
 
 Practical injury notes:
-- If Deni Avdija is out, watch Toumani Camara and Jrue Holiday for usage, minutes, or role lift.
-- If Jrue Holiday is out, watch Scoot Henderson and Deni Avdija for usage, minutes, or role lift.
-- If Donovan Clingan is out, watch Robert Williams III and Deni Avdija for usage, minutes, or role lift.
-- If Toumani Camara is out, watch Deni Avdija for usage, minutes, or role lift.
+- If Ja Morant is out, watch Jrue Holiday for usage, minutes, or role lift.
+- If Jrue Holiday is out, watch Ja Morant for usage, minutes, or role lift.
+- If Shaedon Sharpe is out, watch Ja Morant for usage, minutes, or role lift.
+- If Toumani Camara is out, watch Deni Avdija and Ja Morant for usage, minutes, or role lift.
 
 ## Sacramento Kings (SAC)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Domantas Sabonis | high | 127.865 | F | 29.7 MPG, 15.8 PPG, 4.1 APG, 11.4 RPG, 79% starter rate |
-| 2 | DeMar DeRozan | high | 123.366 | G | 31.2 MPG, 18.4 PPG, 4.1 APG, 100% starter rate, previous rank 2 |
-| 3 | Zach LaVine | high | 119.873 | G | 31.4 MPG, 19.2 PPG, 95% starter rate, previous rank 3 |
-| 4 | Russell Westbrook | high | 116.998 | G | 29 MPG, 15.2 PPG, 6.7 APG, 91% starter rate, previous rank 4 |
-| 5 | Keegan Murray | high | 109.72 | F | 34.5 MPG, 2.6 stocks, 96% starter rate, previous rank 5 |
-| 6 | Maxime Raynaud | medium | 99.48 | C | 7.5 RPG, 76% starter rate, rookie/young-player watch, previous rank 6 |
-| 7 | De'Andre Hunter | medium | 90.7 | F | previous rank 7 |
-| 8 | Precious Achiuwa | medium | 87.479 | PF | 6.7 RPG, 78% starter rate, previous rank 8 |
-| 9 | Malik Monk | low | 82.496 | G | previous rank 9 |
-| 10 | Dylan Cardwell | low | 79.868 | C | 7.5 RPG, 2.2 stocks, rookie/young-player watch, previous rank 10 |
-| 11 | Daeqwon Plowden | low | 76.484 | G | rookie/young-player watch, previous rank 11 |
-| 12 | Nique Clifford | low | 76.27 | G | rookie/young-player watch, previous rank 12 |
+| 1 | Zach LaVine | high | 10.773 | G | previous rank 1 |
+| 2 | Domantas Sabonis | high | 10.004 | F | previous rank 2 |
+| 3 | De'Andre Hunter | high | 5.48 | F | previous rank 3 |
+| 4 | Keegan Murray | high | 5.31 | F | previous rank 4 |
+| 5 | Malik Monk | high | 4.662 | G | previous rank 5 |
+| 6 | Precious Achiuwa | medium | 1.32 | PF | previous rank 6 |
+| 7 | Nique Clifford | medium | 0.718 | G | rookie/young-player watch, previous rank 7 |
+| 8 | Jonathan Mogbo | medium | 0.505 | F | previous rank 8 |
+| 9 | Dylan Cardwell | low | 0.473 | C | rookie/young-player watch, previous rank 9 |
+| 10 | Maxime Raynaud | low | 0.473 | C | rookie/young-player watch, previous rank 10 |
+| 11 | Adam Flagler | low | 0 | G | previous rank 11 |
+| 12 | Alex Karaban | low | 0 | F | rookie/young-player watch, previous rank 12 |
 
 Rookie/young-player watch:
-- Maxime Raynaud: rank 6, medium, score 99.48
-- Dylan Cardwell: rank 10, low, score 79.868
-- Daeqwon Plowden: rank 11, low, score 76.484
-- Nique Clifford: rank 12, low, score 76.27
+- Nique Clifford: rank 7, medium, score 0.718
+- Dylan Cardwell: rank 9, low, score 0.473
+- Maxime Raynaud: rank 10, low, score 0.473
+- Alex Karaban: rank 12, low, score 0
 
 Practical injury notes:
-- If Domantas Sabonis is out, watch Keegan Murray and DeMar DeRozan for usage, minutes, or role lift.
-- If DeMar DeRozan is out, watch Zach LaVine and Domantas Sabonis for usage, minutes, or role lift.
-- If Zach LaVine is out, watch DeMar DeRozan and Domantas Sabonis for usage, minutes, or role lift.
-- If Russell Westbrook is out, watch DeMar DeRozan and Domantas Sabonis for usage, minutes, or role lift.
+- If Zach LaVine is out, watch Malik Monk and Domantas Sabonis for usage, minutes, or role lift.
+- If Domantas Sabonis is out, watch De'Andre Hunter and Zach LaVine for usage, minutes, or role lift.
+- If De'Andre Hunter is out, watch Domantas Sabonis and Zach LaVine for usage, minutes, or role lift.
+- If Keegan Murray is out, watch Domantas Sabonis and Zach LaVine for usage, minutes, or role lift.
 
 ## San Antonio Spurs (SA)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Victor Wembanyama | high | 137.217 | F | 32.1 MPG, 24.3 PPG, 11.1 RPG, 4.3 stocks, 91% starter rate |
-| 2 | De'Aaron Fox | high | 122.593 | G | 32.5 MPG, 16.8 PPG, 6 APG, 100% starter rate, previous rank 2 |
-| 3 | Stephon Castle | high | 119.247 | G | 31.8 MPG, 17.6 PPG, 6.6 APG, 99% starter rate, rookie/young-player watch |
-| 4 | Devin Vassell | high | 105.516 | G | 33.1 MPG, 98% starter rate, previous rank 4 |
-| 5 | Julian Champagnie | high | 87.602 | F | 29.4 MPG, 88% starter rate, previous rank 5 |
-| 6 | Dylan Harper | medium | 84.58 | G | rookie/young-player watch, previous rank 6 |
-| 7 | Keldon Johnson | medium | 64.09 | F | previous rank 7 |
-| 8 | Luke Kornet | medium | 59.02 | C | previous rank 8 |
-| 9 | Harrison Barnes | low | 49.141 | F | previous rank 9 |
-| 10 | David Jones Garcia | low | 32.257 | F | rookie/young-player watch, previous rank 10 |
-| 11 | Carter Bryant | low | 29.057 | F | rookie/young-player watch, previous rank 11 |
-| 12 | Emanuel Miller | low | 25.853 | F | rookie/young-player watch, previous rank 12 |
+| 1 | De'Aaron Fox | high | 10.956 | G | previous rank 1 |
+| 2 | Tobias Harris | high | 8.639 | F | previous rank 2 |
+| 3 | Devin Vassell | high | 5.94 | G | previous rank 3 |
+| 4 | Harrison Barnes | high | 5.312 | F | previous rank 4 |
+| 5 | Keldon Johnson | high | 3.85 | F | previous rank 5 |
+| 6 | Victor Wembanyama | medium | 3.711 | F | previous rank 6 |
+| 7 | Dylan Harper | medium | 2.858 | G | rookie/young-player watch, previous rank 7 |
+| 8 | Luke Kornet | medium | 2.299 | C | previous rank 8 |
+| 9 | Stephon Castle | low | 2.204 | G | previous rank 9 |
+| 10 | Carter Bryant | low | 1.132 | F | rookie/young-player watch, previous rank 10 |
+| 11 | Julian Champagnie | low | 0.66 | F | previous rank 11 |
+| 12 | Jordan McLaughlin | low | 0.51 | G | previous rank 12 |
 
 Rookie/young-player watch:
-- Stephon Castle: rank 3, high, score 119.247
-- Dylan Harper: rank 6, medium, score 84.58
-- David Jones Garcia: rank 10, low, score 32.257
-- Carter Bryant: rank 11, low, score 29.057
+- Dylan Harper: rank 7, medium, score 2.858
+- Carter Bryant: rank 10, low, score 1.132
+- David Jones Garcia: rank 13, low, score 0
+- Ja'Kobi Gillespie: rank 16, low, score 0
 
 Practical injury notes:
-- If Victor Wembanyama is out, watch Julian Champagnie and De'Aaron Fox for usage, minutes, or role lift.
-- If De'Aaron Fox is out, watch Stephon Castle and Victor Wembanyama for usage, minutes, or role lift.
-- If Stephon Castle is out, watch De'Aaron Fox and Victor Wembanyama for usage, minutes, or role lift.
-- If Devin Vassell is out, watch De'Aaron Fox and Victor Wembanyama for usage, minutes, or role lift.
+- If De'Aaron Fox is out, watch Devin Vassell and Tobias Harris for usage, minutes, or role lift.
+- If Tobias Harris is out, watch Harrison Barnes and De'Aaron Fox for usage, minutes, or role lift.
+- If Devin Vassell is out, watch De'Aaron Fox for usage, minutes, or role lift.
+- If Harrison Barnes is out, watch Tobias Harris and De'Aaron Fox for usage, minutes, or role lift.
 
 ## Toronto Raptors (TOR)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Scottie Barnes | high | 144.141 | F | 36.8 MPG, 21.7 PPG, 7.5 APG, 6.7 RPG, 2.9 stocks |
-| 2 | Immanuel Quickley | high | 128.536 | G | 31.9 MPG, 16.4 PPG, 5.9 APG, 100% starter rate, previous rank 2 |
-| 3 | RJ Barrett | high | 126.015 | F | 35.3 MPG, 22.2 PPG, 6.3 RPG, 100% starter rate, previous rank 3 |
-| 4 | Brandon Ingram | high | 106.925 | F | 31.3 MPG, 15.8 PPG, 100% starter rate, previous rank 4 |
-| 5 | Jakob Poeltl | high | 84.994 | C | 6.4 RPG, 96% starter rate, previous rank 5 |
-| 6 | Collin Murray-Boyles | medium | 83.689 | F | 2.2 stocks, rookie/young-player watch, previous rank 6 |
-| 7 | Jamal Shead | medium | 80.198 | G | 28.2 MPG, 5.2 APG, rookie/young-player watch, previous rank 7 |
-| 8 | Ja'Kobe Walter | medium | 74.832 | G | 1.9 stocks, rookie/young-player watch, previous rank 8 |
-| 9 | Sandro Mamukelashvili | low | 57.923 | F | previous rank 9 |
-| 10 | Jamison Battle | low | 29.346 | F | rookie/young-player watch, previous rank 10 |
-| 11 | Alijah Martin | low | 24.76 | G | rookie/young-player watch, previous rank 11 |
-| 12 | Gradey Dick | low | 20.8 | G | previous rank 12 |
+| 1 | Scottie Barnes | high | 9.186 | F | previous rank 1 |
+| 2 | Brandon Ingram | high | 8.8 | F | previous rank 2 |
+| 3 | Immanuel Quickley | high | 7.15 | G | previous rank 3 |
+| 4 | RJ Barrett | high | 6.516 | F | previous rank 4 |
+| 5 | Jakob Poeltl | high | 4.29 | C | previous rank 5 |
+| 6 | Kyle Anderson | medium | 2.186 | F | previous rank 6 |
+| 7 | Gradey Dick | medium | 1.569 | G | previous rank 7 |
+| 8 | Collin Murray-Boyles | medium | 1.463 | F | rookie/young-player watch, previous rank 8 |
+| 9 | Ja'Kobe Walter | low | 0.839 | G | previous rank 9 |
+| 10 | Trayce Jackson-Davis | low | 0.529 | F | previous rank 10 |
+| 11 | Jamal Shead | low | 0.505 | G | previous rank 11 |
+| 12 | Jamison Battle | low | 0.505 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Collin Murray-Boyles: rank 6, medium, score 83.689
-- Jamal Shead: rank 7, medium, score 80.198
-- Ja'Kobe Walter: rank 8, medium, score 74.832
-- Jamison Battle: rank 10, low, score 29.346
+- Collin Murray-Boyles: rank 8, medium, score 1.463
+- Alijah Martin: rank 15, low, score 0
+- Allen Graves: rank 16, low, score 0
+- Chucky Hepburn: rank 17, low, score 0
 
 Practical injury notes:
-- If Scottie Barnes is out, watch RJ Barrett and Immanuel Quickley for usage, minutes, or role lift.
-- If Immanuel Quickley is out, watch Jamal Shead and Scottie Barnes for usage, minutes, or role lift.
-- If RJ Barrett is out, watch Scottie Barnes for usage, minutes, or role lift.
+- If Scottie Barnes is out, watch Brandon Ingram for usage, minutes, or role lift.
 - If Brandon Ingram is out, watch Scottie Barnes for usage, minutes, or role lift.
+- If Immanuel Quickley is out, watch Gradey Dick and Scottie Barnes for usage, minutes, or role lift.
+- If RJ Barrett is out, watch Scottie Barnes for usage, minutes, or role lift.
 
 ## Utah Jazz (UTAH)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Lauri Markkanen | high | 146.824 | F | 34.4 MPG, 26.7 PPG, 6.9 RPG, 100% starter rate, previous rank 1 |
-| 2 | Keyonte George | high | 137.066 | G | 33.1 MPG, 23.6 PPG, 6.1 APG, 100% starter rate, previous rank 2 |
-| 3 | Jaren Jackson Jr. | high | 122.227 | F | 30.3 MPG, 19.4 PPG, 2.5 stocks, 100% starter rate, previous rank 3 |
-| 4 | Jusuf Nurkic | high | 116.333 | C | 4.8 APG, 10.4 RPG, 1.8 stocks, 88% starter rate, previous rank 4 |
-| 5 | Walker Kessler | high | 110.608 | C | 30.8 MPG, 14.4 PPG, 10.8 RPG, 3.2 stocks, 100% starter rate |
-| 6 | Isaiah Collier | medium | 100.245 | G | 7.2 APG, rookie/young-player watch, previous rank 6 |
-| 7 | Bez Mbeng | medium | 96.104 | G | 32.8 MPG, 4.1 APG, 2.6 stocks, rookie/young-player watch, previous rank 7 |
-| 8 | Ace Bailey | medium | 95.218 | G | 85% starter rate, rookie/young-player watch, previous rank 8 |
-| 9 | Kennedy Chandler | low | 90.799 | G | 32.3 MPG, 15 PPG, 6.7 APG, rookie/young-player watch, previous rank 9 |
-| 10 | Kyle Filipowski | low | 89.816 | F | 7.2 RPG, rookie/young-player watch, previous rank 10 |
-| 11 | Brice Sensabaugh | low | 83.883 | F | 14.9 PPG, previous rank 11 |
-| 12 | Svi Mykhailiuk | low | 76.297 | G | 82% starter rate, previous rank 12 |
+| 1 | Jaren Jackson Jr. | high | 10.78 | F | previous rank 1 |
+| 2 | Lauri Markkanen | high | 10.145 | F | previous rank 2 |
+| 3 | Jusuf Nurkic | high | 4.263 | C | previous rank 3 |
+| 4 | Josh Green | high | 3.229 | G |  |
+| 5 | Mo Bamba | high | 2.266 | C | previous rank 4 |
+| 6 | Ace Bailey | medium | 2.095 | G | rookie/young-player watch, previous rank 5 |
+| 7 | Josh Okogie | medium | 1.815 | G | previous rank 6 |
+| 8 | Jaxson Hayes | medium | 1.497 | C | previous rank 7 |
+| 9 | Keyonte George | low | 1.444 | G | previous rank 8 |
+| 10 | Brice Sensabaugh | low | 1.07 | F | previous rank 11 |
+| 11 | Svi Mykhailiuk | low | 0.847 | G | previous rank 12 |
+| 12 | Kyle Filipowski | low | 0.66 | F | previous rank 13 |
 
 Rookie/young-player watch:
-- Isaiah Collier: rank 6, medium, score 100.245
-- Bez Mbeng: rank 7, medium, score 96.104
-- Ace Bailey: rank 8, medium, score 95.218
-- Kennedy Chandler: rank 9, low, score 90.799
+- Ace Bailey: rank 6, medium, score 2.095
+- Bez Mbeng: rank 14, low, score 0
+- Blake Hinson: rank 15, low, score 0
+- Darryn Peterson: rank 16, low, score 0
 
 Practical injury notes:
-- If Lauri Markkanen is out, watch Jaren Jackson Jr. and Keyonte George for usage, minutes, or role lift.
-- If Keyonte George is out, watch Isaiah Collier and Lauri Markkanen for usage, minutes, or role lift.
 - If Jaren Jackson Jr. is out, watch Lauri Markkanen for usage, minutes, or role lift.
-- If Jusuf Nurkic is out, watch Walker Kessler and Lauri Markkanen for usage, minutes, or role lift.
+- If Lauri Markkanen is out, watch Jaren Jackson Jr. for usage, minutes, or role lift.
+- If Jusuf Nurkic is out, watch Mo Bamba and Jaren Jackson Jr. for usage, minutes, or role lift.
+- If Josh Green is out, watch Ace Bailey and Jaren Jackson Jr. for usage, minutes, or role lift.
 
 ## Washington Wizards (WSH)
 
 | Rank | Player | Tier | Score | Pos | Key signals |
 | --- | --- | --- | ---: | --- | --- |
-| 1 | Anthony Davis | high | 143.878 | F | 31.3 MPG, 20.4 PPG, 11.1 RPG, 2.8 stocks, 100% starter rate |
-| 2 | Trae Young | high | 131.472 | G | 17.9 PPG, 8 APG, 100% starter rate, previous rank 2 |
-| 3 | Alex Sarr | high | 125.561 | C | 16.3 PPG, 7.4 RPG, 2.8 stocks, 100% starter rate, rookie/young-player watch |
-| 4 | Kyshawn George | high | 107.632 | F | 29 MPG, 14.8 PPG, 4.5 APG, 1.9 stocks, 100% starter rate |
-| 5 | Bilal Coulibaly | high | 96.818 | G | 2.3 stocks, 100% starter rate, previous rank 5 |
-| 6 | Bub Carrington | medium | 91.574 | G | 4.6 APG, rookie/young-player watch, previous rank 6 |
-| 7 | Julian Reese | medium | 85.897 | F | 30.9 MPG, 10.5 RPG, 2 stocks, 77% starter rate, rookie/young-player watch |
-| 8 | Tre Johnson | medium | 82.514 | G | 70% starter rate, rookie/young-player watch, previous rank 8 |
-| 9 | Leaky Black | low | 78.584 | F | 28.9 MPG, 60% starter rate, rookie/young-player watch, previous rank 9 |
-| 10 | Justin Champagnie | low | 74.478 | F | previous rank 10 |
-| 11 | Will Riley | low | 73.255 | G | rookie/young-player watch, previous rank 11 |
-| 12 | D'Angelo Russell | low | 72.593 | G | 4 APG, previous rank 12 |
+| 1 | Anthony Davis | high | 12.1 | F | previous rank 1 |
+| 2 | Trae Young | high | 10.773 | G | previous rank 2 |
+| 3 | Khris Middleton | high | 8.349 | F | previous rank 3 |
+| 4 | Alex Sarr | high | 2.722 | C | previous rank 4 |
+| 5 | Bilal Coulibaly | high | 2.033 | G | previous rank 5 |
+| 6 | Tre Johnson | medium | 1.903 | G | rookie/young-player watch, previous rank 6 |
+| 7 | Deandre Ayton | medium | 1.783 | C | previous rank 7 |
+| 8 | Tre Mann | medium | 1.76 | G | previous rank 8 |
+| 9 | Bub Carrington | low | 1.078 | G | previous rank 9 |
+| 10 | Will Riley | low | 0.811 | G | rookie/young-player watch, previous rank 10 |
+| 11 | Kyshawn George | low | 0.684 | F | previous rank 11 |
+| 12 | Tristan Vukcevic | low | 0.66 | F | previous rank 12 |
 
 Rookie/young-player watch:
-- Alex Sarr: rank 3, high, score 125.561
-- Bub Carrington: rank 6, medium, score 91.574
-- Julian Reese: rank 7, medium, score 85.897
-- Tre Johnson: rank 8, medium, score 82.514
+- Tre Johnson: rank 6, medium, score 1.903
+- Will Riley: rank 10, low, score 0.811
+- Jamir Watkins: rank 14, low, score 0.473
+- AJ Dybantsa: rank 15, low, score 0
 
 Practical injury notes:
-- If Anthony Davis is out, watch Kyshawn George and Trae Young for usage, minutes, or role lift.
+- If Anthony Davis is out, watch Khris Middleton and Trae Young for usage, minutes, or role lift.
 - If Trae Young is out, watch Bilal Coulibaly and Anthony Davis for usage, minutes, or role lift.
-- If Alex Sarr is out, watch Anthony Davis for usage, minutes, or role lift.
-- If Kyshawn George is out, watch Anthony Davis for usage, minutes, or role lift.
+- If Khris Middleton is out, watch Anthony Davis for usage, minutes, or role lift.
+- If Alex Sarr is out, watch Deandre Ayton and Anthony Davis for usage, minutes, or role lift.
 

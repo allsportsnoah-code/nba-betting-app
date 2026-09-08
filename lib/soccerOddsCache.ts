@@ -1,4 +1,4 @@
-import { getCachedData } from "@/lib/cache";
+import { getCachedData, isOddsDataStale } from "@/lib/cache";
 import type { SoccerCompetitionKey, SoccerOddsGame } from "@/lib/soccerModel";
 
 export type SoccerOddsCacheDay = "today" | "tomorrow" | "yesterday";
@@ -83,10 +83,14 @@ export async function getResolvedSoccerOddsCache(
     tomorrowFallback?.businessDate === expectedBusinessDate && tomorrowFallback.competition === competition;
   const active = primaryMatches ? primary : fallbackMatches ? tomorrowFallback : null;
 
+  const isDateStale = Boolean(primary?.businessDate && primary.businessDate !== expectedBusinessDate);
+  const isAgeStale = isOddsDataStale(primaryRow?.updated_at);
+
   return {
     active,
     expectedBusinessDate,
-    isStale: Boolean(primary?.businessDate && primary.businessDate !== expectedBusinessDate),
+    isStale: isDateStale || isAgeStale,
+    isAgeStale,
     primary,
     usedTomorrowFallback: !primaryMatches && fallbackMatches,
   };
