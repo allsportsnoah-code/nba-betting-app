@@ -203,8 +203,8 @@ export default async function LottoPage() {
 
   // Fetch this week's picks + research + season history all in parallel.
   // 8-second timeout per query so a cold Supabase doesn't block the page.
-  const withTimeout = <T>(promise: Promise<T>, ms: number): Promise<T | null> =>
-    Promise.race([promise, new Promise<null>((resolve) => setTimeout(() => resolve(null), ms))]);
+  const withTimeout = <T,>(promise: PromiseLike<T>, ms: number): Promise<T | null> =>
+    Promise.race([Promise.resolve(promise), new Promise<null>((resolve) => setTimeout(() => resolve(null), ms))]);
 
   const [picksResult, researchResult, allSeasonResult] = await Promise.all([
     withTimeout(
