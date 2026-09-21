@@ -313,7 +313,13 @@ export default async function AllSportsFreePicksBoard({
   pickDate,
   className = "mb-8",
 }: AllSportsFreePicksBoardProps) {
-  const { pickDate: resolvedPickDate, freePickRows, skippedRows, mlbSnapshot, nbaSnapshot } = await getBoardData(pickDate);
+  let boardData;
+  try {
+    boardData = await getBoardData(pickDate);
+  } catch {
+    return null;
+  }
+  const { pickDate: resolvedPickDate, freePickRows, skippedRows, mlbSnapshot, nbaSnapshot } = boardData;
 
   return (
     <section className={`app-card rounded-[2rem] p-6 ${className}`}>
