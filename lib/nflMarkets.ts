@@ -106,7 +106,7 @@ export const NFL_PROP_CATEGORY_LABELS: Record<NflPropCategoryKey, string> = {
 // ---------------------------------------------------------------------------
 
 export type NflCandidate = {
-  marketType: "moneyline" | "spread" | "game_total";
+  marketType: "moneyline" | "spread" | "game_total" | "home_team_total" | "away_team_total";
   side: string;
   lineTaken: number | null;
   oddsTaken: number;
@@ -136,7 +136,7 @@ function americanToImpliedProbNfl(american: number): number {
 }
 
 export function getNflTopPickScore(params: {
-  marketType: "moneyline" | "spread" | "game_total";
+  marketType: "moneyline" | "spread" | "game_total" | "home_team_total" | "away_team_total";
   edge: number;
   confidenceScore: number;
   oddsTaken: number;
@@ -157,8 +157,11 @@ export function getNflTopPickScore(params: {
     : 0;
   // Reward implied probability in the 55-70% range (high hit-rate zone)
   const hitRateBonus = (1 - Math.abs(impliedProb - 0.62)) * 14;
-  // Market stability: spreads are most reliable in NFL, totals next, ML last
-  const marketStability = params.marketType === "spread" ? 12 : params.marketType === "game_total" ? 8 : 4;
+  // Market stability: spreads are most reliable in NFL, totals next, team totals lower variance, ML last
+  const marketStability = params.marketType === "spread" ? 12
+    : params.marketType === "game_total" ? 8
+    : (params.marketType === "home_team_total" || params.marketType === "away_team_total") ? 6
+    : 4;
 
   let supportAdjustment = 0;
   if (params.marketType === "moneyline") {
@@ -215,11 +218,19 @@ export function isNflCandidateTopPickEligible(candidate: NflCandidate): boolean 
       candidate.selectedImpliedProb >= 0.52
     );
   }
+  if (candidate.marketType === "home_team_total" || candidate.marketType === "away_team_total") {
+    return (
+      candidate.edge >= 2.0 &&
+      candidate.confidenceScore >= 68 &&
+      candidate.payoutPerUnit >= 0.88 &&
+      candidate.selectedImpliedProb >= 0.52
+    );
+  }
   return false;
 }
 
 export function buildNflBetProfile(params: {
-  marketType: "moneyline" | "spread" | "game_total";
+  marketType: "moneyline" | "spread" | "game_total" | "home_team_total" | "away_team_total";
   edge: number;
   confidenceScore: number;
   payoutPerUnit: number;
@@ -248,14 +259,19 @@ export function buildNflBetProfile(params: {
   if (params.marketType === "spread") {
     const buffer = params.coverBuffer ?? 0;
     if (buffer >= 2) reasonLabels.push(`${buffer.toFixed(1)} pt cover buffer`);
-    else if (buffer >= 0.5) reasonLabels.push(`${buffer.toFixed(1)} pt spread support`);
+    else if (buffer >= 0.1) reasonLabels.push(`${buffer.toFixed(1)} pt spread support`);
     else riskFlags.push("thin spread buffer");
     if (params.edge >= 2.5) reasonLabels.push(`${params.edge.toFixed(1)} pt edge`);
   }
 
   if (params.marketType === "game_total") {
     if (params.edge >= 3) reasonLabels.push(`${params.edge.toFixed(1)} pt total edge`);
-    else if (params.edge < 1.5) riskFlags.push("thin total edge");
+    else if (params.edge < 0.5) riskFlags.push("thin total edge");
+  }
+
+  if (params.marketType === "home_team_total" || params.marketType === "away_team_total") {
+    if (params.edge >= 2) reasonLabels.push(`${params.edge.toFixed(1)} pt team total edge`);
+    else if (params.edge < 0.3) riskFlags.push("thin team total edge");
   }
 
   if ((params.contextRiskScore ?? 0) >= 20) {
