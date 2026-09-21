@@ -201,27 +201,49 @@ export default async function LottoPage() {
   const yearEnd = `${weekStart.slice(0, 4)}-12-31`;
   const week1Start = allWeeks[0]?.weekStart ?? weekStart;
 
-  // Fetch this week's NFL spread + total picks only
-  const [picksResult, researchResult] = await Promise.all([
-    supabase
-      .from("picks")
-      .select("id, pick_date, game_label, market_type, side, line_taken, odds_taken, confidence_score, edge, projected_line, market_line, is_top_pick, notes, status, units_result, game_start_time")
-      .eq("sport", "NFL")
-      .eq("market_scope", "team")
-      .in("market_type", ["spread", "total"])
-      .gte("pick_date", weekStart)
-      .lte("pick_date", weekEnd)
-      .order("confidence_score", { ascending: false }),
-    supabase
-      .from("cached_market_data")
-      .select("data, updated_at")
-      .eq("cache_key", `nfl_research_${weekStart}`)
-      .maybeSingle(),
+  // Fetch this week's picks + research + season history all in parallel.
+  // 8-second timeout per query so a cold Supabase doesn't block the page.
+  const withTimeout = <T>(promise: Promise<T>, ms: number): Promise<T | null> =>
+    Promise.race([promise, new Promise<null>((resolve) => setTimeout(() => resolve(null), ms))]);
+
+  const [picksResult, researchResult, allSeasonResult] = await Promise.all([
+    withTimeout(
+      supabase
+        .from("picks")
+        .select("id, pick_date, game_label, market_type, side, line_taken, odds_taken, confidence_score, edge, projected_line, market_line, is_top_pick, notes, status, units_result, game_start_time")
+        .eq("sport", "NFL")
+        .eq("market_scope", "team")
+        .in("market_type", ["spread", "total"])
+        .gte("pick_date", weekStart)
+        .lte("pick_date", weekEnd)
+        .order("confidence_score", { ascending: false }),
+      8000
+    ),
+    withTimeout(
+      supabase
+        .from("cached_market_data")
+        .select("data, updated_at")
+        .eq("cache_key", `nfl_research_${weekStart}`)
+        .maybeSingle(),
+      8000
+    ),
+    withTimeout(
+      supabase
+        .from("picks")
+        .select("id, pick_date, market_type, status, units_result")
+        .eq("sport", "NFL")
+        .eq("market_scope", "team")
+        .in("market_type", ["spread", "total"])
+        .gte("pick_date", week1Start)
+        .lte("pick_date", yearEnd),
+      8000
+    ),
   ]);
 
-  const allPicks = (picksResult.data ?? []) as Pick[];
-  const researchGames = (researchResult.data?.data as { games?: GameResearch[] } | null)?.games ?? [];
-  const researchedAt = researchResult.data?.updated_at ?? null;
+  const allPicks = ((picksResult as { data?: Pick[] } | null)?.data ?? []) as Pick[];
+  const researchPayload = (researchResult as { data?: { data?: { games?: GameResearch[] }; updated_at?: string } | null } | null)?.data;
+  const researchGames = (researchPayload?.data?.games ?? []) as GameResearch[];
+  const researchedAt = researchPayload?.updated_at ?? null;
 
   // Build a lookup from game_label → research
   const researchByGame = new Map<string, GameResearch>();
@@ -300,18 +322,8 @@ export default async function LottoPage() {
   const totalCount = primaryLegs.filter((e) => e.pick.market_type === "total").length;
   const hasLotto = slate.length > 0;
 
-  // Season week tracker
-  const { data: allSeasonRows } = await supabase
-    .from("picks")
-    .select("id, pick_date, market_type, status, units_result")
-    .eq("sport", "NFL")
-    .eq("market_scope", "team")
-    .in("market_type", ["spread", "total"])
-    .gte("pick_date", week1Start)
-    .lte("pick_date", yearEnd);
-
   type SeasonRow = { id: number; pick_date: string; market_type: string; status?: string | null; units_result?: number | null };
-  const seasonPicks = (allSeasonRows ?? []) as SeasonRow[];
+  const seasonPicks = ((allSeasonResult as { data?: SeasonRow[] } | null)?.data ?? []) as SeasonRow[];
 
   const weekSummaries: WeekSummary[] = allWeeks.slice(0, 18).map((week) => {
     const wp = seasonPicks.filter((p) => p.pick_date >= week.weekStart && p.pick_date <= week.weekEnd);
