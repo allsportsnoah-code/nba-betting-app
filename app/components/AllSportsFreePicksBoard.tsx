@@ -315,10 +315,14 @@ export default async function AllSportsFreePicksBoard({
 }: AllSportsFreePicksBoardProps) {
   let boardData;
   try {
-    boardData = await getBoardData(pickDate);
+    boardData = await Promise.race([
+      getBoardData(pickDate),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 8000)),
+    ]);
   } catch {
     return null;
   }
+  if (!boardData) return null;
   const { pickDate: resolvedPickDate, freePickRows, skippedRows, mlbSnapshot, nbaSnapshot } = boardData;
 
   return (
