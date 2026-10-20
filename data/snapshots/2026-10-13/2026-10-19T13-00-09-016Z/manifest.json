@@ -1,0 +1,13 @@
+{
+ "weekStart": "2026-10-13",
+ "season": 2026,
+ "takenAt": "2026-10-19T13:00:09.016Z",
+ "files": [
+  "player-data.json",
+  "fanduel-props.json",
+  "dk-props.json",
+  "news.json",
+  "game-lines.json",
+  "injuries.json"
+ ]
+}

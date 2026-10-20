@@ -2,7 +2,7 @@
   "date": "2026-10-20",
   "picksFile": "data/picks/nba-sets-2026-10-20.json",
   "firstGradedAt": "2026-10-20T05:39:41.339Z",
-  "gradedAt": "2026-10-20T18:28:11.113Z",
+  "gradedAt": "2026-10-20T18:34:55.587Z",
   "onePerGame": {
     "odds": 3.7,
     "status": "pending",
@@ -55,8 +55,8 @@
       "label": "BOS @ DET",
       "tickets": [
         {
-          "odds": 11.93,
-          "hitChance": 0.0655,
+          "odds": 11.91,
+          "hitChance": 0.0641,
           "status": "pending",
           "won": 0,
           "lost": 0,
@@ -89,12 +89,12 @@
               }
             },
             {
-              "pick": "Jayson Tatum Under 0.5 Blk",
+              "pick": "Ausar Thompson Over 1.5 Stl",
               "game": "BOS @ DET",
-              "market": "Blk",
+              "market": "Stl",
               "kind": "prop",
-              "price": -193,
-              "hitProb": 0.635,
+              "price": -194,
+              "hitProb": 0.621,
               "lowered": false,
               "result": {
                 "status": "pending"
@@ -139,8 +139,8 @@
           ]
         },
         {
-          "odds": 12.2,
-          "hitChance": 0.0645,
+          "odds": 13,
+          "hitChance": 0.0592,
           "status": "pending",
           "won": 0,
           "lost": 0,
@@ -173,12 +173,12 @@
               }
             },
             {
-              "pick": "Jayson Tatum Under 0.5 Blk",
+              "pick": "Jayson Tatum Over 2.5 3PM",
               "game": "BOS @ DET",
-              "market": "Blk",
+              "market": "3PM",
               "kind": "prop",
-              "price": -193,
-              "hitProb": 0.635,
+              "price": -162,
+              "hitProb": 0.583,
               "lowered": false,
               "result": {
                 "status": "pending"
@@ -223,8 +223,8 @@
           ]
         },
         {
-          "odds": 13.21,
-          "hitChance": 0.0605,
+          "odds": 13.05,
+          "hitChance": 0.06,
           "status": "pending",
           "won": 0,
           "lost": 0,
@@ -257,12 +257,12 @@
               }
             },
             {
-              "pick": "Jayson Tatum Under 0.5 Blk",
+              "pick": "Cade Cunningham Under 2.5 3PM",
               "game": "BOS @ DET",
-              "market": "Blk",
+              "market": "3PM",
               "kind": "prop",
-              "price": -193,
-              "hitProb": 0.635,
+              "price": -200,
+              "hitProb": 0.629,
               "lowered": false,
               "result": {
                 "status": "pending"
@@ -307,8 +307,8 @@
           ]
         },
         {
-          "odds": 16.25,
-          "hitChance": 0.053,
+          "odds": 16.05,
+          "hitChance": 0.0524,
           "status": "pending",
           "won": 0,
           "lost": 0,
@@ -341,12 +341,12 @@
               }
             },
             {
-              "pick": "Jayson Tatum Under 0.5 Blk",
+              "pick": "Cade Cunningham Under 2.5 3PM",
               "game": "BOS @ DET",
-              "market": "Blk",
+              "market": "3PM",
               "kind": "prop",
-              "price": -193,
-              "hitProb": 0.635,
+              "price": -200,
+              "hitProb": 0.629,
               "lowered": false,
               "result": {
                 "status": "pending"
@@ -391,8 +391,8 @@
           ]
         },
         {
-          "odds": 20.42,
-          "hitChance": 0.0416,
+          "odds": 20.17,
+          "hitChance": 0.0412,
           "status": "pending",
           "won": 0,
           "lost": 0,
@@ -425,12 +425,12 @@
               }
             },
             {
-              "pick": "Jayson Tatum Under 0.5 Blk",
+              "pick": "Cade Cunningham Under 2.5 3PM",
               "game": "BOS @ DET",
-              "market": "Blk",
+              "market": "3PM",
               "kind": "prop",
-              "price": -193,
-              "hitProb": 0.635,
+              "price": -200,
+              "hitProb": 0.629,
               "lowered": false,
               "result": {
                 "status": "pending"

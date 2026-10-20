@@ -1,0 +1,885 @@
+{
+  "weekStart": "2026-10-13",
+  "checkedAt": "2026-10-19T13:00:09.016Z",
+  "sources": {
+    "ProFootballTalk": 30,
+    "CBS Sports": 36,
+    "Yahoo Sports": 50,
+    "RotoWire": 5,
+    "ESPN News": 50,
+    "ESPN Player News": 227
+  },
+  "watched": 38,
+  "players": [
+    {
+      "id": "00-0035717",
+      "name": "Nick Bosa",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Bosa (knee/calf) has been ruled out for Monday's Week 6 matchup against the Commanders, Cam Inman of The San Jose Mercury News reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Bosa (knee/calf) has been ruled out for Monday's Week 6 matchup against the Commanders, Cam Inman of The San Jose Mercury News reports.",
+          "text": "Though the decision was made not to put Bosa on IR, he's now set to miss his fourth straight game. Head coach Kyle Shanahan said early this week that the veteran edge rusher had a chance to play against Washington, but Bosa didn't end up practicing at all. While it's not out of the question that he could return Week 7 in Atlanta, it wouldn't be surprising if San Francisco opts to hold Bosa out for",
+          "link": null,
+          "published": "2026-10-18T02:19:35Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Bosa (knee/calf) was a non-participant at Thursday's practice, Matt Barrows of The Athletic reports.",
+          "text": "Despite having an extra day of rest between Week 5 action and the start of Week 6 prep, Bosa has yet to mix into drills since Week 2, missing the last three games in the process due to knee and calf injuries. If he isn't able to practice Friday and/or Saturday, he likely isn't a candidate to suit up Monday against the Commanders.",
+          "link": null,
+          "published": "2026-10-16T04:26:39Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Head coach Kyle Shanahan said Monday that Bosa (calf) \"has a chance\" to play against the Commanders next Monday night, David Lombardi of SFStandard.com reports.",
+          "text": "Bosa has missed the 49ers' last three games while tending to a calf injury. While he could return against Washington, Bosa's practice participation during Week 6 prep will ultimately determine whether he's cleared by medical staff to suit up. Mykel Williams and Romello Height will continue to get more reps at defensive end for as long as Bosa is sidelined.",
+          "link": null,
+          "published": "2026-10-12T22:15:07Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0034775",
+      "name": "Christian Kirk",
+      "team": "SF",
+      "kind": "offense",
+      "injuryStatus": "Questionable",
+      "verdict": "out",
+      "reason": "ESPN Player News: Kirk (calf) had his 21-day practice window opened Thursday.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Head coach Kyle Shanahan said Saturday that the 49ers may activate Kirk (calf) from injured reserve ahead of Monday's game against the Commanders, Nick Wagoner of ESPN.com reports.",
+          "text": "The 49ers officially listed Kirk as questionable for Week 6 after opening his practice window this week, which allowed him to log limited practices Thursday and Friday. Shanahan hinted Saturday that Kirk has a chance to make his 49ers debut Monday, and a call on that front could be contingent on the health of top wide receiver Mike Evans (ribs/Achilles). With Deebo Samuel (hamstring) sidelined for",
+          "link": null,
+          "published": "2026-10-17T21:02:38Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Kirk (calf) remained limited in Friday's practice, Harrison Rich of the San Francisco Chronicle reports.",
+          "text": "Kirk had his 21-day practice window opened Thursday, as he's eyeing a potential return from injured reserve Monday night against the Commanders. The 49ers will make a decision on his potential activation Saturday, so there will be a better idea of his Week 6 availability in the next 24 hours. Kirk's return would be a boost to an injury-ravaged San Francisco wideout room.",
+          "link": null,
+          "published": "2026-10-16T23:17:38Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Kirk (calf) was limited in his return to practice Thursday, Matt Barrows of The Athletic reports.",
+          "text": "The 49ers opened Kirk's practice window to return from injured reserve Thursday, which came only days after head coach Kyle Shanahan told Nick Wagoner of ESPN.com on Monday that the wide receiver was \"unlikely\" to practice this week. The team may have been spurred by the fact No. 1 WR Mike Evans is dealing with Achilles soreness in addition to sore ribs and Deebo Samuel's impending multi-week abse",
+          "link": null,
+          "published": "2026-10-15T22:46:01Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Kirk (calf) had his 21-day practice window opened Thursday.",
+          "text": "This is a mildly surprising move, as head coach Kyle Shanahan described Kirk on Monday as \"unlikely\" to resume practicing this week. Kirk was given a designation to return when he was initially placed on IR prior to the start of the regular season, so the plan has always been for the veteran wide receiver to make it back to action at some point during the season. His practice participation level w",
+          "link": null,
+          "published": "2026-10-15T19:39:24Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Head coach Kyle Shanahan said Monday that Kirk (calf) is \"unlikely\" to return to practice this week, Nick Wagoner of ESPN.com reports.",
+          "text": "The 49ers' wide receiver room is even more thin following the team's 32-29 win over the Seahawks on Sunday, when Deebo Samuel left the game due to a hamstring injury. Kirk opened the regular season on IR because of a calf issue that he sustained in late July, and while he has progressed in his recovery, he's not quite ready to return to practice. With both Samuel and Kirk sidelined, the 49ers will",
+          "link": null,
+          "published": "2026-10-12T21:48:24Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "team": "SF",
+      "kind": "offense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Head coach Kyle Shanahan said Thursday that the 49ers will \"hold off\" on placing Samuel (hamstring) on IR due to the team's bye in Week 8, Vic Tafur of the Athletic reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Head coach Kyle Shanahan said Thursday that the 49ers will \"hold off\" on placing Samuel (hamstring) on IR due to the team's bye in Week 8, Vic Tafur of the Athletic reports.",
+          "text": "It was reported earlier in the week that Samuel would miss multiple weeks; however, the 49ers are stopping short of placing him on injured reserve for the time being due to how the schedule sets up. Samuel is set to miss at least the Week 6 game against the Commanders and likely the following game against the Falcons before the team gets a bye. Week 9 seems to be the earliest potential return date",
+          "link": null,
+          "published": "2026-10-15T19:54:20Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "San Francisco head coach Kyle Shanahan said that Samuel strained his right hamstring \"pretty good\" during Sunday's 32-29 win over Seattle and is \"going to miss at least a couple weeks,\" David Lombardi of SFStandard.com reports.",
+          "text": "Samuel underwent an MRI on his hamstring following Sunday's game, and the results showed an injury significant enough for the veteran wide receiver to miss multiple weeks. Given the timeline laid out by Shanahan, Samuel looks set to sit out in Week 6 against the Commanders and Week 7 in Atlanta before potentially returning following the team's Week 8 bye. Shanahan indicated that Christian Kirk (ca",
+          "link": null,
+          "published": "2026-10-12T19:45:34Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Samuel is scheduled to undergo an MRI after exiting Sunday's 32-29 win over the Seahawks due to a hamstring injury, Ian Rapoport of NFL Network reports.",
+          "text": "Samuel sustained the injury with 5:06 remaining in the third quarter, when he was tripped up by a Seattle defender and landed awkwardly while fumbling the football as he fell to the ground. The upcoming MRI will shed more light on the severity of the hamstring issue, but Rapoport notes that the fact that the 49ers ruled Samuel out of Sunday's game immediately is a foreboding sign. If Samuel ends u",
+          "link": null,
+          "published": "2026-10-12T13:14:38Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0040185",
+      "name": "Marques Sigle",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Sigle (ankle) won't play in Monday's Week 6 matchup against Washington, Cam Inman of The San Jose Mercury News reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Sigle (ankle) won't play in Monday's Week 6 matchup against Washington, Cam Inman of The San Jose Mercury News reports.",
+          "text": "Sigle is dealing with a high-ankle sprain that he suffered Week 4 versus Denver. The second-year safety missed this past Sunday's win over Seattle and is now set to sit out a second straight game. In Sigle's absence, Malik Mustapha will likely draw another start.",
+          "link": null,
+          "published": "2026-10-18T02:23:07Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Sigle (ankle) didn't take part in Thursday's practice, Matt Barrows of The Athletic reports.",
+          "text": "After Sigle suffered a high-ankle sprain in Week 4, head coach Kyle Shanahan said that the second-year pro was slated to miss multiple weeks. With one absence under his belt so far and no practice reps to begin Week 6 prep, he appears to be trending toward another DNP on Monday versus the Commanders. The 49ers can confirm as much when they post their final injury report of the week Saturday.",
+          "link": null,
+          "published": "2026-10-16T04:32:01Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0036844",
+      "name": "Garret Wallow",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: San Francisco head coach Kyle Shanahan said Monday that Wallow will miss \"at least a couple of weeks\" due to a hamstring strain, Nick Wagoner of ESPN.com reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "San Francisco head coach Kyle Shanahan said Monday that Wallow will miss \"at least a couple of weeks\" due to a hamstring strain, Nick Wagoner of ESPN.com reports.",
+          "text": "Shanahan seemingly ruled out the reserve linebacker through the 49ers' Week 8 bye, with Wallow expected to sit out Week 6 versus the Commanders as well as Week 7 in Atlanta. Wallow has accrued seven tackles (five solo) this season while seeing the majority of his playing time on special teams.",
+          "link": null,
+          "published": "2026-10-12T21:19:28Z",
+          "signal": "out"
+        }
+      ]
+    },
+    {
+      "id": "00-0040242",
+      "name": "Jacory Croskey-Merritt",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+          "text": "Whom should you start? Whom should you sit? To help you set your fantasy football lineups and avoid starting an offensive player who won't be in the lineup, we'll post fantasy-relevant updates and analysis here as NFL teams release their official inactives lists. Official Sunday inactives should begin coming in approximately 90 minutes before the scheduled kickoff times: around 11:30 a.m. ET for t",
+          "link": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50188691/fantasy-football-injuries-nfl-week-6-inactive-active",
+          "published": "2026-10-18T19:30:26Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Croskey-Merritt (groin) has been ruled out for Monday night's game against the 49ers, Tashan Reed of The Washington Post reports.",
+          "text": "Croskey-Merritt was unable to practice all week due to a groin injury, and he's now been officially ruled out for Monday night's game. The statuses of Rachaad White (shoulder) and Austin Ekeler (chest) will be known once the Commanders announce their injury designations on Saturday's practice report. Washington is on a bye for Week 7, so Croskey-Merritt will have more time to recover from his inju",
+          "link": null,
+          "published": "2026-10-17T16:46:22Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Croskey-Merritt (groin) wasn't at Saturday's practice and will not likely be available for Monday night's game against the 49ers, Tashan Reed of The Washington Post reports.",
+          "text": "Croskey-Merritt will end up missing all three Week 6 practices while recovering from a groin injury, and it wouldn't be surprising to see him ruled out by the Commanders once the team submits its injury designations following Saturday's session. Rachaad White (shoulder) and Austin Ekeler (chest) are also both working through injuries, so the Commanders may have to dip into their practice squad and",
+          "link": null,
+          "published": "2026-10-17T15:24:45Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Croskey-Merritt (groin) didn't practice Friday.",
+          "text": "Croskey-Merritt has yet to practice this week due to a groin injury that also impacted his on-field work last week. He was able to suit up last Sunday versus the Giants, handling a 36 percent snap share and accounting for 82 yards and one touchdown on his 11 carries. Saturday's session likely will be key for Croskey-Merritt's odds to suit up Monday at San Francisco, but if he's inhibited or sideli",
+          "link": null,
+          "published": "2026-10-16T22:16:13Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Croskey-Merritt (groin) wasn't present for Friday's practice, Tashan Reed of The Washington Post reports.",
+          "text": "After sitting out Thursday's practice due to the groin issue, Croskey-Merritt isn't looking great for Monday's matchup with the 49ers. An absence would put Rachaad White and Austin Ekeler in larger roles, with RB Craig Reynolds also a candidate to take some snaps if he's called up from the practice squad.",
+          "link": null,
+          "published": "2026-10-16T17:02:48Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0039412",
+      "name": "Javontae Jean-Baptiste",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "Injury report: Out",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Jean-Baptiste (pectoral) will be sidelined for Monday's clash against the 49ers, Tashan Reed of The Washington Post reports.",
+          "text": "Jean-Baptiste didn't practice at all this week, so it's not a surprise that he won't play Monday. Per Reed, head coach Dan Quinn expects rookie Joshua Josephs to see more playing time Week 6, with both Jean-Baptiste and Charles Omenihu (groin/ankle) sidelined.",
+          "link": null,
+          "published": "2026-10-18T02:51:00Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0032268",
+      "name": "Marcus Mariota",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Mariota (knee) has been ruled out for Monday's game against the 49ers, Tashan Reed of The Washington Post reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Mariota (knee) has been ruled out for Monday's game against the 49ers, Tashan Reed of The Washington Post reports.",
+          "text": "As expected, Mariota will miss a second consecutive game due to a sprained MCL in his right knee, which he picked up during the Commanders' Week 4 loss to the Colts in London. Rookie seventh-rounder Athan Kaliakmanis will once again serve as Washington's backup quarterback behind Jayden Daniels for Monday night's game. The Commanders are on a bye for Week 7, so Mariota could be back in action for ",
+          "link": null,
+          "published": "2026-10-17T16:55:01Z",
+          "signal": "out"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Mariota (knee) did not participate at practice Thursday.",
+          "text": "Mariota was forced to miss the Commanders' contest versus the Giants in Week 5 after spraining his MCL in Week 4 versus the Colts, and now his availability for Monday's game at San Francisco is in doubt. Unless he's able to return to practice in some capacity Friday or Saturday, rookie seventh-rounder Athan Kaliakmanis projects to continue to operate as Jayden Daniels' primary backup in Week 6.",
+          "link": null,
+          "published": "2026-10-16T00:40:54Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0035279",
+      "name": "Charles Omenihu",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Out",
+      "verdict": "out",
+      "reason": "ESPN Player News: Omenihu (groin/ankle) has been ruled out for Monday's Week 6 matchup against San Francisco, Tashan Reed of The Washington Post reports.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Omenihu (groin/ankle) has been ruled out for Monday's Week 6 matchup against San Francisco, Tashan Reed of The Washington Post reports.",
+          "text": "This will be Omehihu's second straight absence after he was injured early against Indianapolis in Week 4. The Commanders are on bye next week, so the veteran defensive end will look to return in Week 8 against Philadelphia. Javon Kinlaw (ankle/knee) is questionable for Monday's contest, so Washington may need to lean more on Shy Tuttle and/or Deatrich Wise.",
+          "link": null,
+          "published": "2026-10-18T02:46:09Z",
+          "signal": "out"
+        }
+      ]
+    },
+    {
+      "id": "00-0041052",
+      "name": "Kaelon Black",
+      "team": "SF",
+      "kind": "offense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Black was excused from Saturday's practice to address a personal matter but does not have an injury designation for Monday's Week 6 matchup against Washington, Nick Wagoner of ESPN.com reports.",
+          "text": "Since Black wasn't given an injury designation, his absence from practice Saturday isn't expected to impact his availability Monday. The rookie should thus continue to work as the 49ers' No.2 running back behind Christian McCaffrey. That role hasn't yielded much fruit for Black of late, however, as he's totaled fewer than 20 yards in each of his past three contests.",
+          "link": null,
+          "published": "2026-10-17T21:51:08Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Yes, it's OK to drop these underperformers from your fantasy football team",
+          "text": "Perhaps you are aware that ESPN Fantasy delivers a rather extensive look at the top free agent players to add to your myriad football teams each and every Monday. I don't know the goofy fellow who writes it, but rumor is he looks quite like this . Regardless, the column analyzes players that tend to be in higher demand than the week prior, are available in at least 50% of ESPN leagues and are gene",
+          "link": "https://www.espn.com/fantasy/football/story/_/id/50175469/fantasy-football-players-drop",
+          "published": "2026-10-13T19:41:16Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "team": "SF",
+      "kind": "offense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "ESPN Player News: Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+          "text": "Whom should you start? Whom should you sit? To help you set your fantasy football lineups and avoid starting an offensive player who won't be in the lineup, we'll post fantasy-relevant updates and analysis here as NFL teams release their official inactives lists. Official Sunday inactives should begin coming in approximately 90 minutes before the scheduled kickoff times: around 11:30 a.m. ET for t",
+          "link": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50188691/fantasy-football-injuries-nfl-week-6-inactive-active",
+          "published": "2026-10-18T19:30:26Z",
+          "signal": "uncertain"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Evans (ribs) is listed as questionable for Monday's game against Washington, Vic Tafur of The Athletic reports.",
+          "text": "Evans worked to the side during each of the 49ers' last two practices while nursing injuries to his ribs and Achilles. That was enough for him to draw the questionable tag for MNF, and there's also a chance that Christian Kirk (calf) will be activated from injured reserve before the game, per Nick Wagoner of ESPN.com. Deebo Samuel (hamstring) has already been ruled out, so Brandin Cooks, Jacob Cow",
+          "link": null,
+          "published": "2026-10-17T20:58:11Z",
+          "signal": "uncertain"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Evans (ribs/Achilles) was working off to the side during the opening portion of Saturday's practice, Nick Wagoner of ESPN.com reports.",
+          "text": "Evans been working to side for each of the 49ers' last two practices while recovering from rib and Achilles injuries, the latter of which is a new issue for the veteran wide receiver. The 49ers will announce injury designations following Saturday's practice, at which point Evans' status for Monday night's game against the Commanders will be more clear. Deebo Samuel (hamstring) has already been rul",
+          "link": null,
+          "published": "2026-10-17T19:52:11Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Evans (ribs/Achilles) was a non-participant at Friday's practice, Harrison Rich of the San Francisco Chronicle reports.",
+          "text": "Evans was spotted working on the side at the start of Friday's session, but with no activity for a second day in a row, he now has just one more chance to mix into drills Saturday before the 49ers potentially tag him with a designation ahead of Monday's game against the Commanders. There's more cause for concern this week due to the 49ers adding 'Achilles' next to his name on the injury report, an",
+          "link": null,
+          "published": "2026-10-16T22:32:58Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Evans (ribs/Achilles) was working on the side during the open portion of Friday's practice, Nick Wagoner of ESPN.com reports.",
+          "text": "In addition to Evans' existing rib injury, the 49ers tacked on Achilles on Thursday, calling Evans a non-participant with head coach Kyle Shanahan terming it soreness, per Wagoner. It's unclear if Evans will do enough Friday to warrant an upgrade to limited, but the team's ensuing practice report will reveal as much.",
+          "link": null,
+          "published": "2026-10-16T20:29:29Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0041557",
+      "name": "Gracen Halton",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0041556",
+      "name": "Romello Height",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": []
+    },
+    {
+      "id": "00-0034391",
+      "name": "Siran Neal",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0040152",
+      "name": "Upton Stout",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "ESPN Player News: Stout (shoulder) is questionable for Monday night's game against the Commanders.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Stout (shoulder) is questionable for Monday night's game against the Commanders.",
+          "text": "Stout was limited in practice all week after he initially injured the shoulder in Week 4 against the Broncos. He's yet to miss a game this season. Across five appearances, the cornerback has 16 tackles (nine solo), including 0.5 sacks, and one pass breakup.",
+          "link": null,
+          "published": "2026-10-18T02:38:17Z",
+          "signal": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "00-0040660",
+      "name": "Mykel Williams",
+      "team": "SF",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "ESPN Player News: Williams (knee) is questionable for Monday night's game against the Commanders.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Williams (knee) is questionable for Monday night's game against the Commanders.",
+          "text": "Williams made his season debut last Sunday against the Seahawks, recording a pair of tackles (one solo) on 36.5 percent of the defensive snaps. Working his way back to full strength off last season's torn ACL, Williams' role should continue to slowly grow over the next several weeks.",
+          "link": null,
+          "published": "2026-10-18T02:40:22Z",
+          "signal": "uncertain"
+        }
+      ]
+    },
+    {
+      "id": "00-0040731",
+      "name": "Trey Amos",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0037742",
+      "name": "Treylon Burks",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Burks (shoulder) doesn't have a designation for Monday's game in San Francisco.",
+          "text": "Burks practiced in a limited capacity during the entirety of Week 6 prep due to a shoulder issue, but it won't stop him from being available Monday. Fellow WR Stefon Diggs (hamstring) is listed as questionable, and if he's inhibited or sidelined this week, Burks will stand to benefit in the Commanders' passing game. In four contests this season, Burks has notched five catches (on 11 targets) for 8",
+          "link": null,
+          "published": "2026-10-17T19:38:44Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Burks (shoulder) remained limited in Friday's practice.",
+          "text": "Stefon Diggs (hamstring) upgraded to limited after being DNP on Thursday, and Terry McLaurin got a veteran's rest day after returning from his hamstring injury last Sunday. Burks caught two of five targets for 26 yards in last Sunday's 27-27 tie with the Giants.",
+          "link": null,
+          "published": "2026-10-16T23:15:30Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Burks was limited at Thursday's practice due to a shoulder injury.",
+          "text": "After being a healthy scratch in Week 1, Burks has been active and increased his snap share in each of the ensuing four contests, a span in which he combined for a 5-86-2 line on 11 targets. While Burks and No. 1 WR Terry McLaurin (hamstring) both opened Week 6 prep with capped sessions, Stefon Diggs (hamstring) was held out entirely Thursday. If Diggs requires another absence Monday at San Franci",
+          "link": null,
+          "published": "2026-10-15T22:27:55Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Burks caught two passes on five targets for 16 yards during Sunday's 27-27 tie with the Giants.",
+          "text": "Burks saw a season-high five targets during Sunday's game, which was second-most on the Commanders behind Chig Okonkwo (six). Burks only logged two catches, but his season was a 13-yard pass late in overtime that set the Commanders up well within field-goal range, only for Jayden Daniels to mismanage the clock to end the game on a tie. Burks has a 5-86-2 receiving line on 10 targets over his last ",
+          "link": null,
+          "published": "2026-10-14T00:44:20Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0038100",
+      "name": "Percy Butler",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0037616",
+      "name": "Nick Cross",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Cross (illness) will be a full participant in practices ahead of Monday's game against the 49ers, Tashan Reed of The Washington Post reports.",
+          "text": "Cross was battling an illness, keeping him off the field for the Commanders' last three games. However, he is good to go in Week 6 versus San Francisco, likely resulting in fewer snaps for Quan Martin.",
+          "link": null,
+          "published": "2026-10-15T22:47:00Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0031588",
+      "name": "Stefon Diggs",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "ESPN Player News: Diggs (hamstring) is listed as questionable for Monday's game against San Francisco.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+          "text": "Whom should you start? Whom should you sit? To help you set your fantasy football lineups and avoid starting an offensive player who won't be in the lineup, we'll post fantasy-relevant updates and analysis here as NFL teams release their official inactives lists. Official Sunday inactives should begin coming in approximately 90 minutes before the scheduled kickoff times: around 11:30 a.m. ET for t",
+          "link": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50188691/fantasy-football-injuries-nfl-week-6-inactive-active",
+          "published": "2026-10-18T19:30:26Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Diggs (hamstring) is listed as questionable for Monday's game against San Francisco.",
+          "text": "Diggs ended the week with back-to-back limited practices, which was enough for him to draw the questionable tag for Monday Night Football. Diggs did not play in Week 5 against the Giants, but if he's cleared to play against the 49ers, then it would be the first time that he, Terry McLaurin and Jayden Daniels are on the field together since Week 2 against the Cowboys. If Diggs does not play, then A",
+          "link": null,
+          "published": "2026-10-17T19:24:03Z",
+          "signal": "uncertain"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Diggs (hamstring) was on the field for Saturday's practice session, Jonah Keim of ESPN.com reports.",
+          "text": "Diggs is on the practice field for a second consecutive day. He was unable to play against the Giants in Week 5 due to a hamstring injury, and his official status for Monday night's game against the 49ers will be more clear once the Commanders announce their injury designations after Saturday's practice.",
+          "link": null,
+          "published": "2026-10-17T15:37:10Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Diggs (hamstring) was limited at Friday's practice.",
+          "text": "This marks Diggs' first notable on-field work since Week 4 prep as he deals with a hamstring injury, which held him out of a Week 5 tie with the Giants. Both Diggs and No. 1 WR Terry McLaurin (hamstring), who was given a veteran's rest day Friday, are tending to health concerns at the moment, and Saturday's practice likely will be key to determine if either of them get designations for Monday's ga",
+          "link": null,
+          "published": "2026-10-16T22:21:51Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Diggs (hamstring) was going through stretching at Friday's practice, John Keim of ESPN.com reports.",
+          "text": "After sitting out Thursday's practice, Diggs is showing at least modest signs of progress ahead of a Monday matchup with the 49ers. He missed last week's game against the Giants, while Terry McLaurin returned from a hamstring injury of his own.",
+          "link": null,
+          "published": "2026-10-16T17:00:40Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0033699",
+      "name": "Austin Ekeler",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Ekeler (chest) does not carry an injury designation into Monday's game against the 49ers.",
+          "text": "Ekeler was limited in practice all week due to a chest injury, but he's done enough to fade an injury tag for Monday Night Football. With Jacory Croskey-Merritt (groin) already ruled out, Ekeler and Rachaad White are both expected to lead the Commanders' backfield for Week 6 against a 49ers defense that has given up only three rushing touchdowns across five regular-season games.",
+          "link": null,
+          "published": "2026-10-17T19:36:59Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Ekeler (chest) remained limited in Friday's practice.",
+          "text": "The Commanders are dealing with injuries throughout the backfield, as Jacory Croskey-Merritt (foot) was DNP for a second straight day while Rachaad White continues to work back to 100 percent from his shoulder injury. Jeremy McNichols (quadriceps) also remains on injured reserve, though he's practicing fully this week. In two games back with Washington, Ekeler has rushed seven times for 28 yards, ",
+          "link": null,
+          "published": "2026-10-16T23:13:06Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Ekeler was a limited practice participant Thursday due to a chest injury.",
+          "text": "Among those in the Commanders backfield, Jacory Croskey-Merritt (groin) didn't practice to begin Week 6 prep, Ekeler endured practice restrictions, and Jeremy McNichols (quadriceps, IR) was full, leaving just Rachaad White as a healthy body on the active roster. Since re-signing with Washington in late September, Ekeler has received nine touches across two games, which he turned into 54 yards from",
+          "link": null,
+          "published": "2026-10-15T22:38:21Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0036260",
+      "name": "Javon Kinlaw",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0039368",
+      "name": "Jordan Magee",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Magee (hamstring) was designated to return from injured reserve Thursday.",
+          "text": "Magee suffered a hamstring injury in the Week 1 loss to Philadelphia. As a result, he was placed on injured reserve and missed the last four contests. Magee can be activated any time in the next 21 days, meaning there's a chance he will suit up Monday night against the 49ers.",
+          "link": null,
+          "published": "2026-10-15T22:38:55Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0035659",
+      "name": "Terry McLaurin",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Fantasy football Week 6 inactives: Jeremiyah Love, DJ Moore out",
+          "text": "Whom should you start? Whom should you sit? To help you set your fantasy football lineups and avoid starting an offensive player who won't be in the lineup, we'll post fantasy-relevant updates and analysis here as NFL teams release their official inactives lists. Official Sunday inactives should begin coming in approximately 90 minutes before the scheduled kickoff times: around 11:30 a.m. ET for t",
+          "link": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50188691/fantasy-football-injuries-nfl-week-6-inactive-active",
+          "published": "2026-10-18T19:30:26Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "McLaurin (hamstring) does not have an injury designation ahead of Monday's game against the 49ers.",
+          "text": "McLaurin logged an LP-DNP-LP practice log while tending to a lingering hamstring injury, but he has been given the green light to play in Monday night's game. The Commanders could also have Stefon Diggs (hamstring) back in action, and in that case, Washington would have McLaurin, Diggs and Jayden Daniels share the field for the first time since Week 2 against the Cowboys. McLaurin has a 14-203-1 r",
+          "link": null,
+          "published": "2026-10-17T19:19:01Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "McLaurin (hamstring) was on the field for Saturday's practice session, Jonah Keim of ESPN.com reports.",
+          "text": "McLaurin was back on the practice field after sitting out of Friday's session for a veteran rest day. His status for Monday's game against the 49ers should be more clear once the Commanders announce their injury designations following Saturday's practice.",
+          "link": null,
+          "published": "2026-10-17T15:33:40Z",
+          "signal": "practice"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "McLaurin is getting a veteran rest day Friday, John Keim of ESPN.com reports.",
+          "text": "McLaurin returned from a hamstring injury for last week's 27-27 tie with the Giants. He was a limited participant this Thursday, listed with the hamstring injury again, but his absence Friday is apparently about maintenance/rest, not a result of any concern or setback related to his hamstring. Washington's final injury report will come out Saturday, ahead of a Monday night road matchup with San Fr",
+          "link": null,
+          "published": "2026-10-16T16:58:09Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "McLaurin (hamstring) practiced in a limited capacity Thursday.",
+          "text": "McLaurin sat out the Commanders' Week 4 matchup with the Colts in London due to a hamstring injury, which capped him to one limited practice during Week 5 prep. He was able to play this past Sunday against the Giants, when he handled a 57 percent snap share and gathered in all four targets for 62 yards. With a capped session already to begin this week, McLaurin appears to be in a better spot, heal",
+          "link": null,
+          "published": "2026-10-15T22:18:54Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0033955",
+      "name": "Jeremy McNichols",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "ESPN Player News: McNichols (quadriceps) is questionable for Monday night's game against the 49ers.",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "McNichols (quadriceps) is questionable for Monday night's game against the 49ers.",
+          "text": "McNichols was a full practice participant this week but remains on injured reserve, though the Commanders could still choose to activate him ahead of Monday night's contest. With Jacory Croskey-Merritt (foot) out, the Commanders could use McNichols as depth alongside Rachaad White and Austin Ekeler.",
+          "link": null,
+          "published": "2026-10-18T01:45:09Z",
+          "signal": "uncertain"
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "McNichols (quadriceps) was a full participant in Friday's practice.",
+          "text": "McNichols has opened Week 6 prep with back-to-back full practices, which indicates that the veteran running back is in the final stages of his recovery from a quad injury that caused him to open the regular season on injured reserve. He would need to be activated from IR in order to be eligible to play against the 49ers on Monday. McNichols' return could be a crucial one for the Commanders, whose ",
+          "link": null,
+          "published": "2026-10-17T03:00:40Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0033918",
+      "name": "Fabian Moreau",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": []
+    },
+    {
+      "id": "00-0039681",
+      "name": "Tyler Owens",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Questionable",
+      "verdict": "monitor",
+      "reason": "Injury report: Questionable",
+      "items": []
+    },
+    {
+      "id": "00-0034465",
+      "name": "Jeremy Reaves",
+      "team": "WAS",
+      "kind": "defense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Reaves (rib) doesn't carry an injury designation into Monday night's game against the 49ers.",
+          "text": "Reaves was limited in practice all week but is good to go versus San Francisco. He's also dealt with a finger injury lately but has yet to miss a game this season. Reaves has recorded 34 tackles (20 solo) and a pair of pass breakups on 92.5 percent of the defensive snaps through five games.",
+          "link": null,
+          "published": "2026-10-18T01:36:58Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0037256",
+      "name": "Rachaad White",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": "Day-To-Day",
+      "verdict": "monitor",
+      "reason": "Injury report: Day-To-Day",
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "White (shoulder) doesn't have a designation for Monday's game at San Francisco.",
+          "text": "Despite ending Week 6 prep with back-to-back limited practices due to a shoulder injury, White will be available to the Commanders backfield Monday along with Austin Ekeler (chest). With Jacory Croskey-Merritt (groin) ruled out, White and Ekeler are the candidates to lead Washington's backfield this week. On the season, White had 39 touches for 171 yards from scrimmage and one receiving TD in four",
+          "link": null,
+          "published": "2026-10-17T19:29:41Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "White practiced in a limited capacity Friday due to a shoulder injury.",
+          "text": "White's downgrade from Thursday's full listing may be due to maintenance of the shoulder issue that sidelined him Week 4 against the Colts, but his status now bears monitoring to get a sense of his chances to play Monday at San Francisco, especially with Jacory Croskey-Merritt (groin) not practicing this week. In the event Croskey-Merritt is inhibited or out in Week 6, White and Austin Ekeler (che",
+          "link": null,
+          "published": "2026-10-16T22:26:14Z",
+          "signal": "practice"
+        }
+      ]
+    },
+    {
+      "id": "00-0037834",
+      "name": "Brock Purdy",
+      "team": "SF",
+      "kind": "offense",
+      "injuryStatus": null,
+      "verdict": "clear",
+      "reason": null,
+      "items": [
+        {
+          "source": "ESPN News",
+          "title": "How 49ers QB Brock Purdy mastered the art of layering passes over defenders",
+          "text": "Purdy is terrific at layering the football -- fitting it perfectly between the second and third levels of the defense. And it's a big reason why he's playing at an MVP level this season.",
+          "link": "https://www.espn.com/nfl/story/_/id/50189530/san-francisco-49ers-brock-purdy-layering-football",
+          "published": "2026-10-19T10:00:01Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Fantasy football 'believe it or not': How to value four star-caliber players",
+          "text": "There are always narratives in fantasy football . Some good, some bad. And the noise around these narratives can get pretty loud after a breakout game or when a player is going through a slump. But what can we believe, and in whom can we really trust? Below are statements about four players currently delivering different levels of production. I will provide a verdict -- believe it or don't believe",
+          "link": "https://www.espn.com/fantasy/football/story/_/id/50181276/fantasy-football-trade-value-breakout-bust",
+          "published": "2026-10-15T17:17:39Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0039910",
+      "name": "Jayden Daniels",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": null,
+      "verdict": "clear",
+      "reason": null,
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Facts vs. Feelings: Out of Love with Jeremiyah, but another Cardinal looms",
+          "text": "\"I took your advice,\" he said pointedly. \"Oh ...\" I held my breath, hoping that either his bench hadn't been lit up by Kyle Pitts Sr ., or that his lineup hadn't absorbed Carnell Tate 's implosion. He nodded, letting a heavy pause hang between us, offering nothing but an ambiguous smirk. Desperate to fill the expectant silence, I stammered, \"So then you streamed Jacoby Brissett ? Made an anytime T",
+          "link": "https://www.espn.com/fantasy/football/story/_/id/50181259/facts-vs-feelings-fantasy-advice-week-6",
+          "published": "2026-10-15T21:02:33Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Rest-of-season rankings: Packers WRs rise",
+          "text": "Each week, Eric Karabell ranks players by position based on their fantasy football value for the rest of the 2026 season. Use the information to optimize the players for their future potential and/or to gauge their value in trade. Eric's top 100 can be found below the positions in this column. Quarterback Rankings changes: The top five remain the same, but noteworthy Week 5 performances by Jayden ",
+          "link": "https://www.espn.com/fantasy/football/story/_/id/49949224/fantasy-football-2026-updated-rest-season-rankings",
+          "published": "2026-10-15T17:47:58Z",
+          "signal": null
+        },
+        {
+          "source": "ESPN Player News",
+          "title": "Week 5 winners and losers: Maye, Warren, Gibbs dominate; Taylor, Brown struggle",
+          "text": "Week 5 of the 2026 fantasy football season featured massive games by Drake Maye , Jaylen Warren and Jahmyr Gibbs . On the flip side, Jonathan Taylor and Chase Brown had disappointing outings. Who were the big winners and losers around the league during the fifth week of the fantasy football season? Matt Bowen and Tristan H. Cockcroft offer their analysis. Jump to a topic: Ranking winners | Ranking",
+          "link": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50160964/nfl-week-5-fantasy-football-winners-losers-injuries-rankings-more",
+          "published": "2026-10-12T15:42:27Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": null,
+      "verdict": "clear",
+      "reason": null,
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Okonkwo caught four of six targets for 60 yards during Sunday's 27-27 tie against the Giants.",
+          "text": "Okonkwo had his most productive day of the year, finishing tied for the team lead in receptions with wide receiver Terry McLaurin, while his six targets led the way for Washington. The tight end now has caught eight of 13 targets for 81 yards over three contests this season, and he'll look to continue building chemistry with starting quarterback Jayden Daniels moving forward.",
+          "link": null,
+          "published": "2026-10-13T00:41:54Z",
+          "signal": null
+        }
+      ]
+    },
+    {
+      "id": "00-0041040",
+      "name": "Antonio Williams",
+      "team": "WAS",
+      "kind": "offense",
+      "injuryStatus": null,
+      "verdict": "clear",
+      "reason": null,
+      "items": [
+        {
+          "source": "ESPN Player News",
+          "title": "Williams hauled in all three of his targets for 31 yards and added a two-yard punt return during the Commanders' 27-27 tie with the Giants on Sunday.",
+          "text": "Williams didn't see a target from Jayden Daniels until early in the third quarter, when the duo connected on a 17-yard pass on the first of a five-play drive that ended with a 38-yard rushing touchdown by Daniels. Williams finished third on the Commanders in both receptions and receiving yards behind Terry McLaurin and Chig Okonkwo, and the rookie wideout has a 15-155-1 receiving line on 22 target",
+          "link": null,
+          "published": "2026-10-14T00:36:24Z",
+          "signal": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+<title>Week 6 Picks</title>
+<style>
+/* Layout: one narrow reading column, phone first; games in kickoff order, injuries up top. */
+:root{
+  --bg:#f3f5f2; --card:#ffffff; --ink:#15211b; --muted:#5d6b63; --line:#dbe2dc;
+  --accent:#1f6f4a; --accent-soft:#e3f1e8; --warn:#9a5a00; --warn-soft:#fff3dc; --bad:#a1281e; --bad-soft:#fde8e5;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Source Sans 3",system-ui,-apple-system,Segoe UI,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1512; --card:#17201b; --ink:#e7eee9; --muted:#9aaba1; --line:#2a3630;
+  --accent:#5fc792; --accent-soft:#183326; --warn:#f0b35a; --warn-soft:#3a2a10; --bad:#f08a7e; --bad-soft:#3a1a16; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1512; --card:#17201b; --ink:#e7eee9; --muted:#9aaba1; --line:#2a3630;
+  --accent:#5fc792; --accent-soft:#183326; --warn:#f0b35a; --warn-soft:#3a2a10; --bad:#f08a7e; --bad-soft:#3a1a16; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:2.4rem;line-height:1}
+h2{font-size:1.5rem;text-transform:uppercase;letter-spacing:.04em}
+h3{font-size:1.35rem}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.meta{color:var(--muted);font-size:.85rem}
+section{display:grid;gap:12px;min-width:0}
+.rules{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:6px}
+.rules li{margin-left:1.1em}
+.rules ul{margin:0;padding:0;display:grid;gap:4px}
+.list{list-style:none;margin:0;padding:0;display:grid;border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden}
+.list>li{padding:10px 14px;border-top:1px solid var(--line);display:grid;gap:2px;min-width:0}
+.list>li:first-child{border-top:0}
+.row{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.row .who{font-weight:600}
+.odds,.hit{font-family:var(--mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.hit{margin-left:auto;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:1px 7px;border-radius:999px}
+.small{font-size:.8rem;color:var(--muted)}
+.flags{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.flags li{font-size:.74rem;padding:1px 8px;border-radius:999px}
+.f-high{background:var(--bad-soft);color:var(--bad);font-weight:600}
+.f-mid{background:var(--warn-soft);color:var(--warn)}
+.f-low{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.game{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.kick{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.names{display:block;font-family:var(--body);font-size:.8rem;color:var(--muted);font-weight:400;letter-spacing:0}
+.line{font-size:.82rem;color:var(--muted)}
+.take{margin:0;font-weight:600}
+.plays{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.play{border-top:1px dashed var(--line);padding-top:8px;min-width:0}
+.play-main{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.play-label{font-weight:600}
+.play-sub{font-size:.78rem;color:var(--muted)}
+.outs{margin:0;font-size:.8rem;color:var(--muted)}
+.inj-game{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;display:grid;gap:4px}
+.inj-game h4{margin:0;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.inj{display:flex;gap:6px;flex-wrap:wrap;font-size:.86rem}
+.tag{font-size:.7rem;font-weight:700;border-radius:4px;padding:0 5px;text-transform:uppercase;letter-spacing:.04em}
+.tag.dnp{background:var(--bad-soft);color:var(--bad)}
+.tag.ltd{background:var(--warn-soft);color:var(--warn)}
+.ticket{margin:0;padding-block:10px;padding-left:2em;padding-right:14px;display:grid;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.ticket li{min-width:0}
+.tag.team{background:var(--accent-soft);color:var(--accent)}
+.tag.player{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.odds-box{display:flex;flex-wrap:wrap;gap:12px}
+.odds-box>div{flex:1 1 10rem;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.big{font-family:var(--display);font-size:1.7rem;line-height:1.1}
+.alt-ticket{display:grid;gap:8px}
+.alt-ticket summary{cursor:pointer;padding-block:8px}
+.callout{background:var(--warn-soft);color:var(--ink);border-radius:14px;padding:12px 16px;display:grid;gap:6px}
+.callout b{color:var(--warn)}
+nav.jump{display:flex;flex-wrap:wrap;gap:6px}
+nav.jump a{font-size:.78rem;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 10px;background:var(--card)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:8px 12px;border-bottom:1px solid var(--line)}
+td{padding:8px 12px;border-top:1px solid var(--line)}
+tr:first-child td{border-top:0}
+tr.pick td{background:var(--accent-soft)}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+h3{font-size:1.15rem}
+h4.sub{margin:4px 0 0;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<div class="wrap">
+  <header style="display:grid;gap:6px">
+    <div class="eyebrow">Betting Lab · NFL Week 6</div>
+    <h1>Week 6 Picks</h1>
+    <div class="meta">Updated Thu, Oct 15, 5:14 PM ET. Thursday night is complete. Sunday and Monday player props fill in after Saturday's 6 PM FanDuel pull; until then those games show game bets, prospects on estimated lines, and injuries.</div>
+    <nav class="jump"><a href="#tnf">Thursday night</a><a href="#qbs">QB watch</a><a href="#sunday">Sunday + Monday</a><a href="#injuries">Injury watch</a></nav>
+  </header>
+  <section id="tnf">
+  <h2>Thursday night: SEA @ DEN</h2>
+  <div class="meta">Thu 8:15 PM ET · FanDuel SEA -2.5, total 40.5 · our model DEN 24.1, SEA 23.0</div>
+  <div class="callout"><b>Our take:</b> pass on the moneyline, spread and total. Our model likes the Over 40.5 (69%) and the Broncos +2.5 (61%), but FanDuel disagrees by 11–18 points. After last week's lessons, a gap that big means we sit out rather than trust the model. The QBs are set: Sam Darnold and Bo Nix.</div>
+  <div class="tbl"><table><thead><tr><th>Bet</th><th>FanDuel</th><th>Our model</th><th>FanDuel says</th><th>Blended</th></tr></thead><tbody><tr><td>Over 40.5</td><td class="num">-115</td><td class="num">69%</td><td class="num">51%</td><td class="num"><b>58%</b></td></tr><tr><td>DEN ML</td><td class="num">+120</td><td class="num">54%</td><td class="num">44%</td><td class="num"><b>48%</b></td></tr><tr><td>DEN +2.5</td><td class="num">-110</td><td class="num">61%</td><td class="num">50%</td><td class="num"><b>55%</b></td></tr><tr><td>SEA ML</td><td class="num">-142</td><td class="num">46%</td><td class="num">56%</td><td class="num"><b>52%</b></td></tr><tr><td>SEA -2.5</td><td class="num">-110</td><td class="num">39%</td><td class="num">50%</td><td class="num"><b>46%</b></td></tr><tr><td>Under 40.5</td><td class="num">-105</td><td class="num">31%</td><td class="num">49%</td><td class="num"><b>42%</b></td></tr></tbody></table></div>
+  <h3>Best player props (55%+ at FanDuel's price)</h3>
+  <ul class="list"><li><div class="row"><span class="who">Lil'Jordan Humphrey Over 0.5 Receptions</span><span class="odds">-144</span><span class="hit">60%</span></div><div class="small">Receptions · projection 1.6</div></li><li><div class="row"><span class="who">Jaylen Waddle Under 4.5 Receptions</span><span class="odds">-140</span><span class="hit">58%</span></div><div class="small">Receptions · projection 4</div></li><li><div class="row"><span class="who">Tory Horton Over 0.5 Receptions</span><span class="odds">-120</span><span class="hit">57%</span></div><div class="small">Receptions · projection 1.2</div></li><li><div class="row"><span class="who">Emanuel Wilson Under 66.5 Rush Yds</span><span class="odds">-113</span><span class="hit">56%</span></div><div class="small">Rush Yds · projection 54.9</div></li><li><div class="row"><span class="who">Jaylen Waddle Under 46.5 Rec Yds</span><span class="odds">-113</span><span class="hit">55%</span></div><div class="small">Rec Yds · projection 41.5</div></li><li><div class="row"><span class="who">Courtland Sutton Under 31.5 Rec Yds</span><span class="odds">-113</span><span class="hit">55%</span></div><div class="small">Rec Yds · projection 28.8</div></li></ul>
+  <p class="small" style="margin:0">Careful with the two "1+ catch" picks (Lil'Jordan Humphrey, Tory Horton): both are low-volume receivers, and Horton caught a pass in only 2 of his 4 games. The Jaylen Waddle and Courtland Sutton unders are the steadier plays: Waddle has gone under 6 catches in 4 of 5 games since joining Denver.</p>
+  <h3>Lowered lines worth a look</h3>
+  <p class="small" style="margin:0">FanDuel's alternate prices weren't pulled for this game (saving credits), so check each against the "worth it at" price in the app.</p>
+  <ul class="list"><li><div class="row"><span class="who">DEN Over 9.5 team total</span><span class="tag team">Team</span><span class="hit">88%</span></div><div class="small">worth it at -753 or better · our model 94%</div></li><li><div class="row"><span class="who">Game total Over 28.5</span><span class="tag team">Team</span><span class="hit">86%</span></div><div class="small">worth it at -606 or better · our model 92%</div></li><li><div class="row"><span class="who">SEA Over 12.5 team total</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">worth it at -550 or better · our model 87%</div></li><li><div class="row"><span class="who">George Holani Over 0.5 Receptions</span><span class="tag player">Player</span><span class="hit">82%</span></div><div class="small">worth it at -445 or better · did it 4/5 games</div></li></ul>
+  <h3>More options for a parlay</h3>
+  <p class="small" style="margin:0">Not picks on their own: each is about a coin flip or better at a fair price, so they're reasonable to add to a parlay but not to bet alone. Left out: low-usage receivers whose season record doesn't back an over (Tory Horton, Rashid Shaheed, Lil'Jordan Humphrey).</p>
+  <h4 class="sub">Game bets that just missed</h4><ul class="list"><li><div class="row"><span class="who">Over 40.5</span><span class="odds">-115</span><span class="hit">58%</span></div><div class="small">our model 69% vs FanDuel 51%: big gap, so not a single</div></li><li><div class="row"><span class="who">DEN +2.5</span><span class="odds">-110</span><span class="hit">55%</span></div><div class="small">our model 61%</div></li></ul>
+  <h4 class="sub">Player props, slightly better than a coin flip</h4><ul class="list"><li><div class="row"><span class="who">Courtland Sutton Under 3.5 Receptions</span><span class="odds">-166</span><span class="hit">61%</span></div><div class="small">projection 2.9</div></li><li><div class="row"><span class="who">Troy Franklin Under 17.5 Rec Yds</span><span class="odds">-113</span><span class="hit">55%</span></div><div class="small">projection 16.7</div></li><li><div class="row"><span class="who">Cooper Kupp Over 21.5 Rec Yds</span><span class="odds">-113</span><span class="hit">54%</span></div><div class="small">projection 32.9</div></li><li><div class="row"><span class="who">RJ Harvey Over 3.5 Receptions</span><span class="odds">-108</span><span class="hit">54%</span></div><div class="small">projection 4.5</div></li><li><div class="row"><span class="who">Jaxon Smith-Njigba Over 93.5 Rec Yds</span><span class="odds">-113</span><span class="hit">54%</span></div><div class="small">projection 120.1</div></li><li><div class="row"><span class="who">Bo Nix Under 197.5 Pass Yds</span><span class="odds">-113</span><span class="hit">54%</span></div><div class="small">projection 183.6</div></li><li><div class="row"><span class="who">Bo Nix Under 13.5 Rush Yds</span><span class="odds">-113</span><span class="hit">53%</span></div><div class="small">projection 13.2</div></li><li><div class="row"><span class="who">Elijah Arroyo Over 3.5 Rec Yds</span><span class="odds">-113</span><span class="hit">53%</span></div><div class="small">projection 7.2</div></li><li><div class="row"><span class="who">Sam Darnold Over 5.5 Rush Yds</span><span class="odds">-113</span><span class="hit">52%</span></div><div class="small">projection 8.6</div></li><li><div class="row"><span class="who">Sam Darnold Under 226.5 Pass Yds</span><span class="odds">-113</span><span class="hit">52%</span></div><div class="small">projection 216.7</div></li></ul>
+  <h4 class="sub">Lowered lines, a step riskier (70–79%)</h4><ul class="list"><li><div class="row"><span class="who">SEA Over 15.5 team total</span><span class="hit">76%</span></div><div class="small">worth it at -316 or better · our model 79%</div></li><li><div class="row"><span class="who">Game total Over 34.5</span><span class="hit">74%</span></div><div class="small">worth it at -283 or better · our model 83%</div></li><li><div class="row"><span class="who">RJ Harvey 3+ Receptions</span><span class="hit">74%</span></div><div class="small">worth it at -281 or better · did it 3/4 games</div></li><li><div class="row"><span class="who">Cooper Kupp 2+ Receptions</span><span class="hit">74%</span></div><div class="small">worth it at -279 or better · did it 4/5 games</div></li><li><div class="row"><span class="who">DEN +8.5 (alt spread)</span><span class="hit">72%</span></div><div class="small">worth it at -260 or better · our model 78%</div></li><li><div class="row"><span class="who">DEN Over 15.5 team total</span><span class="hit">72%</span></div><div class="small">worth it at -254 or better · our model 82%</div></li></ul>
+  <h4 class="sub">Upside (plus money, usually misses)</h4><ul class="list"><li><div class="row"><span class="who">DEN ML</span><span class="odds">+120</span><span class="hit">48%</span></div><div class="small">plus money; boosts the payout</div></li><li><div class="row"><span class="who">Emanuel Wilson anytime TD</span><span class="odds">+125</span><span class="hit">43%</span></div><div class="small">SEA</div></li></ul>
+  <div class="callout"><b>Pairing tips:</b> the Seahawks passing legs (Jaxon Smith-Njigba and Cooper Kupp yards) go well with the Over; they hit together. Don't pair the Over with the Bo Nix passing-yards under or the Broncos receiver unders; those pull against each other.</div>
+  <p class="small" style="margin:0"><b>Injuries:</b> out Jadarian Price (SEA), Jonah Coleman (DEN), Patrick Surtain II (DEN LCB), Talanoa Hufanga (DEN SS), Drake Thomas (SEA LB), Zach Charbonnet (SEA), Chazz Surratt (SEA). Questionable: Riley Moss (DEN RCB). Inactives come out about 6:45 PM ET.</p>
+</section>
+  <section id="qbs">
+    <h2>QB watch</h2>
+    <ul class="list"><li><div class="row"><span class="who">Lamar Jackson (BAL)</span></div><div class="small">did not practice; questionable · BAL @ CLE, Sun 1:00 PM</div></li><li><div class="row"><span class="who">Baker Mayfield (TB)</span></div><div class="small">did not practice; reported out · PIT @ TB, Sun 1:00 PM</div></li><li><div class="row"><span class="who">Jalen Hurts (PHI)</span></div><div class="small">reported out · CAR @ PHI, Sun 1:00 PM</div></li></ul>
+    <p class="small" style="margin:0">Jalen Hurts is ruled out (blood clot in his calf), so the Eagles start a backup against Carolina. A QB change moves every pass-catcher's projection on that team.</p>
+  </section>
+  <section id="sunday">
+    <h2>Sunday + Monday: early look</h2>
+    <article class="game">
+      <div class="kick">Sun 9:30 AM ET · Sunday morning (international)</div>
+      <h3>HOU @ JAX</h3>
+      <div class="line">FanDuel JAX -2.5, total 42.5 · model JAX 25.6, HOU 19.7</div>
+      <p class="take">Game bet: <b>JAX ML -142</b> (61%)</p>
+      
+      
+      <div class="small">Model has out: Ja'Marcus Ingram (HOU)</div>
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>TEN @ IND</h3>
+      <div class="line">FanDuel IND -6.5, total 43.5 · model IND 24.8, TEN 19.9</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      
+      <div class="small">Prospects (estimated lines): Wan'Dale Robinson Over 34.5 Rec Yds (57%)</div>
+      
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>CAR @ PHI</h3>
+      <div class="line">FanDuel CAR -3.5, total 38.5 · model PHI 22.4, CAR 21.7</div>
+      <p class="take">Game bet: <b>PHI +3.5 -112</b> (56%)</p>
+      <ul class="flags"><li class="f-high">QB Jalen Hurts reported out</li></ul>
+      <div class="small">Prospects (estimated lines): Saquon Barkley Over 8.5 Rush Att (59%) ⚠ didn't practice</div>
+      <div class="small">Model has out: Jalen Hurts (PHI)</div>
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>PIT @ TB</h3>
+      <div class="line">FanDuel PIT -2.5, total 39.5 · model TB 21.6, PIT 21.4</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      <ul class="flags"><li class="f-high">QB Baker Mayfield did not practice; reported out</li></ul>
+      
+      <div class="small">Model has out: Ben Skowronek (PIT), Roman Wilson (PIT), Baker Mayfield (TB)</div>
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>BAL @ CLE</h3>
+      <div class="line">FanDuel BAL -3.5, total 41.5 · model CLE 19.9, BAL 22.1</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      <ul class="flags"><li class="f-high">QB Lamar Jackson did not practice; questionable</li></ul>
+      
+      <div class="small">Model has out: KC Concepcion (CLE)</div>
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>NO @ NYG</h3>
+      <div class="line">FanDuel NO -1.5, total 45.5 · model NYG 25.6, NO 23.2</div>
+      <p class="take">Game bet: <b>NYG +1.5 -122</b> (56%)</p>
+      
+      
+      
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>CHI @ ATL</h3>
+      <div class="line">FanDuel CHI -1.5, total 51.5 · model ATL 25.7, CHI 22.8</div>
+      <p class="take">Game bet: <b>ATL +1.5 -110</b> (56%)</p>
+      
+      <div class="small">Prospects (estimated lines): Drake London Over 4.5 Receptions (61%) · Michael Penix Jr. Over 235.5 Pass Yds (59%) · Drake London Over 82.5 Rec Yds (55%)</div>
+      <div class="small">Model has out: Dayo Odeyingbo (CHI)</div>
+    </article><article class="game">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>NYJ @ NE</h3>
+      <div class="line">FanDuel NE -7.5, total 43.5 · model NE 21.1, NYJ 20.9</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      
+      <div class="small">Prospects (estimated lines): Garrett Wilson Over 5.5 Receptions (59%)</div>
+      <div class="small">Model has out: TreVeyon Henderson (NE), Breece Hall (NYJ)</div>
+    </article><article class="game">
+      <div class="kick">Sun 4:05 PM ET</div>
+      <h3>ARI @ LA</h3>
+      <div class="line">FanDuel LA -12.5, total 51.5 · model LA 29.7, ARI 20.3</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      
+      <div class="small">Prospects (estimated lines): Jeremiyah Love Under 14.5 Rush Att (59%) ⚠ didn't practice · Trey McBride Over 6.5 Receptions (59%) · Puka Nacua Over 92.5 Rec Yds (55%)</div>
+      
+    </article><article class="game">
+      <div class="kick">Sun 4:25 PM ET</div>
+      <h3>LAC @ KC</h3>
+      <div class="line">FanDuel KC -8.5, total 42.5 · model KC 30.6, LAC 15.7</div>
+      <p class="take">Game bet: <b>KC ML -450</b> (83%)</p>
+      
+      <div class="small">Prospects (estimated lines): Patrick Mahomes Under 266.5 Pass Yds (57%)</div>
+      
+    </article><article class="game">
+      <div class="kick">Sun 4:25 PM ET</div>
+      <h3>BUF @ LV</h3>
+      <div class="line">FanDuel BUF -5.5, total 53.5 · model LV 25.0, BUF 26.6</div>
+      <p class="take">Game bet: <b>LV +5.5 -115</b> (56%)</p>
+      
+      
+      <div class="small">Model has out: Keon Coleman (BUF)</div>
+    </article><article class="game">
+      <div class="kick">Sun 8:20 PM ET · Sunday Night Football</div>
+      <h3>DAL @ GB</h3>
+      <div class="line">FanDuel GB -1.5, total 52.5 · model GB 25.7, DAL 25.9</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      
+      
+      <div class="small">Model has out: Skyy Moore (GB)</div>
+    </article><article class="game">
+      <div class="kick">Mon 8:15 PM ET · Monday Night Football</div>
+      <h3>WAS @ SF</h3>
+      <div class="line">FanDuel SF -7.5, total 51.5 · model SF 29.8, WAS 19.7</div>
+      <p class="take">No game bet: nothing clears 55% at a fair price.</p>
+      
+      <div class="small">Prospects (estimated lines): Jayden Daniels Over 158.5 Pass Yds (55%)</div>
+      <div class="small">Model has out: Deebo Samuel Sr. (SF)</div>
+    </article>
+  </section>
+  <section id="injuries">
+    <h2>Injury watch</h2>
+    <p class="small" style="margin:0">Skill players who missed (<span class="tag dnp">DNP</span>) or were limited (<span class="tag ltd">Ltd</span>) in Wednesday–Thursday practice. Friday's report sets the final game statuses.</p>
+    <div class="inj-game"><h4>HOU @ JAX</h4><div class="inj"><span class="tag dnp">DNP</span><span>HOU RB <b>David Montgomery</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>HOU WR <b>Nico Collins</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>HOU TE <b>Dalton Schultz</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>JAX TE <b>Nate Boerkircher</b></span></div></div><div class="inj-game"><h4>TEN @ IND</h4><div class="inj"><span class="tag dnp">DNP</span><span>TEN RB <b>Tony Pollard</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>IND WR <b>Ashton Dulin</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>TEN TE <b>David Martin-Robinson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>TEN RB <b>Tyjae Spears</b></span></div></div><div class="inj-game"><h4>CAR @ PHI</h4><div class="inj"><span class="tag dnp">DNP</span><span>CAR RB <b>AJ Dillon</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PHI RB <b>Saquon Barkley</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PHI RB <b>Will Shipley</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PHI WR <b>DeVonta Smith</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CAR TE <b>Tommy Tremble</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CAR TE <b>Darren Waller</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI WR <b>Marquise Brown</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI TE <b>Grant Calcaterra</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI TE <b>E.J. Jenkins</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI TE <b>Eli Stowers</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI WR <b>Dontayvion Wicks</b></span></div></div><div class="inj-game"><h4>PIT @ TB</h4><div class="inj"><span class="tag dnp">DNP</span><span>PIT WR <b>Ben Skowronek</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PIT WR <b>Roman Wilson</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>TB WR <b>Chris Godwin Jr.</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>TB QB <b>Baker Mayfield</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>TB RB <b>Sean Tucker</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PIT RB <b>Rico Dowdle</b></span></div></div><div class="inj-game"><h4>BAL @ CLE</h4><div class="inj"><span class="tag dnp">DNP</span><span>BAL TE <b>Matthew Hibner</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>BAL QB <b>Lamar Jackson</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>CLE RB <b>Quinshon Judkins</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>CLE TE <b>Carsen Ryan</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>CLE RB <b>Dylan Sampson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>BAL WR <b>Rashod Bateman</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>BAL TE <b>Nick Vannett</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CLE WR <b>Denzel Boston</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CLE WR <b>KC Concepcion</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CLE WR <b>Tylan Wallace</b></span></div></div><div class="inj-game"><h4>NO @ NYG</h4><div class="inj"><span class="tag dnp">DNP</span><span>NO WR <b>Chris Olave</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NO RB <b>Alvin Kamara</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG TE <b>Theo Johnson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG WR <b>Darnell Mooney</b></span></div></div><div class="inj-game"><h4>CHI @ ATL</h4><div class="inj"><span class="tag dnp">DNP</span><span>CHI RB <b>Kyle Monangai</b></span></div></div><div class="inj-game"><h4>NYJ @ NE</h4><div class="inj"><span class="tag dnp">DNP</span><span>NYJ RB <b>Breece Hall</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>NYJ WR <b>Adonai Mitchell</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYJ WR <b>Omar Cooper Jr.</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYJ TE <b>Kenyon Sadiq</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NE WR <b>A.J. Brown</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NE RB <b>TreVeyon Henderson</b></span></div></div><div class="inj-game"><h4>ARI @ LA</h4><div class="inj"><span class="tag dnp">DNP</span><span>ARI RB <b>Jeremiyah Love</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>LA TE <b>Davis Allen</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>ARI WR <b>Devin Duvernay</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LA WR <b>Alex Bachman</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LA TE <b>Colby Parkinson</b></span></div></div><div class="inj-game"><h4>LAC @ KC</h4><div class="inj"><span class="tag dnp">DNP</span><span>LAC WR <b>Tre Harris</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>KC WR <b>Rashee Rice</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>Quentin Johnston</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>KeAndre Lambert-Smith</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>Ladd McConkey</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>Brenen Thompson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>Marquez Valdes-Scantling</b></span></div></div><div class="inj-game"><h4>BUF @ LV</h4><div class="inj"><span class="tag dnp">DNP</span><span>BUF WR <b>DJ Moore</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>LV WR <b>Jalen Nailor</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>BUF RB <b>Ty Johnson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>BUF WR <b>Josh Palmer</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LV TE <b>Brock Bowers</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LV TE <b>Carter Runyon</b></span></div></div><div class="inj-game"><h4>DAL @ GB</h4><div class="inj"><span class="tag dnp">DNP</span><span>GB WR <b>Skyy Moore</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>GB WR <b>Savion Williams</b></span></div></div>
+  </section>
+  <p class="small">Chances blend our model with FanDuel's price (at most 40% model). Picks need 55%+ at a fair price; game bets are skipped when our model and FanDuel differ by more than 15 points. Lowered prop lines now blend in each player's real season record at that line.</p>
+</div>

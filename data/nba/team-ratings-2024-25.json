@@ -1,0 +1,156 @@
+{
+ "season": "2024-25",
+ "source": "Basketball-Reference NBA_2025 advanced-team",
+ "teams": {
+  "OKC": {
+   "offRtg": 120.3,
+   "defRtg": 107.5,
+   "pace": 100
+  },
+  "BOS": {
+   "offRtg": 120.6,
+   "defRtg": 111.1,
+   "pace": 95.7
+  },
+  "CLE": {
+   "offRtg": 121.7,
+   "defRtg": 112.2,
+   "pace": 99.8
+  },
+  "MIN": {
+   "offRtg": 116.6,
+   "defRtg": 111.5,
+   "pace": 97.3
+  },
+  "LAC": {
+   "offRtg": 115.1,
+   "defRtg": 110.3,
+   "pace": 97.5
+  },
+  "MEM": {
+   "offRtg": 117.7,
+   "defRtg": 113,
+   "pace": 103.3
+  },
+  "HOU": {
+   "offRtg": 115.3,
+   "defRtg": 110.8,
+   "pace": 98.6
+  },
+  "NY": {
+   "offRtg": 118.5,
+   "defRtg": 114.3,
+   "pace": 96.7
+  },
+  "DEN": {
+   "offRtg": 119.9,
+   "defRtg": 116,
+   "pace": 99.8
+  },
+  "GS": {
+   "offRtg": 115,
+   "defRtg": 111.7,
+   "pace": 98.7
+  },
+  "MIL": {
+   "offRtg": 115.9,
+   "defRtg": 113.4,
+   "pace": 99.3
+  },
+  "IND": {
+   "offRtg": 116.5,
+   "defRtg": 114.3,
+   "pace": 99.9
+  },
+  "DET": {
+   "offRtg": 115,
+   "defRtg": 113.1,
+   "pace": 99.8
+  },
+  "LAL": {
+   "offRtg": 115.9,
+   "defRtg": 114.7,
+   "pace": 97.6
+  },
+  "MIA": {
+   "offRtg": 113.5,
+   "defRtg": 112.9,
+   "pace": 96.2
+  },
+  "SAC": {
+   "offRtg": 116.7,
+   "defRtg": 116.2,
+   "pace": 98.2
+  },
+  "ORL": {
+   "offRtg": 109.4,
+   "defRtg": 109.6,
+   "pace": 96.1
+  },
+  "ATL": {
+   "offRtg": 114.6,
+   "defRtg": 115.7,
+   "pace": 102.6
+  },
+  "DAL": {
+   "offRtg": 114.8,
+   "defRtg": 116,
+   "pace": 99.2
+  },
+  "CHI": {
+   "offRtg": 114.1,
+   "defRtg": 115.6,
+   "pace": 102.8
+  },
+  "SA": {
+   "offRtg": 114.4,
+   "defRtg": 117.2,
+   "pace": 99.3
+  },
+  "POR": {
+   "offRtg": 111.7,
+   "defRtg": 114.7,
+   "pace": 98.8
+  },
+  "PHX": {
+   "offRtg": 116.2,
+   "defRtg": 119.3,
+   "pace": 97.1
+  },
+  "TOR": {
+   "offRtg": 110.5,
+   "defRtg": 114.8,
+   "pace": 99.7
+  },
+  "PHI": {
+   "offRtg": 111.9,
+   "defRtg": 118.2,
+   "pace": 97.4
+  },
+  "BKN": {
+   "offRtg": 108.5,
+   "defRtg": 115.8,
+   "pace": 96.4
+  },
+  "UTAH": {
+   "offRtg": 111.2,
+   "defRtg": 120.4,
+   "pace": 100
+  },
+  "CHA": {
+   "offRtg": 107.3,
+   "defRtg": 116.6,
+   "pace": 97.6
+  },
+  "NO": {
+   "offRtg": 110.4,
+   "defRtg": 119.9,
+   "pace": 99.1
+  },
+  "WSH": {
+   "offRtg": 106.8,
+   "defRtg": 119.1,
+   "pace": 100.9
+  }
+ }
+}

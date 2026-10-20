@@ -1,0 +1,40 @@
+{
+  "season": "2026-27",
+  "notes": "Free published regular-season win totals. Primary = BetMGM (line + over/under prices); alt = Fanatics (line only). Re-check before betting: lines move.",
+  "sources": [
+    { "book": "BetMGM", "url": "https://sports.betmgm.com/en/blog/nba/nba-odds-predictions-season-win-totals-bm23/", "published": "2026-10-13" },
+    { "book": "Fanatics", "url": "https://betfanatics.com/blog/nba-win-totals-over-under-odds", "published": "2026-10-15" }
+  ],
+  "teams": {
+    "ATL": { "line": 43.5, "over": -120, "under": 100, "alt": 43.5 },
+    "BOS": { "line": 51.5, "over": 100, "under": -120, "alt": 51.5 },
+    "BKN": { "line": 24.5, "over": -110, "under": -110, "alt": 24.5 },
+    "CHA": { "line": 39.5, "over": 100, "under": -120, "alt": 39.5 },
+    "CHI": { "line": 29.5, "over": -105, "under": -115, "alt": 29.5 },
+    "CLE": { "line": 47.5, "over": -115, "under": -105, "alt": 48.5 },
+    "DAL": { "line": 34.5, "over": -110, "under": -110, "alt": 34.5 },
+    "DEN": { "line": 49.5, "over": 105, "under": -125, "alt": 49.5 },
+    "DET": { "line": 49.5, "over": -105, "under": -115, "alt": 49.5 },
+    "GS": { "line": 37.5, "over": -120, "under": 100, "alt": 39.5 },
+    "HOU": { "line": 48.5, "over": -105, "under": -115, "alt": 48.5 },
+    "IND": { "line": 43.5, "over": -125, "under": 105, "alt": 44.5 },
+    "LAC": { "line": 28.5, "over": -110, "under": -110, "alt": 27.5 },
+    "LAL": { "line": 46.5, "over": -105, "under": -115, "alt": 46.5 },
+    "MEM": { "line": 29.5, "over": -120, "under": 100, "alt": 28.5 },
+    "MIA": { "line": 46.5, "over": -125, "under": -105, "alt": 46.5 },
+    "MIL": { "line": 25.5, "over": -120, "under": 100, "alt": 26.5 },
+    "MIN": { "line": 48.5, "over": -110, "under": -110, "alt": 48.5 },
+    "NO": { "line": 28.5, "over": -110, "under": -110, "alt": 27.5 },
+    "NY": { "line": 52.5, "over": 100, "under": -120, "alt": 52.5 },
+    "OKC": { "line": 62.5, "over": -105, "under": -115, "alt": 60.5 },
+    "ORL": { "line": 43.5, "over": -130, "under": 110, "alt": 43.5 },
+    "PHI": { "line": 50.5, "over": -130, "under": 110, "alt": 50.5 },
+    "PHX": { "line": 40.5, "over": -110, "under": -110, "alt": 40.5 },
+    "POR": { "line": 41.5, "over": -110, "under": -110, "alt": 43.5 },
+    "SA": { "line": 59.5, "over": -125, "under": 105, "alt": 59.5 },
+    "SAC": { "line": 21.5, "over": -105, "under": -115, "alt": 20.5 },
+    "TOR": { "line": 46.5, "over": -120, "under": 100, "alt": 45.5 },
+    "UTAH": { "line": 37.5, "over": -120, "under": 100, "alt": 35.5 },
+    "WSH": { "line": 34.5, "over": -110, "under": -110, "alt": 35.5 }
+  }
+}

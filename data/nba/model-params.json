@@ -1,0 +1,19 @@
+{
+ "fittedOn": "2025-26",
+ "split": "2026-02-01",
+ "generatedAt": "2026-10-16T20:10:28.002Z",
+ "params": {
+  "priorGames": 10,
+  "priorGamesPace": 6,
+  "halfLifeDays": 45,
+  "hcaPoints": 1.6,
+  "backToBackPoints": 0.99,
+  "threeInFourPoints": 0.35,
+  "restEdgePerDay": 0,
+  "backToBackTotalPoints": -1.03,
+  "totalBiasPoints": -0.79,
+  "marginSd": 13.86,
+  "perGameCap": 30,
+  "availabilityWeight": 0.75
+ }
+}

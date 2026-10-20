@@ -1,0 +1,43 @@
+25-leg strategy comparison, run 2026-10-19 15:10. Pre-game inputs replayed (Week 6 as of Sun 2026-10-18 7:27 AM ET; Week 5 as of Sun 2026-10-11 8:00 AM ET). 40 tickets x 25 legs per strategy, same rules as the site (one per group, per-game cap, 25-of-40 player cap, drift to all-new). Lowered-line prices estimated as fair + 4 points. Payout = 20 cents at estimated FanDuel prices (same-game discount).
+
+== WEEK 6 ==
+candidates: 770 main-line legs, 355 lowered-line legs; graded 1022
+
+A. Original rules (hit-ranked)     tickets 40 | legs  79 predicted 57% actual 57% | misses: fewest 7, avg 9.5 | cashed 0 | 20c pays ~$16,558 (FanDuel est.)
+B. Edge-first (58%+ near even/unders) not enough legs (10)
+C. High confidence 60%+            tickets  8 | legs  29 predicted 64% actual 52% | misses: fewest 10, avg 11.1 | cashed 0 | 20c pays ~$633 (FanDuel est.)
+D. Unders + favorites              tickets 40 | legs  73 predicted 59% actual 53% | misses: fewest 8, avg 11.3 | cashed 0 | 20c pays ~$2,085 (FanDuel est.)
+E. Original, max 2 per game        tickets 40 | legs  74 predicted 57% actual 64% | misses: fewest 6, avg 8.9 | cashed 0 | 20c pays ~$38,176 (FanDuel est.)
+F. Edge-first, max 2 per game      not enough legs (10)
+G. Lowered lines 80-88% only       tickets 40 | legs  73 predicted 85% actual 79% | misses: fewest 3, avg 4.9 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+H. Mix: 18 lowered + 7 edge legs   tickets 40 | legs  74 predicted 84% actual 79% | misses: fewest 3, avg 4.8 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+J. Max 2 per game, near-even odds  tickets 40 | legs  72 predicted 55% actual 59% | misses: fewest 7, avg 8.5 | cashed 0 | 20c pays ~$323,350 (FanDuel est.)
+K. Max 2/game, 55%+ only           not enough legs (75)
+T. Target mix, lambda 0.15         tickets 40 | legs  75 predicted 90% actual 82% | misses: fewest 2, avg 4.0 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.3          tickets 40 | legs  75 predicted 90% actual 82% | misses: fewest 2, avg 4.0 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.45         tickets 40 | legs  75 predicted 90% actual 82% | misses: fewest 2, avg 4.0 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.6          tickets 40 | legs  75 predicted 90% actual 82% | misses: fewest 2, avg 4.0 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.75         tickets 40 | legs  74 predicted 90% actual 81% | misses: fewest 2, avg 3.5 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.9          tickets 40 | legs  77 predicted 59% actual 60% | misses: fewest 7, avg 10.3 | cashed 0 | 20c pays ~$90,017 (FanDuel est.)
+I. Lowered lines 75-85% (more payout) tickets 40 | legs  74 predicted 82% actual 75% | misses: fewest 4, avg 6.1 | cashed 0 | 20c pays ~$1 (FanDuel est.)
+
+== WEEK 5 ==
+candidates: 706 main-line legs, 411 lowered-line legs; graded 1106
+
+A. Original rules (hit-ranked)     tickets 40 | legs  75 predicted 58% actual 52% | misses: fewest 7, avg 9.4 | cashed 0 | 20c pays ~$13,588 (FanDuel est.)
+B. Edge-first (58%+ near even/unders) not enough legs (9)
+C. High confidence 60%+            tickets  4 | legs  27 predicted 64% actual 65% | misses: fewest 8, avg 8.3 | cashed 0 | 20c pays ~$1,182 (FanDuel est.)
+D. Unders + favorites              tickets 40 | legs  74 predicted 58% actual 55% | misses: fewest 8, avg 10.3 | cashed 0 | 20c pays ~$3,522 (FanDuel est.)
+E. Original, max 2 per game        tickets 40 | legs  75 predicted 57% actual 49% | misses: fewest 9, avg 11.7 | cashed 0 | 20c pays ~$28,587 (FanDuel est.)
+F. Edge-first, max 2 per game      not enough legs (9)
+G. Lowered lines 80-88% only       tickets 40 | legs  73 predicted 85% actual 86% | misses: fewest 2, avg 3.7 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+H. Mix: 18 lowered + 7 edge legs   tickets 40 | legs  74 predicted 85% actual 85% | misses: fewest 3, avg 3.7 | cashed 0 | 20c pays ~$0 (FanDuel est.)
+J. Max 2 per game, near-even odds  tickets 40 | legs  74 predicted 55% actual 50% | misses: fewest 9, avg 11.5 | cashed 0 | 20c pays ~$335,728 (FanDuel est.)
+K. Max 2/game, 55%+ only           tickets 22 | legs  39 predicted 59% actual 54% | misses: fewest 10, avg 11.5 | cashed 0 | 20c pays ~$18,914 (FanDuel est.)
+T. Target mix, lambda 0.15         tickets 40 | legs  74 predicted 90% actual 88% | misses: fewest 0, avg 2.1 | cashed 6 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.3          tickets 40 | legs  74 predicted 90% actual 88% | misses: fewest 0, avg 2.1 | cashed 6 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.45         tickets 40 | legs  74 predicted 90% actual 88% | misses: fewest 0, avg 2.1 | cashed 6 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.6          tickets 40 | legs  74 predicted 90% actual 88% | misses: fewest 0, avg 2.1 | cashed 6 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.75         tickets 40 | legs  74 predicted 90% actual 88% | misses: fewest 0, avg 2.1 | cashed 6 | 20c pays ~$0 (FanDuel est.)
+T. Target mix, lambda 0.9          tickets 40 | legs  75 predicted 61% actual 64% | misses: fewest 7, avg 9.7 | cashed 0 | 20c pays ~$145,563 (FanDuel est.)
+I. Lowered lines 75-85% (more payout) tickets 40 | legs  75 predicted 83% actual 79% | misses: fewest 2, avg 4.5 | cashed 0 | 20c pays ~$1 (FanDuel est.)

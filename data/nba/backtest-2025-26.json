@@ -1,0 +1,719 @@
+{
+ "version": 1,
+ "season": "2025-26",
+ "generatedAt": "2026-10-16T20:10:28.002Z",
+ "split": "2026-02-01",
+ "priorSource": "Basketball-Reference NBA_2025 advanced-team",
+ "params": {
+  "priorGames": 10,
+  "priorGamesPace": 6,
+  "halfLifeDays": 45,
+  "hcaPoints": 1.6,
+  "backToBackPoints": 0.99,
+  "threeInFourPoints": 0.35,
+  "restEdgePerDay": 0,
+  "backToBackTotalPoints": -1.03,
+  "totalBiasPoints": -0.79,
+  "marginSd": 13.86,
+  "perGameCap": 30,
+  "availabilityWeight": 0.75
+ },
+ "rawFit": {
+  "hcaAdj": -0.8,
+  "b2b": 1.98,
+  "threeInFour": 0.7,
+  "restEdge": -0.71,
+  "totalBias": -0.79,
+  "b2bTotal": -2.06
+ },
+ "availability": {
+  "playersMatched": "468/591",
+  "avgMissingPer100": 1.75,
+  "teamGamesMissing3Plus": 526,
+  "teamGames": 2462
+ },
+ "test": {
+  "games": 501,
+  "gamesWithSpread": 501,
+  "gamesWithTotal": 501,
+  "marginMae": {
+   "model": 11.7,
+   "market": 10.98
+  },
+  "totalMae": {
+   "model": 14.4,
+   "market": 14.36
+  },
+  "modelVsMarketGap": {
+   "spreadMeanAbs": 3.21,
+   "totalMeanAbs": 3.44
+  },
+  "spreads": [
+   {
+    "minEdge": 0,
+    "bets": 494,
+    "record": "243-251-0",
+    "hitRate": 49.2,
+    "roiPct": -6.2
+   },
+   {
+    "minEdge": 1,
+    "bets": 390,
+    "record": "185-205-0",
+    "hitRate": 47.4,
+    "roiPct": -9.6
+   },
+   {
+    "minEdge": 2,
+    "bets": 299,
+    "record": "139-160-0",
+    "hitRate": 46.5,
+    "roiPct": -11.3
+   },
+   {
+    "minEdge": 3,
+    "bets": 228,
+    "record": "107-121-0",
+    "hitRate": 46.9,
+    "roiPct": -10.4
+   },
+   {
+    "minEdge": 4,
+    "bets": 164,
+    "record": "80-84-0",
+    "hitRate": 48.8,
+    "roiPct": -6.9
+   },
+   {
+    "minEdge": 5,
+    "bets": 115,
+    "record": "58-57-0",
+    "hitRate": 50.4,
+    "roiPct": -3.8
+   }
+  ],
+  "totals": [
+   {
+    "minEdge": 0,
+    "bets": 496,
+    "record": "261-235-0",
+    "hitRate": 52.6,
+    "roiPct": 0.4
+   },
+   {
+    "minEdge": 2,
+    "bets": 317,
+    "record": "173-144-0",
+    "hitRate": 54.6,
+    "roiPct": 4.2
+   },
+   {
+    "minEdge": 4,
+    "bets": 185,
+    "record": "105-80-0",
+    "hitRate": 56.8,
+    "roiPct": 8.4
+   },
+   {
+    "minEdge": 6,
+    "bets": 82,
+    "record": "44-38-0",
+    "hitRate": 53.7,
+    "roiPct": 2.4
+   },
+   {
+    "minEdge": 8,
+    "bets": 30,
+    "record": "17-13-0",
+    "hitRate": 56.7,
+    "roiPct": 7.9
+   }
+  ],
+  "moneyline": [
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": false,
+    "bets": 416,
+    "hitRate": 27.4,
+    "roiPct": -24.6
+   },
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": true,
+    "bets": 70,
+    "hitRate": 65.7,
+    "roiPct": 9.1
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": false,
+    "bets": 344,
+    "hitRate": 24.7,
+    "roiPct": -27.2
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": true,
+    "bets": 45,
+    "hitRate": 64.4,
+    "roiPct": 10.1
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": false,
+    "bets": 283,
+    "hitRate": 23.3,
+    "roiPct": -27.8
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": true,
+    "bets": 33,
+    "hitRate": 57.6,
+    "roiPct": 1.7
+   }
+  ],
+  "clv": [
+   {
+    "minEdgeVsOpen": 1,
+    "games": 393,
+    "movedToward": 178,
+    "movedAway": 124,
+    "unchanged": 91,
+    "towardPct": 58.9
+   },
+   {
+    "minEdgeVsOpen": 2,
+    "games": 303,
+    "movedToward": 133,
+    "movedAway": 97,
+    "unchanged": 73,
+    "towardPct": 57.8
+   },
+   {
+    "minEdgeVsOpen": 3,
+    "games": 216,
+    "movedToward": 96,
+    "movedAway": 68,
+    "unchanged": 52,
+    "towardPct": 58.5
+   }
+  ],
+  "spreadsAtOpen": [
+   {
+    "minEdge": 1,
+    "bets": 393,
+    "record": "202-191-0",
+    "hitRate": 51.4
+   },
+   {
+    "minEdge": 2,
+    "bets": 303,
+    "record": "154-149-0",
+    "hitRate": 50.8
+   },
+   {
+    "minEdge": 3,
+    "bets": 216,
+    "record": "108-108-0",
+    "hitRate": 50
+   },
+   {
+    "minEdge": 4,
+    "bets": 155,
+    "record": "78-77-0",
+    "hitRate": 50.3
+   }
+  ],
+  "calibration": [
+   {
+    "bucket": "50-55%",
+    "games": 186,
+    "predicted": 52.3,
+    "actual": 54.3
+   },
+   {
+    "bucket": "55-60%",
+    "games": 129,
+    "predicted": 57.5,
+    "actual": 41.1
+   },
+   {
+    "bucket": "60-65%",
+    "games": 83,
+    "predicted": 62.2,
+    "actual": 45.8
+   },
+   {
+    "bucket": "65-100%",
+    "games": 103,
+    "predicted": 70.2,
+    "actual": 51.5
+   }
+  ],
+  "absenceSpots": {
+   "games": 187,
+   "modelHitPct": 51.3
+  },
+  "restSpots": {
+   "games": 128,
+   "restedTeamCoverPct": 51.6
+  }
+ },
+ "testWithoutAvailability": {
+  "games": 501,
+  "gamesWithSpread": 501,
+  "gamesWithTotal": 501,
+  "marginMae": {
+   "model": 11.95,
+   "market": 10.98
+  },
+  "totalMae": {
+   "model": 14.4,
+   "market": 14.36
+  },
+  "modelVsMarketGap": {
+   "spreadMeanAbs": 3.7,
+   "totalMeanAbs": 3.44
+  },
+  "spreads": [
+   {
+    "minEdge": 0,
+    "bets": 496,
+    "record": "232-264-0",
+    "hitRate": 46.8,
+    "roiPct": -10.7
+   },
+   {
+    "minEdge": 1,
+    "bets": 414,
+    "record": "189-225-0",
+    "hitRate": 45.7,
+    "roiPct": -12.8
+   },
+   {
+    "minEdge": 2,
+    "bets": 334,
+    "record": "155-179-0",
+    "hitRate": 46.4,
+    "roiPct": -11.3
+   },
+   {
+    "minEdge": 3,
+    "bets": 266,
+    "record": "127-139-0",
+    "hitRate": 47.7,
+    "roiPct": -8.8
+   },
+   {
+    "minEdge": 4,
+    "bets": 206,
+    "record": "98-108-0",
+    "hitRate": 47.6,
+    "roiPct": -9.1
+   },
+   {
+    "minEdge": 5,
+    "bets": 144,
+    "record": "75-69-0",
+    "hitRate": 52.1,
+    "roiPct": -0.5
+   }
+  ],
+  "totals": [
+   {
+    "minEdge": 0,
+    "bets": 496,
+    "record": "262-234-0",
+    "hitRate": 52.8,
+    "roiPct": 0.8
+   },
+   {
+    "minEdge": 2,
+    "bets": 316,
+    "record": "172-144-0",
+    "hitRate": 54.4,
+    "roiPct": 3.9
+   },
+   {
+    "minEdge": 4,
+    "bets": 186,
+    "record": "106-80-0",
+    "hitRate": 57,
+    "roiPct": 8.8
+   },
+   {
+    "minEdge": 6,
+    "bets": 81,
+    "record": "43-38-0",
+    "hitRate": 53.1,
+    "roiPct": 1.4
+   },
+   {
+    "minEdge": 8,
+    "bets": 30,
+    "record": "17-13-0",
+    "hitRate": 56.7,
+    "roiPct": 7.9
+   }
+  ],
+  "moneyline": [
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": false,
+    "bets": 429,
+    "hitRate": 24.7,
+    "roiPct": -32.5
+   },
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": true,
+    "bets": 64,
+    "hitRate": 56.3,
+    "roiPct": -6.4
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": false,
+    "bets": 372,
+    "hitRate": 22.3,
+    "roiPct": -34.7
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": true,
+    "bets": 46,
+    "hitRate": 52.2,
+    "roiPct": -9
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": false,
+    "bets": 324,
+    "hitRate": 22.2,
+    "roiPct": -33
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": true,
+    "bets": 35,
+    "hitRate": 48.6,
+    "roiPct": -17.1
+   }
+  ],
+  "clv": [
+   {
+    "minEdgeVsOpen": 1,
+    "games": 408,
+    "movedToward": 151,
+    "movedAway": 161,
+    "unchanged": 96,
+    "towardPct": 48.4
+   },
+   {
+    "minEdgeVsOpen": 2,
+    "games": 321,
+    "movedToward": 114,
+    "movedAway": 131,
+    "unchanged": 76,
+    "towardPct": 46.5
+   },
+   {
+    "minEdgeVsOpen": 3,
+    "games": 240,
+    "movedToward": 84,
+    "movedAway": 102,
+    "unchanged": 54,
+    "towardPct": 45.2
+   }
+  ],
+  "spreadsAtOpen": [
+   {
+    "minEdge": 1,
+    "bets": 408,
+    "record": "188-220-0",
+    "hitRate": 46.1
+   },
+   {
+    "minEdge": 2,
+    "bets": 321,
+    "record": "155-166-0",
+    "hitRate": 48.3
+   },
+   {
+    "minEdge": 3,
+    "bets": 240,
+    "record": "112-128-0",
+    "hitRate": 46.7
+   },
+   {
+    "minEdge": 4,
+    "bets": 175,
+    "record": "82-93-0",
+    "hitRate": 46.9
+   }
+  ],
+  "calibration": [
+   {
+    "bucket": "50-55%",
+    "games": 149,
+    "predicted": 52.3,
+    "actual": 50.3
+   },
+   {
+    "bucket": "55-60%",
+    "games": 127,
+    "predicted": 57.5,
+    "actual": 41.7
+   },
+   {
+    "bucket": "60-65%",
+    "games": 104,
+    "predicted": 62.6,
+    "actual": 43.3
+   },
+   {
+    "bucket": "65-100%",
+    "games": 121,
+    "predicted": 70.9,
+    "actual": 51.2
+   }
+  ],
+  "absenceSpots": {
+   "games": 189,
+   "modelHitPct": 48.7
+  },
+  "restSpots": {
+   "games": 128,
+   "restedTeamCoverPct": 51.6
+  }
+ },
+ "tune": {
+  "games": 730,
+  "gamesWithSpread": 478,
+  "gamesWithTotal": 478,
+  "marginMae": {
+   "model": 11.17,
+   "market": 11.14
+  },
+  "totalMae": {
+   "model": 15.7,
+   "market": 14.99
+  },
+  "modelVsMarketGap": {
+   "spreadMeanAbs": 2.18,
+   "totalMeanAbs": 3.47
+  },
+  "spreads": [
+   {
+    "minEdge": 0,
+    "bets": 467,
+    "record": "251-216-0",
+    "hitRate": 53.7,
+    "roiPct": 2.4
+   },
+   {
+    "minEdge": 1,
+    "bets": 342,
+    "record": "186-156-0",
+    "hitRate": 54.4,
+    "roiPct": 3.6
+   },
+   {
+    "minEdge": 2,
+    "bets": 217,
+    "record": "111-106-0",
+    "hitRate": 51.2,
+    "roiPct": -2.5
+   },
+   {
+    "minEdge": 3,
+    "bets": 138,
+    "record": "66-72-0",
+    "hitRate": 47.8,
+    "roiPct": -8.8
+   },
+   {
+    "minEdge": 4,
+    "bets": 74,
+    "record": "34-40-0",
+    "hitRate": 45.9,
+    "roiPct": -12.5
+   },
+   {
+    "minEdge": 5,
+    "bets": 36,
+    "record": "17-19-0",
+    "hitRate": 47.2,
+    "roiPct": -10.4
+   }
+  ],
+  "totals": [
+   {
+    "minEdge": 0,
+    "bets": 468,
+    "record": "231-237-0",
+    "hitRate": 49.4,
+    "roiPct": -5.8
+   },
+   {
+    "minEdge": 2,
+    "bets": 293,
+    "record": "135-158-0",
+    "hitRate": 46.1,
+    "roiPct": -12.2
+   },
+   {
+    "minEdge": 4,
+    "bets": 167,
+    "record": "68-99-0",
+    "hitRate": 40.7,
+    "roiPct": -22.4
+   },
+   {
+    "minEdge": 6,
+    "bets": 85,
+    "record": "37-48-0",
+    "hitRate": 43.5,
+    "roiPct": -17.1
+   },
+   {
+    "minEdge": 8,
+    "bets": 38,
+    "record": "15-23-0",
+    "hitRate": 39.5,
+    "roiPct": -24.6
+   }
+  ],
+  "moneyline": [
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": false,
+    "bets": 363,
+    "hitRate": 42.7,
+    "roiPct": 13.3
+   },
+   {
+    "minEdgePct": 2,
+    "favoritesOnly": true,
+    "bets": 84,
+    "hitRate": 63.1,
+    "roiPct": 0.4
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": false,
+    "bets": 256,
+    "hitRate": 40.2,
+    "roiPct": 14.2
+   },
+   {
+    "minEdgePct": 4,
+    "favoritesOnly": true,
+    "bets": 43,
+    "hitRate": 62.8,
+    "roiPct": 1.6
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": false,
+    "bets": 178,
+    "hitRate": 39.9,
+    "roiPct": 13.7
+   },
+   {
+    "minEdgePct": 6,
+    "favoritesOnly": true,
+    "bets": 24,
+    "hitRate": 70.8,
+    "roiPct": 15.1
+   }
+  ],
+  "clv": [
+   {
+    "minEdgeVsOpen": 1,
+    "games": 357,
+    "movedToward": 184,
+    "movedAway": 90,
+    "unchanged": 83,
+    "towardPct": 67.2
+   },
+   {
+    "minEdgeVsOpen": 2,
+    "games": 249,
+    "movedToward": 137,
+    "movedAway": 59,
+    "unchanged": 53,
+    "towardPct": 69.9
+   },
+   {
+    "minEdgeVsOpen": 3,
+    "games": 151,
+    "movedToward": 91,
+    "movedAway": 31,
+    "unchanged": 29,
+    "towardPct": 74.6
+   }
+  ],
+  "spreadsAtOpen": [
+   {
+    "minEdge": 1,
+    "bets": 357,
+    "record": "206-151-0",
+    "hitRate": 57.7
+   },
+   {
+    "minEdge": 2,
+    "bets": 249,
+    "record": "143-106-0",
+    "hitRate": 57.4
+   },
+   {
+    "minEdge": 3,
+    "bets": 151,
+    "record": "90-61-0",
+    "hitRate": 59.6
+   },
+   {
+    "minEdge": 4,
+    "bets": 81,
+    "record": "50-31-0",
+    "hitRate": 61.7
+   }
+  ],
+  "calibration": [
+   {
+    "bucket": "50-55%",
+    "games": 245,
+    "predicted": 52.5,
+    "actual": 56.3
+   },
+   {
+    "bucket": "55-60%",
+    "games": 139,
+    "predicted": 57.4,
+    "actual": 55.4
+   },
+   {
+    "bucket": "60-65%",
+    "games": 68,
+    "predicted": 62.2,
+    "actual": 44.1
+   },
+   {
+    "bucket": "65-100%",
+    "games": 26,
+    "predicted": 68.5,
+    "actual": 50
+   }
+  ],
+  "absenceSpots": {
+   "games": 202,
+   "modelHitPct": 55.4
+  },
+  "restSpots": {
+   "games": 106,
+   "restedTeamCoverPct": 45.3
+  }
+ }
+}

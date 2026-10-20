@@ -1,0 +1,500 @@
+<title>Week 5 Weekend Picks</title>
+<style>
+/* Layout: one narrow reading column, phone first; games in kickoff order, injuries up top. */
+:root{
+  --bg:#f3f5f2; --card:#ffffff; --ink:#15211b; --muted:#5d6b63; --line:#dbe2dc;
+  --accent:#1f6f4a; --accent-soft:#e3f1e8; --warn:#9a5a00; --warn-soft:#fff3dc; --bad:#a1281e; --bad-soft:#fde8e5;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Source Sans 3",system-ui,-apple-system,Segoe UI,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1512; --card:#17201b; --ink:#e7eee9; --muted:#9aaba1; --line:#2a3630;
+  --accent:#5fc792; --accent-soft:#183326; --warn:#f0b35a; --warn-soft:#3a2a10; --bad:#f08a7e; --bad-soft:#3a1a16; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1512; --card:#17201b; --ink:#e7eee9; --muted:#9aaba1; --line:#2a3630;
+  --accent:#5fc792; --accent-soft:#183326; --warn:#f0b35a; --warn-soft:#3a2a10; --bad:#f08a7e; --bad-soft:#3a1a16; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:2.4rem;line-height:1}
+h2{font-size:1.5rem;text-transform:uppercase;letter-spacing:.04em}
+h3{font-size:1.35rem}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.meta{color:var(--muted);font-size:.85rem}
+section{display:grid;gap:12px;min-width:0}
+.rules{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:6px}
+.rules li{margin-left:1.1em}
+.rules ul{margin:0;padding:0;display:grid;gap:4px}
+.list{list-style:none;margin:0;padding:0;display:grid;border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden}
+.list>li{padding:10px 14px;border-top:1px solid var(--line);display:grid;gap:2px;min-width:0}
+.list>li:first-child{border-top:0}
+.row{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.row .who{font-weight:600}
+.odds,.hit{font-family:var(--mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.hit{margin-left:auto;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:1px 7px;border-radius:999px}
+.small{font-size:.8rem;color:var(--muted)}
+.flags{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.flags li{font-size:.74rem;padding:1px 8px;border-radius:999px}
+.f-high{background:var(--bad-soft);color:var(--bad);font-weight:600}
+.f-mid{background:var(--warn-soft);color:var(--warn)}
+.f-low{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.game{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.kick{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.names{display:block;font-family:var(--body);font-size:.8rem;color:var(--muted);font-weight:400;letter-spacing:0}
+.line{font-size:.82rem;color:var(--muted)}
+.take{margin:0;font-weight:600}
+.plays{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.play{border-top:1px dashed var(--line);padding-top:8px;min-width:0}
+.play-main{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.play-label{font-weight:600}
+.play-sub{font-size:.78rem;color:var(--muted)}
+.outs{margin:0;font-size:.8rem;color:var(--muted)}
+.inj-game{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;display:grid;gap:4px}
+.inj-game h4{margin:0;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.inj{display:flex;gap:6px;flex-wrap:wrap;font-size:.86rem}
+.tag{font-size:.7rem;font-weight:700;border-radius:4px;padding:0 5px;text-transform:uppercase;letter-spacing:.04em}
+.tag.dnp{background:var(--bad-soft);color:var(--bad)}
+.tag.ltd{background:var(--warn-soft);color:var(--warn)}
+.ticket{margin:0;padding-block:10px;padding-left:2em;padding-right:14px;display:grid;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.ticket li{min-width:0}
+.tag.team{background:var(--accent-soft);color:var(--accent)}
+.tag.player{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.odds-box{display:flex;flex-wrap:wrap;gap:12px}
+.odds-box>div{flex:1 1 10rem;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.big{font-family:var(--display);font-size:1.7rem;line-height:1.1}
+.alt-ticket{display:grid;gap:8px}
+.alt-ticket summary{cursor:pointer;padding-block:8px}
+.callout{background:var(--warn-soft);color:var(--ink);border-radius:14px;padding:12px 16px;display:grid;gap:6px}
+.callout b{color:var(--warn)}
+nav.jump{display:flex;flex-wrap:wrap;gap:6px}
+nav.jump a{font-size:.78rem;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 10px;background:var(--card)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<div class="wrap">
+  <header style="display:grid;gap:6px">
+    <div class="eyebrow">Betting Lab · NFL Week 5 · Sunday + Monday</div>
+    <h1>Weekend Picks</h1>
+    <div class="meta">Built Fri, Oct 9, 7:26 AM ET from FanDuel lines pulled Fri 12:58 AM ET. Every pick here is saved and gets graded when you're back.</div>
+    <nav class="jump"><a href="#checklist">Checklist</a><a href="#parlay">25-leg parlay</a><a href="#risk">Picks at risk</a><a href="#top">Top picks</a><a href="#legs">Parlay legs</a><a href="#injuries">Injury watch</a><a href="#games">Every game</a></nav>
+  </header>
+
+  <section id="checklist">
+    <h2>Before you bet</h2>
+    <div class="rules"><ul>
+      <li><b>Friday afternoon:</b> check final game statuses for the players flagged below (NFL.com injuries page or the FanDuel app).</li>
+      <li><b>Questionable stays in.</b> If a report says a player will have a snap limit or pitch count, skip his props.</li>
+      <li><b>Out or doubtful:</b> skip his props, and recheck teammates' picks (a missing QB changes every pass-catcher).</li>
+      <li><b>Late scratches</b> don't hurt you: FanDuel voids props for players who don't play.</li>
+      <li><b>Line moved?</b> Only bet at the line shown or better. If an over's line went up, or an under's went down, skip it.</li>
+      <li><b>Inactives</b> come out 90 minutes before kickoff (about 7:00 AM ET for London, 11:30 AM for the 1 PM games).</li>
+    </ul></div>
+  </section>
+
+  <section id="parlay">
+    <h2>25-leg parlay</h2>
+    <p class="small" style="margin:0">Built for the best chance of every leg hitting: lowered lines (FanDuel's "2+ receptions", alternate team totals and so on) that hit 83–90% each. Player legs cleared the number in every game this season. Left out: Bears–Packers (Caleb Williams missed practice), Ravens–Falcons (Lamar Jackson status) and Eagles–Jaguars (Saquon Barkley status) and Giants–Commanders (both teams changed QBs, so the season records don't apply).</p>
+    <div class="odds-box">
+      <div><div class="eyebrow">Chance all 25 hit</div><div class="big">about 1 in 46</div></div>
+      <div><div class="eyebrow">Estimated payout</div><div class="big">+1,359</div><div class="small">$5 wins about $68</div></div>
+    </div>
+    <ol class="ticket"><li><div class="row"><span class="who">Michael Mayer 2+ Receptions</span><span class="tag player">Player</span><span class="hit">89%</span></div><div class="small">LV @ NE · Sun 1:00 PM ET · worth it at -777 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: MIA Over 8.5</span><span class="tag team">Team</span><span class="hit">87%</span></div><div class="small">CIN @ MIA · Sun 1:00 PM ET · worth it at -679 or better · our model 92%</div></li><li><div class="row"><span class="who">Alt team total: MIN Over 12.5</span><span class="tag team">Team</span><span class="hit">87%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -649 or better · our model 90%</div></li><li><div class="row"><span class="who">Tre Tucker 2+ Receptions</span><span class="tag player">Player</span><span class="hit">87%</span></div><div class="small">LV @ NE · Sun 1:00 PM ET · worth it at -641 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: PIT Over 13.5</span><span class="tag team">Team</span><span class="hit">86%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · worth it at -623 or better · our model 88%</div></li><li><div class="row"><span class="who">Alt team total: NYJ Over 11.5</span><span class="tag team">Team</span><span class="hit">86%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -615 or better · our model 89%</div></li><li><div class="row"><span class="who">Alt team total: LV Over 11.5</span><span class="tag team">Team</span><span class="hit">86%</span></div><div class="small">LV @ NE · Sun 1:00 PM ET · worth it at -599 or better · our model 90%</div></li><li><div class="row"><span class="who">Alt team total: NO Over 10.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -580 or better · our model 87%</div></li><li><div class="row"><span class="who">Alt total: Over 25.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">HOU @ TEN · Sun 1:00 PM ET · worth it at -571 or better · our model 89%</div></li><li><div class="row"><span class="who">Alt team total: HOU Under 31.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">HOU @ TEN · Sun 1:00 PM ET · worth it at -554 or better · our model 88%</div></li><li><div class="row"><span class="who">Alt team total: CLE Over 9.5</span><span class="tag team">Team</span><span class="hit">84%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -539 or better · our model 85%</div></li><li><div class="row"><span class="who">Alt total: Over 27.5</span><span class="tag team">Team</span><span class="hit">84%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -520 or better · our model 87%</div></li><li><div class="row"><span class="who">Juwan Johnson 25+ Rec Yds</span><span class="tag player">Player</span><span class="hit">83%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -471 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Tony Pollard 1+ Receptions</span><span class="tag player">Player</span><span class="hit">83%</span></div><div class="small">HOU @ TEN · Sun 1:00 PM ET · worth it at -471 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Omarion Hampton 20+ Rush Yds</span><span class="tag player">Player</span><span class="hit">87%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · worth it at -646 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Justin Herbert 150+ Pass Yds</span><span class="tag player">Player</span><span class="hit">84%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · worth it at -513 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Cooper Kupp 1+ Receptions</span><span class="tag player">Player</span><span class="hit">90%</span></div><div class="small">SF @ SEA · Sun 4:25 PM ET · worth it at -890 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Trey McBride 5+ Receptions</span><span class="tag player">Player</span><span class="hit">90%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -871 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Jameson Williams 2+ Receptions</span><span class="tag player">Player</span><span class="hit">89%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -817 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Sam LaPorta 3+ Receptions</span><span class="tag player">Player</span><span class="hit">88%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -733 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Rashid Shaheed 1+ Receptions</span><span class="tag player">Player</span><span class="hit">86%</span></div><div class="small">SF @ SEA · Sun 4:25 PM ET · worth it at -635 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: SF Over 12.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">SF @ SEA · Sun 4:25 PM ET · worth it at -583 or better · our model 90%</div></li><li><div class="row"><span class="who">Alt team total: LA Under 37.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -573 or better · our model 90%</div></li><li><div class="row"><span class="who">Alt team total: BUF Over 16.5</span><span class="tag team">Team</span><span class="hit">85%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -545 or better · our model 86%</div></li><li><div class="row"><span class="who">Kyren Williams 2+ Receptions</span><span class="tag player">Player</span><span class="hit">83%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -481 or better · cleared it 4/4 games this season</div></li></ol>
+    <div class="rules"><ul>
+      <li><b>Build it in FanDuel:</b> player legs are under each player's alternate lines ("To record X+ receptions", "X+ yards"); team legs are under Alternate Team Total and Alternate Total Points.</li>
+      <li><b>If a leg is missing or priced much worse</b> than its "worth it at" price, swap in one of these: Alt team total: ARI Over 15.5 (DET @ ARI, 84%); Alt team total: DET Under 38.5 (DET @ ARI, 84%); Alt team total: LAC Over 10.5 (DEN @ LAC, 84%); Alt team total: IND Over 11.5 (IND @ PIT, 84%).</li>
+      <li><b>The payout is an estimate.</b> FanDuel shows the real number once all 25 legs are in the slip. A leg voided because a player doesn't play just drops out of the parlay.</li>
+      <li><b>Keep it small.</b> Even the safest 25-leg ticket loses most of the time, and the vig on 25 legs adds up.</li>
+    </ul></div>
+    <details class="alt-ticket">
+      <summary><b>Want a bigger payout?</b> A riskier 25 (about 1 in 697, about +19,526)</summary>
+      <ol class="ticket"><li><div class="row"><span class="who">Juwan Johnson 3+ Receptions</span><span class="tag player">Player</span><span class="hit">81%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -413 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Xavier Hutchinson 1+ Receptions</span><span class="tag player">Player</span><span class="hit">80%</span></div><div class="small">HOU @ TEN · Sun 1:00 PM ET · worth it at -395 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: MIN Over 15.5</span><span class="tag team">Team</span><span class="hit">79%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -370 or better · our model 84%</div></li><li><div class="row"><span class="who">Alt team total: PIT Over 16.5</span><span class="tag team">Team</span><span class="hit">78%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · worth it at -355 or better · our model 81%</div></li><li><div class="row"><span class="who">Alt total: Over 30.5</span><span class="tag team">Team</span><span class="hit">78%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -352 or better · our model 81%</div></li><li><div class="row"><span class="who">Alt team total: NYJ Over 14.5</span><span class="tag team">Team</span><span class="hit">78%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -351 or better · our model 82%</div></li><li><div class="row"><span class="who">Quinshon Judkins 2+ Receptions</span><span class="tag player">Player</span><span class="hit">77%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · worth it at -342 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt total: Over 34.5</span><span class="tag team">Team</span><span class="hit">77%</span></div><div class="small">CIN @ MIA · Sun 1:00 PM ET · worth it at -333 or better · our model 82%</div></li><li><div class="row"><span class="who">Alt team total: HOU Under 28.5</span><span class="tag team">Team</span><span class="hit">76%</span></div><div class="small">HOU @ TEN · Sun 1:00 PM ET · worth it at -319 or better · our model 80%</div></li><li><div class="row"><span class="who">Tyler Shough 200+ Pass Yds</span><span class="tag player">Player</span><span class="hit">76%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · worth it at -313 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt total: Over 35.5</span><span class="tag team">Team</span><span class="hit">75%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · worth it at -303 or better · our model 78%</div></li><li><div class="row"><span class="who">Alt total: Under 53.5</span><span class="tag team">Team</span><span class="hit">75%</span></div><div class="small">LV @ NE · Sun 1:00 PM ET · worth it at -296 or better · our model 77%</div></li><li><div class="row"><span class="who">Alt team total: IND Over 14.5</span><span class="tag team">Team</span><span class="hit">75%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · worth it at -297 or better · our model 75%</div></li><li><div class="row"><span class="who">Michael Mayer 3+ Receptions</span><span class="tag player">Player</span><span class="hit">73%</span></div><div class="small">LV @ NE · Sun 1:00 PM ET · worth it at -269 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Omarion Hampton 25+ Rush Yds</span><span class="tag player">Player</span><span class="hit">78%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · worth it at -357 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Justin Herbert 150+ Pass Yds</span><span class="tag player">Player</span><span class="hit">77%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · worth it at -342 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: LAC Over 13.5</span><span class="tag team">Team</span><span class="hit">75%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · worth it at -296 or better · our model 76%</div></li><li><div class="row"><span class="who">Jaxon Smith-Njigba 5+ Receptions</span><span class="tag player">Player</span><span class="hit">81%</span></div><div class="small">SF @ SEA · Sun 4:25 PM ET · worth it at -426 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Trey McBride 6+ Receptions</span><span class="tag player">Player</span><span class="hit">81%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -421 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt total: Over 37.5</span><span class="tag team">Team</span><span class="hit">76%</span></div><div class="small">SF @ SEA · Sun 4:25 PM ET · worth it at -317 or better · our model 79%</div></li><li><div class="row"><span class="who">Alt total: Under 63.5</span><span class="tag team">Team</span><span class="hit">76%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -313 or better · our model 77%</div></li><li><div class="row"><span class="who">Alt team total: ARI Over 18.5</span><span class="tag team">Team</span><span class="hit">75%</span></div><div class="small">DET @ ARI · Sun 4:25 PM ET · worth it at -307 or better · our model 77%</div></li><li><div class="row"><span class="who">Alt total: Under 63.5</span><span class="tag team">Team</span><span class="hit">77%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -329 or better · our model 80%</div></li><li><div class="row"><span class="who">Dawson Knox 1+ Receptions</span><span class="tag player">Player</span><span class="hit">76%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -324 or better · cleared it 4/4 games this season</div></li><li><div class="row"><span class="who">Alt team total: BUF Over 19.5</span><span class="tag team">Team</span><span class="hit">76%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · worth it at -313 or better · our model 78%</div></li></ol>
+    </details>
+  </section>
+
+  <section id="risk">
+    <h2>Picks at risk</h2>
+    <p class="small" style="margin:0">These picks depend on a player who did not practice Thursday. NFL.com posts final game statuses (Out / Doubtful / Questionable) Friday afternoon. Inactives come out 90 minutes before each kickoff.</p>
+    <div class="callout">
+      <div><b>Bears–Packers:</b> QB Caleb Williams did not practice. If he's out, skip the Rome Odunze overs and the Under 45.5; the Bears' passing game changes completely.</div>
+      <div><b>Eagles–Jaguars and Ravens–Falcons:</b> the model already has Saquon Barkley and Lamar Jackson out, based on missed practices and news roundups, not an official ruling. If either one plays, skip the props in that game.</div>
+    </div>
+    <ul class="list"><li><div class="row"><span class="who">Under 45.5</span><span class="odds">-110</span><span class="hit">55%</span></div><div class="small">CHI @ GB · Sun 1:00 PM ET</div><ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li></ul></li><li><div class="row"><span class="who">Rome Odunze Over 2.5 Receptions</span><span class="odds">-182</span><span class="hit">65%</span></div><div class="small">CHI @ GB · Sun 1:00 PM ET</div><ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li><li class="f-low">RB Kyle Monangai did not practice</li></ul></li><li><div class="row"><span class="who">Rome Odunze Over 39.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div><div class="small">CHI @ GB · Sun 1:00 PM ET</div><ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li><li class="f-low">RB Kyle Monangai did not practice</li></ul></li></ul>
+  </section>
+
+  <section id="top">
+    <h2>Top picks this weekend</h2>
+    <p class="small" style="margin:0">Most likely to hit, at FanDuel's price or better. Picks with an injury flag are listed last.</p>
+    <ul class="list"><li><div class="row"><span class="who">Konata Mumpfield Over 0.5 Receptions</span><span class="odds">-172</span><span class="hit">64%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Dalton Kincaid Under 4.5 Receptions</span><span class="odds">-166</span><span class="hit">64%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR DJ Moore did not practice</li></ul></li><li><div class="row"><span class="who">Kyren Williams Over 2.5 Receptions</span><span class="odds">-158</span><span class="hit">63%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Evan Engram Under 2.5 Receptions</span><span class="odds">-166</span><span class="hit">62%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · Receptions</div></li><li><div class="row"><span class="who">Malik Nabers Under 5.5 Receptions</span><span class="odds">-160</span><span class="hit">62%</span></div><div class="small">NYG @ WAS · Sun 1:00 PM ET · Receptions</div><ul class="flags"><li class="f-mid">Malik Nabers limited in practice</li></ul></li><li><div class="row"><span class="who">Garrett Wilson Under 6.5 Receptions</span><span class="odds">-160</span><span class="hit">61%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">Mason Taylor Over 1.5 Receptions</span><span class="odds">-154</span><span class="hit">61%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">Isaiah Williams Under 2.5 Receptions</span><span class="odds">-148</span><span class="hit">61%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">DK Metcalf Under 4.5 Receptions</span><span class="odds">-152</span><span class="hit">60%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · Receptions</div></li><li><div class="row"><span class="who">Roman Wilson Under 3.5 Receptions</span><span class="odds">-140</span><span class="hit">60%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · Receptions</div></li><li><div class="row"><span class="who">Pittsburgh Steelers ML</span><span class="odds">-142</span><span class="hit">59%</span></div><div class="small">IND @ PIT · Sun 1:00 PM ET · Game</div></li><li><div class="row"><span class="who">Tyler Higbee Over 2.5 Receptions</span><span class="odds">-138</span><span class="hit">59%</span></div><div class="small">BUF @ LA · Mon 8:15 PM ET · Receptions</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Courtland Sutton Under 3.5 Receptions</span><span class="odds">-136</span><span class="hit">58%</span></div><div class="small">DEN @ LAC · Sun 4:05 PM ET · Receptions</div></li><li><div class="row"><span class="who">New York Jets ML</span><span class="odds">-134</span><span class="hit">58%</span></div><div class="small">CLE @ NYJ · Sun 1:00 PM ET · Game</div></li><li><div class="row"><span class="who">Minnesota Vikings ML</span><span class="odds">-136</span><span class="hit">58%</span></div><div class="small">MIN @ NO · Sun 1:00 PM ET · Game</div></li></ul>
+  </section>
+
+  <section id="legs">
+    <h2>Safest parlay legs</h2>
+    <p class="small" style="margin:0">High hit chance without giving up value. Remember: even five 65% legs only hit together about 1 time in 9.</p>
+    <ul class="list"><li><div class="row"><span class="who">Rome Odunze Over 2.5 Receptions</span><span class="odds">-182</span><span class="hit">65%</span></div><div class="small">Chicago Bears @ Green Bay Packers · Sun 1:00 PM ET</div><ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li><li class="f-low">RB Kyle Monangai did not practice</li></ul></li><li><div class="row"><span class="who">Dalton Kincaid Under 4.5 Receptions</span><span class="odds">-166</span><span class="hit">64%</span></div><div class="small">Buffalo Bills @ Los Angeles Rams · Mon 8:15 PM ET</div><ul class="flags"><li class="f-low">WR DJ Moore did not practice</li></ul></li><li><div class="row"><span class="who">Konata Mumpfield Over 0.5 Receptions</span><span class="odds">-172</span><span class="hit">64%</span></div><div class="small">Buffalo Bills @ Los Angeles Rams · Mon 8:15 PM ET</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Kyren Williams Over 2.5 Receptions</span><span class="odds">-158</span><span class="hit">63%</span></div><div class="small">Buffalo Bills @ Los Angeles Rams · Mon 8:15 PM ET</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Isaiah Williams Under 2.5 Receptions</span><span class="odds">-148</span><span class="hit">61%</span></div><div class="small">Cleveland Browns @ New York Jets · Sun 1:00 PM ET</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">Mason Taylor Over 1.5 Receptions</span><span class="odds">-154</span><span class="hit">61%</span></div><div class="small">Cleveland Browns @ New York Jets · Sun 1:00 PM ET</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">Roman Wilson Under 3.5 Receptions</span><span class="odds">-140</span><span class="hit">60%</span></div><div class="small">Indianapolis Colts @ Pittsburgh Steelers · Sun 1:00 PM ET</div></li><li><div class="row"><span class="who">Evan Engram Under 2.5 Receptions</span><span class="odds">-166</span><span class="hit">62%</span></div><div class="small">Denver Broncos @ Los Angeles Chargers · Sun 4:05 PM ET</div></li><li><div class="row"><span class="who">Malik Nabers Under 5.5 Receptions</span><span class="odds">-160</span><span class="hit">62%</span></div><div class="small">New York Giants @ Washington Commanders · Sun 1:00 PM ET</div><ul class="flags"><li class="f-mid">Malik Nabers limited in practice</li></ul></li><li><div class="row"><span class="who">Garrett Wilson Under 6.5 Receptions</span><span class="odds">-160</span><span class="hit">61%</span></div><div class="small">Cleveland Browns @ New York Jets · Sun 1:00 PM ET</div><ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul></li><li><div class="row"><span class="who">DK Metcalf Under 4.5 Receptions</span><span class="odds">-152</span><span class="hit">60%</span></div><div class="small">Indianapolis Colts @ Pittsburgh Steelers · Sun 1:00 PM ET</div></li><li><div class="row"><span class="who">Tyler Higbee Over 2.5 Receptions</span><span class="odds">-138</span><span class="hit">59%</span></div><div class="small">Buffalo Bills @ Los Angeles Rams · Mon 8:15 PM ET</div><ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul></li><li><div class="row"><span class="who">Parker Washington Under 60.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div><div class="small">Philadelphia Eagles @ Jacksonville Jaguars · Sun 9:30 AM ET</div></li><li><div class="row"><span class="who">Courtland Sutton Under 3.5 Receptions</span><span class="odds">-136</span><span class="hit">58%</span></div><div class="small">Denver Broncos @ Los Angeles Chargers · Sun 4:05 PM ET</div></li><li><div class="row"><span class="who">Jaylen Wright Under 25.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div><div class="small">Cincinnati Bengals @ Miami Dolphins · Sun 1:00 PM ET</div><ul class="flags"><li class="f-mid">Jaylen Wright limited in practice</li><li class="f-low">WR Caleb Douglas did not practice</li><li class="f-low">TE Justin Joly did not practice</li></ul></li></ul>
+  </section>
+
+  <section id="injuries">
+    <h2>Injury watch</h2>
+    <p class="small" style="margin:0">Skill players who missed (<span class="tag dnp">DNP</span>) or were limited (<span class="tag ltd">Ltd</span>) in Thursday's practice, from the official NFL report. NFL.com posts final game statuses (Out / Doubtful / Questionable) Friday afternoon. Inactives come out 90 minutes before each kickoff.</p>
+    <div class="inj-game"><h4>PHI @ JAX · Sun 9:30 AM</h4><div class="inj"><span class="tag dnp">DNP</span><span>PHI RB <b>Saquon Barkley</b> <span class="small">(model has him out)</span></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PHI WR <b>Marquise Brown</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PHI WR <b>DeVonta Smith</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI TE <b>Dallas Goedert</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PHI WR <b>Dontayvion Wicks</b></span></div></div><div class="inj-game"><h4>CLE @ NYJ · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>CLE WR <b>Tylan Wallace</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>NYJ RB <b>Breece Hall</b> <span class="small">(model has him out)</span></span></div><div class="inj"><span class="tag dnp">DNP</span><span>NYJ WR <b>Adonai Mitchell</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CLE TE <b>Carsen Ryan</b></span></div></div><div class="inj-game"><h4>CHI @ GB · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>CHI QB <b>Caleb Williams</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>CHI RB <b>Kyle Monangai</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>GB RB <b>Chris Brooks</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CHI RB <b>D'Andre Swift</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>GB WR <b>Savion Williams</b></span></div></div><div class="inj-game"><h4>CIN @ MIA · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>CIN WR <b>Tee Higgins</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>MIA WR <b>Caleb Douglas</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>MIA TE <b>Justin Joly</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>CIN WR <b>Ja'Marr Chase</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>MIA WR <b>Chris Bell</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>MIA RB <b>Jaylen Wright</b></span></div></div><div class="inj-game"><h4>LV @ NE · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>LV WR <b>Jalen Nailor</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>NE WR <b>Mack Hollins</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LV RB <b>Ashton Jeanty</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LV WR <b>Cody White</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NE RB <b>Rhamondre Stevenson</b></span></div></div><div class="inj-game"><h4>MIN @ NO · Sun 1:00 PM</h4><div class="inj"><span class="tag ltd">Ltd</span><span>MIN WR <b>Jordan Addison</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>MIN WR <b>Justin Jefferson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>MIN RB <b>Aaron Jones</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NO WR <b>Barion Brown</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NO TE <b>Noah Fant</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NO RB <b>Alvin Kamara</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NO WR <b>Chris Olave</b></span></div></div><div class="inj-game"><h4>HOU @ TEN · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>TEN TE <b>David Martin-Robinson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>HOU WR <b>Nico Collins</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>HOU WR <b>Tank Dell</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>TEN TE <b>Gunnar Helm</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>TEN WR <b>Carnell Tate</b></span></div></div><div class="inj-game"><h4>NYG @ WAS · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>WAS QB <b>Marcus Mariota</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>WAS WR <b>Stefon Diggs</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>WAS WR <b>Terry McLaurin</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG TE <b>Isaiah Likely</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG TE <b>Chris Manhertz</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG WR <b>Malik Nabers</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>NYG RB <b>Cam Skattebo</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>WAS RB <b>Jacory Croskey-Merritt</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>WAS RB <b>Jeremy McNichols</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>WAS TE <b>Chig Okonkwo</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>WAS RB <b>Rachaad White</b></span></div></div><div class="inj-game"><h4>IND @ PIT · Sun 1:00 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>IND WR <b>Ashton Dulin</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>PIT WR <b>Michael Pittman</b> <span class="small">(model has him out)</span></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>IND WR <b>Keenan Allen</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>PIT RB <b>Rico Dowdle</b></span></div></div><div class="inj-game"><h4>DEN @ LAC · Sun 4:05 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>DEN WR <b>Pat Bryant</b> <span class="small">(model has him out)</span></span></div><div class="inj"><span class="tag dnp">DNP</span><span>LAC WR <b>Ladd McConkey</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>LAC WR <b>Brenen Thompson</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC QB <b>Trey Lance</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC WR <b>Quentin Johnston</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LAC TE <b>Charlie Kolar</b></span></div></div><div class="inj-game"><h4>DET @ ARI · Sun 4:25 PM</h4><div class="inj"><span class="tag ltd">Ltd</span><span>ARI RB <b>Jeremiyah Love</b></span></div></div><div class="inj-game"><h4>SF @ SEA · Sun 4:25 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>SF WR <b>Mike Evans</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>SEA RB <b>Zach Charbonnet</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>SEA WR <b>Irvin Charles</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>SEA RB <b>George Holani</b></span></div></div><div class="inj-game"><h4>BAL @ ATL · Sun 8:20 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>BAL QB <b>Lamar Jackson</b> <span class="small">(model has him out)</span></span></div><div class="inj"><span class="tag dnp">DNP</span><span>BAL TE <b>Durham Smythe</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>BAL WR <b>Zay Flowers</b></span></div></div><div class="inj-game"><h4>BUF @ LA · Mon 8:15 PM</h4><div class="inj"><span class="tag dnp">DNP</span><span>BUF WR <b>DJ Moore</b></span></div><div class="inj"><span class="tag dnp">DNP</span><span>LA WR <b>Davante Adams</b></span></div><div class="inj"><span class="tag ltd">Ltd</span><span>LA TE <b>Colby Parkinson</b></span></div></div>
+    <p class="small" style="margin:0">Already on injured reserve or ruled out, and left out of every projection: Tank Bigsby (PHI), Saquon Barkley (PHI), Breece Hall (NYJ), De'Von Achane (MIA), Jordan Mason (MIN), Travis Etienne (NO), Jaxson Dart (NYG), Chauncey Golston (NYG), Arden Key (IND), Michael Pittman (PIT), Jonah Coleman (DEN), Patrick Surtain II (DEN LCB), Pat Bryant (DEN), Jadarian Price (SEA), Nick Bosa (SF), Kyle Juszczyk (SF), Lamar Jackson (BAL).</p>
+  </section>
+
+  <section id="games">
+    <h2>Every game</h2>
+    <article class="game" id="g-PHI-JAX">
+    <header class="game-head">
+      <div class="kick">Sun 9:30 AM ET · Sunday morning (international)</div>
+      <h3>PHI @ JAX <span class="names">Philadelphia Eagles at Jacksonville Jaguars</span></h3>
+      <div class="line">FanDuel JAX -7.5 · total 41.5 · model JAX 25.1, PHI 18.0</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Parker Washington Under 60.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rec Yds · projection 46.2</div>
+        <ul class="flags"><li class="f-mid">Assumes Saquon Barkley is out (missed practice; not confirmed)</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Trevor Lawrence Under 225.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 198.7</div>
+        <ul class="flags"><li class="f-mid">Assumes Saquon Barkley is out (missed practice; not confirmed)</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Jalen Hurts Over 185.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 223.6</div>
+        <ul class="flags"><li class="f-mid">Assumes Saquon Barkley is out (missed practice; not confirmed)</li><li class="f-low">WR Marquise Brown did not practice</li><li class="f-low">WR DeVonta Smith did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Bhayshul Tuten Under 1.5 Receptions</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Receptions · projection 1.2</div>
+        <ul class="flags"><li class="f-mid">Assumes Saquon Barkley is out (missed practice; not confirmed)</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Bhayshul Tuten Under 9.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 8.6</div>
+        <ul class="flags"><li class="f-mid">Assumes Saquon Barkley is out (missed practice; not confirmed)</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Tank Bigsby (PHI), Saquon Barkley (PHI)</p>
+  </article>
+<article class="game" id="g-CLE-NYJ">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>CLE @ NYJ <span class="names">Cleveland Browns at New York Jets</span></h3>
+      <div class="line">FanDuel NYJ -1.5 · total 39.5 · model NYJ 23.1, CLE 19.4</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">New York Jets ML</span><span class="odds">-134</span><span class="hit">58%</span></div>
+        <div class="play-sub">Game</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Garrett Wilson Under 6.5 Receptions</span><span class="odds">-160</span><span class="hit">61%</span></div>
+        <div class="play-sub">Receptions · projection 5.5</div>
+        <ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Mason Taylor Over 1.5 Receptions</span><span class="odds">-154</span><span class="hit">61%</span></div>
+        <div class="play-sub">Receptions · projection 2.5</div>
+        <ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Isaiah Williams Under 2.5 Receptions</span><span class="odds">-148</span><span class="hit">61%</span></div>
+        <div class="play-sub">Receptions · projection 1.8</div>
+        <ul class="flags"><li class="f-low">WR Adonai Mitchell did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Quinshon Judkins Under 59.5 Rush Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rush Yds · projection 51.6</div>
+        <ul class="flags"><li class="f-low">WR Tylan Wallace did not practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Breece Hall (NYJ)</p>
+  </article>
+<article class="game" id="g-CHI-GB">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>CHI @ GB <span class="names">Chicago Bears at Green Bay Packers</span></h3>
+      <div class="line">FanDuel CHI -1.5 · total 45.5 · model GB 20.6, CHI 20.6</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Under 45.5</span><span class="odds">-110</span><span class="hit">55%</span></div>
+        <div class="play-sub">Game</div>
+        <ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Rome Odunze Over 2.5 Receptions</span><span class="odds">-182</span><span class="hit">65%</span></div>
+        <div class="play-sub">Receptions · projection 4.1</div>
+        <ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li><li class="f-low">RB Kyle Monangai did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tucker Kraft Under 4.5 Receptions</span><span class="odds">-122</span><span class="hit">57%</span></div>
+        <div class="play-sub">Receptions · projection 3.8</div>
+        <ul class="flags"><li class="f-low">RB Chris Brooks did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Rome Odunze Over 39.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rec Yds · projection 63.8</div>
+        <ul class="flags"><li class="f-high">QB Caleb Williams did not practice</li><li class="f-low">RB Kyle Monangai did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Jordan Love Over 233.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 281</div>
+        <ul class="flags"><li class="f-low">RB Chris Brooks did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tucker Kraft Under 49.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 44.3</div>
+        <ul class="flags"><li class="f-low">RB Chris Brooks did not practice</li></ul>
+      </li></ul>
+    
+  </article>
+<article class="game" id="g-CIN-MIA">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>CIN @ MIA <span class="names">Cincinnati Bengals at Miami Dolphins</span></h3>
+      <div class="line">FanDuel CIN -6.5 · total 43.5 · model MIA 21.8, CIN 24.8</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Chris Bell Under 2.5 Receptions</span><span class="odds">-122</span><span class="hit">56%</span></div>
+        <div class="play-sub">Receptions · projection 1.9</div>
+        <ul class="flags"><li class="f-mid">Chris Bell limited in practice</li><li class="f-low">WR Caleb Douglas did not practice</li><li class="f-low">TE Justin Joly did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Jaylen Wright Under 25.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 18.1</div>
+        <ul class="flags"><li class="f-mid">Jaylen Wright limited in practice</li><li class="f-low">WR Caleb Douglas did not practice</li><li class="f-low">TE Justin Joly did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Ollie Gordon II Under 43.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 31.3</div>
+        <ul class="flags"><li class="f-low">WR Caleb Douglas did not practice</li><li class="f-low">TE Justin Joly did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Malik Willis Over 192.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 230.4</div>
+        <ul class="flags"><li class="f-low">WR Caleb Douglas did not practice</li><li class="f-low">TE Justin Joly did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Joe Burrow Over 242.5 Pass Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Pass Yds · projection 276.4</div>
+        <ul class="flags"><li class="f-low">WR Tee Higgins did not practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> De'Von Achane (MIA)</p>
+  </article>
+<article class="game" id="g-LV-NE">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>LV @ NE <span class="names">Las Vegas Raiders at New England Patriots</span></h3>
+      <div class="line">FanDuel NE -3.5 · total 44.5 · model NE 20.2, LV 23.5</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Ashton Jeanty Over 24.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 37.4</div>
+        <ul class="flags"><li class="f-mid">Ashton Jeanty limited in practice</li><li class="f-low">WR Jalen Nailor did not practice</li></ul>
+      </li></ul>
+    
+  </article>
+<article class="game" id="g-MIN-NO">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>MIN @ NO <span class="names">Minnesota Vikings at New Orleans Saints</span></h3>
+      <div class="line">FanDuel MIN -1.5 · total 42.5 · model NO 21.3, MIN 24.8</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Minnesota Vikings ML</span><span class="odds">-136</span><span class="hit">58%</span></div>
+        <div class="play-sub">Game</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tyler Shough Over 8.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 20.3</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tyler Shough Over 237.5 Pass Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Pass Yds · projection 266.6</div>
+        
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Jordan Mason (MIN), Travis Etienne (NO)</p>
+  </article>
+<article class="game" id="g-HOU-TEN">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>HOU @ TEN <span class="names">Houston Texans at Tennessee Titans</span></h3>
+      <div class="line">FanDuel HOU -7.5 · total 37.5 · model TEN 21.9, HOU 20.4</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Over 37.5</span><span class="odds">-118</span><span class="hit">56%</span></div>
+        <div class="play-sub">Game</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">David Montgomery Under 43.5 Rush Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rush Yds · projection 36.8</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">C.J. Stroud Over 9.5 Rush Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rush Yds · projection 17.8</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Calvin Ridley Over 8.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 21.8</div>
+        <ul class="flags"><li class="f-low">TE David Martin-Robinson did not practice</li></ul>
+      </li></ul>
+    
+  </article>
+<article class="game" id="g-NYG-WAS">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>NYG @ WAS <span class="names">New York Giants at Washington Commanders</span></h3>
+      <div class="line">FanDuel WAS -3.5 · total 42.5 · model WAS 20.4, NYG 23.6</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Malik Nabers Under 5.5 Receptions</span><span class="odds">-160</span><span class="hit">62%</span></div>
+        <div class="play-sub">Receptions · projection 4.6</div>
+        <ul class="flags"><li class="f-mid">Malik Nabers limited in practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Jaxson Dart (NYG), Chauncey Golston (NYG)</p>
+  </article>
+<article class="game" id="g-IND-PIT">
+    <header class="game-head">
+      <div class="kick">Sun 1:00 PM ET</div>
+      <h3>IND @ PIT <span class="names">Indianapolis Colts at Pittsburgh Steelers</span></h3>
+      <div class="line">FanDuel PIT -2.5 · total 44.5 · model PIT 24.8, IND 21.0</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Pittsburgh Steelers ML</span><span class="odds">-142</span><span class="hit">59%</span></div>
+        <div class="play-sub">Game</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">DK Metcalf Under 4.5 Receptions</span><span class="odds">-152</span><span class="hit">60%</span></div>
+        <div class="play-sub">Receptions · projection 3.8</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Roman Wilson Under 3.5 Receptions</span><span class="odds">-140</span><span class="hit">60%</span></div>
+        <div class="play-sub">Receptions · projection 2.7</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Aaron Rodgers Over 222.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 260.7</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tyler Warren Under 48.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 43.2</div>
+        <ul class="flags"><li class="f-low">WR Ashton Dulin did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Josh Downs Under 58.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 53</div>
+        <ul class="flags"><li class="f-low">WR Ashton Dulin did not practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Arden Key (IND), Michael Pittman (PIT)</p>
+  </article>
+<article class="game" id="g-DEN-LAC">
+    <header class="game-head">
+      <div class="kick">Sun 4:05 PM ET</div>
+      <h3>DEN @ LAC <span class="names">Denver Broncos at Los Angeles Chargers</span></h3>
+      <div class="line">FanDuel DEN -3.5 · total 42.5 · model LAC 20.2, DEN 22.2</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Evan Engram Under 2.5 Receptions</span><span class="odds">-166</span><span class="hit">62%</span></div>
+        <div class="play-sub">Receptions · projection 2</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Courtland Sutton Under 3.5 Receptions</span><span class="odds">-136</span><span class="hit">58%</span></div>
+        <div class="play-sub">Receptions · projection 2.9</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Omarion Hampton Over 37.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 61</div>
+        <ul class="flags"><li class="f-low">WR Ladd McConkey did not practice</li><li class="f-low">WR Brenen Thompson did not practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Jonah Coleman (DEN), Patrick Surtain II (DEN LCB), Pat Bryant (DEN)</p>
+  </article>
+<article class="game" id="g-DET-ARI">
+    <header class="game-head">
+      <div class="kick">Sun 4:25 PM ET</div>
+      <h3>DET @ ARI <span class="names">Detroit Lions at Arizona Cardinals</span></h3>
+      <div class="line">FanDuel DET -5.5 · total 54.5 · model ARI 25.6, DET 28.0</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Jared Goff Over 280.5 Pass Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Pass Yds · projection 335.4</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Jacoby Brissett Over 8.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 17.5</div>
+        
+      </li></ul>
+    
+  </article>
+<article class="game" id="g-SF-SEA">
+    <header class="game-head">
+      <div class="kick">Sun 4:25 PM ET</div>
+      <h3>SF @ SEA <span class="names">San Francisco 49ers at Seattle Seahawks</span></h3>
+      <div class="line">FanDuel SEA -3 · total 46.5 · model SEA 23.9, SF 24.6</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Sam Darnold Over 4.5 Rush Yds</span><span class="odds">-120</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 10.5</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">George Holani Under 19.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 16.1</div>
+        <ul class="flags"><li class="f-mid">George Holani limited in practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Emanuel Wilson Under 62.5 Rush Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rush Yds · projection 50.8</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">George Holani Under 9.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rec Yds · projection 8.6</div>
+        <ul class="flags"><li class="f-mid">George Holani limited in practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Deebo Samuel Sr. Under 34.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 30.8</div>
+        <ul class="flags"><li class="f-low">WR Mike Evans did not practice</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Jadarian Price (SEA), Nick Bosa (SF), Kyle Juszczyk (SF)</p>
+  </article>
+<article class="game" id="g-BAL-ATL">
+    <header class="game-head">
+      <div class="kick">Sun 8:20 PM ET · Sunday Night Football</div>
+      <h3>BAL @ ATL <span class="names">Baltimore Ravens at Atlanta Falcons</span></h3>
+      <div class="line">FanDuel ATL -3.5 · total 43.5 · model ATL 24.5, BAL 22.0</div>
+    </header>
+    <p class="take">Pass on the moneyline, spread and total.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Bijan Robinson Under 26.5 Rec Yds</span><span class="odds">-114</span><span class="hit">55%</span></div>
+        <div class="play-sub">Rec Yds · projection 25.7</div>
+        <ul class="flags"><li class="f-mid">Assumes Lamar Jackson is out (missed practice; not confirmed)</li></ul>
+      </li></ul>
+    <p class="outs"><b>Model has out:</b> Lamar Jackson (BAL)</p>
+  </article>
+<article class="game" id="g-BUF-LA">
+    <header class="game-head">
+      <div class="kick">Mon 8:15 PM ET · Monday Night Football</div>
+      <h3>BUF @ LA <span class="names">Buffalo Bills at Los Angeles Rams</span></h3>
+      <div class="line">FanDuel LA -3.5 · total 54.5 · model LA 25.5, BUF 26.8</div>
+    </header>
+    <p class="take">We like a game bet here.</p>
+    <ul class="plays"><li class="play">
+        <div class="play-main"><span class="play-label">Buffalo Bills +3.5</span><span class="odds">-118</span><span class="hit">57%</span></div>
+        <div class="play-sub">Game</div>
+        
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Konata Mumpfield Over 0.5 Receptions</span><span class="odds">-172</span><span class="hit">64%</span></div>
+        <div class="play-sub">Receptions · projection 1.5</div>
+        <ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Dalton Kincaid Under 4.5 Receptions</span><span class="odds">-166</span><span class="hit">64%</span></div>
+        <div class="play-sub">Receptions · projection 3.2</div>
+        <ul class="flags"><li class="f-low">WR DJ Moore did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Kyren Williams Over 2.5 Receptions</span><span class="odds">-158</span><span class="hit">63%</span></div>
+        <div class="play-sub">Receptions · projection 4.3</div>
+        <ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Tyler Higbee Over 2.5 Receptions</span><span class="odds">-138</span><span class="hit">59%</span></div>
+        <div class="play-sub">Receptions · projection 3.6</div>
+        <ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul>
+      </li><li class="play">
+        <div class="play-main"><span class="play-label">Kyren Williams Over 19.5 Rec Yds</span><span class="odds">-114</span><span class="hit">56%</span></div>
+        <div class="play-sub">Rec Yds · projection 36.8</div>
+        <ul class="flags"><li class="f-low">WR Davante Adams did not practice</li></ul>
+      </li></ul>
+    
+  </article>
+  </section>
+
+  <p class="small">Chances blend our model with FanDuel's price (at most 40% model). A pick needs 55%+ and a fair price. Game bets are skipped when our team model and FanDuel disagree by more than 15 points, because that usually means news the model hasn't caught.</p>
+</div>

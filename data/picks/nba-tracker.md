@@ -1,6 +1,6 @@
 # NBA daily tracker
 
-Updated 2026-10-20 18:28 UTC by `npm run grade:nba-parlays`. Built from data/picks/nba-parlays-*.results.json.
+Updated 2026-10-20 18:34 UTC by `npm run grade:nba-parlays`. Built from data/picks/nba-parlays-*.results.json.
 
 **Tickets:** 0 cashed of 2 ($0.40 staked).
 **Ticket legs:** 0-0 (—, we expected —).
