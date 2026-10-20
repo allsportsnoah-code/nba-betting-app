@@ -1,0 +1,246 @@
+{
+  "updatedAt": "2026-10-20T05:39:42.057Z",
+  "days": [
+    {
+      "date": "2026-10-20",
+      "ticket": "pending",
+      "legsWon": 0,
+      "legsLost": 0,
+      "legsVoid": 0,
+      "legsPending": 25,
+      "topPicks": "0-0"
+    },
+    {
+      "date": "2026-10-21",
+      "ticket": "pending",
+      "legsWon": 0,
+      "legsLost": 0,
+      "legsVoid": 0,
+      "legsPending": 25,
+      "topPicks": "0-0"
+    }
+  ],
+  "tickets": {
+    "played": 2,
+    "cashed": 0,
+    "staked": 0.4
+  },
+  "ticketLegs": {
+    "won": 0,
+    "lost": 0,
+    "hitRate": null,
+    "expectedHitRate": null,
+    "byMarket": {
+      "Ast alt": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Ast+Reb": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Ast": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Moneyline": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts alt": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts+Ast": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts+Reb+Ast": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts+Reb": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Reb alt": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Reb": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Stl": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      }
+    },
+    "byHitBucket": {
+      "40-45%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "45-50%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "50-55%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "55-60%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      }
+    }
+  },
+  "topPicks": {
+    "won": 0,
+    "lost": 0,
+    "hitRate": null,
+    "expectedHitRate": null,
+    "byMarket": {
+      "3PM": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Ast": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Blk": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts+Ast": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts+Reb": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Pts": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "Reb": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      }
+    },
+    "byHitBucket": {
+      "55-60%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "60-65%": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      }
+    }
+  },
+  "onePerGame": {
+    "cashed": 0,
+    "lost": 0,
+    "pending": 2,
+    "days": [
+      {
+        "date": "2026-10-20",
+        "status": "pending",
+        "legs": "0-0",
+        "odds": 3.7
+      },
+      {
+        "date": "2026-10-21",
+        "status": "pending",
+        "legs": "0-0",
+        "odds": 136.34
+      }
+    ],
+    "legs": {
+      "won": 0,
+      "lost": 0,
+      "hitRate": null,
+      "expectedHitRate": null
+    }
+  },
+  "singleGameSets": {
+    "cashed": 0,
+    "lost": 0,
+    "pending": 98,
+    "legs": {
+      "won": 0,
+      "lost": 0,
+      "hitRate": null,
+      "expectedHitRate": null,
+      "lowered": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      },
+      "mainLine": {
+        "won": 0,
+        "lost": 0,
+        "hitRate": null,
+        "expectedHitRate": null
+      }
+    }
+  }
+}

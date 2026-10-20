@@ -1,0 +1,487 @@
+{
+  "date": "2026-10-20",
+  "picksFile": "data/picks/nba-parlays-2026-10-20.json",
+  "picksBuiltAt": "2026-10-20T05:23:40.604Z",
+  "firstGradedAt": "2026-10-20T05:30:02.600Z",
+  "gradedAt": "2026-10-20T05:39:41.284Z",
+  "finals": [
+    {
+      "gameId": "401909088",
+      "final": false,
+      "score": "BOS NaN @ DET NaN"
+    },
+    {
+      "gameId": "401909089",
+      "final": false,
+      "score": "PHI NaN @ NY NaN"
+    },
+    {
+      "gameId": "401909090",
+      "final": false,
+      "score": "OKC NaN @ SA NaN"
+    }
+  ],
+  "ticket": {
+    "status": "pending",
+    "won": 0,
+    "lost": 0,
+    "void": 0,
+    "pending": 25,
+    "stake": 0.2,
+    "fanduelPayoutIfWon": null,
+    "legs": [
+      {
+        "pick": "Dylan Harper Under 4.5 Reb",
+        "game": "OKC @ SA",
+        "market": "Reb",
+        "kind": "prop",
+        "price": 114,
+        "hitProb": 0.502,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Karl-Anthony Towns Under 4.5 Ast",
+        "game": "PHI @ NY",
+        "market": "Ast",
+        "kind": "prop",
+        "price": 115,
+        "hitProb": 0.499,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Jaylen Brown Over 3.5 Ast",
+        "game": "PHI @ NY",
+        "market": "Ast",
+        "kind": "prop",
+        "price": 108,
+        "hitProb": 0.512,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Andre Drummond 8+ Reb",
+        "game": "PHI @ NY",
+        "market": "Reb (alt)",
+        "kind": "prop",
+        "price": 150,
+        "hitProb": 0.424,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Keldon Johnson Over 8.5 Pts",
+        "game": "OKC @ SA",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -107,
+        "hitProb": 0.54,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Tyrese Maxey Over 26.5 Pts+Ast",
+        "game": "PHI @ NY",
+        "market": "Pts+Ast",
+        "kind": "prop",
+        "price": -105,
+        "hitProb": 0.535,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Jayson Tatum Under 26.5 Pts",
+        "game": "BOS @ DET",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -106,
+        "hitProb": 0.538,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Chet Holmgren Over 14.5 Pts+Ast",
+        "game": "OKC @ SA",
+        "market": "Pts+Ast",
+        "kind": "prop",
+        "price": -103,
+        "hitProb": 0.53,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "VJ Edgecombe Over 20.5 Pts+Reb+Ast",
+        "game": "PHI @ NY",
+        "market": "Pts+Reb+Ast",
+        "kind": "prop",
+        "price": -105,
+        "hitProb": 0.534,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Isaiah Hartenstein Over 2.5 Ast",
+        "game": "OKC @ SA",
+        "market": "Ast",
+        "kind": "prop",
+        "price": 102,
+        "hitProb": 0.516,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "LeBron James Over 15.5 Pts",
+        "game": "PHI @ NY",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -123,
+        "hitProb": 0.566,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "OG Anunoby Over 1.5 Stl",
+        "game": "PHI @ NY",
+        "market": "Stl",
+        "kind": "prop",
+        "price": 149,
+        "hitProb": 0.415,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "De'Aaron Fox Over 15.5 Pts",
+        "game": "OKC @ SA",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -106,
+        "hitProb": 0.527,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Paul George Over 4.5 Reb",
+        "game": "BOS @ DET",
+        "market": "Reb",
+        "kind": "prop",
+        "price": 110,
+        "hitProb": 0.487,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Julian Champagnie 6+ Reb",
+        "game": "OKC @ SA",
+        "market": "Reb (alt)",
+        "kind": "prop",
+        "price": 149,
+        "hitProb": 0.412,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Derrick White Over 8.5 Ast+Reb",
+        "game": "BOS @ DET",
+        "market": "Ast+Reb",
+        "kind": "prop",
+        "price": 107,
+        "hitProb": 0.493,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Jared McCain Under 12.5 Pts+Reb",
+        "game": "OKC @ SA",
+        "market": "Pts+Reb",
+        "kind": "prop",
+        "price": -118,
+        "hitProb": 0.549,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Joel Embiid Over 25.5 Pts+Ast",
+        "game": "PHI @ NY",
+        "market": "Pts+Ast",
+        "kind": "prop",
+        "price": -116,
+        "hitProb": 0.544,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "PHI ML",
+        "game": "PHI @ NY",
+        "market": "Moneyline",
+        "kind": "game",
+        "price": 150,
+        "hitProb": 0.408,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Ajay Mitchell Over 11.5 Pts",
+        "game": "OKC @ SA",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -115,
+        "hitProb": 0.537,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Payton Pritchard Over 3.5 Reb",
+        "game": "BOS @ DET",
+        "market": "Reb",
+        "kind": "prop",
+        "price": 112,
+        "hitProb": 0.474,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Jalen Duren Over 16.5 Pts",
+        "game": "BOS @ DET",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -122,
+        "hitProb": 0.549,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Duncan Robinson Over 10.5 Pts",
+        "game": "BOS @ DET",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -113,
+        "hitProb": 0.53,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Neemias Queta Over 7.5 Reb",
+        "game": "BOS @ DET",
+        "market": "Reb",
+        "kind": "prop",
+        "price": 103,
+        "hitProb": 0.493,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Cade Cunningham 10+ Ast",
+        "game": "BOS @ DET",
+        "market": "Ast (alt)",
+        "kind": "prop",
+        "price": 136,
+        "hitProb": 0.426,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      }
+    ]
+  },
+  "topPicks": {
+    "won": 0,
+    "lost": 0,
+    "void": 0,
+    "pending": 12,
+    "picks": [
+      {
+        "pick": "John Collins Over 0.5 3PM",
+        "game": "BOS @ DET",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -182,
+        "hitProb": 0.635,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Keldon Johnson Over 0.5 3PM",
+        "game": "OKC @ SA",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -178,
+        "hitProb": 0.629,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Anfernee Simons Over 1.5 3PM",
+        "game": "PHI @ NY",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -151,
+        "hitProb": 0.601,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Ausar Thompson Under 1.5 Blk",
+        "game": "BOS @ DET",
+        "market": "Blk",
+        "kind": "prop",
+        "price": -149,
+        "hitProb": 0.597,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Ajay Mitchell Over 2.5 Ast",
+        "game": "OKC @ SA",
+        "market": "Ast",
+        "kind": "prop",
+        "price": -152,
+        "hitProb": 0.595,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Dylan Harper Under 1.5 3PM",
+        "game": "OKC @ SA",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -145,
+        "hitProb": 0.593,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "OG Anunoby Over 1.5 Ast",
+        "game": "PHI @ NY",
+        "market": "Ast",
+        "kind": "prop",
+        "price": -143,
+        "hitProb": 0.579,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Isaiah Hartenstein Over 9.5 Pts+Ast",
+        "game": "OKC @ SA",
+        "market": "Pts+Ast",
+        "kind": "prop",
+        "price": -132,
+        "hitProb": 0.575,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Julian Champagnie Over 8.5 Pts",
+        "game": "OKC @ SA",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -131,
+        "hitProb": 0.574,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Jaylen Brown Over 20.5 Pts",
+        "game": "PHI @ NY",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -124,
+        "hitProb": 0.569,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "VJ Edgecombe Over 11.5 Pts",
+        "game": "PHI @ NY",
+        "market": "Pts",
+        "kind": "prop",
+        "price": -124,
+        "hitProb": 0.569,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Chet Holmgren Over 20.5 Pts+Reb",
+        "game": "OKC @ SA",
+        "market": "Pts+Reb",
+        "kind": "prop",
+        "price": -126,
+        "hitProb": 0.568,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      }
+    ]
+  }
+}

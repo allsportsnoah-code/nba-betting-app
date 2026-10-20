@@ -6,6 +6,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/lotto", label: "25-Leg" },
   { href: "/dashboard?day=today&propType=pra", label: "NBA" },
+  { href: "/nba/parlays", label: "NBA Parlays" },
   { href: "/mlb", label: "MLB" },
   { href: "/nfl", label: "NFL" },
   { href: "/soccer", label: "Soccer" },

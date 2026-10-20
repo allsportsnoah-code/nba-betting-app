@@ -1,0 +1,6022 @@
+{
+  "date": "2026-10-21",
+  "picksFile": "data/picks/nba-sets-2026-10-21.json",
+  "firstGradedAt": "2026-10-20T05:39:42.055Z",
+  "gradedAt": "2026-10-20T05:39:42.055Z",
+  "onePerGame": {
+    "odds": 136.34,
+    "status": "pending",
+    "won": 0,
+    "lost": 0,
+    "void": 0,
+    "pending": 11,
+    "oddsIfWon": null,
+    "legs": [
+      {
+        "pick": "Nickeil Alexander-Walker Over 2.5 Ast",
+        "game": "ATL @ ORL",
+        "market": "Ast",
+        "kind": "prop",
+        "price": -167,
+        "hitProb": 0.613,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Alex Sarr Over 1.5 Ast",
+        "game": "MIL @ WSH",
+        "market": "Ast",
+        "kind": "prop",
+        "price": -184,
+        "hitProb": 0.636,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+        "game": "MIN @ MIA",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -173,
+        "hitProb": 0.627,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Naz Reid Under 7.5 Reb",
+        "game": "CHA @ BKN",
+        "market": "Reb",
+        "kind": "prop",
+        "price": -145,
+        "hitProb": 0.58,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Norman Powell Over 2.5 Reb",
+        "game": "CHI @ TOR",
+        "market": "Reb",
+        "kind": "prop",
+        "price": -163,
+        "hitProb": 0.605,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Ty Jerome Under 7.5 Ast",
+        "game": "UTAH @ MEM",
+        "market": "Ast",
+        "kind": "prop",
+        "price": -144,
+        "hitProb": 0.59,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Ivica Zubac Under 1.5 Blk",
+        "game": "IND @ NO",
+        "market": "Blk",
+        "kind": "prop",
+        "price": -230,
+        "hitProb": 0.676,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Reed Sheppard Over 1.5 3PM",
+        "game": "DAL @ HOU",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -172,
+        "hitProb": 0.626,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Draymond Green Over 0.5 3PM",
+        "game": "GS @ LAL",
+        "market": "3PM",
+        "kind": "prop",
+        "price": -224,
+        "hitProb": 0.673,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Devin Booker Under 1.5 Stl",
+        "game": "PHX @ POR",
+        "market": "Stl",
+        "kind": "prop",
+        "price": -225,
+        "hitProb": 0.673,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      },
+      {
+        "pick": "Darius Garland Under 3.5 Reb",
+        "game": "SAC @ LAC",
+        "market": "Reb",
+        "kind": "prop",
+        "price": -167,
+        "hitProb": 0.619,
+        "lowered": false,
+        "result": {
+          "status": "pending"
+        }
+      }
+    ]
+  },
+  "games": {
+    "401909091": {
+      "label": "MIN @ MIA",
+      "tickets": [
+        {
+          "odds": 14.63,
+          "hitChance": 0.0547,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bam Adebayo Over 2.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.593,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Ayo Dosunmu Over 2.5 Reb",
+              "game": "MIN @ MIA",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -150,
+              "hitProb": 0.587,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 15.09,
+          "hitChance": 0.0531,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bam Adebayo Over 2.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.593,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LaMelo Ball Under 8.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -139,
+              "hitProb": 0.571,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 14.71,
+          "hitChance": 0.053,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bam Adebayo Over 2.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.593,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Klay Thompson Under 2.5 Reb",
+              "game": "MIN @ MIA",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -148,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 16.18,
+          "hitChance": 0.0486,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bobby Portis Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.567,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaden McDaniels Under 7.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 12.67,
+          "hitChance": 0.0603,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Davion Mitchell 5+ Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.661,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rudy Gobert 8+ Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.671,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Joan Beringer Under 7.5 Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.529,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.84,
+          "hitChance": 0.043,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jonathan Kuminga Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -237,
+              "hitProb": 0.667,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tim Hardaway Jr. Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.627,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pelle Larsson Over 0.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -178,
+              "hitProb": 0.615,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Giannis Antetokounmpo Under 17.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -109,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Anthony Edwards 8+ Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb (alt)",
+              "kind": "prop",
+              "price": -200,
+              "hitProb": 0.614,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MIN +1.5",
+              "game": "MIN @ MIA",
+              "market": "Spread",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.514,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 23.13,
+          "hitChance": 0.034,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bam Adebayo Over 2.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.593,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 243.5",
+              "game": "MIN @ MIA",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LaMelo Ball Under 8.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -139,
+              "hitProb": 0.571,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Klay Thompson Under 2.5 Reb",
+              "game": "MIN @ MIA",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -148,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bobby Portis Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.567,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.67,
+          "hitChance": 0.0413,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Andrew Wiggins Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaden McDaniels Under 7.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Davion Mitchell 5+ Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.661,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rudy Gobert 8+ Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.671,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Joan Beringer Under 7.5 Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.529,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Giannis Antetokounmpo Under 17.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -109,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 24.37,
+          "hitChance": 0.0311,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Bam Adebayo Over 2.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.593,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Anthony Edwards 8+ Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb (alt)",
+              "kind": "prop",
+              "price": -200,
+              "hitProb": 0.614,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MIN +1.5",
+              "game": "MIN @ MIA",
+              "market": "Spread",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.514,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 243.5",
+              "game": "MIN @ MIA",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LaMelo Ball Under 8.5 Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -139,
+              "hitProb": 0.571,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Klay Thompson Under 2.5 Reb",
+              "game": "MIN @ MIA",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -148,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 20.62,
+          "hitChance": 0.0384,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Bobby Portis Over 1.5 3PM",
+              "game": "MIN @ MIA",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.567,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaden McDaniels Under 7.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Davion Mitchell 5+ Ast",
+              "game": "MIN @ MIA",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.661,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rudy Gobert 8+ Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.671,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Joan Beringer Under 7.5 Pts",
+              "game": "MIN @ MIA",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.529,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Giannis Antetokounmpo Under 17.5 Ast+Reb",
+              "game": "MIN @ MIA",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -109,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909092": {
+      "label": "GS @ LAL",
+      "tickets": [
+        {
+          "odds": 16.78,
+          "hitChance": 0.0509,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Draymond Green Over 0.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAL ML",
+              "game": "GS @ LAL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -225,
+              "hitProb": 0.66,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Gui Santos Under 3.5 Ast",
+              "game": "GS @ LAL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -165,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matisse Thybulle Under 10.5 Pts+Reb",
+              "game": "GS @ LAL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -128,
+              "hitProb": 0.572,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Brandin Podziemski Over 1.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Luka Doncic Over 3.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -150,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.26,
+          "hitChance": 0.0502,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Draymond Green Over 0.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAL ML",
+              "game": "GS @ LAL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -225,
+              "hitProb": 0.66,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Gui Santos Under 3.5 Ast",
+              "game": "GS @ LAL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -165,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matisse Thybulle Under 10.5 Pts+Reb",
+              "game": "GS @ LAL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -128,
+              "hitProb": 0.572,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Brandin Podziemski Over 1.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Quentin Grimes Over 10.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 17.78,
+          "hitChance": 0.0472,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Draymond Green Over 0.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAL ML",
+              "game": "GS @ LAL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -225,
+              "hitProb": 0.66,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Gui Santos Under 3.5 Ast",
+              "game": "GS @ LAL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -165,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matisse Thybulle Under 10.5 Pts+Reb",
+              "game": "GS @ LAL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -128,
+              "hitProb": 0.572,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Stephen Curry Over 7.5 Ast+Reb",
+              "game": "GS @ LAL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -141,
+              "hitProb": 0.556,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Austin Reaves Under 2.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -135,
+              "hitProb": 0.54,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 20.92,
+          "hitChance": 0.0383,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Draymond Green Over 0.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAL ML",
+              "game": "GS @ LAL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -225,
+              "hitProb": 0.66,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Gui Santos Under 3.5 Ast",
+              "game": "GS @ LAL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -165,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Sandro Mamukelashvili Under 5.5 Reb",
+              "game": "GS @ LAL",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.524,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Walker Kessler Under 11.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yaxel Lendeborg Under 14.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.515,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 30.91,
+          "hitChance": 0.0274,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Matisse Thybulle Under 10.5 Pts+Reb",
+              "game": "GS @ LAL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -128,
+              "hitProb": 0.572,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Brandin Podziemski Over 1.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 234.5",
+              "game": "GS @ LAL",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Quentin Grimes Over 10.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Stephen Curry Over 7.5 Ast+Reb",
+              "game": "GS @ LAL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -141,
+              "hitProb": 0.556,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Austin Reaves Under 2.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -135,
+              "hitProb": 0.54,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 36.36,
+          "hitChance": 0.0223,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Brandin Podziemski Over 1.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Sandro Mamukelashvili Under 5.5 Reb",
+              "game": "GS @ LAL",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.524,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Walker Kessler Under 11.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yaxel Lendeborg Under 14.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.515,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 234.5",
+              "game": "GS @ LAL",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Quentin Grimes Over 10.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 35.42,
+          "hitChance": 0.0209,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Stephen Curry Over 7.5 Ast+Reb",
+              "game": "GS @ LAL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -141,
+              "hitProb": 0.556,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Austin Reaves Under 2.5 3PM",
+              "game": "GS @ LAL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -135,
+              "hitProb": 0.54,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Sandro Mamukelashvili Under 5.5 Reb",
+              "game": "GS @ LAL",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.524,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Walker Kessler Under 11.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yaxel Lendeborg Under 14.5 Pts",
+              "game": "GS @ LAL",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.515,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 234.5",
+              "game": "GS @ LAL",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909834": {
+      "label": "ATL @ ORL",
+      "tickets": [
+        {
+          "odds": 13.35,
+          "hitChance": 0.0623,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Nickeil Alexander-Walker Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Desmond Bane Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -159,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Suggs Over 1.5 3PM",
+              "game": "ATL @ ORL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.608,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Johnson 6+ Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -275,
+              "hitProb": 0.687,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dyson Daniels 4+ Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -289,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Franz Wagner Under 10.5 Ast+Reb",
+              "game": "ATL @ ORL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 13.2,
+          "hitChance": 0.0619,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Nickeil Alexander-Walker Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Desmond Bane Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -159,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Suggs Over 1.5 3PM",
+              "game": "ATL @ ORL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.608,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Johnson Over 6.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -149,
+              "hitProb": 0.58,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dyson Daniels 4+ Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -289,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Wendell Carter Jr. 8+ Pts",
+              "game": "ATL @ ORL",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.67,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 17.56,
+          "hitChance": 0.0479,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Nickeil Alexander-Walker Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Desmond Bane Over 2.5 Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -159,
+              "hitProb": 0.61,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Suggs Over 1.5 3PM",
+              "game": "ATL @ ORL",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.608,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Johnson 6+ Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -275,
+              "hitProb": 0.687,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "ORL ML",
+              "game": "ATL @ ORL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -135,
+              "hitProb": 0.557,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Onyeka Okongwu Over 15.5 Pts+Ast",
+              "game": "ATL @ ORL",
+              "market": "Pts+Ast",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 20.59,
+          "hitChance": 0.0387,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Dyson Daniels 4+ Ast",
+              "game": "ATL @ ORL",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -289,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Franz Wagner Under 10.5 Ast+Reb",
+              "game": "ATL @ ORL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "CJ McCollum Over 19.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.542,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Paolo Banchero Under 31.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.523,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 235.5",
+              "game": "ATL @ ORL",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Wendell Carter Jr. 8+ Pts",
+              "game": "ATL @ ORL",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.67,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 33.58,
+          "hitChance": 0.0253,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Franz Wagner Under 10.5 Ast+Reb",
+              "game": "ATL @ ORL",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "ORL ML",
+              "game": "ATL @ ORL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -135,
+              "hitProb": 0.557,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Onyeka Okongwu Over 15.5 Pts+Ast",
+              "game": "ATL @ ORL",
+              "market": "Pts+Ast",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "CJ McCollum Over 19.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.542,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Paolo Banchero Under 31.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.523,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 235.5",
+              "game": "ATL @ ORL",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 27.09,
+          "hitChance": 0.0298,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Wendell Carter Jr. 8+ Pts",
+              "game": "ATL @ ORL",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.67,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "ORL ML",
+              "game": "ATL @ ORL",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -135,
+              "hitProb": 0.557,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Onyeka Okongwu Over 15.5 Pts+Ast",
+              "game": "ATL @ ORL",
+              "market": "Pts+Ast",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "CJ McCollum Over 19.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.542,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Paolo Banchero Under 31.5 Pts+Reb",
+              "game": "ATL @ ORL",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -125,
+              "hitProb": 0.523,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 235.5",
+              "game": "ATL @ ORL",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909835": {
+      "label": "MIL @ WSH",
+      "tickets": [
+        {
+          "odds": 18.4,
+          "hitChance": 0.0481,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Alex Sarr Over 1.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -184,
+              "hitProb": 0.636,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyshawn George Over 2.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -164,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Anthony Davis Under 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trae Young Under 2.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -152,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaime Jaquez Jr. Over 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.584,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Myles Turner Over 1.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -147,
+              "hitProb": 0.58,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.61,
+          "hitChance": 0.0477,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Alex Sarr Over 1.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -184,
+              "hitProb": 0.636,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyshawn George Over 2.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -164,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Anthony Davis Under 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trae Young Under 2.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -152,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaime Jaquez Jr. Over 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.584,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyle Kuzma Over 3.5 Reb",
+              "game": "MIL @ WSH",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.576,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 20.13,
+          "hitChance": 0.0414,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Alex Sarr Over 1.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -184,
+              "hitProb": 0.636,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyshawn George Over 2.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -164,
+              "hitProb": 0.618,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Anthony Davis Under 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -173,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trae Young Under 2.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -152,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Ryan Rollins Over 9.5 Ast+Reb",
+              "game": "MIL @ WSH",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.551,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyler Herro Under 4.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.53,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 31.39,
+          "hitChance": 0.0269,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jaime Jaquez Jr. Over 3.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -146,
+              "hitProb": 0.584,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Myles Turner Over 1.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -147,
+              "hitProb": 0.58,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "AJ Dybantsa Over 13.5 Pts",
+              "game": "MIL @ WSH",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 238.5",
+              "game": "MIL @ WSH",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MIL +4.5",
+              "game": "MIL @ WSH",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.51,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyle Kuzma Over 3.5 Reb",
+              "game": "MIL @ WSH",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.576,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 33.95,
+          "hitChance": 0.0233,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Myles Turner Over 1.5 3PM",
+              "game": "MIL @ WSH",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -147,
+              "hitProb": 0.58,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Ryan Rollins Over 9.5 Ast+Reb",
+              "game": "MIL @ WSH",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.551,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyler Herro Under 4.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.53,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "AJ Dybantsa Over 13.5 Pts",
+              "game": "MIL @ WSH",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 238.5",
+              "game": "MIL @ WSH",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MIL +4.5",
+              "game": "MIL @ WSH",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.51,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 34.33,
+          "hitChance": 0.0231,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kyle Kuzma Over 3.5 Reb",
+              "game": "MIL @ WSH",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.576,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Ryan Rollins Over 9.5 Ast+Reb",
+              "game": "MIL @ WSH",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.551,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyler Herro Under 4.5 Ast",
+              "game": "MIL @ WSH",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.53,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "AJ Dybantsa Over 13.5 Pts",
+              "game": "MIL @ WSH",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 238.5",
+              "game": "MIL @ WSH",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MIL +4.5",
+              "game": "MIL @ WSH",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.51,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909837": {
+      "label": "CHI @ TOR",
+      "tickets": [
+        {
+          "odds": 10.77,
+          "hitChance": 0.0689,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 5,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Norman Powell Over 2.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matas Buzelis Under 2.5 3PM",
+              "game": "CHI @ TOR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "RJ Barrett Under 3.5 Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.577,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Caleb Wilson Over 2.5 Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -160,
+              "hitProb": 0.576,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Josh Giddey Over 1.5 3PM",
+              "game": "CHI @ TOR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -150,
+              "hitProb": 0.574,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 10.99,
+          "hitChance": 0.0672,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 5,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Norman Powell Over 2.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matas Buzelis Under 2.5 3PM",
+              "game": "CHI @ TOR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "RJ Barrett Under 3.5 Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.577,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Caleb Wilson Over 2.5 Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -160,
+              "hitProb": 0.576,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Immanuel Quickley Over 3.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 12.22,
+          "hitChance": 0.0651,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 5,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Norman Powell Over 2.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -163,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Matas Buzelis Under 2.5 3PM",
+              "game": "CHI @ TOR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -181,
+              "hitProb": 0.597,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Scottie Barnes 5+ Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -266,
+              "hitProb": 0.669,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kawhi Leonard Over 34.5 Pts+Reb+Ast",
+              "game": "CHI @ TOR",
+              "market": "Pts+Reb+Ast",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.531,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "CHI +9.5",
+              "game": "CHI @ TOR",
+              "market": "Spread",
+              "kind": "game",
+              "price": -108,
+              "hitProb": 0.507,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 12.94,
+          "hitChance": 0.0579,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 5,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "RJ Barrett Under 3.5 Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.577,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 236.5",
+              "game": "CHI @ TOR",
+              "market": "Total",
+              "kind": "game",
+              "price": -112,
+              "hitProb": 0.504,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Immanuel Quickley Over 3.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Scottie Barnes 5+ Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -266,
+              "hitProb": 0.669,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kawhi Leonard Over 34.5 Pts+Reb+Ast",
+              "game": "CHI @ TOR",
+              "market": "Pts+Reb+Ast",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.531,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 15.69,
+          "hitChance": 0.0509,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 5,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "CHI +9.5",
+              "game": "CHI @ TOR",
+              "market": "Spread",
+              "kind": "game",
+              "price": -108,
+              "hitProb": 0.507,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 236.5",
+              "game": "CHI @ TOR",
+              "market": "Total",
+              "kind": "game",
+              "price": -112,
+              "hitProb": 0.504,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Immanuel Quickley Over 3.5 Reb",
+              "game": "CHI @ TOR",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -143,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Scottie Barnes 5+ Ast",
+              "game": "CHI @ TOR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -266,
+              "hitProb": 0.669,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kawhi Leonard Over 34.5 Pts+Reb+Ast",
+              "game": "CHI @ TOR",
+              "market": "Pts+Reb+Ast",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.531,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909838": {
+      "label": "UTAH @ MEM",
+      "tickets": [
+        {
+          "odds": 19.21,
+          "hitChance": 0.042,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ty Jerome Under 3.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -171,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaren Jackson Jr. Over 1.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -177,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaylen Wells Over 2.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.6,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cedric Coward Under 3.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -154,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Lauri Markkanen Under 2.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -160,
+              "hitProb": 0.581,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaxson Hayes Under 14.5 Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -122,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 19.5,
+          "hitChance": 0.0393,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ty Jerome Under 3.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -171,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaren Jackson Jr. Over 1.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -177,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaylen Wells Over 2.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.6,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cedric Coward Under 3.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -154,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Lauri Markkanen Under 2.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -160,
+              "hitProb": 0.581,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MEM ML",
+              "game": "UTAH @ MEM",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -118,
+              "hitProb": 0.525,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 21.2,
+          "hitChance": 0.0351,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ty Jerome Under 3.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -171,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaren Jackson Jr. Over 1.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -177,
+              "hitProb": 0.605,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaylen Wells Over 2.5 Reb",
+              "game": "UTAH @ MEM",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -170,
+              "hitProb": 0.6,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cedric Coward Under 3.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -154,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darryn Peterson Under 14.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach Edey Under 12.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 25.11,
+          "hitChance": 0.0315,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Lauri Markkanen Under 2.5 Ast",
+              "game": "UTAH @ MEM",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -160,
+              "hitProb": 0.581,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jaxson Hayes Under 14.5 Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -122,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keyonte George 20+ Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb (alt)",
+              "kind": "prop",
+              "price": -293,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cameron Boozer Under 17.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.513,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 242.5",
+              "game": "UTAH @ MEM",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "MEM ML",
+              "game": "UTAH @ MEM",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -118,
+              "hitProb": 0.525,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 27.3,
+          "hitChance": 0.0281,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jaxson Hayes Under 14.5 Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -122,
+              "hitProb": 0.561,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach Edey Under 12.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darryn Peterson Under 14.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keyonte George 20+ Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb (alt)",
+              "kind": "prop",
+              "price": -293,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cameron Boozer Under 17.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.513,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 242.5",
+              "game": "UTAH @ MEM",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 27.72,
+          "hitChance": 0.0263,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "MEM ML",
+              "game": "UTAH @ MEM",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -118,
+              "hitProb": 0.525,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach Edey Under 12.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darryn Peterson Under 14.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keyonte George 20+ Pts+Reb",
+              "game": "UTAH @ MEM",
+              "market": "Pts+Reb (alt)",
+              "kind": "prop",
+              "price": -293,
+              "hitProb": 0.7,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Cameron Boozer Under 17.5 Pts",
+              "game": "UTAH @ MEM",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -120,
+              "hitProb": 0.513,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 242.5",
+              "game": "UTAH @ MEM",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909839": {
+      "label": "IND @ NO",
+      "tickets": [
+        {
+          "odds": 13.87,
+          "hitChance": 0.0611,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ivica Zubac Under 1.5 Blk",
+              "game": "IND @ NO",
+              "market": "Blk",
+              "kind": "prop",
+              "price": -230,
+              "hitProb": 0.676,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zion Williamson Over 0.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -217,
+              "hitProb": 0.653,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Nembhard Under 1.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -201,
+              "hitProb": 0.649,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bennedict Mathurin Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.607,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kelly Oubre Jr. Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -158,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Aaron Nesmith Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -154,
+              "hitProb": 0.579,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 14.6,
+          "hitChance": 0.0601,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ivica Zubac Under 1.5 Blk",
+              "game": "IND @ NO",
+              "market": "Blk",
+              "kind": "prop",
+              "price": -230,
+              "hitProb": 0.676,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zion Williamson Over 0.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -217,
+              "hitProb": 0.653,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Nembhard Under 1.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -201,
+              "hitProb": 0.649,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bennedict Mathurin Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.607,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kelly Oubre Jr. Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -158,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Herbert Jones Over 2.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 16.69,
+          "hitChance": 0.054,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ivica Zubac Under 1.5 Blk",
+              "game": "IND @ NO",
+              "market": "Blk",
+              "kind": "prop",
+              "price": -230,
+              "hitProb": 0.676,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zion Williamson Over 0.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -217,
+              "hitProb": 0.653,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Nembhard Under 1.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -201,
+              "hitProb": 0.649,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Bennedict Mathurin Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.607,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yves Missi Under 7.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.568,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pascal Siakam Over 26.5 Pts+Reb",
+              "game": "IND @ NO",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 16.58,
+          "hitChance": 0.0489,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ivica Zubac Under 1.5 Blk",
+              "game": "IND @ NO",
+              "market": "Blk",
+              "kind": "prop",
+              "price": -230,
+              "hitProb": 0.676,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zion Williamson Over 0.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -217,
+              "hitProb": 0.653,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Nembhard Under 1.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -201,
+              "hitProb": 0.649,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trey Murphy III 18+ Pts",
+              "game": "IND @ NO",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -188,
+              "hitProb": 0.619,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "NO +3.5",
+              "game": "IND @ NO",
+              "market": "Spread",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dejounte Murray Over 16.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.83,
+          "hitChance": 0.0426,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Ivica Zubac Under 1.5 Blk",
+              "game": "IND @ NO",
+              "market": "Blk",
+              "kind": "prop",
+              "price": -230,
+              "hitProb": 0.676,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zion Williamson Over 0.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -217,
+              "hitProb": 0.653,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Andrew Nembhard Under 1.5 Stl",
+              "game": "IND @ NO",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -201,
+              "hitProb": 0.649,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyrese Haliburton Under 19.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 240.5",
+              "game": "IND @ NO",
+              "market": "Total",
+              "kind": "game",
+              "price": -112,
+              "hitProb": 0.504,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Herbert Jones Over 2.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 25.4,
+          "hitChance": 0.0373,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Bennedict Mathurin Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.607,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kelly Oubre Jr. Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -158,
+              "hitProb": 0.606,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yves Missi Under 7.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.568,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Pascal Siakam Over 26.5 Pts+Reb",
+              "game": "IND @ NO",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trey Murphy III 18+ Pts",
+              "game": "IND @ NO",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -188,
+              "hitProb": 0.619,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "NO +3.5",
+              "game": "IND @ NO",
+              "market": "Spread",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 31.79,
+          "hitChance": 0.0267,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Bennedict Mathurin Over 3.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.607,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dejounte Murray Over 16.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyrese Haliburton Under 19.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 240.5",
+              "game": "IND @ NO",
+              "market": "Total",
+              "kind": "game",
+              "price": -112,
+              "hitProb": 0.504,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Herbert Jones Over 2.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -136,
+              "hitProb": 0.57,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Yves Missi Under 7.5 Reb",
+              "game": "IND @ NO",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.568,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 33.11,
+          "hitChance": 0.0243,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Pascal Siakam Over 26.5 Pts+Reb",
+              "game": "IND @ NO",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.547,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Trey Murphy III 18+ Pts",
+              "game": "IND @ NO",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -188,
+              "hitProb": 0.619,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "NO +3.5",
+              "game": "IND @ NO",
+              "market": "Spread",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.528,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dejounte Murray Over 16.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.522,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tyrese Haliburton Under 19.5 Pts",
+              "game": "IND @ NO",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.517,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Under 240.5",
+              "game": "IND @ NO",
+              "market": "Total",
+              "kind": "game",
+              "price": -112,
+              "hitProb": 0.504,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909840": {
+      "label": "DAL @ HOU",
+      "tickets": [
+        {
+          "odds": 16.05,
+          "hitChance": 0.0523,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Cooper Flagg Under 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -203,
+              "hitProb": 0.643,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jabari Smith Jr. Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.632,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Reed Sheppard Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -172,
+              "hitProb": 0.626,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Max Christie Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -174,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Alperen Sengun Over 4.5 Ast",
+              "game": "DAL @ HOU",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -157,
+              "hitProb": 0.603,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Amen Thompson Under 8.5 Reb",
+              "game": "DAL @ HOU",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -138,
+              "hitProb": 0.551,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 13.15,
+          "hitChance": 0.0635,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Cooper Flagg Under 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -203,
+              "hitProb": 0.643,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jabari Smith Jr. Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.632,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Reed Sheppard Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -172,
+              "hitProb": 0.626,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Max Christie Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -174,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Alperen Sengun Over 4.5 Ast",
+              "game": "DAL @ HOU",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -157,
+              "hitProb": 0.603,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tari Eason 8+ Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.668,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.62,
+          "hitChance": 0.0454,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Cooper Flagg Under 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -203,
+              "hitProb": 0.643,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jabari Smith Jr. Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.632,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Reed Sheppard Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -172,
+              "hitProb": 0.626,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Max Christie Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -174,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "P.J. Washington Over 19.5 Pts+Reb",
+              "game": "DAL @ HOU",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.538,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kevin Durant Over 23.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.48,
+          "hitChance": 0.0435,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Cooper Flagg Under 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -203,
+              "hitProb": 0.643,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jabari Smith Jr. Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.632,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Reed Sheppard Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -172,
+              "hitProb": 0.626,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Daniel Gafford 6+ Reb",
+              "game": "DAL @ HOU",
+              "market": "Reb (alt)",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.642,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyrie Irving Over 19.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.521,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "DAL +8.5",
+              "game": "DAL @ HOU",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 17.76,
+          "hitChance": 0.044,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Cooper Flagg Under 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -203,
+              "hitProb": 0.643,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jabari Smith Jr. Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.632,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Reed Sheppard Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -172,
+              "hitProb": 0.626,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 229.5",
+              "game": "DAL @ HOU",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Fred VanVleet Under 12.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.506,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tari Eason 8+ Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.668,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 22.15,
+          "hitChance": 0.0359,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Max Christie Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -174,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Alperen Sengun Over 4.5 Ast",
+              "game": "DAL @ HOU",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -157,
+              "hitProb": 0.603,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "P.J. Washington Over 19.5 Pts+Reb",
+              "game": "DAL @ HOU",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.538,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kevin Durant Over 23.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Daniel Gafford 6+ Reb",
+              "game": "DAL @ HOU",
+              "market": "Reb (alt)",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.642,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyrie Irving Over 19.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.521,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 27.13,
+          "hitChance": 0.0294,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Max Christie Over 1.5 3PM",
+              "game": "DAL @ HOU",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -174,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "DAL +8.5",
+              "game": "DAL @ HOU",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 229.5",
+              "game": "DAL @ HOU",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Fred VanVleet Under 12.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.506,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Tari Eason 8+ Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -242,
+              "hitProb": 0.668,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "P.J. Washington Over 19.5 Pts+Reb",
+              "game": "DAL @ HOU",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.538,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 32.55,
+          "hitChance": 0.0237,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kevin Durant Over 23.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -121,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Daniel Gafford 6+ Reb",
+              "game": "DAL @ HOU",
+              "market": "Reb (alt)",
+              "kind": "prop",
+              "price": -224,
+              "hitProb": 0.642,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Kyrie Irving Over 19.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.521,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "DAL +8.5",
+              "game": "DAL @ HOU",
+              "market": "Spread",
+              "kind": "game",
+              "price": -105,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 229.5",
+              "game": "DAL @ HOU",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Fred VanVleet Under 12.5 Pts",
+              "game": "DAL @ HOU",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -116,
+              "hitProb": 0.506,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909841": {
+      "label": "PHX @ POR",
+      "tickets": [
+        {
+          "odds": 13.1,
+          "hitChance": 0.0635,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Devin Booker Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dillon Brooks Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.664,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Toumani Camara Over 1.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.642,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Donovan Clingan Over 0.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -190,
+              "hitProb": 0.637,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "POR ML",
+              "game": "PHX @ POR",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -166,
+              "hitProb": 0.594,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Ja Morant Under 1.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -144,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 10.58,
+          "hitChance": 0.0752,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Devin Booker Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dillon Brooks Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.664,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Toumani Camara Over 1.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.642,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Donovan Clingan Over 0.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -190,
+              "hitProb": 0.637,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "POR ML",
+              "game": "PHX @ POR",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -166,
+              "hitProb": 0.594,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Deni Avdija 4+ Ast",
+              "game": "PHX @ POR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -271,
+              "hitProb": 0.694,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 15.63,
+          "hitChance": 0.0575,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Devin Booker Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dillon Brooks Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.664,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Toumani Camara Over 1.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.642,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Donovan Clingan Over 0.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -190,
+              "hitProb": 0.637,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Green Under 8.5 Ast+Reb",
+              "game": "PHX @ POR",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Collin Gillespie Over 10.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.554,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 18.85,
+          "hitChance": 0.042,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Devin Booker Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.673,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Dillon Brooks Under 1.5 Stl",
+              "game": "PHX @ POR",
+              "market": "Stl",
+              "kind": "prop",
+              "price": -232,
+              "hitProb": 0.664,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Toumani Camara Over 1.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -189,
+              "hitProb": 0.642,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Miles Bridges Over 2.5 Ast",
+              "game": "PHX @ POR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Damian Lillard Over 18.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.52,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Khaman Maluach Under 9.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.512,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 20.28,
+          "hitChance": 0.0422,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Donovan Clingan Over 0.5 3PM",
+              "game": "PHX @ POR",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -190,
+              "hitProb": 0.637,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "POR ML",
+              "game": "PHX @ POR",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -166,
+              "hitProb": 0.594,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 232.5",
+              "game": "PHX @ POR",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Deni Avdija 4+ Ast",
+              "game": "PHX @ POR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -271,
+              "hitProb": 0.694,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Jalen Green Under 8.5 Ast+Reb",
+              "game": "PHX @ POR",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Collin Gillespie Over 10.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.554,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 24.46,
+          "hitChance": 0.0308,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "POR ML",
+              "game": "PHX @ POR",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -166,
+              "hitProb": 0.594,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Miles Bridges Over 2.5 Ast",
+              "game": "PHX @ POR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Damian Lillard Over 18.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.52,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Khaman Maluach Under 9.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.512,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 232.5",
+              "game": "PHX @ POR",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Deni Avdija 4+ Ast",
+              "game": "PHX @ POR",
+              "market": "Ast (alt)",
+              "kind": "prop",
+              "price": -271,
+              "hitProb": 0.694,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 36.13,
+          "hitChance": 0.0236,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Jalen Green Under 8.5 Ast+Reb",
+              "game": "PHX @ POR",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Collin Gillespie Over 10.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -124,
+              "hitProb": 0.554,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Miles Bridges Over 2.5 Ast",
+              "game": "PHX @ POR",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -127,
+              "hitProb": 0.55,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Damian Lillard Over 18.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -123,
+              "hitProb": 0.52,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Khaman Maluach Under 9.5 Pts",
+              "game": "PHX @ POR",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -119,
+              "hitProb": 0.512,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 232.5",
+              "game": "PHX @ POR",
+              "market": "Total",
+              "kind": "game",
+              "price": -115,
+              "hitProb": 0.511,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "401909842": {
+      "label": "SAC @ LAC",
+      "tickets": [
+        {
+          "odds": 15.85,
+          "hitChance": 0.0521,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kris Dunn Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.659,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Garland Under 3.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAC ML",
+              "game": "SAC @ LAC",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -180,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Derrick Jones Jr. Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -176,
+              "hitProb": 0.609,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rui Hachimura Under 2.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "De'Andre Hunter Under 2.5 Ast",
+              "game": "SAC @ LAC",
+              "market": "Ast",
+              "kind": "prop",
+              "price": -156,
+              "hitProb": 0.584,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 17.09,
+          "hitChance": 0.0508,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kris Dunn Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.659,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Garland Under 3.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAC ML",
+              "game": "SAC @ LAC",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -180,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Derrick Jones Jr. Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -176,
+              "hitProb": 0.609,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rui Hachimura Under 2.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach LaVine Under 6.5 Ast+Reb",
+              "game": "SAC @ LAC",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 19.12,
+          "hitChance": 0.0457,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kris Dunn Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.659,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Garland Under 3.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAC ML",
+              "game": "SAC @ LAC",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -180,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Derrick Jones Jr. Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -176,
+              "hitProb": 0.609,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Domantas Sabonis Under 0.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -134,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Isaiah Jackson Under 7.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -106,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 17.06,
+          "hitChance": 0.044,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Kris Dunn Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -225,
+              "hitProb": 0.659,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Garland Under 3.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -167,
+              "hitProb": 0.619,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "LAC ML",
+              "game": "SAC @ LAC",
+              "market": "Moneyline",
+              "kind": "game",
+              "price": -180,
+              "hitProb": 0.613,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keaton Wagler Over 13.5 Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.526,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keegan Murray Over 18.5 Pts+Reb",
+              "game": "SAC @ LAC",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -117,
+              "hitProb": 0.519,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Acuff Jr. 15+ Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.645,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 30.82,
+          "hitChance": 0.0305,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Derrick Jones Jr. Under 1.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -176,
+              "hitProb": 0.609,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Rui Hachimura Under 2.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 228.5",
+              "game": "SAC @ LAC",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach LaVine Under 6.5 Ast+Reb",
+              "game": "SAC @ LAC",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Domantas Sabonis Under 0.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -134,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Isaiah Jackson Under 7.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -106,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 27.49,
+          "hitChance": 0.0293,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Rui Hachimura Under 2.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -140,
+              "hitProb": 0.586,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keaton Wagler Over 13.5 Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.526,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keegan Murray Over 18.5 Pts+Reb",
+              "game": "SAC @ LAC",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -117,
+              "hitProb": 0.519,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Acuff Jr. 15+ Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.645,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 228.5",
+              "game": "SAC @ LAC",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Zach LaVine Under 6.5 Ast+Reb",
+              "game": "SAC @ LAC",
+              "market": "Ast+Reb",
+              "kind": "prop",
+              "price": -130,
+              "hitProb": 0.569,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        },
+        {
+          "odds": 30.76,
+          "hitChance": 0.0264,
+          "status": "pending",
+          "won": 0,
+          "lost": 0,
+          "void": 0,
+          "pending": 6,
+          "oddsIfWon": null,
+          "legs": [
+            {
+              "pick": "Domantas Sabonis Under 0.5 3PM",
+              "game": "SAC @ LAC",
+              "market": "3PM",
+              "kind": "prop",
+              "price": -134,
+              "hitProb": 0.56,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Isaiah Jackson Under 7.5 Reb",
+              "game": "SAC @ LAC",
+              "market": "Reb",
+              "kind": "prop",
+              "price": -106,
+              "hitProb": 0.536,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keaton Wagler Over 13.5 Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts",
+              "kind": "prop",
+              "price": -126,
+              "hitProb": 0.526,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Keegan Murray Over 18.5 Pts+Reb",
+              "game": "SAC @ LAC",
+              "market": "Pts+Reb",
+              "kind": "prop",
+              "price": -117,
+              "hitProb": 0.519,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Darius Acuff Jr. 15+ Pts",
+              "game": "SAC @ LAC",
+              "market": "Pts (alt)",
+              "kind": "prop",
+              "price": -234,
+              "hitProb": 0.645,
+              "lowered": true,
+              "result": {
+                "status": "pending"
+              }
+            },
+            {
+              "pick": "Over 228.5",
+              "game": "SAC @ LAC",
+              "market": "Total",
+              "kind": "game",
+              "price": -110,
+              "hitProb": 0.5,
+              "lowered": false,
+              "result": {
+                "status": "pending"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pending": 71
+}
