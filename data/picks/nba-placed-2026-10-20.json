@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "note": "Lines the user actually got on FanDuel when placing the 25-leg ticket (the build used DraftKings lines).",
+  "recordedAt": "2026-10-20T18:30:00.000Z",
+  "stake": 0.11,
+  "payout": 950000,
+  "changes": [
+    { "from": "Derrick White Over 8.5 Ast+Reb", "line": 7.5, "price": -122 },
+    { "from": "Tyrese Maxey Over 26.5 Pts+Ast", "line": 25.5, "price": -125 },
+    { "from": "VJ Edgecombe Over 20.5 Pts+Reb+Ast", "line": 19.5, "price": -128 },
+    { "from": "Jared McCain Under 12.5 Pts+Reb", "line": 11.5, "price": 100 },
+    { "from": "Keldon Johnson Over 8.5 Pts", "line": 7.5, "price": -138 },
+    { "from": "De'Aaron Fox Over 15.5 Pts", "line": 14.5, "price": -122 }
+  ]
+}

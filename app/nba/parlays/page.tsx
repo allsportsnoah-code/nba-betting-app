@@ -66,6 +66,7 @@ function LegRow({ l, rank }: { l: NbaParlayLeg; rank?: number }) {
       <span className="w-20 text-xs text-slate-500">{tipLabel(l.startTime)}</span>
       <span className="font-medium text-slate-900">{l.pick}</span>
       <span className="text-xs text-slate-400">{l.game}</span>
+      {l.placedFrom && <span className="text-xs text-amber-700">placed at FanDuel&apos;s line (built as {l.placedFrom})</span>}
       <DkTag l={l} />
       <span className="ml-auto font-mono text-xs text-slate-500">
         {fmtOdds(l.price)} · {pct(l.hitProb)}
@@ -318,6 +319,7 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
                 <h2 className="mt-2 text-2xl font-semibold text-slate-950">The ticket</h2>
                 <p className="mt-1 max-w-3xl text-sm text-slate-600">
                   Sorted by tip time. Average leg hits {pct(t.avgLegHit)} of the time. Any line marked DK is DraftKings&apos; (via ESPN, where FanDuel had none), so check it on FanDuel before placing.
+                  {t.placed && ` Shows the ticket as placed: ${t.placed.changed} leg${t.placed.changed === 1 ? "" : "s"} moved to FanDuel's line; the build is kept in history.`}
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -330,6 +332,15 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
                   <div className="text-lg font-semibold">{money(t.fanduelEstimate)}</div>
                   <div className="text-[10px] text-slate-500">raw product {money(t.rawPayout)} (÷{t.haircutFactor} for FanDuel&apos;s parlay pricing)</div>
                 </div>
+                {t.placed?.stake != null && t.placed.payout != null && (
+                  <div className="rounded-2xl bg-emerald-50 px-4 py-2 text-emerald-900">
+                    <div className="text-[0.65rem] uppercase tracking-[0.12em] opacity-70">Placed on FanDuel</div>
+                    <div className="text-lg font-semibold">
+                      {money(t.placed.stake)} to win {money(t.placed.payout)}
+                    </div>
+                    {t.placed.haircut != null && <div className="text-[10px] opacity-70">FanDuel paid the plain product ÷{t.placed.haircut}</div>}
+                  </div>
+                )}
               </div>
             </div>
             <ul className="mt-5 divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white">

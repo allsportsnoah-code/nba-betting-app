@@ -3,7 +3,7 @@
   "picksFile": "data/picks/nba-parlays-2026-10-20.json",
   "picksBuiltAt": "2026-10-20T05:23:40.604Z",
   "firstGradedAt": "2026-10-20T05:30:02.600Z",
-  "gradedAt": "2026-10-20T05:39:41.284Z",
+  "gradedAt": "2026-10-20T18:28:11.055Z",
   "finals": [
     {
       "gameId": "401909088",
@@ -79,24 +79,24 @@
         }
       },
       {
-        "pick": "Keldon Johnson Over 8.5 Pts",
+        "pick": "Keldon Johnson Over 7.5 Pts",
         "game": "OKC @ SA",
         "market": "Pts",
         "kind": "prop",
-        "price": -107,
-        "hitProb": 0.54,
+        "price": -138,
+        "hitProb": 0.592,
         "lowered": false,
         "result": {
           "status": "pending"
         }
       },
       {
-        "pick": "Tyrese Maxey Over 26.5 Pts+Ast",
+        "pick": "Tyrese Maxey Over 25.5 Pts+Ast",
         "game": "PHI @ NY",
         "market": "Pts+Ast",
         "kind": "prop",
-        "price": -105,
-        "hitProb": 0.535,
+        "price": -125,
+        "hitProb": 0.577,
         "lowered": false,
         "result": {
           "status": "pending"
@@ -127,12 +127,12 @@
         }
       },
       {
-        "pick": "VJ Edgecombe Over 20.5 Pts+Reb+Ast",
+        "pick": "VJ Edgecombe Over 19.5 Pts+Reb+Ast",
         "game": "PHI @ NY",
         "market": "Pts+Reb+Ast",
         "kind": "prop",
-        "price": -105,
-        "hitProb": 0.534,
+        "price": -128,
+        "hitProb": 0.581,
         "lowered": false,
         "result": {
           "status": "pending"
@@ -175,12 +175,12 @@
         }
       },
       {
-        "pick": "De'Aaron Fox Over 15.5 Pts",
+        "pick": "De'Aaron Fox Over 14.5 Pts",
         "game": "OKC @ SA",
         "market": "Pts",
         "kind": "prop",
-        "price": -106,
-        "hitProb": 0.527,
+        "price": -122,
+        "hitProb": 0.568,
         "lowered": false,
         "result": {
           "status": "pending"
@@ -211,24 +211,24 @@
         }
       },
       {
-        "pick": "Derrick White Over 8.5 Ast+Reb",
+        "pick": "Derrick White Over 7.5 Ast+Reb",
         "game": "BOS @ DET",
         "market": "Ast+Reb",
         "kind": "prop",
-        "price": 107,
-        "hitProb": 0.493,
+        "price": -122,
+        "hitProb": 0.568,
         "lowered": false,
         "result": {
           "status": "pending"
         }
       },
       {
-        "pick": "Jared McCain Under 12.5 Pts+Reb",
+        "pick": "Jared McCain Under 11.5 Pts+Reb",
         "game": "OKC @ SA",
         "market": "Pts+Reb",
         "kind": "prop",
-        "price": -118,
-        "hitProb": 0.549,
+        "price": 100,
+        "hitProb": 0.508,
         "lowered": false,
         "result": {
           "status": "pending"

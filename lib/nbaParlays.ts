@@ -18,6 +18,8 @@ export type NbaParlayLeg = {
   kind: "game" | "prop";
   // Where the line came from; files built before FanDuel lines were added have no book (DraftKings).
   book?: "fanduel" | "draftkings";
+  // Set when the user placed this leg at a different FanDuel line: the saved pick it replaced.
+  placedFrom?: string;
 };
 
 export const isDkLeg = (leg: { book?: string }) => leg.book !== "fanduel";
@@ -42,6 +44,9 @@ export type NbaParlayDay = {
     haircutFactor: number;
     hitChance: number;
     avgLegHit: number;
+    // Present once the lines actually placed on FanDuel were recorded (scripts/apply-nba-placed-lines.mjs).
+    // stake/payout: the real bet and FanDuel's quote; haircut = plain product / FanDuel's real odds.
+    placed?: { at: string; note: string; changed: number; stake?: number; payout?: number; haircut?: number };
   };
   // Sorted by hit probability, highest first.
   topPicks: NbaTopPick[];
