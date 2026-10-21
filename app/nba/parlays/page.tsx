@@ -5,6 +5,9 @@ import {
   loadNbaParlayDay,
   loadNbaSetsDay,
   loadNbaSetsResults,
+  loadNbaParlayResults,
+  loadNbaNightRecap,
+  type NbaNightRecap,
   type NbaGameSet,
   type NbaParlayLeg,
   type NbaSetLeg,
@@ -15,7 +18,8 @@ import {
 export const dynamic = "force-dynamic";
 
 // Read-only view of data/picks/nba-parlays-<date>.json and nba-sets-<date>.json (npm run build:nba-parlays writes them),
-// plus nba-sets-<date>.results.json grades (npm run grade:nba-parlays).
+// plus the .results.json grades beside each (npm run grade:nba-parlays) and the night's written
+// recap, nba-recap-<date>.json.
 // Only the current builds are shown; `history` / `onePerGameHistory` entries are earlier builds and never displayed as current.
 
 function fmtOdds(odds: number) {
@@ -59,15 +63,29 @@ function DkTag({ l }: { l: { book?: string } }) {
   return l.book === "draftkings" ? <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-[10px] text-indigo-700">DK: check FanDuel</span> : null;
 }
 
-function LegRow({ l, rank }: { l: NbaParlayLeg; rank?: number }) {
+type LegGrade = NbaTicketResult["legs"][number]["result"];
+
+/** Graded result for a leg/pick, matched by game + pick text. */
+function findGrade(graded: NbaTicketResult["legs"] | undefined, l: { game: string; pick: string }): LegGrade | undefined {
+  return graded?.find((g) => g.pick === l.pick && g.game === l.game)?.result ?? graded?.find((g) => g.pick === l.pick)?.result;
+}
+
+function gradeNote(result: LegGrade | undefined) {
+  return result ? [result.actual != null ? `actual ${result.actual}` : null, result.note].filter(Boolean).join(" · ") : "";
+}
+
+function LegRow({ l, rank, result }: { l: NbaParlayLeg; rank?: number; result?: LegGrade }) {
+  const note = gradeNote(result);
   return (
     <li className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2 text-sm">
+      {result && <ResultBadge status={result.status} />}
       {rank != null && <span className="w-6 text-right font-mono text-xs text-slate-400">{rank}</span>}
       <span className="w-20 text-xs text-slate-500">{tipLabel(l.startTime)}</span>
       <span className="font-medium text-slate-900">{l.pick}</span>
       <span className="text-xs text-slate-400">{l.game}</span>
       {l.placedFrom && <span className="text-xs text-amber-700">placed at FanDuel&apos;s line (built as {l.placedFrom})</span>}
       <DkTag l={l} />
+      {note && <span className="text-xs text-slate-400">{note}</span>}
       <span className="ml-auto font-mono text-xs text-slate-500">
         {fmtOdds(l.price)} · {pct(l.hitProb)}
       </span>
@@ -124,6 +142,7 @@ function SetLegRow({ l, result, showGame = false }: { l: NbaSetLeg; result?: Nba
       <span className="font-medium text-slate-900">{l.pick}</span>
       {showGame && <span className="text-xs text-slate-400">{l.game}</span>}
       {l.loweredFrom && <span className="text-xs text-amber-700">lowered from {l.loweredFrom}</span>}
+      {l.replacedFrom && <span className="text-xs text-amber-700">replaces {l.replacedFrom}</span>}
       <DkTag l={l} />
       {note && <span className="text-xs text-slate-400">{note}</span>}
       <span className="ml-auto font-mono text-xs text-slate-500">
@@ -184,6 +203,56 @@ function GameSetView({ set, results, open }: { set: NbaGameSet; results: NbaTick
   );
 }
 
+function RecapView({ recap }: { recap: NbaNightRecap }) {
+  // Newest update first; earlier updates stay visible below it, unchanged.
+  const updates = [...recap.updates].reverse();
+  return (
+    <section className="app-card mb-8 rounded-[2rem] p-6">
+      <div className="app-eyebrow">Night recap</div>
+      {updates.map((u, i) => (
+        <details key={u.at} className="mt-3 rounded-2xl border border-slate-200 bg-white" open={i === 0}>
+          <summary className="flex cursor-pointer flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 text-sm">
+            <span className="font-semibold text-slate-950">{u.headline}</span>
+            <span className="text-xs text-slate-500">
+              {u.gamesFinal} ·{" "}
+              {new Date(u.at).toLocaleString("en-US", { timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })} ET
+            </span>
+          </summary>
+          <div className="grid gap-4 border-t border-slate-100 p-4 text-sm md:grid-cols-2">
+            {u.games.map((g) => (
+              <div key={g.label}>
+                <div className="font-semibold text-slate-900">{g.label}</div>
+                <div className="text-xs text-slate-500">{g.result}</div>
+                <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
+                  {g.notes.map((n) => (
+                    <li key={n}>{n}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div>
+              <div className="font-semibold text-slate-900">How our picks did</div>
+              <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
+                {u.record.map((n) => (
+                  <li key={n}>{n}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div className="font-semibold text-slate-900">What it tells us</div>
+              <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
+                {u.lessons.map((n) => (
+                  <li key={n}>{n}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </details>
+      ))}
+    </section>
+  );
+}
+
 export default async function NbaParlaysPage({ searchParams }: { searchParams: Promise<{ date?: string | string[] }> }) {
   const params = await searchParams;
   const today = todayEt();
@@ -194,6 +263,8 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
   const t = day?.ticket;
   const legs = t ? [...t.legs].sort((a, b) => a.startTime.localeCompare(b.startTime) || b.hitProb - a.hitProb) : [];
   const topPicks = day ? [...day.topPicks].sort((a, b) => b.hitProb - a.hitProb) : [];
+  const parlayResults = day ? loadNbaParlayResults(date) : null;
+  const recap = loadNbaNightRecap(date);
 
   const sets = loadNbaSetsDay(date);
   const setResults = sets ? loadNbaSetsResults(date) : null;
@@ -304,6 +375,8 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
         </div>
       </section>
 
+      {recap && recap.updates.length > 0 && <RecapView recap={recap} />}
+
       {!day || !t ? (
         <p className="mb-8 rounded-3xl border border-dashed border-slate-300 bg-white/60 p-8 text-center text-sm text-slate-600">
           No saved NBA 25-leg parlay for {dateLabel(date)}. Run <code>npm run build:nba-parlays</code> to build one.
@@ -322,7 +395,8 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
                   {t.placed && ` Shows the ticket as placed: ${t.placed.changed} leg${t.placed.changed === 1 ? "" : "s"} moved to FanDuel's line; the build is kept in history.`}
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap items-center gap-3">
+                <TicketBadge r={parlayResults?.ticket} />
                 <div className="rounded-2xl bg-slate-900 px-4 py-2 text-white">
                   <div className="text-[0.65rem] uppercase tracking-[0.12em] text-slate-300">Odds of hitting</div>
                   <div className="text-lg font-semibold">1 in {oneIn(t.hitChance)}</div>
@@ -345,7 +419,7 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
             </div>
             <ul className="mt-5 divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white">
               {legs.map((l, i) => (
-                <LegRow key={`${l.game}-${l.pick}-${i}`} l={l} />
+                <LegRow key={`${l.game}-${l.pick}-${i}`} l={l} result={findGrade(parlayResults?.ticket.legs, l)} />
               ))}
             </ul>
           </section>
@@ -361,12 +435,17 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
               {topPicks.length} picks <DkBadge legs={topPicks} />
             </div>
             <h2 className="mt-2 text-2xl font-semibold text-slate-950">Top single picks</h2>
-            <p className="mt-1 text-sm text-slate-600">Ranked by hit chance, highest first.</p>
+            <p className="mt-1 text-sm text-slate-600">
+              Ranked by hit chance, highest first.
+              {parlayResults &&
+                ` Record: ${parlayResults.topPicks.won}-${parlayResults.topPicks.lost}${parlayResults.topPicks.void ? `, ${parlayResults.topPicks.void} void` : ""}${parlayResults.topPicks.pending ? `, ${parlayResults.topPicks.pending} pending` : ""}.`}
+            </p>
             <div className="mt-4 overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead className="text-xs uppercase tracking-[0.08em] text-slate-500">
                   <tr>
                     <th className="px-2 py-2">#</th>
+                    {parlayResults && <th className="px-2 py-2">Result</th>}
                     <th className="px-2 py-2">Pick</th>
                     <th className="px-2 py-2">Game</th>
                     <th className="px-2 py-2">Tip</th>
@@ -377,9 +456,17 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
-                  {topPicks.map((p, i) => (
+                  {topPicks.map((p, i) => {
+                    const result = findGrade(parlayResults?.topPicks.picks, p);
+                    return (
                     <tr key={`${p.game}-${p.pick}-${i}`}>
                       <td className="px-2 py-2 font-mono text-xs text-slate-400">{i + 1}</td>
+                      {parlayResults && (
+                        <td className="px-2 py-2">
+                          {result && <ResultBadge status={result.status} />}
+                          {result?.actual != null && <span className="ml-2 text-xs text-slate-400">actual {result.actual}</span>}
+                        </td>
+                      )}
                       <td className="px-2 py-2 font-medium text-slate-900">
                         {p.pick} <DkTag l={p} />
                       </td>
@@ -390,7 +477,8 @@ export default async function NbaParlaysPage({ searchParams }: { searchParams: P
                       <td className="px-2 py-2 text-right font-mono text-slate-500">{pct(p.marketProb)}</td>
                       <td className="px-2 py-2 text-right font-mono text-slate-500">{p.projection ?? "–"}</td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-20",
+  "updates": [
+    {
+      "at": "2026-10-21T02:40:00Z",
+      "gamesFinal": "2 of 3 games final (OKC @ SA still playing)",
+      "headline": "Opening night: two road comebacks, star overs went cold",
+      "games": [
+        {
+          "label": "BOS @ DET — Pistons 121, Celtics 113",
+          "result": "DK close BOS -1.5, total 220.5 → DET covered outright, total went OVER (234)",
+          "notes": [
+            "Boston led 72-50 early in the 3rd; Detroit pulled off the largest opening-day comeback in NBA history.",
+            "Paul George scored 38 in his Celtics debut (7-12 from three, 5 steals).",
+            "Jayson Tatum shot 6-23 (0-7 from three) for 13 points and 11 assists, in his first full season back from the May 2025 Achilles tear.",
+            "Javonte Green didn't play in the first half, then scored 19 (5-8 from three). Duren had 22 and 9, Duncan Robinson 21 (5-9 from three), Cade 22 points and 8 assists, Ausar Thompson 11 and 11.",
+            "Out: Taurean Prince (DET), Devin Carter (BOS)."
+          ]
+        },
+        {
+          "label": "PHI @ NY — 76ers 106, Knicks 100",
+          "result": "DK close NY -4.5, total 231.5 → PHI won outright, total went UNDER (206)",
+          "notes": [
+            "It was the Knicks' banner and ring night, and they shot 37% from the field and 33% from three. Brunson went 6-19 for 21.",
+            "Maxey scored 28. Jaylen Brown had 19, 8 and 6 in his 76ers debut. LeBron had 14, 9 and 7 to open his 24th season. Embiid had 13, 11 and 6 with 3 blocks.",
+            "PHI's bench beat the Knicks' focus on the stars: Anfernee Simons hit 3 threes and Caldwell-Pope 2. Mikal Bridges scored 4; OG Anunoby went 1-9 from three with 0 assists."
+          ]
+        }
+      ],
+      "record": [
+        "25-leg ticket ($0.11 to win $950k): lost. 11 legs won, 6 lost, 8 still pending in OKC @ SA. Losing legs: Edgecombe PRA 19.5 (14), LeBron 15.5 pts (14), Embiid 25.5 pts+ast (19), Anunoby 1.5 stl (1), Queta 7.5 reb (4), Cade 10+ ast (8).",
+        "Top single picks: 2-4 with 6 pending. Lost: Collins over 0.5 threes (0), Anunoby over 1.5 ast (0), Jaylen Brown over 20.5 pts (19), Edgecombe over 11.5 pts (9).",
+        "One pick per game: lost (Collins over 0.5 threes missed; Simons over 1.5 threes hit).",
+        "Single-game sets: 0 of 18 settled tickets cashed. The individual legs went 17-13 (57%), but a 6-leg ticket needs every leg, and many missed by just 1 or 2 legs.",
+        "App board: NBA props 34-23-2, +7.95u, almost all unders. The #1 featured picks went 6-1-1. Team picks: Under 232.5 in PHI-NY won; Boston ML -122 lost after leading by 22."
+      ],
+      "lessons": [
+        "One night is a small sample. Treat these as things to watch, not rule changes.",
+        "Stars in new-team debuts (Embiid, LeBron, Edgecombe, Jaylen Brown) went under their scoring lines: a new-look roster spreads the shots around. Lean away from star scoring overs on teams with big roster changes until a few games show the new usage.",
+        "Opening-night shooting was cold (Knicks 37%, Tatum 0-7 from three). Board unders went 32-21-2, while overs carried most of the parlay damage.",
+        "Heavy-juice 'at least one' props (Collins over 0.5 threes at -182, Ausar over 1.5 steals at -194) sank several set tickets each. When one leg is on 5 tickets, its miss costs 5 tickets: spread those legs across fewer tickets.",
+        "A 6-leg set built from ~60% legs only hits about 5% of the time, so expect long losing streaks. Keep stakes tiny.",
+        "Calibration so far: ticket legs hit 65% (11-6) vs 51% predicted; top picks hit 33% (2-4) vs ~59% predicted. Too early to recalibrate; the tracker will show it over the next week."
+      ]
+    }
+  ]
+}

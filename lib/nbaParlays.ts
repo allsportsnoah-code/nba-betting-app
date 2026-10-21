@@ -87,6 +87,8 @@ export type NbaSetLeg = NbaParlayLeg & {
   line: number | null;
   side: string | null;
   loweredFrom?: string | null;
+  // Set when this leg replaced one FanDuel doesn't offer (scripts/replace-nba-set-leg.mjs).
+  replacedFrom?: string | null;
 };
 
 export type NbaOnePerGame = {
@@ -153,6 +155,30 @@ export type NbaSetsResults = {
   games: Record<string, { label: string; tickets: NbaTicketResult[] }>;
 };
 
+// data/picks/nba-parlays-<date>.results.json (npm run grade:nba-parlays): grades for the 25-leg
+// ticket and the top single picks. Legs carry the same pick text as the saved file.
+export type NbaParlayResults = {
+  date: string;
+  gradedAt: string;
+  ticket: NbaTicketResult & { stake?: number; fanduelPayoutIfWon?: number | null };
+  topPicks: { won: number; lost: number; void: number; pending: number; picks: NbaTicketResult["legs"] };
+};
+
+// data/picks/nba-recap-<date>.json: a written review of the night (what happened and what it
+// teaches), saved alongside the picks and results. New versions replace nothing: they are
+// appended to `updates`, and the page shows them all.
+export type NbaNightRecap = {
+  date: string;
+  updates: {
+    at: string;
+    gamesFinal: string;
+    headline: string;
+    games: { label: string; result: string; notes: string[] }[];
+    record: string[];
+    lessons: string[];
+  }[];
+};
+
 function readJson<T>(file: string): T | null {
   try {
     return JSON.parse(fs.readFileSync(path.join(PICKS_DIR, file), "utf8")) as T;
@@ -167,6 +193,14 @@ export function loadNbaSetsDay(date: string): NbaSetsDay | null {
 
 export function loadNbaSetsResults(date: string): NbaSetsResults | null {
   return readJson<NbaSetsResults>(`nba-sets-${date}.results.json`);
+}
+
+export function loadNbaParlayResults(date: string): NbaParlayResults | null {
+  return readJson<NbaParlayResults>(`nba-parlays-${date}.results.json`);
+}
+
+export function loadNbaNightRecap(date: string): NbaNightRecap | null {
+  return readJson<NbaNightRecap>(`nba-recap-${date}.json`);
 }
 
 export function listNbaSetsDates(): string[] {

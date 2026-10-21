@@ -3,30 +3,30 @@
   "picksFile": "data/picks/nba-parlays-2026-10-20.json",
   "picksBuiltAt": "2026-10-20T05:23:40.604Z",
   "firstGradedAt": "2026-10-20T05:30:02.600Z",
-  "gradedAt": "2026-10-20T18:34:55.529Z",
+  "gradedAt": "2026-10-21T02:16:27.923Z",
   "finals": [
     {
       "gameId": "401909088",
-      "final": false,
-      "score": "BOS NaN @ DET NaN"
+      "final": true,
+      "score": "BOS 113 @ DET 121"
     },
     {
       "gameId": "401909089",
-      "final": false,
-      "score": "PHI NaN @ NY NaN"
+      "final": true,
+      "score": "PHI 106 @ NY 100"
     },
     {
       "gameId": "401909090",
       "final": false,
-      "score": "OKC NaN @ SA NaN"
+      "score": "OKC 34 @ SA 26"
     }
   ],
   "ticket": {
-    "status": "pending",
-    "won": 0,
-    "lost": 0,
+    "status": "lost",
+    "won": 11,
+    "lost": 6,
     "void": 0,
-    "pending": 25,
+    "pending": 8,
     "stake": 0.2,
     "fanduelPayoutIfWon": null,
     "legs": [
@@ -51,7 +51,8 @@
         "hitProb": 0.499,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 1
         }
       },
       {
@@ -63,7 +64,8 @@
         "hitProb": 0.512,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 6
         }
       },
       {
@@ -75,7 +77,8 @@
         "hitProb": 0.424,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 14
         }
       },
       {
@@ -99,7 +102,8 @@
         "hitProb": 0.577,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 33
         }
       },
       {
@@ -111,7 +115,8 @@
         "hitProb": 0.538,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 13
         }
       },
       {
@@ -135,7 +140,8 @@
         "hitProb": 0.581,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 14
         }
       },
       {
@@ -159,7 +165,8 @@
         "hitProb": 0.566,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 14
         }
       },
       {
@@ -171,7 +178,8 @@
         "hitProb": 0.415,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 1
         }
       },
       {
@@ -195,7 +203,8 @@
         "hitProb": 0.487,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 5
         }
       },
       {
@@ -219,7 +228,8 @@
         "hitProb": 0.568,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 9
         }
       },
       {
@@ -243,7 +253,8 @@
         "hitProb": 0.544,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 19
         }
       },
       {
@@ -255,7 +266,8 @@
         "hitProb": 0.408,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 6
         }
       },
       {
@@ -279,7 +291,8 @@
         "hitProb": 0.474,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 4
         }
       },
       {
@@ -291,7 +304,8 @@
         "hitProb": 0.549,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 22
         }
       },
       {
@@ -303,7 +317,8 @@
         "hitProb": 0.53,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 21
         }
       },
       {
@@ -315,7 +330,8 @@
         "hitProb": 0.493,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 4
         }
       },
       {
@@ -327,16 +343,17 @@
         "hitProb": 0.426,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 8
         }
       }
     ]
   },
   "topPicks": {
-    "won": 0,
-    "lost": 0,
+    "won": 2,
+    "lost": 4,
     "void": 0,
-    "pending": 12,
+    "pending": 6,
     "picks": [
       {
         "pick": "John Collins Over 0.5 3PM",
@@ -347,7 +364,8 @@
         "hitProb": 0.635,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 0
         }
       },
       {
@@ -371,7 +389,8 @@
         "hitProb": 0.601,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 3
         }
       },
       {
@@ -383,7 +402,8 @@
         "hitProb": 0.597,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 0
         }
       },
       {
@@ -419,7 +439,8 @@
         "hitProb": 0.579,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 0
         }
       },
       {
@@ -455,7 +476,8 @@
         "hitProb": 0.569,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 19
         }
       },
       {
@@ -467,7 +489,8 @@
         "hitProb": 0.569,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 9
         }
       },
       {

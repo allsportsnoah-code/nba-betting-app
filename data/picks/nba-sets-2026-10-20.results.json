@@ -2,14 +2,14 @@
   "date": "2026-10-20",
   "picksFile": "data/picks/nba-sets-2026-10-20.json",
   "firstGradedAt": "2026-10-20T05:39:41.339Z",
-  "gradedAt": "2026-10-20T18:34:55.587Z",
+  "gradedAt": "2026-10-21T02:16:27.950Z",
   "onePerGame": {
     "odds": 3.7,
-    "status": "pending",
-    "won": 0,
-    "lost": 0,
+    "status": "lost",
+    "won": 1,
+    "lost": 1,
     "void": 0,
-    "pending": 3,
+    "pending": 1,
     "oddsIfWon": null,
     "legs": [
       {
@@ -21,7 +21,8 @@
         "hitProb": 0.635,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "lost",
+          "actual": 0
         }
       },
       {
@@ -33,7 +34,8 @@
         "hitProb": 0.601,
         "lowered": false,
         "result": {
-          "status": "pending"
+          "status": "won",
+          "actual": 3
         }
       },
       {
@@ -57,11 +59,11 @@
         {
           "odds": 11.91,
           "hitChance": 0.0641,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 4,
+          "lost": 2,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -73,7 +75,8 @@
               "hitProb": 0.672,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -85,7 +88,8 @@
               "hitProb": 0.642,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -97,7 +101,8 @@
               "hitProb": 0.621,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             },
             {
@@ -109,7 +114,8 @@
               "hitProb": 0.635,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -121,7 +127,8 @@
               "hitProb": 0.618,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -133,7 +140,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             }
           ]
@@ -141,11 +149,11 @@
         {
           "odds": 13,
           "hitChance": 0.0592,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -157,7 +165,8 @@
               "hitProb": 0.672,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -169,7 +178,8 @@
               "hitProb": 0.642,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -181,7 +191,8 @@
               "hitProb": 0.583,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -193,7 +204,8 @@
               "hitProb": 0.635,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -205,7 +217,8 @@
               "hitProb": 0.618,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -217,7 +230,8 @@
               "hitProb": 0.6,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             }
           ]
@@ -225,11 +239,11 @@
         {
           "odds": 13.05,
           "hitChance": 0.06,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 4,
+          "lost": 2,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -241,7 +255,8 @@
               "hitProb": 0.672,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -253,7 +268,8 @@
               "hitProb": 0.642,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -265,7 +281,8 @@
               "hitProb": 0.629,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -277,7 +294,8 @@
               "hitProb": 0.635,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -289,7 +307,8 @@
               "hitProb": 0.597,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 2
               }
             },
             {
@@ -301,7 +320,8 @@
               "hitProb": 0.583,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             }
           ]
@@ -309,11 +329,11 @@
         {
           "odds": 16.05,
           "hitChance": 0.0524,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -325,7 +345,8 @@
               "hitProb": 0.672,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -337,7 +358,8 @@
               "hitProb": 0.642,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -349,7 +371,8 @@
               "hitProb": 0.629,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -361,7 +384,8 @@
               "hitProb": 0.635,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -373,7 +397,8 @@
               "hitProb": 0.554,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             },
             {
@@ -385,7 +410,8 @@
               "hitProb": 0.549,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             }
           ]
@@ -393,11 +419,11 @@
         {
           "odds": 20.17,
           "hitChance": 0.0412,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 5,
+          "lost": 1,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -409,7 +435,8 @@
               "hitProb": 0.672,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -421,7 +448,8 @@
               "hitProb": 0.642,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -433,7 +461,8 @@
               "hitProb": 0.629,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -445,7 +474,8 @@
               "hitProb": 0.54,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 38
               }
             },
             {
@@ -457,7 +487,8 @@
               "hitProb": 0.533,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 7
               }
             },
             {
@@ -469,7 +500,8 @@
               "hitProb": 0.527,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 8
               }
             }
           ]
@@ -477,11 +509,11 @@
         {
           "odds": 18.67,
           "hitChance": 0.0412,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -493,7 +525,8 @@
               "hitProb": 0.635,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -505,7 +538,8 @@
               "hitProb": 0.618,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -517,7 +551,8 @@
               "hitProb": 0.504,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 234
               }
             },
             {
@@ -529,7 +564,8 @@
               "hitProb": 0.6,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             },
             {
@@ -541,7 +577,8 @@
               "hitProb": 0.597,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 2
               }
             },
             {
@@ -553,7 +590,8 @@
               "hitProb": 0.583,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             }
           ]
@@ -561,11 +599,11 @@
         {
           "odds": 30.92,
           "hitChance": 0.0285,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -577,7 +615,8 @@
               "hitProb": 0.618,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -589,7 +628,8 @@
               "hitProb": 0.554,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             },
             {
@@ -601,7 +641,8 @@
               "hitProb": 0.549,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             },
             {
@@ -613,7 +654,8 @@
               "hitProb": 0.54,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 38
               }
             },
             {
@@ -625,7 +667,8 @@
               "hitProb": 0.533,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 7
               }
             },
             {
@@ -637,7 +680,8 @@
               "hitProb": 0.527,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 8
               }
             }
           ]
@@ -645,11 +689,11 @@
         {
           "odds": 21.61,
           "hitChance": 0.036,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -661,7 +705,8 @@
               "hitProb": 0.618,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -673,7 +718,8 @@
               "hitProb": 0.504,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 234
               }
             },
             {
@@ -685,7 +731,8 @@
               "hitProb": 0.6,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             },
             {
@@ -697,7 +744,8 @@
               "hitProb": 0.597,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 2
               }
             },
             {
@@ -709,7 +757,8 @@
               "hitProb": 0.583,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 2
               }
             },
             {
@@ -721,7 +770,8 @@
               "hitProb": 0.554,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             }
           ]
@@ -729,11 +779,11 @@
         {
           "odds": 34.09,
           "hitChance": 0.0252,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -745,7 +795,8 @@
               "hitProb": 0.549,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             },
             {
@@ -757,7 +808,8 @@
               "hitProb": 0.54,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 38
               }
             },
             {
@@ -769,7 +821,8 @@
               "hitProb": 0.533,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 7
               }
             },
             {
@@ -781,7 +834,8 @@
               "hitProb": 0.527,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 8
               }
             },
             {
@@ -793,7 +847,8 @@
               "hitProb": 0.504,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 234
               }
             },
             {
@@ -805,7 +860,8 @@
               "hitProb": 0.6,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             }
           ]
@@ -818,11 +874,11 @@
         {
           "odds": 17.74,
           "hitChance": 0.0476,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 4,
+          "lost": 2,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -834,7 +890,8 @@
               "hitProb": 0.64,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -846,7 +903,8 @@
               "hitProb": 0.613,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -858,7 +916,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -870,7 +929,8 @@
               "hitProb": 0.601,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 3
               }
             },
             {
@@ -882,7 +942,8 @@
               "hitProb": 0.579,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -894,7 +955,8 @@
               "hitProb": 0.57,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 1
               }
             }
           ]
@@ -902,11 +964,11 @@
         {
           "odds": 15.25,
           "hitChance": 0.0548,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 4,
+          "lost": 2,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -918,7 +980,8 @@
               "hitProb": 0.64,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -930,7 +993,8 @@
               "hitProb": 0.613,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -942,7 +1006,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -954,7 +1019,8 @@
               "hitProb": 0.601,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 3
               }
             },
             {
@@ -966,7 +1032,8 @@
               "hitProb": 0.579,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -978,7 +1045,8 @@
               "hitProb": 0.657,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 9
               }
             }
           ]
@@ -986,11 +1054,11 @@
         {
           "odds": 15.4,
           "hitChance": 0.0561,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 5,
+          "lost": 1,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1002,7 +1070,8 @@
               "hitProb": 0.64,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1014,7 +1083,8 @@
               "hitProb": 0.613,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1026,7 +1096,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -1038,7 +1109,8 @@
               "hitProb": 0.601,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 3
               }
             },
             {
@@ -1050,7 +1122,8 @@
               "hitProb": 0.566,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 14
               }
             },
             {
@@ -1062,7 +1135,8 @@
               "hitProb": 0.688,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             }
           ]
@@ -1070,11 +1144,11 @@
         {
           "odds": 20.19,
           "hitChance": 0.0428,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 5,
+          "lost": 1,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1086,7 +1160,8 @@
               "hitProb": 0.64,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1098,7 +1173,8 @@
               "hitProb": 0.613,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1110,7 +1186,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -1122,7 +1199,8 @@
               "hitProb": 0.601,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 3
               }
             },
             {
@@ -1134,7 +1212,8 @@
               "hitProb": 0.548,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 30
               }
             },
             {
@@ -1146,7 +1225,8 @@
               "hitProb": 0.542,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 12
               }
             }
           ]
@@ -1154,11 +1234,11 @@
         {
           "odds": 22.99,
           "hitChance": 0.0359,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 5,
+          "lost": 1,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1170,7 +1250,8 @@
               "hitProb": 0.64,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1182,7 +1263,8 @@
               "hitProb": 0.613,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 1
               }
             },
             {
@@ -1194,7 +1276,8 @@
               "hitProb": 0.61,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -1206,7 +1289,8 @@
               "hitProb": 0.541,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             },
             {
@@ -1218,7 +1302,8 @@
               "hitProb": 0.529,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 17
               }
             },
             {
@@ -1230,7 +1315,8 @@
               "hitProb": 0.523,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 6
               }
             }
           ]
@@ -1238,11 +1324,11 @@
         {
           "odds": 19.35,
           "hitChance": 0.0456,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1254,7 +1340,8 @@
               "hitProb": 0.601,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 3
               }
             },
             {
@@ -1266,7 +1353,8 @@
               "hitProb": 0.579,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -1278,7 +1366,8 @@
               "hitProb": 0.511,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 206
               }
             },
             {
@@ -1290,7 +1379,8 @@
               "hitProb": 0.657,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 9
               }
             },
             {
@@ -1302,7 +1392,8 @@
               "hitProb": 0.566,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 14
               }
             },
             {
@@ -1314,7 +1405,8 @@
               "hitProb": 0.688,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             }
           ]
@@ -1322,11 +1414,11 @@
         {
           "odds": 34.75,
           "hitChance": 0.0258,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 3,
+          "lost": 3,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1338,7 +1430,8 @@
               "hitProb": 0.579,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -1350,7 +1443,8 @@
               "hitProb": 0.548,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 30
               }
             },
             {
@@ -1362,7 +1456,8 @@
               "hitProb": 0.542,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 12
               }
             },
             {
@@ -1374,7 +1469,8 @@
               "hitProb": 0.541,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             },
             {
@@ -1386,7 +1482,8 @@
               "hitProb": 0.529,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 17
               }
             },
             {
@@ -1398,7 +1495,8 @@
               "hitProb": 0.523,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 6
               }
             }
           ]
@@ -1406,11 +1504,11 @@
         {
           "odds": 21.18,
           "hitChance": 0.0415,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 2,
+          "lost": 4,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1422,7 +1520,8 @@
               "hitProb": 0.579,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 0
               }
             },
             {
@@ -1434,7 +1533,8 @@
               "hitProb": 0.511,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 206
               }
             },
             {
@@ -1446,7 +1546,8 @@
               "hitProb": 0.657,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 9
               }
             },
             {
@@ -1458,7 +1559,8 @@
               "hitProb": 0.566,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 14
               }
             },
             {
@@ -1470,7 +1572,8 @@
               "hitProb": 0.688,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 5
               }
             },
             {
@@ -1482,7 +1585,8 @@
               "hitProb": 0.548,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 30
               }
             }
           ]
@@ -1490,11 +1594,11 @@
         {
           "odds": 30.69,
           "hitChance": 0.0273,
-          "status": "pending",
-          "won": 0,
-          "lost": 0,
+          "status": "lost",
+          "won": 4,
+          "lost": 2,
           "void": 0,
-          "pending": 6,
+          "pending": 0,
           "oddsIfWon": null,
           "legs": [
             {
@@ -1506,7 +1610,8 @@
               "hitProb": 0.542,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 12
               }
             },
             {
@@ -1518,7 +1623,8 @@
               "hitProb": 0.541,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 5
               }
             },
             {
@@ -1530,7 +1636,8 @@
               "hitProb": 0.529,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 17
               }
             },
             {
@@ -1542,7 +1649,8 @@
               "hitProb": 0.523,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 6
               }
             },
             {
@@ -1554,7 +1662,8 @@
               "hitProb": 0.511,
               "lowered": false,
               "result": {
-                "status": "pending"
+                "status": "won",
+                "actual": 206
               }
             },
             {
@@ -1566,7 +1675,8 @@
               "hitProb": 0.657,
               "lowered": true,
               "result": {
-                "status": "pending"
+                "status": "lost",
+                "actual": 9
               }
             }
           ]
@@ -2419,5 +2529,5 @@
       ]
     }
   },
-  "pending": 29
+  "pending": 10
 }
