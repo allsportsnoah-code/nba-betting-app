@@ -261,12 +261,14 @@ async function fetchPropBets(game) {
 // FanDuel markets are converted to ESPN's shape so the leg math below stays the same.
 const FD_API = "https://sbapi.nj.sportsbook.fanduel.com/api";
 const FD_KEY = "FhMFpcPWXMeyZxOx"; // FanDuel's public web app key
-const FD_TABS = ["", "player-points", "player-rebounds", "player-assists", "player-threes", "player-combos"];
+const FD_TABS = ["", "player-points", "player-rebounds", "player-assists", "player-threes", "player-combos", "player-defense"];
 const FD_MAIN = {
   POINTS: "Total Points",
   REBOUNDS: "Total Rebounds",
   ASSISTS: "Total Assists",
   MADE_3_POINT_FIELD_GOALS: "Total 3-Point Field Goals",
+  STEALS: "Total Steals",
+  BLOCKS: "Total Blocks",
   "POINTS_+_ASSISTS": "Total Points and Assists",
   "POINTS_+_REBOUNDS": "Total Points and Rebounds",
   "REBOUNDS_+_ASSISTS": "Total Assists and Rebounds",
@@ -420,7 +422,11 @@ function mergeBooks(fd, dkLines, dkItems) {
   }
   const athleteOf = (item) => item.athlete?.$ref?.match(/athletes\/(\d+)/)?.[1];
   const covered = new Set((fd?.items ?? []).map((item) => `${athleteOf(item)}|${item.type.name}`));
-  const items = [...(fd?.items ?? []), ...dkItems.filter((item) => !covered.has(`${athleteOf(item)}|${item.type?.name}`)).map((item) => ({ ...item, book: "draftkings" }))];
+  // A stat FanDuel posts in this game but not for this player can't be bet there (e.g. Tatum
+  // blocks on 2026-10-20), so DraftKings only fills stats FanDuel hasn't posted for the game yet.
+  const fdStats = new Set((fd?.items ?? []).map((item) => item.type.name));
+  const dkFill = dkItems.filter((item) => !covered.has(`${athleteOf(item)}|${item.type?.name}`) && !fdStats.has(item.type?.name));
+  const items = [...(fd?.items ?? []), ...dkFill.map((item) => ({ ...item, book: "draftkings" }))];
   return { lines: Object.keys(lines.books).length ? lines : null, items };
 }
 
@@ -971,6 +977,7 @@ async function buildDay(date, perGame, ratings, hca, index, now) {
   if (withProps.size < open.length) {
     return console.log(`${date}: props posted for ${withProps.size}/${open.length} games, wait until they're all up`);
   }
+  if (DRY_RUN && argValue("--pool-out")) fs.writeFileSync(argValue("--pool-out"), JSON.stringify(pool.map((leg) => ({ ...slim(leg), slot: leg.slot ?? leg.key }))));
   if (DRY_RUN) {
     const ticket = buildTicket(pool, open.length);
     const fdLegs = pool.filter((leg) => leg.book === "fanduel").length;
